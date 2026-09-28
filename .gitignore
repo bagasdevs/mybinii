@@ -1,19 +1,19 @@
-# Cache Firecrawl CLI (hasil scrape sumber data)
+# Firecrawl CLI cache (scrape of the data source)
 .firecrawl/
 
-# Artefak SDD (ledger, brief, paket review)
+# SDD artifacts (ledger, brief, review packages)
 .superpowers/
 
-# Unduhan hasil verifikasi poster di browser (PNG 1,9 MB sekali pakai)
+# One-off poster verification downloads from the browser (PNG, ~1.9 MB)
 .tmp-downloads/
 
-# photos/ SENGAJA tidak diabaikan: 475 foto hasil mirror ikut di-commit
-# karena Cloudflare Pages menyajikan berkas langsung dari repo.
+# photos/ is deliberately NOT ignored: the 475 mirrored photos are committed
+# because Cloudflare Pages serves files straight from the repo.
 
 # OS / editor
 .DS_Store
 Thumbs.db
 *.swp
 
-# Tidak boleh ada dependensi: kalau folder ini muncul, ada yang salah.
+# There must be no dependencies: if this folder appears, something is wrong.
 node_modules/

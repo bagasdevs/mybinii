@@ -1,40 +1,43 @@
-# Kredit dan sumber
+# Credits and sources
 
-## Data roster
+## Roster data
 
-Daftar grup dan member berasal dari situs **https://mygirlnine.pages.dev/**
-("여돌 구절판"), diambil 2026-09-26. Situs itu adalah sumber data primer proyek ini.
+The group and member list comes from **https://mygirlnine.pages.dev/**
+("여돌 구절판"), fetched 2026-09-26. That site is the primary data source for this
+project.
 
-Data profil per grup (nama, generasi, tanggal debut) dirujuk dari **kprofiles.com**
-lewat tautan `source` pada tiap grup di `data/roster.json`.
+Per-group profile data (name, generation, debut date) is referenced from
+**kprofiles.com** through the `source` field on each group in `data/roster.json`.
 
-## Foto
+## Photos
 
-Foto profil member disalin dari `https://mygirlnine.pages.dev/photos/` dan
-diverifikasi terhadap `sha256` di `data/photo-sources.json`: 457 dari 475 berkas
-byte-identik dengan yang disajikan situs itu. Ukurannya beragam — 262 ukuran
-berbeda, dari 301×297 sampai 1731×1550, dan hanya satu yang 640×800 — karena
-foto-fotonya dikumpulkan dari berbagai sumber.
+Member profile photos were mirrored from `https://mygirlnine.pages.dev/photos/`
+and verified against the `sha256` values in `data/photo-sources.json`: 457 of 475
+files are byte-identical to what that site serves. Sizes vary widely — 262
+distinct sizes, from 301x297 up to 1731x1550, with only one at 640x800 — because
+the photos were gathered from many sources.
 
-`data/photo-sources.json` mencatat untuk setiap foto:
+`data/photo-sources.json` records, for every photo:
 
-- `sourceUrl` — halaman profil kprofiles yang menjadi rujukan
-- `imageUrl` — URL gambar asli di kprofiles
-- `sourceType` — `web-download-edited`, `official-web-link`, atau `user-upload`
-- `providedFile` — nama berkas asli untuk foto yang disediakan operator
-- `sha256` — checksum berkas yang disajikan situs asli
+- `sourceUrl` — the kprofiles profile page used as reference
+- `imageUrl` — the original image URL on kprofiles
+- `sourceType` — `web-download-edited`, `official-web-link`, or `user-upload`
+- `providedFile` — original filename for operator-provided photos
+- `sha256` — checksum of the file served by the source site
 
-Situs asli menyatakan: "사진 권리는 원 권리자에게 있습니다" — hak atas foto tetap
-milik pemegang hak aslinya.
+The source site states: "사진 권리는 원 권리자에게 있습니다" — photo rights remain
+with their original holders.
 
-## Batasan pemakaian
+## Usage limits
 
-Konten dan foto **bukan** milik proyek ini. Repo ini dipakai untuk keperluan
-pribadi. **Jangan** dipakai untuk keperluan komersial, dan **jangan**
-dipublikasikan seolah-olah karya sendiri.
+The roster and photos are **not** owned by this project. This repository is for
+personal use. **Do not** use it commercially, and **do not** present it as your
+own work. The photo attribution above must stay intact for as long as the photos
+are distributed with the code.
 
-## Kode
+## Code
 
-Kode di repo ini ditulis ulang dari nol. Struktur fase permainan (setup → heat →
-sort → result), tata letak poster, dan skema data mengikuti perilaku situs asal
-agar hasilnya setara; tambahan pada versi ini adalah search dan i18n.
+The code in this repository was written from scratch. The phase structure
+(setup → heat → sort → result), poster layout, and data schema follow the
+behaviour of the source site so results stay comparable; search, i18n, undo, and
+the accessibility work are additions in this version.

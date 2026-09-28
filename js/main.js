@@ -1,6 +1,7 @@
 import { GROUPS, MEMBERS } from '../data/roster.js';
 import en from '../i18n/en.js';
 import ko from '../i18n/ko.js';
+import { renderCredits } from './credits.js';
 import { createTranslator, detectLocale, genLabel } from './i18n.js';
 import { effectiveTitle } from './phases/result.js';
 import { createCropDialog } from './photo.js';
@@ -277,6 +278,12 @@ document.querySelector('#dialog').addEventListener('close', () => {
     URL.revokeObjectURL(posterUrl);
     posterUrl = null;
   }
+});
+
+document.querySelector('#credits').addEventListener('click', () => {
+  const dialog = document.querySelector('#dialog');
+  document.querySelector('#dialogBody').innerHTML = renderCredits(state, t);
+  if (!dialog.open) dialog.showModal();
 });
 
 redrawAll();

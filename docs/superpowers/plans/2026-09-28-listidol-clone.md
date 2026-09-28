@@ -1879,12 +1879,45 @@ git commit -m "feat: helper view murni + label grup EN + test"
 
 - [ ] **Step 1: Port `style.css` dari situs asli**
 
+Berkasnya sudah ada di `.firecrawl/style.css` hasil scrape Task 1, jadi salin dari
+sana (tidak perlu unduh ulang; `curl` juga diblokir tool policy):
+
 ```bash
-curl -s "https://mygirlnine.pages.dev/style.css?v=20260928-weeklyfix" -o style.css
-wc -c style.css
+cp .firecrawl/style.css style.css
+node -e "const a=require('fs').readFileSync('style.css'),b=require('fs').readFileSync('.firecrawl/style.css');console.log(a.length,'bytes, identik:',a.equals(b))"
 ```
 
-Expected: `9914 style.css` (atau mirip). Berkas ini dipakai apa adanya; gaya tambahan ditulis di Task 8.
+Expected: `9914 bytes, identik: true`.
+
+- [ ] **Step 1b: Mirror font yang dirujuk CSS**
+
+`style.css` memuat dua `@font-face` yang menunjuk `fonts/noto-kr-400.ttf` dan
+`fonts/noto-kr-700.ttf` (masing-masing ~6,2 MB). Tanpa berkas itu seluruh teks
+Hangul jatuh ke font fallback, dan `document.fonts.ready` di poster tidak menunggu
+glyph yang benar. Unduh sekali, verifikasi magic SFNT (`00 01 00 00`) dan catat
+sha256-nya:
+
+```bash
+node -e "
+const fs=require('fs'),crypto=require('crypto');
+const UA={'user-agent':'Mozilla/5.0 (compatible; listidol-mirror/1.0)'};
+(async()=>{for(const w of [400,700]){const n='noto-kr-'+w+'.ttf';
+const r=await fetch('https://mygirlnine.pages.dev/fonts/'+n,{headers:UA});
+const b=Buffer.from(await r.arrayBuffer());
+const ok=b[0]===0&&b[1]===1&&b[2]===0&&b[3]===0;
+console.log(n,r.status,b.length,ok,crypto.createHash('sha256').update(b).digest('hex'));
+if(ok)fs.writeFileSync('fonts/'+n,b);}})();"
+```
+
+Expected (diverifikasi): `noto-kr-400.ttf 200 6163256 true
+c733940a7dc687142848b30a491e97138ed58dc58c4cae33c44e3ee52da411cb` dan
+`noto-kr-700.ttf 200 6159248 true
+5ebb0def0fe9e7c853253eca8ec9c1066adc479f2e248533b412ed0c6a663abc`.
+
+Berkas ini dipakai apa adanya; gaya tambahan ditulis di Task 8, kecuali delapan
+baris yang memang dibutuhkan Task 7 sendiri: `.lang-switch` (tiga aturan, karena
+situs asli tidak punya pemilih bahasa) dan `.portrait-fallback` (avatar inisial
+saat foto gagal dimuat).
 
 - [ ] **Step 2: Tulis `index.html`**
 
@@ -2304,7 +2337,11 @@ python -m http.server 8080 --directory .
 
 Buka `http://localhost:8080/` lalu periksa, satu per satu:
 
-1. Grid grup tampil, semua grup non-`hidden` ada, urut naik berdasarkan debut.
+0. Catatan: locale pertama ditentukan `navigator.language`. Di Chromium headless
+   nilainya `en-US`, jadi halaman pertama kali terbuka dalam bahasa Inggris — itu
+   perilaku yang dispesifikasikan (`?lang=` -> localStorage -> navigator -> `ko`),
+   bukan bug. Untuk memulai dari bahasa Korea, buka `?lang=ko`.
+1. Grid grup tampil, semua grup non-`hidden` ada (79, ARTMS tidak ada), urut naik berdasarkan debut.
 2. Klik satu kartu grup: tanda centang dan gaya `selected` muncul/hilang.
 3. Klik tab `3세대`: seluruh grup generasi 3 terpilih. Klik lagi: seluruhnya terlepas.
 4. Klik `데뷔순서 오름차순 ↑`: urutan berbalik menjadi menurun dan label berubah.

@@ -4,9 +4,10 @@ import { GROUPS } from '../data/roster.js';
 import { renderCredits } from '../js/credits.js';
 import ko from '../i18n/ko.js';
 import en from '../i18n/en.js';
+import id from '../i18n/id.js';
 import { createTranslator } from '../js/i18n.js';
 
-const tFor = (locale) => createTranslator({ ko, en }, () => locale, () => {});
+const tFor = (locale) => createTranslator({ ko, en, id }, () => locale, () => {});
 
 const visibleGroups = GROUPS.filter((g) => !g.hidden);
 
@@ -40,4 +41,7 @@ test('renderCredits memakai label grup sesuai bahasa', () => {
   assert.ok(enHtml.includes('LOONA'));
   const koHtml = renderCredits({ lang: 'ko' }, tFor('ko'));
   assert.ok(koHtml.includes('이달의 소녀'));
+  const idHtml = renderCredits({ lang: 'id' }, tFor('id'));
+  assert.ok(idHtml.includes('LOONA'), 'id memakai label latin');
+  assert.ok(idHtml.includes('Dasar roster'), 'id memakai kamus Indonesia');
 });

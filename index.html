@@ -17,11 +17,12 @@
   <div class="lang-switch" id="langSwitch" role="group">
     <button type="button" data-lang="ko">한국어</button>
     <button type="button" data-lang="en">English</button>
+    <button type="button" data-lang="id">Indonesia</button>
   </div>
 </header>
 <main id="app"></main>
 <footer><button id="credits" class="text-button" type="button"></button></footer>
-<dialog id="dialog"><div id="dialogBody"></div><button id="closeDialog" class="outline" type="button"></button></dialog>
+<dialog id="dialog" aria-labelledby="dialogTitle"><div id="dialogBody"></div><div class="dialog-foot"><button id="closeDialog" class="outline" type="button"></button></div></dialog>
 <div id="toast" role="status"></div>
 <script type="module" src="js/main.js"></script>
 </body>

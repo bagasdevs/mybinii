@@ -24,3 +24,7 @@
 .selection-head>.search-row{flex:1 1 220px;max-width:360px;margin:0}
 .selection-head>.tabs{margin-left:auto}
 @media(max-width:650px){.selection-head>.search-row{flex:1 1 100%;max-width:none}.selection-head>.tabs{margin-left:0;flex-wrap:nowrap;overflow-x:auto;max-width:100%;scrollbar-width:none}.selection-head>.tabs::-webkit-scrollbar{display:none}.selection-head .tab{white-space:nowrap;flex-shrink:0}.selection-actions{width:100%;gap:8px}.debut-switch{flex:1 1 100%;margin-right:0;justify-content:flex-start;font-size:12px}.selection-actions .text-button{white-space:nowrap;flex-shrink:0}.group .meta{font-size:12px;line-height:1.45}}
+/* --- dialog: tombol Tutup selalu terlihat, tak perlu scroll 79 baris --- */
+#dialog{padding:0}
+#dialogBody{padding:25px 25px 0;max-height:calc(85vh - 90px);overflow:auto}
+.dialog-foot{position:sticky;bottom:0;display:flex;justify-content:flex-end;gap:8px;padding:14px 25px;background:var(--bg);border-top:1px solid var(--line);border-radius:0 0 18px 18px}

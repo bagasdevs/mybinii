@@ -1,5 +1,6 @@
 import { GROUPS, MEMBERS } from '../data/roster.js';
 import en from '../i18n/en.js';
+import id from '../i18n/id.js';
 import ko from '../i18n/ko.js';
 import { renderCredits } from './credits.js';
 import { createTranslator, detectLocale, genLabel } from './i18n.js';
@@ -11,7 +12,7 @@ import { buildIndex, groupText, memberText } from './search.js';
 import * as act from './state.js';
 import { esc, groupLabel, initialsOf } from './view.js';
 
-const dicts = { ko, en };
+const dicts = { ko, en, id };
 const app = document.querySelector('#app');
 const dialogBody = document.querySelector('#dialogBody');
 const toastEl = document.querySelector('#toast');
@@ -104,7 +105,7 @@ async function downloadPoster() {
 function showSavedPreview(url) {
   const dialog = document.querySelector('#dialog');
   dialogBody.innerHTML =
-    `<h2>${esc(t('result.saved.title'))}</h2>` +
+    `<h2 id="dialogTitle">${esc(t('result.saved.title'))}</h2>` +
     `<p class="small">${esc(t('result.saved.hint'))}</p>`;
   const preview = document.createElement('img');
   preview.src = url;
@@ -269,11 +270,15 @@ app.addEventListener('compositionend', (event) => {
   redrawSearch(event.target);
 });
 
-document.querySelector('#closeDialog').addEventListener('click', () => {
-  document.querySelector('#dialog').close();
+const dialog = document.querySelector('#dialog');
+document.querySelector('#closeDialog').addEventListener('click', () => dialog.close());
+// Klik backdrop (abu-abu di luar kotak) menutup dialog — tanpa ini pengguna
+// harus scroll 79 baris kredit dulu baru ketemu tombol Tutup.
+dialog.addEventListener('click', (event) => {
+  if (event.target === dialog) dialog.close();
 });
 
-document.querySelector('#dialog').addEventListener('close', () => {
+dialog.addEventListener('close', () => {
   if (posterUrl) {
     URL.revokeObjectURL(posterUrl);
     posterUrl = null;
@@ -284,8 +289,7 @@ document.querySelector('#dialog').addEventListener('close', () => {
 });
 
 document.querySelector('#credits').addEventListener('click', () => {
-  const dialog = document.querySelector('#dialog');
-  document.querySelector('#dialogBody').innerHTML = renderCredits(state, t);
+  dialogBody.innerHTML = renderCredits(state, t);
   if (!dialog.open) dialog.showModal();
 });
 

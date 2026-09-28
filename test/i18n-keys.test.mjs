@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readdirSync, readFileSync } from 'node:fs';
 import en from '../i18n/en.js';
+import id from '../i18n/id.js';
 import ko from '../i18n/ko.js';
 
 // Kunci memuat huruf besar (setup.selectAll, crop.errSize, ...), jadi kelas
@@ -39,37 +40,37 @@ test('pemindaian menemukan key dalam jumlah wajar', () => {
   assert.ok(usedKeys().size >= 60, `hanya ${usedKeys().size} key terpindai`);
 });
 
-test('setiap key yang dipakai kode ada di kamus ko', () => {
-  const missing = [...usedKeys()].filter((key) => !(key in ko)).sort();
-  assert.deepEqual(missing, [], `key hilang dari i18n/ko.js: ${missing}`);
-});
-
-test('setiap key yang dipakai kode ada di kamus en', () => {
-  const missing = [...usedKeys()].filter((key) => !(key in en)).sort();
-  assert.deepEqual(missing, [], `key hilang dari i18n/en.js: ${missing}`);
-});
-
-test('key yang dibentuk runtime ada di kedua kamus', () => {
-  for (const key of DYNAMIC_KEYS) {
-    assert.ok(key in ko, `key hilang dari i18n/ko.js: ${key}`);
-    assert.ok(key in en, `key hilang dari i18n/en.js: ${key}`);
+test('setiap key yang dipakai kode ada di semua kamus', () => {
+  for (const [locale, dict] of Object.entries({ ko, en, id })) {
+    const missing = [...usedKeys()].filter((key) => !(key in dict)).sort();
+    assert.deepEqual(missing, [], `key hilang dari i18n/${locale}.js: ${missing}`);
   }
 });
 
-test('ko dan en punya himpunan key yang identik', () => {
-  assert.deepEqual(Object.keys(ko).sort(), Object.keys(en).sort());
+test('key yang dibentuk runtime ada di semua kamus', () => {
+  for (const key of DYNAMIC_KEYS) {
+    for (const [locale, dict] of Object.entries({ ko, en, id })) {
+      assert.ok(key in dict, `key hilang dari i18n/${locale}.js: ${key}`);
+    }
+  }
+});
+
+test('ko, en, dan id punya himpunan key yang identik', () => {
+  assert.deepEqual(Object.keys(en).sort(), Object.keys(ko).sort());
+  assert.deepEqual(Object.keys(id).sort(), Object.keys(ko).sort());
 });
 
 test('tidak ada nilai kamus yang kosong', () => {
-  for (const [locale, dict] of Object.entries({ ko, en })) {
+  for (const [locale, dict] of Object.entries({ ko, en, id })) {
     const empty = Object.entries(dict).filter(([, v]) => String(v).trim() === '').map(([k]) => k);
     assert.deepEqual(empty, [], `${locale} punya nilai kosong: ${empty}`);
   }
 });
 
-test('placeholder di ko dan en untuk key yang sama sama-sama cocok', () => {
+test('placeholder di semua kamus untuk key yang sama sama-sama cocok', () => {
   const names = (value) => [...String(value).matchAll(/\{(\w+)\}/g)].map((m) => m[1]).sort();
   for (const key of Object.keys(ko)) {
-    assert.deepEqual(names(ko[key]), names(en[key]), `placeholder beda pada ${key}`);
+    assert.deepEqual(names(en[key]), names(ko[key]), `placeholder beda pada ${key} (en)`);
+    assert.deepEqual(names(id[key]), names(ko[key]), `placeholder beda pada ${key} (id)`);
   }
 });

@@ -38,15 +38,17 @@ export const EN_GROUP_OVERRIDES = {
   퍼플키스: 'PURPLE KISS',
 };
 
+// Label non-EN = name Korea; id memakai label Inggris (latin) supaya terbaca
+// pengguna Indonesia. Satu-satunya pengecualian nyata, bukan pola umum.
 export function groupLabel(group, locale) {
   if (!group) return '';
-  if (locale !== 'en') return group.name;
+  if (locale === 'ko') return group.name;
   return EN_GROUP_OVERRIDES[group.id] ?? (group.id !== group.name ? group.id : group.name);
 }
 
 export function memberLabel(member, locale) {
   if (!member) return '';
-  return locale === 'en' ? member.english : member.name;
+  return locale === 'ko' ? member.name : member.english;
 }
 
 /** Satu baris per grup, dipakai poster (yang menggambar tiap grup di baris sendiri). */

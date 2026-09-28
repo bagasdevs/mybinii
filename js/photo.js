@@ -71,7 +71,7 @@ export function createCropDialog({ state, t, memberById, toast, redraw }) {
     const photo = act.beginCrop(state, memberId);
 
     body.innerHTML =
-      `<h2>${esc(t('crop.title', { name: memberLabel(member, state.lang) }))}</h2>` +
+      `<h2 id="dialogTitle">${esc(t('crop.title', { name: memberLabel(member, state.lang) }))}</h2>` +
       `<label class="outline" style="display:inline-block;cursor:pointer">${esc(t('crop.choose'))}` +
       `<input type="file" accept="image/*" id="upload" style="display:none"></label> ` +
       `<button class="text-button" type="button" id="resetPhoto">${esc(t('crop.reset'))}</button>` +

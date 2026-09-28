@@ -1,6 +1,6 @@
 // Modul murni: tidak menyentuh document/window/localStorage.
 export const DEFAULT_LOCALE = 'ko';
-export const LOCALES = ['ko', 'en'];
+export const LOCALES = ['ko', 'en', 'id'];
 
 /** Urutan: ?lang= → localStorage → navigator → default. Nilai tak dikenal dilewati. */
 export function detectLocale({ search = '', stored = null, navigatorLangs = [] } = {}) {
@@ -28,8 +28,8 @@ export function interpolate(template, vars) {
 }
 
 /**
- * @param dicts   { ko: {...}, en: {...} }
- * @param getLocale () => 'ko' | 'en'
+ * @param dicts   { ko: {...}, en: {...}, id: {...} }
+ * @param getLocale () => 'ko' | 'en' | 'id'
  * @param onMissing dipanggil sekali per key yang hilang
  */
 export function createTranslator(dicts, getLocale, onMissing) {

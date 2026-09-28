@@ -3,7 +3,7 @@ import { CHECKED, GROUPS, MEMBERS } from '../data/roster.js';
 import { esc, groupLabel, memberLabel } from './view.js';
 
 export function renderCredits(state, t) {
-  const locale = state.lang === 'en' ? 'en' : 'ko';
+  const locale = state.lang === 'ko' ? 'ko' : state.lang === 'id' ? 'id' : 'en';
   const date = new Intl.DateTimeFormat(locale, { dateStyle: 'long' }).format(
     new Date(`${CHECKED}T00:00:00Z`),
   );
@@ -30,7 +30,7 @@ export function renderCredits(state, t) {
     .join('');
 
   return (
-    `<h2>${esc(t('credits.title'))}</h2>` +
+    `<h2 id="dialogTitle">${esc(t('credits.title'))}</h2>` +
     `<p class="small">${esc(t('credits.body', { date }))}</p>` +
     `<p class="small"><a href="data/photo-sources.json" target="_blank" rel="noopener noreferrer">${esc(t('credits.openSources'))}</a></p>` +
     rows

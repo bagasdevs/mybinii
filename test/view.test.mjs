@@ -66,11 +66,16 @@ test('groupLabel memakai override untuk SNSD', () => {
 
 test('groupLabel tidak pernah mencetak undefined', () => {
   for (const g of GROUPS) {
-    for (const locale of ['ko', 'en']) {
+    for (const locale of ['ko', 'en', 'id']) {
       const label = groupLabel(g, locale);
       assert.ok(label && label !== 'undefined', `${g.id} / ${locale}`);
     }
   }
+});
+
+test('id memakai label latin yang sama dengan en', () => {
+  assert.equal(groupLabel(byId('이달의 소녀'), 'id'), 'LOONA');
+  assert.equal(memberLabel({ name: '사나', english: 'Sana' }, 'id'), 'Sana');
 });
 
 test('setiap grup ber-name Hangul punya label EN non-Hangul', () => {
@@ -91,6 +96,7 @@ test('memberLabel mengikuti bahasa', () => {
   const member = { name: '사나', english: 'Sana' };
   assert.equal(memberLabel(member, 'ko'), '사나');
   assert.equal(memberLabel(member, 'en'), 'Sana');
+  assert.equal(memberLabel(member, 'id'), 'Sana');
 });
 
 // --- labelsOf --------------------------------------------------------------

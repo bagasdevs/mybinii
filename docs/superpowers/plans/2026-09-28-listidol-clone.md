@@ -666,7 +666,8 @@ baris di `js/main.js`.
 - [ ] **Step 6: Verifikasi kedua kamus punya key yang identik**
 
 Run: `node -e "Promise.all([import('./i18n/ko.js'),import('./i18n/en.js')]).then(([a,b])=>{const ka=Object.keys(a.default),kb=Object.keys(b.default);const miss=ka.filter(k=>!(k in b.default)).concat(kb.filter(k=>!(k in a.default)));console.log('ko',ka.length,'en',kb.length,'selisih',miss);if(miss.length)process.exit(1)})"`
-Expected: `ko 89 en 89 selisih []` (jumlah bisa berbeda sedikit; yang penting `selisih []`)
+Expected: `ko 84 en 84 selisih []` — tabel di atas memang berisi 84 baris, bukan
+89 seperti perkiraan awal; yang penting `selisih []`.
 
 - [ ] **Step 7: Commit**
 

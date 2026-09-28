@@ -201,4 +201,6 @@ test('steps menandai langkah aktif dan memakai kunci i18n', () => {
   assert.equal((html.match(/class="current"/g) ?? []).length, 1);
   assert.ok(html.includes('[step.sort]'));
   assert.ok(html.includes('05'));
+  assert.ok(html.startsWith('<ol class="steps">'));
+  assert.ok(html.includes('aria-current="step"'));
 });

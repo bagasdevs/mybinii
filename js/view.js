@@ -128,11 +128,13 @@ export function stepIndex(state) {
 export function steps(state, t) {
   const current = stepIndex(state);
   return (
-    `<div class="steps">` +
+    `<ol class="steps">` +
     STEP_KEYS.map(
       (key, i) =>
-        `<span class="${i === current ? 'current' : ''}">${String(i + 1).padStart(2, '0')} ${esc(t(key))}</span>`,
+        i === current
+          ? `<li class="current" aria-current="step">${String(i + 1).padStart(2, '0')} ${esc(t(key))}</li>`
+          : `<li>${String(i + 1).padStart(2, '0')} ${esc(t(key))}</li>`,
     ).join('') +
-    `</div>`
+    `</ol>`
   );
 }

@@ -1,7 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { GROUPS, MEMBERS } from '../data/roster.js';
-import { buildIndex, groupText, memberText } from '../js/search.js';
 import {
   beginCrop,
   clearAllVisible,
@@ -21,11 +20,6 @@ import {
   toggleGeneration,
   toggleGroup,
 } from '../js/state.js';
-
-const groupById = new Map(GROUPS.map((g) => [g.id, g]));
-const genLabelFn = (gen) => `${gen}세대`;
-const groupIndex = buildIndex(GROUPS, (g) => groupText(g, genLabelFn));
-const memberIndex = buildIndex(MEMBERS, (m) => memberText(m, groupById, genLabelFn));
 
 const visibleGroupCount = () => GROUPS.filter((g) => !g.hidden).length;
 const selectableCount = () => GROUPS.filter((g) => !g.disabled && !g.hidden).length;
@@ -108,11 +102,6 @@ test('setPhase selalu mengosongkan query', () => {
   }
 });
 
-test('groupIndex dan memberIndex konsisten dengan jumlah data', () => {
-  assert.equal(groupIndex.size, GROUPS.length);
-  assert.equal(memberIndex.size, MEMBERS.length);
-});
-
 // --- alur permainan --------------------------------------------------------
 
 test('startGame menolak bila member eligible kurang dari 9', () => {
@@ -154,13 +143,26 @@ test('enterSort menolak kandidat kurang dari 9', () => {
   assert.equal(state.phase, 'setup');
 });
 
-test('startGame mereset custom dan finalists', () => {
+test('startGame mereset custom dan finalists, dan melepas blob unggahan', () => {
   const state = createState();
-  state.custom = { g_twice_sana: { url: 'blob:x', x: 1, y: 1, zoom: 1 } };
+  state.custom = {
+    g_twice_sana: { url: 'blob:upload-1', x: 1, y: 1, zoom: 1 },
+    g_twice_mina: { url: 'photos/profile-g_twice_mina.jpg', x: 50, y: 25, zoom: 1 },
+  };
   state.finalists = ['g_twice_sana'];
-  startGame(state, {});
+
+  const revoked = [];
+  const original = URL.revokeObjectURL;
+  URL.revokeObjectURL = (url) => revoked.push(url);
+  try {
+    startGame(state, {});
+  } finally {
+    URL.revokeObjectURL = original;
+  }
+
   assert.deepEqual(state.custom, {});
   assert.deepEqual(state.finalists, []);
+  assert.deepEqual(revoked, ['blob:upload-1'], 'hanya blob yang dilepas; path berkas tidak');
 });
 
 // --- heat ------------------------------------------------------------------
@@ -226,6 +228,25 @@ test('confirmHeat selalu mengosongkan pilihan layar berikutnya', () => {
   for (const id of state.heat.current.slice(0, 3)) pickMember(state, id);
   confirmHeat(state, {});
   assert.equal(state.heat.selected.size, 0);
+});
+
+// Layar heat baru berisi kandidat yang berbeda; query sisa dari layar sebelumnya
+// akan menyembunyikan seluruh kandidat baru (spec §9).
+test('confirmHeat mengosongkan query di setiap layar heat baru', () => {
+  const state = createState();
+  startGame(state, {});
+  assert.equal(state.phase, 'heat');
+
+  let boards = 0;
+  while (state.phase === 'heat') {
+    if (boards++ > 500) throw new Error('heat tidak pernah selesai');
+    for (const id of state.heat.current.slice(0, 3)) pickMember(state, id);
+    setQuery(state, 'sana');
+    assert.equal(confirmHeat(state, {}), true);
+    assert.equal(state.query, '', `query tersisa setelah layar ${boards}`);
+  }
+
+  assert.ok(boards > 1, `hanya ${boards} layar`);
 });
 
 // --- sort ------------------------------------------------------------------

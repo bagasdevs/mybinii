@@ -226,6 +226,33 @@ test('hasil sort selalu 9 teratas dan tanpa duplikat', () => {
   assert.equal(new Set(result).size, 9);
 });
 
+// Ground truth untuk `ids(n)`: `m<i>` menaik menurut i, apa pun urutan masukannya.
+// Test di atas hanya memeriksa panjang, jadi sembilan yang KEMBALI (jalur
+// slice(0, 9)) tidak pernah diperiksa untuk kandidat lebih dari 9.
+const byIdAsc = (st) => (Number(st.left.slice(1)) <= Number(st.right.slice(1)) ? st.left : st.right);
+const byIdDesc = (st) => (Number(st.left.slice(1)) >= Number(st.right.slice(1)) ? st.left : st.right);
+const top9 = (n) => ids(n).slice(0, 9);
+
+test('merge sort mengembalikan 9 teratas yang benar untuk kandidat > 9', () => {
+  for (const n of [10, 13, 15, 18, 23, 40]) {
+    assert.deepEqual(runSort(ids(n), byIdAsc).result, top9(n), `n = ${n}`);
+  }
+});
+
+test('merge sort mengembalikan 9 terbawah yang benar saat comparator membalik', () => {
+  const input = ids(24);
+  assert.deepEqual(runSort(input, byIdDesc).result, [...input].reverse().slice(0, 9));
+});
+
+test('merge sort mengembalikan 9 teratas yang benar saat urutan masukan bukan urutan akhir', () => {
+  // m1,m3,...,m23 lalu m0,m2,...,m22 — merge benar-benar harus menyusun ulang,
+  // bukan sekadar mempertahankan urutan masukan.
+  const input = ids(24)
+    .filter((_, i) => i % 2 === 1)
+    .concat(ids(24).filter((_, i) => i % 2 === 0));
+  assert.deepEqual(runSort(input, byIdAsc).result, top9(24));
+});
+
 test('chooseSort mengabaikan id yang bukan kandidat', () => {
   const st = createSort();
   beginSort(st, ids(9));

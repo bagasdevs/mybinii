@@ -2,7 +2,7 @@
 // `loadImage` tinggal di js/poster.js supaya hanya ada satu implementasi.
 import { loadImage } from './poster.js';
 import * as act from './state.js';
-import { esc, photoOf } from './view.js';
+import { esc, memberLabel, photoOf } from './view.js';
 
 const MAX_BYTES = 20 * 1024 * 1024;
 const SLIDERS = [
@@ -71,7 +71,7 @@ export function createCropDialog({ state, t, memberById, toast, redraw }) {
     const photo = act.beginCrop(state, memberId);
 
     body.innerHTML =
-      `<h2>${esc(t('crop.title', { name: member.name }))}</h2>` +
+      `<h2>${esc(t('crop.title', { name: memberLabel(member, state.lang) }))}</h2>` +
       `<label class="outline" style="display:inline-block;cursor:pointer">${esc(t('crop.choose'))}` +
       `<input type="file" accept="image/*" id="upload" style="display:none"></label> ` +
       `<button class="text-button" type="button" id="resetPhoto">${esc(t('crop.reset'))}</button>` +

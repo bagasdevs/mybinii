@@ -11,8 +11,10 @@ lewat tautan `source` pada tiap grup di `data/roster.json`.
 ## Foto
 
 Foto profil member disalin dari `https://mygirlnine.pages.dev/photos/` dan
-diverifikasi terhadap `sha256` di `data/photo-sources.json`. Berkas asal di situs
-itu berukuran 640×800.
+diverifikasi terhadap `sha256` di `data/photo-sources.json`: 457 dari 475 berkas
+byte-identik dengan yang disajikan situs itu. Ukurannya beragam — 262 ukuran
+berbeda, dari 301×297 sampai 1731×1550, dan hanya satu yang 640×800 — karena
+foto-fotonya dikumpulkan dari berbagai sumber.
 
 `data/photo-sources.json` mencatat untuk setiap foto:
 

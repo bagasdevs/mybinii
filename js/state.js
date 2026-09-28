@@ -79,10 +79,26 @@ export function setTitle(state, value) {
   state.titleTouched = true;
 }
 
+/** Satu-satunya tempat `state.query` dikosongkan. */
+function resetQuery(state) {
+  state.query = '';
+}
+
 /** Satu-satunya tempat transisi fase. Selalu mengosongkan query. */
 export function setPhase(state, phase) {
   state.phase = phase;
-  state.query = '';
+  resetQuery(state);
+}
+
+/**
+ * Buang foto unggahan sekaligus lepaskan object URL-nya. Foto bawaan memakai
+ * path berkas, jadi hanya blob yang di-revoke.
+ */
+function releaseCustom(state) {
+  for (const photo of Object.values(state.custom)) {
+    if (photo?.url?.startsWith('blob:')) URL.revokeObjectURL(photo.url);
+  }
+  state.custom = {};
 }
 
 // --- alur permainan --------------------------------------------------------
@@ -95,7 +111,7 @@ export function startGame(state, { onTooFew } = {}) {
   }
 
   state.pool = eligible.map((m) => m.id);
-  state.custom = {};
+  releaseCustom(state);
   state.finalists = [];
   state.heat = createHeat();
   state.heat.roundTotal = roundCount(state.pool.length);
@@ -146,13 +162,19 @@ export function confirmHeat(state, { onNeedMore, onTooFew } = {}) {
     return false;
   }
 
+  // Layar heat baru berisi kandidat yang berbeda, jadi query dari layar
+  // sebelumnya akan menyembunyikan kandidat secara tak terduga (spec §9).
   if (result.action === 'continue') {
+    resetQuery(state);
     beginHeat(state.heat);
     return true;
   }
 
   const next = advanceHeat(state.heat);
-  if (next.next === 'heat') return true;
+  if (next.next === 'heat') {
+    resetQuery(state);
+    return true;
+  }
 
   if (!enterSort(state, next.ids)) {
     onTooFew?.();

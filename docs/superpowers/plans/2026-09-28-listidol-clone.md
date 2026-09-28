@@ -1473,7 +1473,7 @@ git commit -m "feat: logika turnamen dan merge-sort sebagai modul murni + test"
   - `initialsOf(member, locale) -> string`
   - `defaultPhoto(member) -> { url, x, y, zoom }`
   - `photoOf(member, custom) -> { url, x, y, zoom }`
-  - `portrait(member, custom) -> string` (HTML `<img>`)
+  - `portrait(member, custom, locale) -> string` (HTML `<img>`; `alt` mengikuti bahasa)
   - `memberCard(member, { custom, groupById, locale, picked }) -> string`
   - `bar(left, right) -> string`
   - `stepIndex(state) -> 0..5`
@@ -1633,10 +1633,20 @@ test('defaultPhoto memakai nilai bawaan bila crop tidak ada', () => {
 });
 
 test('portrait memuat object-position dan scale dari crop', () => {
-  const html = portrait({ id: 'a', image: 'photos/a.jpg', english: 'A', crop: { x: 10, y: 20, zoom: 2 } }, {});
+  const html = portrait(
+    { id: 'a', image: 'photos/a.jpg', name: '에이', english: 'A', crop: { x: 10, y: 20, zoom: 2 } },
+    {},
+    'en',
+  );
   assert.ok(html.includes('object-position:10% 20%'));
   assert.ok(html.includes('scale(2)'));
   assert.ok(html.includes('data-member="a"'));
+});
+
+test('alt portrait mengikuti bahasa yang aktif', () => {
+  const member = { id: 'a', image: 'photos/a.jpg', name: '사나', english: 'Sana' };
+  assert.ok(portrait(member, {}, 'en').includes('alt="Sana"'));
+  assert.ok(portrait(member, {}, 'ko').includes('alt="사나"'));
 });
 
 test('initialsOf memakai dua huruf pertama label', () => {
@@ -1774,10 +1784,11 @@ export function photoOf(member, custom) {
   return custom[member.id] ?? defaultPhoto(member);
 }
 
-export function portrait(member, custom) {
+/** Alt mengikuti bahasa aktif; label member memang ditampilkan di sebelah foto. */
+export function portrait(member, custom, locale) {
   const photo = photoOf(member, custom);
   return (
-    `<img src="${esc(photo.url)}" alt="${esc(memberLabel(member, 'ko'))}" loading="lazy" ` +
+    `<img src="${esc(photo.url)}" alt="${esc(memberLabel(member, locale))}" loading="lazy" ` +
     `data-member="${esc(member.id)}" ` +
     `style="object-position:${photo.x}% ${photo.y}%;transform:scale(${photo.zoom})">`
   );
@@ -1787,7 +1798,7 @@ export function memberCard(member, { custom, groupById, locale, picked = false }
   return (
     `<button class="member ${picked ? 'picked' : ''}" type="button" ` +
     `data-member="${esc(member.id)}" aria-pressed="${picked}">` +
-    `<div class="portrait">${portrait(member, custom)}<span class="check">${picked ? '✓' : ''}</span></div>` +
+    `<div class="portrait">${portrait(member, custom, locale)}<span class="check">${picked ? '✓' : ''}</span></div>` +
     `<div class="member-name">${esc(memberLabel(member, locale))}</div>` +
     `<div class="member-group">${esc(labelsOf(member, groupById, locale))}</div>` +
     `</button>`
@@ -1834,7 +1845,7 @@ export function steps(state, t) {
 - [ ] **Step 4: Jalankan test untuk memastikan lulus**
 
 Run: `node --test test/view.test.mjs`
-Expected: PASS, 24 test lulus.
+Expected: PASS, 25 test lulus.
 
 - [ ] **Step 5: Commit**
 
@@ -2987,7 +2998,7 @@ export function renderSort(state, ctx) {
 
   const card = (member) =>
     `<button class="member" type="button" data-sort="${esc(member.id)}">` +
-    `<div class="portrait">${portrait(member, state.custom)}</div>` +
+    `<div class="portrait">${portrait(member, state.custom, locale)}</div>` +
     `<div class="member-name">${esc(memberLabel(member, locale))}</div>` +
     `<div class="member-group">${esc(labelsOf(member, ctx.groupById, locale))}</div>` +
     `</button>`;
@@ -3143,7 +3154,7 @@ export function renderResult(state, ctx) {
     return (
       `<div class="poster-card">` +
       `<span class="badge ${rankIndex === 0 ? 'first' : ''}">${esc(t('result.rank', { n: rankIndex + 1 }))}</span>` +
-      `<div class="portrait">${portrait(member, state.custom)}` +
+      `<div class="portrait">${portrait(member, state.custom, locale)}` +
       `<button class="edit-photo" type="button" data-photo="${esc(member.id)}">${esc(t('result.editPhoto'))}</button></div>` +
       `<div class="member-name">${esc(memberLabel(member, locale))}</div>` +
       `<div class="member-group">${esc(labelsOf(member, ctx.groupById, locale))}</div>` +

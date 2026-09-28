@@ -1029,8 +1029,10 @@ test('sortGroups: debut hilang tidak melempar dan hasilnya deterministik', () =>
     { id: 'empty', debut: '' },
   ];
   assert.doesNotThrow(() => sortGroups(groups, false));
+  // Tie-break ikut dibalik saat debutDesc, persis seperti rumus di app.js asli
+  // ((debutDesc?-1:1) mengalikan seluruh ekspresi, termasuk perbandingan id).
   assert.deepEqual(sortGroups(groups, false).map((g) => g.id), ['empty', 'missing', 'has']);
-  assert.deepEqual(sortGroups(groups, true).map((g) => g.id), ['has', 'empty', 'missing']);
+  assert.deepEqual(sortGroups(groups, true).map((g) => g.id), ['has', 'missing', 'empty']);
 });
 
 test('sortGroups tidak memutasi masukan', () => {
@@ -1042,10 +1044,13 @@ test('sortGroups tidak memutasi masukan', () => {
 
 // --- alur heat -------------------------------------------------------------
 
+// Protokol yang sama dengan confirmHeat di Task 9: finishHeat mencatat hasil,
+// PEMANGGIL yang memuat layar berikutnya saat masih ada.
 function playHeat(hs, pick = 3) {
-  const picks = hs.current.slice(0, Math.min(pick, hs.current.length)).map((m) => m.id);
+  const picks = hs.current.slice(0, Math.min(pick, hs.current.length));
   const res = finishHeat(hs, picks);
   assert.equal(res.ok, true);
+  if (res.action === 'continue') beginHeat(hs);
   return res.action;
 }
 
@@ -1135,7 +1140,9 @@ test('selalu memilih kanan membalik urutan masukan', () => {
 test('merge sort memakai perbandingan tidak lebih dari batasnya', () => {
   const input = ids(15);
   const { st, result } = runSort(input, (st) => st.left);
-  assert.equal(result.length, 15);
+  // Hasil akhir selalu dipotong ke 9 teratas (app.js asli: finalists = out.slice(0,9)),
+  // tapi seluruh 15 kandidat tetap dibandingkan sampai selesai.
+  assert.equal(result.length, 9);
   assert.ok(st.comparisons <= sortLimit(15), `${st.comparisons} > ${sortLimit(15)}`);
 });
 
@@ -1417,9 +1424,15 @@ export function chooseSort(st, id) {
   const frame = st.stack.at(-1);
   if (!frame || frame.stage !== 3) return { done: false, ignored: true };
 
-  if (id === st.left) frame.l++;
-  else if (id === st.right) frame.r++;
-  else return { done: false, ignored: true };
+  if (id === st.left) {
+    frame.out.push(id);
+    frame.l++;
+  } else if (id === st.right) {
+    frame.out.push(id);
+    frame.r++;
+  } else {
+    return { done: false, ignored: true };
+  }
 
   st.comparisons++;
   return beginMerge(st);

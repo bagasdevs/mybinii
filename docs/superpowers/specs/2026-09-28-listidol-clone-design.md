@@ -1,7 +1,7 @@
 # listidol — Klon "여돌 구절판" dengan Search & Multi-language
 
 Tanggal: 2026-09-28
-Status: menunggu review spec
+Status: diimplementasikan 2026-09-28 (lihat docs/superpowers/plans/2026-09-28-listidol-clone.md)
 
 ## 1. Tujuan
 

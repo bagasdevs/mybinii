@@ -81,7 +81,6 @@ export default {
   'dialog.close': 'Close',
   'search.placeholder': 'Search name or group',
   'search.aria': 'Search members or groups',
-  'search.count.members': '{n} / {total} members',
   'search.count.groups': '{n} / {total} teams',
   'search.empty': 'No matches',
   'search.clear': 'Clear',

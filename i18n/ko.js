@@ -81,7 +81,6 @@ export default {
   'dialog.close': '닫기',
   'search.placeholder': '이름·그룹 검색',
   'search.aria': '멤버 또는 그룹 검색',
-  'search.count.members': '{n}명 / {total}명',
   'search.count.groups': '{n}팀 / {total}팀',
   'search.empty': '검색 결과가 없습니다',
   'search.clear': '지우기',

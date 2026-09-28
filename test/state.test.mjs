@@ -3,13 +3,16 @@ import assert from 'node:assert/strict';
 import { GROUPS, MEMBERS } from '../data/roster.js';
 import { buildIndex, groupText, memberText } from '../js/search.js';
 import {
+  beginCrop,
   clearAllVisible,
   confirmHeat,
   createState,
   enterSort,
   pickMember,
   pickSort,
+  resetCrop,
   selectAllVisible,
+  setCrop,
   setPhase,
   setQuery,
   setTitle,
@@ -284,6 +287,61 @@ test('setTitle tidak mengubah pilihan, pool, atau fase', () => {
   const state = createState();
   const selected = [...state.selected].sort();
   setTitle(state, 'x');
+  assert.deepEqual([...state.selected].sort(), selected);
+  assert.equal(state.phase, 'setup');
+  assert.deepEqual(state.pool, []);
+});
+
+// --- crop foto -------------------------------------------------------------
+
+const firstMember = MEMBERS[0];
+
+test('beginCrop mengisi custom dengan foto bawaan member', () => {
+  const state = createState();
+  const photo = beginCrop(state, firstMember.id);
+  assert.equal(state.cropId, firstMember.id);
+  assert.equal(photo.url, firstMember.image);
+  assert.deepEqual(photo, {
+    url: firstMember.image,
+    x: firstMember.crop?.x ?? 50,
+    y: firstMember.crop?.y ?? 25,
+    zoom: firstMember.crop?.zoom ?? 1,
+  });
+});
+
+test('beginCrop dipanggil dua kali tidak menimpa suntingan', () => {
+  const state = createState();
+  beginCrop(state, firstMember.id);
+  setCrop(state, firstMember.id, { zoom: 2.5 });
+  const again = beginCrop(state, firstMember.id);
+  assert.equal(again.zoom, 2.5);
+});
+
+test('setCrop menggabungkan patch tanpa menghapus field lain', () => {
+  const state = createState();
+  beginCrop(state, firstMember.id);
+  setCrop(state, firstMember.id, { x: 12 });
+  const photo = setCrop(state, firstMember.id, { y: 34 });
+  assert.equal(photo.x, 12);
+  assert.equal(photo.y, 34);
+  assert.equal(photo.url, firstMember.image);
+});
+
+test('resetCrop menghapus custom dan mengembalikan foto bawaan', () => {
+  const state = createState();
+  beginCrop(state, firstMember.id);
+  setCrop(state, firstMember.id, { zoom: 3 });
+  const photo = resetCrop(state, firstMember.id);
+  assert.equal(state.custom[firstMember.id], undefined);
+  assert.equal(photo.zoom, firstMember.crop?.zoom ?? 1);
+});
+
+test('aksi crop tidak menyentuh selected, pool, atau fase', () => {
+  const state = createState();
+  const selected = [...state.selected].sort();
+  beginCrop(state, firstMember.id);
+  setCrop(state, firstMember.id, { zoom: 2 });
+  resetCrop(state, firstMember.id);
   assert.deepEqual([...state.selected].sort(), selected);
   assert.equal(state.phase, 'setup');
   assert.deepEqual(state.pool, []);

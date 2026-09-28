@@ -3,6 +3,7 @@ import en from '../i18n/en.js';
 import ko from '../i18n/ko.js';
 import { createTranslator, detectLocale, genLabel } from './i18n.js';
 import { effectiveTitle } from './phases/result.js';
+import { createCropDialog } from './photo.js';
 import { buildPoster } from './poster.js';
 import { render } from './render.js';
 import { buildIndex, groupText, memberText } from './search.js';
@@ -129,6 +130,8 @@ function draw() {
   app.innerHTML = render(state, ctx);
 }
 
+const cropDialog = createCropDialog({ state, t, memberById, toast, redraw: draw });
+
 function redrawAll() {
   ctx = buildContext();
   applyDocumentChrome();
@@ -169,6 +172,11 @@ app.addEventListener('click', async (event) => {
       toast(t('heat.maxPick', { need: Math.min(3, state.heat.current.length) }));
     }
     draw();
+    return;
+  }
+
+  if (button.dataset.photo !== undefined) {
+    cropDialog.open(button.dataset.photo);
     return;
   }
 

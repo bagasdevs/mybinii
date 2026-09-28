@@ -1,4 +1,5 @@
 import { GROUPS, MEMBERS } from '../data/roster.js';
+import { defaultPhoto } from './view.js';
 import {
   advanceHeat,
   beginHeat,
@@ -170,4 +171,26 @@ export function pickSort(state, memberId) {
     setPhase(state, 'result');
   }
   return result;
+}
+
+// --- crop foto -------------------------------------------------------------
+
+const photoDefaults = (memberId) => defaultPhoto(memberById.get(memberId));
+
+/** Mengisi `state.custom[memberId]` dengan foto bawaan bila belum ada. */
+export function beginCrop(state, memberId) {
+  state.cropId = memberId;
+  state.custom[memberId] ??= photoDefaults(memberId);
+  return state.custom[memberId];
+}
+
+export function setCrop(state, memberId, patch) {
+  state.custom[memberId] = { ...(state.custom[memberId] ?? photoDefaults(memberId)), ...patch };
+  return state.custom[memberId];
+}
+
+export function resetCrop(state, memberId) {
+  delete state.custom[memberId];
+  state.cropId = memberId;
+  return photoDefaults(memberId);
 }

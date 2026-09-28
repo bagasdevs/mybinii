@@ -12,7 +12,7 @@
 
 ## Global Constraints
 
-- **Nol dependensi.** Tidak ada `package.json`, tidak ada `node_modules`, tidak ada langkah build. Deploy = unggah folder.
+- **Nol dependensi.** Tidak ada `node_modules`, tidak ada langkah build, tidak ada `dependencies`/`devDependencies`. Satu `package.json` minimal berisi `{"type":"module"}` **diperlukan** supaya Node tidak memperingatkan `MODULE_TYPELESS_PACKAGE_JSON` dan me-reparse setiap `.js` sebagai ESM; berkas itu tidak menambah dependensi maupun langkah build. Deploy = unggah folder.
 - **Node ≥ 26** untuk menjalankan test (`node --test`, regex `\p{...}`).
 - **Modul murni** — `js/i18n.js`, `js/search.js`, `js/game.js` **tidak boleh** menyentuh `document`, `window`, atau `localStorage`. Modul ini wajib bisa diimpor di Node.
 - **Semua teks yang dilihat pengguna lewat `t(key)`.** Tidak ada literal Korea/Inggris di `js/phases/*`, `js/render.js`, `js/poster.js`, `js/photo.js`, `js/credits.js`.
@@ -66,6 +66,7 @@ tools/mirror-photos.mjs        unduh 475 foto + verifikasi sha256
 photos/                        475 jpg hasil mirror
 CREDITS.md
 README.md
+package.json                   hanya {"type":"module"} + skrip test/serve; tanpa dependensi
 ```
 
 **Catatan penyimpangan dari spec §4:** plan ini menambahkan `js/game.js` yang tidak ada di daftar spec. Alasannya: `app.js` asli menaruh state machine turnamen dan merge-sort di dalam handler DOM. Dipisah menjadi modul murni, bagian itu jadi satu-satunya tempat yang benar-benar berhak diuji di Node, dan fase-fase render menjadi fungsi murni dari state. Spec §4 diperbarui agar cocok.
@@ -75,7 +76,8 @@ README.md
 ## Task 1: Fondasi data
 
 **Files:**
-- Create: `data/roster.json` (salinan bersih dari `.firecrawl/roster.json`)
+- Create: `data/roster.json` (salinan bersih dari `.firecrawl/roster.json`; Task 2 menulis ulang empat nilai `image` di dalamnya)
+- Create: `package.json` (hanya `{"type":"module"}` dan dua skrip; tanpa dependensi)
 - Create: `data/photo-sources.json` (salinan dari `.firecrawl/photo-sources.json`)
 - Create: `tools/build-roster.mjs`
 - Create: `data/roster.js` (dihasilkan, ikut di-commit)
@@ -550,8 +552,6 @@ berisi objek datar `key → string`, satu key per baris. Isi persis tabel ini:
 | `gen.4` | 4세대 | 4th gen |
 | `gen.5` | 5세대 | 5th gen |
 | `gen.other` | {n}세대 | gen {n} |
-| `common.members` | {n}명 | {n} members |
-| `common.teams` | {n}팀 | {n} teams |
 | `setup.tab.all` | 전체 | All |
 | `setup.debut.label` | 데뷔순서 | Debut order |
 | `setup.debut.asc` | 오름차순 ↑ | Oldest first ↑ |
@@ -1417,6 +1417,7 @@ git commit -m "feat: logika turnamen dan merge-sort sebagai modul murni + test"
 - Produces:
   - `esc(value) -> string`
   - `visibleGroups() -> Group[]`
+  - `POSTER_LAYOUT: number[]` = `[3,4,5,1,0,2,6,7,8]`
   - `EN_GROUP_OVERRIDES: Record<groupId, string>`
   - `groupLabel(group, locale) -> string`
   - `memberLabel(member, locale) -> string`
@@ -1651,6 +1652,9 @@ const ESCAPES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&
 
 /** Grup yang tampil di grid: `hidden` disembunyikan, `disabled` tampil tapi mati. */
 export const visibleGroups = () => GROUPS.filter((g) => !g.hidden);
+
+/** Urutan slot poster. Satu sumber kebenaran: dipakai renderer HTML dan canvas. */
+export const POSTER_LAYOUT = [3, 4, 5, 1, 0, 2, 6, 7, 8];
 
 export const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ESCAPES[c]);
 
@@ -3022,9 +3026,13 @@ git commit -m "feat: fase sort berpasangan"
 - Consumes: `photoOf`, `memberLabel`, `groupLines`, `portrait`, `labelsOf` dari `js/view.js`
 - Produces:
   - `setTitle(state, value) -> void` (menandai `titleTouched = true`)
-  - `POSTER_LAYOUT: number[]` = `[3,4,5,1,0,2,6,7,8]`
+  - `effectiveTitle(state, t) -> string`
   - `loadImage(url) -> Promise<HTMLImageElement>`
   - `buildPoster({ finalists, memberById, custom, title, labels }) -> Promise<Blob>`
+
+`POSTER_LAYOUT` **tidak** didefinisikan di sini; ia berasal dari `js/view.js`
+(Task 6) dan diimpor oleh `js/phases/result.js` maupun `js/poster.js`, supaya
+urutan slot poster hanya punya satu definisi.
 
 **Konteks — dua perbaikan atas situs asli:** (1) `document.fonts.load(...)` untuk setiap bobot yang dipakai dipanggil sebelum menggambar, agar teks Hangul tidak ter-render sebagai tofu; (2) `URL.revokeObjectURL` dipanggil saat dialog ditutup, sedangkan situs asli membiarkan blob-nya bocor.
 
@@ -3070,9 +3078,7 @@ export function setTitle(state, value) {
 - [ ] **Step 4: Ganti stub `js/phases/result.js`**
 
 ```js
-import { bar, esc, labelsOf, memberLabel, portrait, steps } from '../view.js';
-
-export const POSTER_LAYOUT = [3, 4, 5, 1, 0, 2, 6, 7, 8];
+import { POSTER_LAYOUT, bar, esc, labelsOf, memberLabel, portrait, steps } from '../view.js';
 
 /** Judul efektif: hasil suntingan pengguna, atau nama aplikasi yang ikut bahasa. */
 export function effectiveTitle(state, t) {
@@ -3122,11 +3128,10 @@ export function renderResult(state, ctx) {
 - [ ] **Step 5: Tulis `js/poster.js`**
 
 ```js
-import { groupLines, memberLabel, photoOf } from './view.js';
+import { POSTER_LAYOUT, groupLines, memberLabel, photoOf } from './view.js';
 
 const WIDTH = 1080;
 const HEIGHT = 1600;
-const LAYOUT = [3, 4, 5, 1, 0, 2, 6, 7, 8];
 const FONT = '"Noto Sans KR", sans-serif';
 
 export function loadImage(url) {
@@ -3169,8 +3174,8 @@ export async function buildPoster({ finalists, memberById, custom, title, labels
   }
   c.fillText(title, WIDTH / 2, 158);
 
-  for (let slot = 0; slot < LAYOUT.length; slot++) {
-    const rankIndex = LAYOUT[slot];
+  for (let slot = 0; slot < POSTER_LAYOUT.length; slot++) {
+    const rankIndex = POSTER_LAYOUT[slot];
     const member = memberById.get(finalists[rankIndex]);
     if (!member) continue;
 
@@ -3227,11 +3232,15 @@ export async function buildPoster({ finalists, memberById, custom, title, labels
 
 - [ ] **Step 6: Wire di `js/main.js`**
 
-Ubah signature handler klik `#app` menjadi `async (event) => {`. Tambahkan `buildPoster` dan `effectiveTitle` ke import:
+Ubah signature handler klik `#app` menjadi `async (event) => {`. Tambahkan import
+berikut, dan **gabungkan** `groupLines` ke baris import `./view.js` yang sudah ada
+di Task 7 (`import { initialsOf } from './view.js';`) — jangan membuat baris import
+kedua untuk modul yang sama:
 
 ```js
 import { effectiveTitle } from './phases/result.js';
 import { buildPoster } from './poster.js';
+// baris ./view.js yang sudah ada diubah menjadi:
 import { groupLines, initialsOf } from './view.js';
 ```
 

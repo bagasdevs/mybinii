@@ -1,10 +1,16 @@
-# Firecrawl CLI cache
+# Cache Firecrawl CLI (hasil scrape sumber data)
 .firecrawl/
+
+# Artefak SDD (ledger, brief, paket review)
+.superpowers/
+
+# photos/ SENGAJA tidak diabaikan: 475 foto hasil mirror ikut di-commit
+# karena Cloudflare Pages menyajikan berkas langsung dari repo.
 
 # OS / editor
 .DS_Store
 Thumbs.db
 *.swp
 
-# Local preview
+# Tidak boleh ada dependensi: kalau folder ini muncul, ada yang salah.
 node_modules/

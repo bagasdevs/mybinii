@@ -1,0 +1,10 @@
+{
+  "name": "listidol",
+  "private": true,
+  "type": "module",
+  "description": "Versi sendiri dari 여돌 구절판 — tanpa dependensi, tanpa langkah build",
+  "scripts": {
+    "test": "node --test",
+    "serve": "python -m http.server 8080 --directory ."
+  }
+}

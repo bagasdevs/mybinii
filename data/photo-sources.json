@@ -1,0 +1,4621 @@
+[
+  {
+    "id": "g_mave_siu",
+    "name": "SIU",
+    "english": "SIU",
+    "group": "MAVE:",
+    "sourceUrl": "https://kprofiles.com/mave-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/01/SIU-640x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "464e6b1ff3c01721715b737ceb1ab1f698138261629e208c36808aafcd6119b4"
+  },
+  {
+    "id": "g_mave_zena",
+    "name": "ZENA",
+    "english": "ZENA",
+    "group": "MAVE:",
+    "sourceUrl": "https://kprofiles.com/mave-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/01/ZENA-640x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "613d3888b6069b392016b9d8db4e26e99082b5d1495cce1890a5d39e010a92c2"
+  },
+  {
+    "id": "g_mave_tyra",
+    "name": "TYRA",
+    "english": "TYRA",
+    "group": "MAVE:",
+    "sourceUrl": "https://kprofiles.com/mave-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/01/TYRA-640x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "a1c6244d33b327186ed13e2ac4c742e14b7ff934c810e2097990dc4072a2eb3a"
+  },
+  {
+    "id": "g_mave_marty",
+    "name": "MARTY",
+    "english": "MARTY",
+    "group": "MAVE:",
+    "sourceUrl": "https://kprofiles.com/mave-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/01/MARTY-640x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "b98d1f5ece7bd90c1f80324f5b3a07ab23b56e6f38c6d963764bfa847f14822e"
+  },
+  {
+    "id": "g_weeekly_monday",
+    "name": "Monday",
+    "english": "Monday",
+    "group": "Weeekly",
+    "sourceUrl": "https://kprofiles.com/weeekly-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2018/12/MONDAY-5-900x643.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "8a9bc8de644f5c7c55fe299ff555f4e17ca6785989d140425e712dfbd2417df3"
+  },
+  {
+    "id": "g_weeekly_soojin",
+    "name": "이수진",
+    "english": "Soojin",
+    "group": "Weeekly",
+    "localPath": "photos/user-final-g_weeekly_soojin.jpg",
+    "sourceUrl": null,
+    "matchMethod": "User provided photo override"
+  },
+  {
+    "id": "g_weeekly_soeun",
+    "name": "Soeun",
+    "english": "Soeun",
+    "group": "Weeekly",
+    "sourceUrl": "https://kprofiles.com/weeekly-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2018/12/PARK-SOEUN-1-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "f789b14c17e7ed4b780c30b83bef06ec2ec30e5cdbf53363cd1fc1b035b42376"
+  },
+  {
+    "id": "g_weeekly_jaehee",
+    "name": "Jaehee",
+    "english": "Jaehee",
+    "group": "Weeekly",
+    "sourceUrl": "https://kprofiles.com/weeekly-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2018/12/LEE-JAEHEE-1-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "84b79695ed4ff223ba7cf44ae369744f09c23a9483407078e1579912ff67deea"
+  },
+  {
+    "id": "g_weeekly_jihan",
+    "name": "Jihan",
+    "english": "Jihan",
+    "group": "Weeekly",
+    "sourceUrl": "https://kprofiles.com/weeekly-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2018/12/JIHAN-5-900x643.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "356f4f60616bfd65b69d10259ff6bf5d416d41e93eadbb5eaed70c264e9df245"
+  },
+  {
+    "id": "g_weeekly_zoa",
+    "name": "Zoa",
+    "english": "Zoa",
+    "group": "Weeekly",
+    "sourceUrl": "https://kprofiles.com/weeekly-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2018/12/ZOA-5-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "e92f1de41633e4962bc2023c8d39620d7e218b58bda7b543d4460f47a28aab5f"
+  },
+  {
+    "id": "g_wooah_nana",
+    "name": "Nana",
+    "english": "Nana",
+    "group": "woo!ah!",
+    "sourceUrl": "https://kprofiles.com/wooah-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2020/04/NANA-1-533x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "d1edb2e4ea17dcc44c78e969462df101309d378092f8324ebdc7f03fced0acba"
+  },
+  {
+    "id": "g_wooah_wooyeon",
+    "name": "Wooyeon",
+    "english": "Wooyeon",
+    "group": "woo!ah!",
+    "sourceUrl": "https://kprofiles.com/wooah-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2020/04/WOOYEON-2-533x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "98daf222262c248013d5fc6b757c23145e7984d7834cf559a1205e2b090d2682"
+  },
+  {
+    "id": "g_wooah_sora",
+    "name": "Sora",
+    "english": "Sora",
+    "group": "woo!ah!",
+    "sourceUrl": "https://kprofiles.com/wooah-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2020/04/SORA-1-533x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "e3e391a14f270f80f671defac9e7cc3baeaa454d93da1f9070863455db20597e"
+  },
+  {
+    "id": "g_wooah_lucy",
+    "name": "Lucy",
+    "english": "Lucy",
+    "group": "woo!ah!",
+    "sourceUrl": "https://kprofiles.com/wooah-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2020/04/LUCY-1-533x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "a41767f6142a4fcbc2282b1438297d61c8aba257240067c91081ff00845f2c74"
+  },
+  {
+    "id": "g_wooah_minseo",
+    "name": "Minseo",
+    "english": "Minseo",
+    "group": "woo!ah!",
+    "sourceUrl": "https://kprofiles.com/wooah-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2020/04/MINSEO-1-533x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "41f592ee263149170f9b8b878bd40b9f619d4098be35282c27b2a6a052668622"
+  },
+  {
+    "id": "g_unchild_yeeun",
+    "name": "Yeeun",
+    "english": "Yeeun",
+    "group": "UNCHILD",
+    "sourceUrl": "https://kprofiles.com/unchild-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/10/YEEUN-3-600x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "7858d5ea5a3e49209fa451c5ad9e7ce88a623faa0326b277dd781acc2dbeeac9"
+  },
+  {
+    "id": "g_unchild_heekie",
+    "name": "Heekie",
+    "english": "Heekie",
+    "group": "UNCHILD",
+    "sourceUrl": "https://kprofiles.com/unchild-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/10/unchild-profile-heekie-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "ea93973787873dcbf837a36d5574d837eb79bf96bb025bfd4f4f57ef25303bae"
+  },
+  {
+    "id": "g_unchild_tina",
+    "name": "Tina",
+    "english": "Tina",
+    "group": "UNCHILD",
+    "sourceUrl": "https://kprofiles.com/unchild-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/10/TINA-3-600x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "94d3ec381e29d316ead60f3f0edc75cb0c3d4116164f12aa28870d2b76249bce"
+  },
+  {
+    "id": "g_unchild_ako",
+    "name": "Ako",
+    "english": "Ako",
+    "group": "UNCHILD",
+    "sourceUrl": "https://kprofiles.com/unchild-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/10/AKO-3-600x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "cd1a87261b91c01c1461e94a57fd11d2f98946b7c667939ca50d4dbe92714805"
+  },
+  {
+    "id": "g_unchild_evon",
+    "name": "Evon",
+    "english": "Evon",
+    "group": "UNCHILD",
+    "sourceUrl": "https://kprofiles.com/unchild-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/10/EVON-3-600x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "8e2b832477dc1c3c86e7ab393c5fe310c14ab0a7eeabdb98c8c42506e45a737d"
+  },
+  {
+    "id": "g_unchild_haeun",
+    "name": "Haeun",
+    "english": "Haeun",
+    "group": "UNCHILD",
+    "sourceUrl": "https://kprofiles.com/unchild-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/10/HAEUN-3-600x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "53995dff7c55121362822795ff2250f232528f61faec3cf804bb7fe58e84e4cb"
+  },
+  {
+    "id": "g_aoa_hyejeong",
+    "name": "혜정",
+    "english": "Hyejeong",
+    "group": "AOA",
+    "sourceUrl": "https://kprofiles.com/aoa-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/05/Hyejung.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "cc914080072087c0fee9736c5294ada5a2d179d1c380a5ad8e93158d847feca2"
+  },
+  {
+    "id": "g_aoa_seolhyun",
+    "name": "설현",
+    "english": "Seolhyun",
+    "group": "AOA",
+    "sourceUrl": "https://kprofiles.com/aoa-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/05/Seolhyun.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "3d077b2f8d5009df0f9d907b254e583623a23a59b7fa8118523100a89582dd86"
+  },
+  {
+    "id": "g_aoa_dohwa",
+    "name": "도화",
+    "english": "Dohwa",
+    "group": "AOA",
+    "sourceUrl": "https://kprofiles.com/aoa-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/05/Chanmi.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "c183b1a3d6b5db6f7e08551673c607e1e660d6026cf10d0398fa011094f829d6"
+  },
+  {
+    "id": "g_meovv_sooin",
+    "name": "Sooin",
+    "english": "Sooin",
+    "group": "MEOVV",
+    "sourceUrl": "https://kprofiles.com/meovv-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/02/SOOIN-1-900x600.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "5286c98d8e7877b530da74fc46bc54cb3530f656fb910236a3d05ba858def68a"
+  },
+  {
+    "id": "g_crayonpop_geummi",
+    "name": "Geummi",
+    "english": "Geummi",
+    "group": "크레용팝",
+    "sourceUrl": "https://kprofiles.com/crayon-pop-profile/",
+    "imageUrl": "https://78.media.tumblr.com/ec88eae908da32de62b76a6b24c831a1/tumblr_oe7lvrg5mG1rb6p8oo1_400.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "8d39983c930afde015e4da954b02b8785b3d2874fe398db369630511542ee051"
+  },
+  {
+    "id": "g_crayonpop_ellin",
+    "name": "Ellin",
+    "english": "Ellin",
+    "group": "크레용팝",
+    "sourceUrl": "https://kprofiles.com/crayon-pop-profile/",
+    "imageUrl": "https://78.media.tumblr.com/d165c3fd329d32e89d346902e7510899/tumblr_oe7lvrg5mG1rb6p8oo3_400.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "aa039fc5c29babe313db36bba5995c130d89054d358c6854c0107f954e677dc1"
+  },
+  {
+    "id": "g_crayonpop_choa",
+    "name": "Choa",
+    "english": "Choa",
+    "group": "크레용팝",
+    "sourceUrl": "https://kprofiles.com/crayon-pop-profile/",
+    "imageUrl": "https://78.media.tumblr.com/f26599b0c5b7b910147db1896dc4d20b/tumblr_oe7lx0Zfyk1rb6p8oo1_400.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "2543a97987f06d54b5450a29e61466bcfb05e2cbf09d1a69505932034c271301"
+  },
+  {
+    "id": "g_crayonpop_way",
+    "name": "Way",
+    "english": "Way",
+    "group": "크레용팝",
+    "sourceUrl": "https://kprofiles.com/crayon-pop-profile/",
+    "imageUrl": "https://78.media.tumblr.com/67605794e34a473c5c76cde2d3146dc7/tumblr_oe7lx0Zfyk1rb6p8oo2_400.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "2dc6627380dd3be043732fd6007054cf7cf0874f327bff9c76d61e6ba8c4e378"
+  },
+  {
+    "id": "g_crayonpop_soyul",
+    "name": "Soyul",
+    "english": "Soyul",
+    "group": "크레용팝",
+    "sourceUrl": "https://kprofiles.com/crayon-pop-profile/",
+    "imageUrl": "https://78.media.tumblr.com/5591ec7908b93987a97ea9e2c5ed1136/tumblr_oe7lvrg5mG1rb6p8oo2_400.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "7a66d022582f5bdc07f3f40e434ae553551e7b4bd0e623b23aaa63bf47c9f300"
+  },
+  {
+    "id": "g_purplekiss_nagoeun",
+    "name": "Na Goeun",
+    "english": "Na Goeun",
+    "group": "퍼플키스",
+    "sourceUrl": "https://kprofiles.com/purple-kiss-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2019/08/nagoeun-scaled.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "c3fca677784b2f815713bebea047f5b80ac63ed276fc6c84b63d88dbb91c4408"
+  },
+  {
+    "id": "g_purplekiss_dosie",
+    "name": "Dosie",
+    "english": "Dosie",
+    "group": "퍼플키스",
+    "sourceUrl": "https://kprofiles.com/purple-kiss-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2019/08/dosie1-scaled.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "94f6a578503b3afa2bd2caac8c17c63f17b60888a7e742aa9118c6630bd25cf7"
+  },
+  {
+    "id": "g_purplekiss_ireh",
+    "name": "Ireh",
+    "english": "Ireh",
+    "group": "퍼플키스",
+    "sourceUrl": "https://kprofiles.com/purple-kiss-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2019/08/ireh-4-scaled.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "2f7f7f34bbe61d513d4116e491d30e90d7d8eac22b01923dfc2bf6951a213364"
+  },
+  {
+    "id": "g_purplekiss_yuki",
+    "name": "Yuki",
+    "english": "Yuki",
+    "group": "퍼플키스",
+    "sourceUrl": "https://kprofiles.com/purple-kiss-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2019/08/yuki1-scaled.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "f4bc7a63108d244afcafeb33c3bde9717689e2b09bf39c32d0c21bd61a98db9e"
+  },
+  {
+    "id": "g_purplekiss_chaein",
+    "name": "Chaein",
+    "english": "Chaein",
+    "group": "퍼플키스",
+    "sourceUrl": "https://kprofiles.com/purple-kiss-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2019/08/chaein1-scaled.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "e257d993479a569ac6afa274cda0511c5aba254318800e5b8e24738e871699f6"
+  },
+  {
+    "id": "g_purplekiss_swan",
+    "name": "Swan",
+    "english": "Swan",
+    "group": "퍼플키스",
+    "sourceUrl": "https://kprofiles.com/purple-kiss-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2019/08/swan1-scaled.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "104cd59c866cb93a662e57ac48b03b24a98852416ea4eabd56c1a9fb1088c3fd"
+  },
+  {
+    "id": "g_kep1er_yujin",
+    "name": "유진",
+    "english": "Yujin",
+    "group": "Kep1er",
+    "sourceUrl": "https://kprofiles.com/kep1er-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/10/YUJIN-2-533x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "4e11b90253bf12e3df81516116d7eee028e6ecba767af06155efbae0634ad2d5"
+  },
+  {
+    "id": "g_kep1er_xiaoting",
+    "name": "Xiaoting",
+    "english": "Xiaoting",
+    "group": "Kep1er",
+    "sourceUrl": "https://kprofiles.com/kep1er-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/10/XIAOTING-2-900x600.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "0d9b760e86d33485213174423200c4d4de77ddf00e4fff3c2c1e2eac047a51d5"
+  },
+  {
+    "id": "g_kep1er_chaehyun",
+    "name": "Chaehyun",
+    "english": "Chaehyun",
+    "group": "Kep1er",
+    "sourceUrl": "https://kprofiles.com/kep1er-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/10/CHAEHYUN-2-534x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "5c99f01dde75dc188bb61e21ade0bf650cad15d451eb1576086b786c6c4d91fd"
+  },
+  {
+    "id": "g_kep1er_dayeon",
+    "name": "Dayeon",
+    "english": "Dayeon",
+    "group": "Kep1er",
+    "sourceUrl": "https://kprofiles.com/kep1er-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/10/DAYEON-2-900x600.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "31b838455e303d12776ef31bd0b33b0f43e34a8990160a878360798889d721a2"
+  },
+  {
+    "id": "g_kep1er_hikaru",
+    "name": "Hikaru",
+    "english": "Hikaru",
+    "group": "Kep1er",
+    "sourceUrl": "https://kprofiles.com/kep1er-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/10/HIKARU-2-900x600.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "e526b34908d810eb0fdd549a6a1e61d0ce7277328690b1401166bda7d1d4a48f"
+  },
+  {
+    "id": "g_kep1er_bahiyyih",
+    "name": "Bahiyyih",
+    "english": "Bahiyyih",
+    "group": "Kep1er",
+    "sourceUrl": "https://kprofiles.com/kep1er-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/10/HUENING-BAHIYYIH-2-900x601.jpeg",
+    "matchMethod": "Explicit member name in image alt on group page",
+    "sha256": "4f3567a64cd86013a0b6e9c16dcd572f3c37a8f2e7c52d6870064f56fa140d9d"
+  },
+  {
+    "id": "g_kep1er_mashiro",
+    "name": "Mashiro",
+    "english": "Mashiro",
+    "group": "Kep1er",
+    "sourceUrl": "https://kprofiles.com/kep1er-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/10/MASHIRO-568x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "dc377759c61bba3adf6c7f97d1fbd4423c7ae2b1585c8b0846127da28e0d428c"
+  },
+  {
+    "id": "g_kep1er_yeseo",
+    "name": "Yeseo",
+    "english": "Yeseo",
+    "group": "Kep1er",
+    "sourceUrl": "https://kprofiles.com/kep1er-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/10/YESEO-2-568x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "15470b3f0a653eac215125dc6bcdb2bb4e8d27cd9c31ea2a2e91d0c70f6a5cc4"
+  },
+  {
+    "id": "g_kep1er_youngeun",
+    "name": "Youngeun",
+    "english": "Youngeun",
+    "group": "Kep1er",
+    "sourceUrl": "https://kprofiles.com/kep1er-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/10/YOUNGEUN-5-534x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "74b5563e3d035d0fbcde3f7b097eb2c56808b2b25a76f69179f40ef9d8fb9446"
+  },
+  {
+    "id": "g_loona_hyunjin",
+    "name": "현진",
+    "english": "Hyunjin",
+    "group": "이달의 소녀",
+    "sourceUrl": "https://kprofiles.com/loona-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/05/loona-the-origin-album-0-zero-hyunjin-concept-photo-v0-y6zlpvdfa27a1-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "d3e196187bae580714d3265d3b0d31a0bc14429a9b82489ced2ccf84768bdfc2"
+  },
+  {
+    "id": "g_loona_yeojin",
+    "name": "여진",
+    "english": "Yeojin",
+    "group": "이달의 소녀",
+    "sourceUrl": "https://kprofiles.com/loona-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/05/loona-the-origin-album-0-zero-yeojin-concept-photo-v0-bg0yc7bygh6a1-571x800.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "ef53f68e2a4c079ec855a83b9ab69e221744e5eddbed8bfc77270eca8936bfb0"
+  },
+  {
+    "id": "g_loona_vivi",
+    "name": "비비",
+    "english": "Vivi",
+    "group": "이달의 소녀",
+    "sourceUrl": "https://kprofiles.com/loona-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/05/loona-the-origin-album-0-zero-vivi-teaser-photos-v0-2ik1iaerkz7a1-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "0a1bbae39529c55dacb879f04569f863a1b2d98f6acb730188801473a694a9a3"
+  },
+  {
+    "id": "g_loona_yves",
+    "name": "이브",
+    "english": "Yves",
+    "group": "이달의 소녀",
+    "sourceUrl": "https://kprofiles.com/loona-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/05/loona-the-origin-album-0-zero-yves-teaser-photos-v0-jfiz2dslbr7a1-571x800.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "f3440116e5c46da1db669cd5364076561717a6b257a090afdf617d5e9246712a"
+  },
+  {
+    "id": "g_loona_chuu",
+    "name": "츄",
+    "english": "Chuu",
+    "group": "이달의 소녀",
+    "sourceUrl": "https://kprofiles.com/loona-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/05/jzvnl0x2b0591-533x800.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "e3cbea29a6dfd4ebc89f939e24a2f5b8b0833752091fd211cebfa8b3d9592a31"
+  },
+  {
+    "id": "g_loona_gowon",
+    "name": "고원",
+    "english": "Go Won",
+    "group": "이달의 소녀",
+    "sourceUrl": "https://kprofiles.com/loona-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/05/loona-the-origin-album-0-gowon-teaser-photos-v0-8aoci0fs936a1-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "20d5362cbb43f9788e7e51a3e6a402bfd36582c6f0bf213290488a575d1f1b51"
+  },
+  {
+    "id": "g_loona_hyeju",
+    "name": "혜주",
+    "english": "Hyeju",
+    "group": "이달의 소녀",
+    "sourceUrl": "https://kprofiles.com/loona-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/05/221217-loona-0-jinsoul-logo-removed-olivia-hye-image-teasers-v0-avvymr8woc6a1-600x800.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "534f2938ed5bd8341458be38cf798f62707d55aa515baff101f165524cada129"
+  },
+  {
+    "id": "g_artms_heejin",
+    "name": "희진",
+    "english": "Heejin",
+    "group": "이달의 소녀",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "matchMethod": "User-provided b269f36119f24779160b8a8ad4ba9a3f.jpeg",
+    "sha256": "4b6feaad62b03f26bc58691aa59f6e9a05fb16c7ee4711c577f02be9b3008928"
+  },
+  {
+    "id": "g_artms_haseul",
+    "name": "하슬",
+    "english": "Haseul",
+    "group": "이달의 소녀",
+    "sourceUrl": "https://kprofiles.com/loona-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/05/loona-the-origin-album-0-zero-haseul-teaser-photos-v0-h34begurug7a1-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "a3664c554228893dbf04f272a7635204ec7733b4ec0eb4b6d596498b553825c2"
+  },
+  {
+    "id": "g_artms_kimlip",
+    "name": "김립",
+    "english": "Kim Lip",
+    "group": "이달의 소녀",
+    "sourceUrl": "https://kprofiles.com/loona-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/05/loona-the-origin-album-0-zero-kim-lip-concept-photo-v0-rt37xfrqc78a1-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "b19d37b51607f429a820f418bad64aba1ec3b6ceb250b1176b250a19d745a84a"
+  },
+  {
+    "id": "g_artms_jinsoul",
+    "name": "진솔",
+    "english": "Jinsoul",
+    "group": "이달의 소녀",
+    "sourceUrl": "https://kprofiles.com/loona-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/05/loona-the-origin-album-0-zero-jinsoul-teaser-photos-v0-rigqznp4gf6a1-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "9425774b185ed70dd768261a915969b3263e85807ca62b65002c04e10153c2da"
+  },
+  {
+    "id": "g_artms_choerry",
+    "name": "최리",
+    "english": "Choerry",
+    "group": "이달의 소녀",
+    "sourceUrl": "https://kprofiles.com/loona-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/05/loona-the-origin-album-0-zero-choerry-teaser-photos-v0-y5gpdxi0b87a1-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "fa0fa920473778cbb3ff209f3ea61db6f8b9b53bde44e823e8e5a094630640c6"
+  },
+  {
+    "id": "g_dreamcatcher_jiu",
+    "name": "JiU",
+    "english": "JiU",
+    "group": "드림캐쳐",
+    "sourceUrl": "https://kprofiles.com/dreamcatcher-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/JIU-900x600.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "3c0d54bb4a86bcb25a32be489aeaabe4ed50521fcbe3a4c86a0f71fea166eaff"
+  },
+  {
+    "id": "g_dreamcatcher_sua",
+    "name": "SuA",
+    "english": "SuA",
+    "group": "드림캐쳐",
+    "sourceUrl": "https://kprofiles.com/dreamcatcher-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/SUA-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "cf8b57819ead383b919337a3cc8a85a2d42a09424f1bd0fd676dc6666eee877b"
+  },
+  {
+    "id": "g_dreamcatcher_siyeon",
+    "name": "Siyeon",
+    "english": "Siyeon",
+    "group": "드림캐쳐",
+    "sourceUrl": "https://kprofiles.com/dreamcatcher-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/SIYEON-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "309d1d675576ff286af9143fd5ba314a4424c4ed23a622d5e44bbc13ca606173"
+  },
+  {
+    "id": "g_dreamcatcher_handong",
+    "name": "Handong",
+    "english": "Handong",
+    "group": "드림캐쳐",
+    "sourceUrl": "https://kprofiles.com/dreamcatcher-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/HANDONG-900x600.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "299e6870219a3addf26a5236efb119db59149b3a705e2656ea8a254832688c9b"
+  },
+  {
+    "id": "g_dreamcatcher_yoohyeon",
+    "name": "Yoohyeon",
+    "english": "Yoohyeon",
+    "group": "드림캐쳐",
+    "sourceUrl": "https://kprofiles.com/dreamcatcher-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/YOOHYEON-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "b9bb3acf2f10856c05c4f7f597261077010eea70353629b0128e86c2dae1c4dd"
+  },
+  {
+    "id": "g_dreamcatcher_dami",
+    "name": "Dami",
+    "english": "Dami",
+    "group": "드림캐쳐",
+    "sourceUrl": "https://kprofiles.com/dreamcatcher-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/DAMI-900x600.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "68bd630859692c14438f4528b42f4d71b0972bb81f274fd368e9f54bcbf20966"
+  },
+  {
+    "id": "g_dreamcatcher_gahyeon",
+    "name": "Gahyeon",
+    "english": "Gahyeon",
+    "group": "드림캐쳐",
+    "sourceUrl": "https://kprofiles.com/dreamcatcher-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/GAHYEON-900x600.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "c7619ee4f5b3a69aef9734f8007f8138e4cd6e96961ea4bdc8910a621d9ce22d"
+  },
+  {
+    "id": "g_limelight_gaeun",
+    "name": "Gaeun",
+    "english": "Gaeun",
+    "group": "LIMELIGHT",
+    "sourceUrl": "https://kprofiles.com/limelight-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/01/GAEUN-534x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "7bc2d585b0bfd61b4891bffeac161fa4fefcb5fe75a6b6e4efccde0d97cc41b6"
+  },
+  {
+    "id": "g_madein_miu",
+    "name": "MiU",
+    "english": "MiU",
+    "group": "LIMELIGHT",
+    "sourceUrl": "https://kprofiles.com/limelight-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/01/MiU-900x600.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "e2530f02f193ad683877d047bf8c7fd7958610c0bb6f5422edbb2da491aeaddd"
+  },
+  {
+    "id": "g_madein_suhye",
+    "name": "Suhye",
+    "english": "Suhye",
+    "group": "LIMELIGHT",
+    "sourceUrl": "https://kprofiles.com/limelight-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/01/SUHYE-534x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "6bb7fd6a4adefefa679fc19022855493934e06f4f7b94ad58962476c467b5cd2"
+  },
+  {
+    "id": "g_mamamoo_solar",
+    "name": "솔라",
+    "english": "Solar",
+    "group": "마마무",
+    "sourceUrl": "https://kprofiles.com/mamamoo-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/04/SOLAR-900x675.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "a7e7eefa019be08f6043b1e338c3fdc868ea52b5d2bac13bb28b20c05674a1c3"
+  },
+  {
+    "id": "g_ohmygirl_hyojung",
+    "name": "Hyojung",
+    "english": "Hyojung",
+    "group": "오마이걸",
+    "sourceUrl": "https://kprofiles.com/oh-my-girl-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/HYOJUNG-3-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "02b1a6c5e183575b8433c15501136a1c6e288811ac758c52eea9896a0eb80e2d"
+  },
+  {
+    "id": "g_ohmygirl_mimi",
+    "name": "Mimi",
+    "english": "Mimi",
+    "group": "오마이걸",
+    "sourceUrl": "https://kprofiles.com/oh-my-girl-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/MIMI-3-900x600.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "c2513b3f5d327bef590aabefd574e135bc8644ec273464206c145dc6597185d3"
+  },
+  {
+    "id": "g_ohmygirl_yooa",
+    "name": "YooA",
+    "english": "YooA",
+    "group": "오마이걸",
+    "sourceUrl": "https://kprofiles.com/oh-my-girl-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/YOOA-3-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "e74bb173ebc3d6dd3b937913cf911a083b3e18ae9fb6129ac3cf0b5c021733ca"
+  },
+  {
+    "id": "g_ohmygirl_seunghee",
+    "name": "Seunghee",
+    "english": "Seunghee",
+    "group": "오마이걸",
+    "sourceUrl": "https://kprofiles.com/oh-my-girl-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/SEUNGHEE-3-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "81e4d35d47a1eace4fd49607364c90851651acea6b0af860d75424996a927b1a"
+  },
+  {
+    "id": "g_ohmygirl_yubin",
+    "name": "Yubin",
+    "english": "Yubin",
+    "group": "오마이걸",
+    "sourceUrl": "https://kprofiles.com/oh-my-girl-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/YUBIN-3-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "ec410b70172687076dfae6c24e622ed698f6e6a7ef6a579e75cdb2fd3ee17be5"
+  },
+  {
+    "id": "g_ohmygirl_arin",
+    "name": "Arin",
+    "english": "Arin",
+    "group": "오마이걸",
+    "sourceUrl": "https://kprofiles.com/oh-my-girl-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/ARIN-3-900x600.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "1ebbc9290b456532a2231e0ad1a125aa737d029eca8673673a4d3dc1dec0abbe"
+  },
+  {
+    "id": "g_everglow_eu",
+    "name": "E:U",
+    "english": "E:U",
+    "group": "EVERGLOW",
+    "sourceUrl": "https://kprofiles.com/everglow-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2019/02/IMG_3263-533x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "dd83eec1096d0ec2b1d078a82ca6b80feb4ab0f4b9e6a4afd3f4dd62a25d0b80"
+  },
+  {
+    "id": "g_everglow_sihyeon",
+    "name": "Sihyeon",
+    "english": "Sihyeon",
+    "group": "EVERGLOW",
+    "sourceUrl": "https://kprofiles.com/everglow-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2019/02/IMG_3265-534x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "99a935b676344c5620958a3883c0b3761998956ae149e063ae921d32d8860bd6"
+  },
+  {
+    "id": "g_everglow_mia",
+    "name": "Mia",
+    "english": "Mia",
+    "group": "EVERGLOW",
+    "sourceUrl": "https://kprofiles.com/everglow-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/05/MIA-900x600.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "2137920ad2a204a3e6e06f5989d80f154f7edb7e8a7511b1f1aa2e513dc86f75"
+  },
+  {
+    "id": "g_everglow_onda",
+    "name": "Onda",
+    "english": "Onda",
+    "group": "EVERGLOW",
+    "sourceUrl": "https://kprofiles.com/everglow-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2019/02/IMG_3266-534x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "e1ceb49f531dafb04784397a55e7c92b447ff9e2dd18dbce971931d7892d2c37"
+  },
+  {
+    "id": "g_everglow_aisha",
+    "name": "Aisha",
+    "english": "Aisha",
+    "group": "EVERGLOW",
+    "sourceUrl": "https://kprofiles.com/everglow-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2019/02/IMG_3264-534x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "54d2920da840b076d827208c6c6a574f0368e29dee18661ff3820af7ceed62de"
+  },
+  {
+    "id": "g_everglow_yiren",
+    "name": "Yiren",
+    "english": "Yiren",
+    "group": "EVERGLOW",
+    "sourceUrl": "https://kprofiles.com/everglow-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/05/YIREN-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "339a3b09fe791a46fecee6baff176e72540a2414f137102ed34894f1cc42bb96"
+  },
+  {
+    "id": "g_izone_nako",
+    "name": "나코",
+    "english": "Nako",
+    "group": "IZ*ONE",
+    "localPath": "photos/user-20260927-v33-g_izone_nako.jpeg",
+    "providedFile": "IMG_5594.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "User-specified correction: original uploaded image belongs to IZ*ONE Nako",
+    "sha256": "c0cf807967c1259ae2632988da66fcf47e862cf3e5844456dc7293b350a6cd4d"
+  },
+  {
+    "id": "g_ive_yujin",
+    "name": "유진",
+    "english": "Yujin",
+    "group": "IZ*ONE",
+    "sourceUrl": "https://kprofiles.com/izone-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2018/09/B3FBD020-3918-4CF5-BB1E-FB6AD9790686-900x600.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "c87983a2ea3cdb900b753f8028a6e3d11a493190f78d1de5dafc2f92fcf20743"
+  },
+  {
+    "id": "g_pristin_nayoung",
+    "name": "Nayoung",
+    "english": "Nayoung",
+    "group": "PRISTIN",
+    "sourceUrl": "https://kprofiles.com/pristin-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/Nayeong-min.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "36a3a5d41421b79cffc723c7d0befd02cd117c730a2e1810882f6e9df8652776"
+  },
+  {
+    "id": "g_pristin_roa",
+    "name": "RoA",
+    "english": "RoA",
+    "group": "PRISTIN",
+    "sourceUrl": "https://kprofiles.com/pristin-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/Roa-min.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "083adfabb9610e7e2680c281731f99fc0f1a5bc88eb9c531c767b33988915ef1"
+  },
+  {
+    "id": "g_pristin_yuha",
+    "name": "Yuha",
+    "english": "Yuha",
+    "group": "PRISTIN",
+    "sourceUrl": "https://kprofiles.com/pristin-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2022/03/Yuha-min.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "85a3d5052bbd9ef08efeaccee43c3a9c451b5c702dc77255efe68de0b3ef4390"
+  },
+  {
+    "id": "g_pristin_eunwoo",
+    "name": "Eunwoo",
+    "english": "Eunwoo",
+    "group": "PRISTIN",
+    "sourceUrl": "https://kprofiles.com/pristin-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/Eunwoo-min.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "053e9a296577c73a80d1e6ac6b3ca1b42645c80ff59c09cd2b905705ec36186c"
+  },
+  {
+    "id": "g_pristin_rena",
+    "name": "Rena",
+    "english": "Rena",
+    "group": "PRISTIN",
+    "sourceUrl": "https://kprofiles.com/pristin-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/Rena-min.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "fdcfb0f56c9116ce77e11ba726bd82f8c4593e1fe98ce866d52e8c9321e6da11"
+  },
+  {
+    "id": "g_pristin_kyulkyung",
+    "name": "Kyulkyung",
+    "english": "Kyulkyung",
+    "group": "PRISTIN",
+    "sourceUrl": "https://kprofiles.com/pristin-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/Kyulkyung-1-1024x682.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "f6e56ebe78c94558555eb232c53f97253559ee831ebd80a4fbd80a854b2734f0"
+  },
+  {
+    "id": "g_pristin_yehana",
+    "name": "Yehana",
+    "english": "Yehana",
+    "group": "PRISTIN",
+    "sourceUrl": "https://kprofiles.com/pristin-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/Yehana-min.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "8f763ad97bd0a16b36838c56798e82d3c78534700a0dfff4f9581927d93a53e4"
+  },
+  {
+    "id": "g_pristin_sungyeon",
+    "name": "Sungyeon",
+    "english": "Sungyeon",
+    "group": "PRISTIN",
+    "sourceUrl": "https://kprofiles.com/pristin-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/Sungyeon.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "e5bf51561250293395428dc3150cab3833b00296ff617993e8365b82197f6064"
+  },
+  {
+    "id": "g_pristin_xiyeon",
+    "name": "Xiyeon",
+    "english": "Xiyeon",
+    "group": "PRISTIN",
+    "sourceUrl": "https://kprofiles.com/pristin-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/Xieon-min.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "0975ba41d2e647510ce1e7c0ecf8b1165f687051d0466817d959b8474e8dfcd6"
+  },
+  {
+    "id": "g_pristin_kyla",
+    "name": "Kyla",
+    "english": "Kyla",
+    "group": "PRISTIN",
+    "sourceUrl": "https://kprofiles.com/pristin-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/Kyla-min.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "97f83ea5e52cc634d1a3ebd1d2c1f18afe5ab94111175c5e93d75641d8eb6d49"
+  },
+  {
+    "id": "g_ourbirthday_chohyejin",
+    "name": "Cho Hyejin",
+    "english": "Cho Hyejin",
+    "group": "OURBIRTHDAY",
+    "sourceUrl": "https://kprofiles.com/ourbirthday-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2026/08/HPCU4HYaIAA0wmk-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "b4d19b972e8837e60d3d893907deebcc8d0255153f95237ecf2dc665aa438a21"
+  },
+  {
+    "id": "g_ourbirthday_achiraya",
+    "name": "Achiraya",
+    "english": "Achiraya",
+    "group": "OURBIRTHDAY",
+    "sourceUrl": "https://kprofiles.com/ourbirthday-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2026/08/FANS_1786194082439_1-571x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "0dd31c247311bd4d5c53b27c11599491d7979c145c193b05c834740274038419"
+  },
+  {
+    "id": "g_ourbirthday_baby",
+    "name": "Baby",
+    "english": "Baby",
+    "group": "OURBIRTHDAY",
+    "sourceUrl": "https://kprofiles.com/ourbirthday-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2026/08/HPCWQSabAAE24op-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "28ba1168ca2235fba33fbc222f4f802ec32ae047503474c7e7a3a941043b6aca"
+  },
+  {
+    "id": "g_ourbirthday_kukchorok",
+    "name": "Kuk Chorok",
+    "english": "Kuk Chorok",
+    "group": "OURBIRTHDAY",
+    "sourceUrl": "https://kprofiles.com/ourbirthday-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2026/08/FANS_1786194041976_1-571x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "d6e001399ed340b09b287129d4f73292467e87b0d483f66427925231253611d2"
+  },
+  {
+    "id": "g_ourbirthday_kilala",
+    "name": "Kilala",
+    "english": "Kilala",
+    "group": "OURBIRTHDAY",
+    "sourceUrl": "https://kprofiles.com/ourbirthday-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2026/08/HPCSfQwaAAAL1SR-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "0c9cb8f664950065e8651ce29e13b6b502c53c139a53bfe363a05c2c9e0d9465"
+  },
+  {
+    "id": "g_ourbirthday_u",
+    "name": "U",
+    "english": "U",
+    "group": "OURBIRTHDAY",
+    "sourceUrl": "https://kprofiles.com/ourbirthday-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2026/08/FANS_1786107707842_1-571x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "02a6c156c86c4d5f0951e9e54cadca05c6a9181f55966b4e9809e2dfb04d3fb4"
+  },
+  {
+    "id": "g_ourbirthday_shinhyewon",
+    "name": "Shin Hyewon",
+    "english": "Shin Hyewon",
+    "group": "OURBIRTHDAY",
+    "sourceUrl": "https://kprofiles.com/ourbirthday-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/06/SHIN-HYEWON-571x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "220650bb8c2d86a691f8c4f526527ff6173d743d4def1a286557bfd72cf2c270"
+  },
+  {
+    "id": "g_h1key_seoi",
+    "name": "Seoi",
+    "english": "Seoi",
+    "group": "H1-KEY",
+    "sourceUrl": "https://kprofiles.com/h1-key-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/11/SEOI-571x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "81352ce0bc90a265beb1636c0aeee50ca00c3a986125ff1bcaef1c3fbefcc1d9"
+  },
+  {
+    "id": "g_h1key_riina",
+    "name": "Riina",
+    "english": "Riina",
+    "group": "H1-KEY",
+    "sourceUrl": "https://kprofiles.com/h1-key-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/11/RIINA-571x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "9a6b7caf40ebae87772048f649ac463e61db3b21a0f8f9dcc3377c673449d362"
+  },
+  {
+    "id": "g_h1key_hwiseo",
+    "name": "Hwiseo",
+    "english": "Hwiseo",
+    "group": "H1-KEY",
+    "sourceUrl": "https://kprofiles.com/h1-key-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/11/HWISEO-571x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "6fc9f02c8548b6df78f1382d95bd7f219ec9b5beef65075d3dcd5980a569e0b1"
+  },
+  {
+    "id": "g_h1key_yel",
+    "name": "Yel",
+    "english": "Yel",
+    "group": "H1-KEY",
+    "sourceUrl": "https://kprofiles.com/h1-key-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/11/YEL-571x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "52d2a48ff710c9799955807380c0a10b5b5a8cd3d5a0486ea874befd89ddf73d"
+  },
+  {
+    "id": "g_clc_seunghee",
+    "name": "Seunghee",
+    "english": "Seunghee",
+    "group": "CLC",
+    "sourceUrl": "https://kprofiles.com/clc-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/2-Seunghee-1-800x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "5897a543bbd1d0b65aa080070dcb5e00a41df33381d3b7005eb835436d960125"
+  },
+  {
+    "id": "g_clc_seungyeon",
+    "name": "Seungyeon",
+    "english": "Seungyeon",
+    "group": "CLC",
+    "sourceUrl": "https://kprofiles.com/clc-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/1-Seungyeon-800x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "97c22d7ca007e8470179d2d67fd2ce46ce4d31281e32153a81a3e9ca3a879a76"
+  },
+  {
+    "id": "g_clc_yeeun",
+    "name": "Yeeun",
+    "english": "Yeeun",
+    "group": "CLC",
+    "sourceUrl": "https://kprofiles.com/clc-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/5-Yeeun-1-800x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "34dd59c6e3333f55be9d237c94322c8dfe5918a709a473c73f485eac868a734d"
+  },
+  {
+    "id": "g_clc_eunbin",
+    "name": "Eunbin",
+    "english": "Eunbin",
+    "group": "CLC",
+    "sourceUrl": "https://kprofiles.com/clc-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/01/7-Eunbin-1-800x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "54498ee76bdf07555cf6d3cc26d4a6cb1d4b2c7a17d5f4c8f18d7d203bb4b520"
+  },
+  {
+    "id": "g_katseye_daniela",
+    "name": "Daniela",
+    "english": "Daniela",
+    "group": "KATSEYE",
+    "sourceUrl": "https://kprofiles.com/katseye-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/11/DANIELA-4-592x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "473a1ab457054d41f3a48891d523e41ed9eca58e12535d8087bd91e54ea1cf82"
+  },
+  {
+    "id": "g_katseye_lara",
+    "name": "Lara",
+    "english": "Lara",
+    "group": "KATSEYE",
+    "sourceUrl": "https://kprofiles.com/katseye-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/11/LARA-4-592x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "49d27a12387b1fc981945b67225f4e1e903736980c3e999099bfae474ca51bf6"
+  },
+  {
+    "id": "g_babydontcry_beni",
+    "name": "Beni",
+    "english": "Beni",
+    "group": "Baby DONT Cry",
+    "sourceUrl": "https://kprofiles.com/baby-dont-cry-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2025/06/beni-3.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "5f49ce271c34f6b142e7584cf759b1e082524be83beb18685f49c0478e60c857"
+  },
+  {
+    "id": "g_babydontcry_kumi",
+    "name": "Kumi",
+    "english": "Kumi",
+    "group": "Baby DONT Cry",
+    "sourceUrl": "https://kprofiles.com/baby-dont-cry-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2025/06/kumi-2.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "0cba9b9cc3730eec4a2e5f04b553aac5c8f5953078afe07f80894db5e90be931"
+  },
+  {
+    "id": "g_babydontcry_mia",
+    "name": "Mia",
+    "english": "Mia",
+    "group": "Baby DONT Cry",
+    "sourceUrl": "https://kprofiles.com/baby-dont-cry-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2025/06/mia-2.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "eea565b00fac1b70261b3ef5d22a2a3f4672fac87af45616181ca35bc4d98b28"
+  },
+  {
+    "id": "g_unis_hyeonju",
+    "name": "Hyeonju",
+    "english": "Hyeonju",
+    "group": "UNIS",
+    "sourceUrl": "https://kprofiles.com/unis-universe-ticket-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/01/hyeonju-3.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "2f05e95faf219ebedaeb5cfedfc6c24fd205e2cfb9b530a5ef11324826a79659"
+  },
+  {
+    "id": "g_unis_nana",
+    "name": "Nana",
+    "english": "Nana",
+    "group": "UNIS",
+    "sourceUrl": "https://kprofiles.com/unis-universe-ticket-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/01/nana-4.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "fddb2149a2c7d0ef95946de05a05394f459ee73b3a1e2f3ad00939a6e2303aa7"
+  },
+  {
+    "id": "g_unis_gehlee",
+    "name": "Gehlee",
+    "english": "Gehlee",
+    "group": "UNIS",
+    "sourceUrl": "https://kprofiles.com/unis-universe-ticket-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/01/gehlee-4.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "5c1e8e72950bb74637ca3073dec326123dadc5f3c042d80082e27c839d8c669d"
+  },
+  {
+    "id": "g_unis_kotarou",
+    "name": "코토코",
+    "english": "Kotoko",
+    "group": "UNIS",
+    "sourceUrl": "https://kprofiles.com/unis-universe-ticket-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/01/KOTOKO-4.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "52821f2a162685f2d315eadd2adb504ee71f6c590ebb522504148f34ada2e98b"
+  },
+  {
+    "id": "g_unis_yunha",
+    "name": "Yunha",
+    "english": "Yunha",
+    "group": "UNIS",
+    "sourceUrl": "https://kprofiles.com/unis-universe-ticket-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/01/YUNHA-3.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "03ff09c47f64f8bf96046c5c9b1e7727151209b161889a17cb87878bdc7bc941"
+  },
+  {
+    "id": "g_unis_elisia",
+    "name": "Elisia",
+    "english": "Elisia",
+    "group": "UNIS",
+    "sourceUrl": "https://kprofiles.com/unis-universe-ticket-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/01/elisia-3.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "224a4d4a3f04ed6fd3b6fc8710b16ba6b1307dd7bdae7c87d96b77ecd6f489c2"
+  },
+  {
+    "id": "g_unis_yoona",
+    "name": "Yoona",
+    "english": "Yoona",
+    "group": "UNIS",
+    "sourceUrl": "https://kprofiles.com/unis-universe-ticket-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/01/YOONA-3.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "93c93bb68fb8e20f22e0471e7a20ff901b0c6649e9a648e5d3133a9a193d5b61"
+  },
+  {
+    "id": "g_unis_seowon",
+    "name": "Seowon",
+    "english": "Seowon",
+    "group": "UNIS",
+    "sourceUrl": "https://kprofiles.com/unis-universe-ticket-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/01/SEOWON-3.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "8b0ebc9a97c19b3f8a17fa06fdbfcddf5718b1aaccf0d1d1bf7fd91522be5f84"
+  },
+  {
+    "id": "g_wjsn_seola",
+    "name": "Seola",
+    "english": "Seola",
+    "group": "우주소녀",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "matchMethod": "User-provided 1cacf8f1a9505942682aeffd27285da8.jpeg",
+    "sha256": "2dfd4095053f8ccb25ce8eb32a7c87ba3860109ba2788cbbd64a92e7cc561445"
+  },
+  {
+    "id": "g_wjsn_bona",
+    "name": "Bona",
+    "english": "Bona",
+    "group": "우주소녀",
+    "sourceUrl": "https://kprofiles.com/wjsn-cosmic-girls-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/06/HBqYthAboAANrTJ-571x800.jpg",
+    "matchMethod": "Exact adjacent member heading in individual profile section",
+    "sha256": "13bcb02fad4648f4cc6e5903c0415ffbadad29cd9b187e67bf3ffdda44f52f18"
+  },
+  {
+    "id": "g_wjsn_exy",
+    "name": "Exy",
+    "english": "Exy",
+    "group": "우주소녀",
+    "sourceUrl": "https://kprofiles.com/wjsn-cosmic-girls-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/06/HBqYfw9bkAAhIa8-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "83f8a91d208e55307cccdbf6faa995d549c0d289ba8cb4735bb457dec45336bb"
+  },
+  {
+    "id": "g_wjsn_soobin",
+    "name": "Soobin",
+    "english": "Soobin",
+    "group": "우주소녀",
+    "sourceUrl": "https://kprofiles.com/wjsn-cosmic-girls-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/06/HBqYt-da4AADjRR-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "cac7dd39ea362bfb79ba4550493a12d5b1184cdb5b68c4f7d04e72d4e304d9f0"
+  },
+  {
+    "id": "g_wjsn_luda",
+    "name": "Luda",
+    "english": "Luda",
+    "group": "우주소녀",
+    "sourceUrl": "https://kprofiles.com/wjsn-cosmic-girls-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/06/wjsn-sequence-hq-luda-640x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "e9540d49d7119d66b4c07b79e936f3c8b1fc7b84e2fbef983b7124cb2a82b514"
+  },
+  {
+    "id": "g_wjsn_dawon",
+    "name": "Dawon",
+    "english": "Dawon",
+    "group": "우주소녀",
+    "sourceUrl": "https://kprofiles.com/wjsn-cosmic-girls-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/06/wjsn-sequence-hq-dawon-900x720.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "c4261af7e19da8c897282b4095c901bfbbfdfad5e47afc3ca3ff705865f04915"
+  },
+  {
+    "id": "g_wjsn_eunseo",
+    "name": "Eunseo",
+    "english": "Eunseo",
+    "group": "우주소녀",
+    "sourceUrl": "https://kprofiles.com/wjsn-cosmic-girls-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/06/HBq-98oasAA0n7V-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "2911749683a2e3ad1f3346a52852762b32f7cb10379e2d61103ed428819045ba"
+  },
+  {
+    "id": "g_wjsn_yeoreum",
+    "name": "Yeoreum",
+    "english": "Yeoreum",
+    "group": "우주소녀",
+    "sourceUrl": "https://kprofiles.com/wjsn-cosmic-girls-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/06/HBq-8wbaQAADDl9-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "372cfef826616ceb33081549b8b91c23bb7edae6a170e74816146c9cd80565c2"
+  },
+  {
+    "id": "g_wjsn_dayoung",
+    "name": "Dayoung",
+    "english": "Dayoung",
+    "group": "우주소녀",
+    "sourceUrl": "https://kprofiles.com/wjsn-cosmic-girls-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/06/HBqZC_3bgAERy-0-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "cb4e3ba6d13f9d493333550044b9372cf24d6d98ce2bafffe99da26fbf921391"
+  },
+  {
+    "id": "g_wjsn_yeonjung",
+    "name": "Yeonjung",
+    "english": "Yeonjung",
+    "group": "우주소녀",
+    "sourceUrl": "https://kprofiles.com/wjsn-cosmic-girls-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/06/HBqZDldb0AAyNZn-571x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "c5c2c46673a02e9718761ff7f02d1b56f241796427b2fd05767811cd21c6e6fe"
+  },
+  {
+    "id": "g_april_chaekyung",
+    "name": "Chaekyung",
+    "english": "Chaekyung",
+    "group": "APRIL",
+    "sourceUrl": "https://kprofiles.com/april-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/07/EdTCd3lUYAAL_Qv-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "f7570f4200fe4176efbffa62ce7c3ea6caa8d4175dead46c6cc4e0f6895fd176"
+  },
+  {
+    "id": "g_april_chaewon",
+    "name": "채원",
+    "english": "Chaewon",
+    "group": "APRIL",
+    "sourceUrl": "https://kprofiles.com/april-members-profile/",
+    "imageUrl": "https://0.soompi.io/wp-content/uploads/2020/07/19081457/Chaewon.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "a281993aab0b8aa66c2094990aee8c3ad9545146e4deb562739e5271430d17fd"
+  },
+  {
+    "id": "g_april_naeun",
+    "name": "Naeun",
+    "english": "Naeun",
+    "group": "APRIL",
+    "sourceUrl": "https://kprofiles.com/april-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/07/naeun-2-534x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "f0fd24406a68ce129a3cf4124096d963770782f5bb49eec836a4b410baec8a18"
+  },
+  {
+    "id": "g_april_yena",
+    "name": "Yena",
+    "english": "Yena",
+    "group": "APRIL",
+    "sourceUrl": "https://kprofiles.com/april-members-profile/",
+    "imageUrl": "https://0.soompi.io/wp-content/uploads/2020/07/21082312/yena-1.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "320240d7aa510af20f4f5626d54027da8ebce900a0b9b80791a8810564cb52df"
+  },
+  {
+    "id": "g_april_rachel",
+    "name": "Rachel",
+    "english": "Rachel",
+    "group": "APRIL",
+    "sourceUrl": "https://kprofiles.com/april-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/07/rachel-1-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "56d20320ddb1cf4a20e7037d3e41529ef3044945f38baaf2edeba50314f3a4e5"
+  },
+  {
+    "id": "g_april_jinsol",
+    "name": "Jinsol",
+    "english": "Jinsol",
+    "group": "APRIL",
+    "sourceUrl": "https://kprofiles.com/april-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/07/jinsol-1-534x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "5a8a8f1a0f1e48257f4d96e92f2be3ad725398bb8c278ee16a816d65a3a6dd64"
+  },
+  {
+    "id": "g_twice_momo",
+    "name": "모모",
+    "english": "Momo",
+    "group": "TWICE",
+    "sourceUrl": "https://kprofiles.com/twice-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/05/MOMO-1-572x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "51dbe5ad2a6a2a5e7f7763980bba3c29849d913a8ae0b329d9c3e4331aa84faa"
+  },
+  {
+    "id": "g_twice_jihyo",
+    "name": "지효",
+    "english": "Jihyo",
+    "group": "TWICE",
+    "sourceUrl": "https://kprofiles.com/twice-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/05/JIHYO-1-900x643.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "defec75d469bda7adeefad5021153bd6172828ffb992546951c77037eb11dfba"
+  },
+  {
+    "id": "g_laboum_yujeong",
+    "name": "Yujeong",
+    "english": "Yujeong",
+    "group": "라붐",
+    "sourceUrl": "https://kprofiles.com/laboum-members-profile/",
+    "imageUrl": "https://uploads.disquscdn.com/images/bacd6e8d51f6e42bb6815394e5dfcd28d0125e369ec4c55fc40dbbe53f8ff435.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "53b8a7a5c3312ba1177080585634f5281a390933eb9d4668c40e668a01737b75"
+  },
+  {
+    "id": "g_laboum_soyeon",
+    "name": "소연",
+    "english": "Soyeon",
+    "group": "라붐",
+    "sourceUrl": "https://kprofiles.com/laboum-members-profile/",
+    "imageUrl": "https://uploads.disquscdn.com/images/671c2d037d33f6eb8a8d9358172d9279ce689fa85747f7e42fd3e9e593db2f14.jpg?w=800&h=1070",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "64ee109895316c29fb13ae4cf0e06d020bd9f1393ad1279f477aa6567f3279ae"
+  },
+  {
+    "id": "g_laboum_zn",
+    "name": "ZN",
+    "english": "ZN",
+    "group": "라붐",
+    "sourceUrl": "https://kprofiles.com/laboum-members-profile/",
+    "imageUrl": "https://uploads.disquscdn.com/images/ba5483917d42910d9a9a55552e08bea60b340c11f30d9cfd5276b30b7adb1708.jpg?w=800&h=680",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "d0d56be90b169c808acc0c0862e434a869b031b6ea9c6306b8f1e0fcbe388c91"
+  },
+  {
+    "id": "g_laboum_haein",
+    "name": "Haein",
+    "english": "Haein",
+    "group": "라붐",
+    "sourceUrl": "https://kprofiles.com/laboum-members-profile/",
+    "imageUrl": "https://uploads.disquscdn.com/images/06213adaaacf301e622d94e3e8b38612f4400e3b740b71d4b9ebb3eeca05247d.jpg?w=800&h=680",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "c4acd6bf313f8b620877dfcc529f55844e3adf67507ebc572642dad0836a3206"
+  },
+  {
+    "id": "g_laboum_solbin",
+    "name": "Solbin",
+    "english": "Solbin",
+    "group": "라붐",
+    "sourceUrl": "https://kprofiles.com/laboum-members-profile/",
+    "imageUrl": "https://uploads.disquscdn.com/images/0d909c9056f2425700c6c884133994eb458b507656c877dcaf54b7672da5d373.jpg?w=800&h=680",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "f77fdad711e4f79592a9956de7d41c8ab3f645aa0a9c8990fc2b1479a2ac7b61"
+  },
+  {
+    "id": "g_tuide_seohee",
+    "name": "Seohee",
+    "english": "Seohee",
+    "group": "TUIDE",
+    "sourceUrl": "https://kprofiles.com/pledis-girls-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/03/D96574A9-4AF0-491F-8294-75F9D5B5EC40-640x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "54e4165924de76b5d2a59b40d1ea84c8853d0a36500dde9500f7180e5ea0cdfc"
+  },
+  {
+    "id": "g_tuide_seoyeon",
+    "name": "Seoyeon",
+    "english": "Seoyeon",
+    "group": "TUIDE",
+    "sourceUrl": "https://kprofiles.com/pledis-girls-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/03/84929B39-D939-4754-BD02-200EEBF0BF05-900x600.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "ea93a1535ec69f71b523a224ba1437313821f3e2b8ee8f2297718bae1cbf9ab5"
+  },
+  {
+    "id": "g_tuide_elena",
+    "name": "Elena",
+    "english": "Elena",
+    "group": "TUIDE",
+    "sourceUrl": "https://kprofiles.com/pledis-girls-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/03/49CE316C-E6B1-42E1-9BEC-3AA295A67DDA-900x600.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "2542e9a4106a93a32d7c161b3074a364433ea28ca0b67e576590e64ecc780695"
+  },
+  {
+    "id": "g_tuide_jia",
+    "name": "Jia",
+    "english": "Jia",
+    "group": "TUIDE",
+    "sourceUrl": "https://kprofiles.com/pledis-girls-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/03/3B49958B-5D09-4AB2-86FC-8577394EBB3C-900x600.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "a46ac8f6baa062be404d45dece5b657b48a4ab3e5275c7af9cba6cad7d95af69"
+  },
+  {
+    "id": "g_tuide_seah",
+    "name": "Seah",
+    "english": "Seah",
+    "group": "TUIDE",
+    "sourceUrl": "https://kprofiles.com/pledis-girls-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/03/5C529EAC-AFC8-413A-86B6-4C7608626C2D-900x600.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "d44f683296e4f8efdee90e9561e98aa90e843af504c11b36a08c5c5cd3b9e4fa"
+  },
+  {
+    "id": "g_tuide_yihani",
+    "name": "Yi Hani",
+    "english": "Yi Hani",
+    "group": "TUIDE",
+    "sourceUrl": "https://kprofiles.com/pledis-girls-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/03/5B465C56-FA89-438F-AC94-953A4A6D88DB-900x600.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "ae5180ddbba9901084cd2bb719546bd8c3f910cd016aa58b69b6041b9b73c237"
+  },
+  {
+    "id": "g_ioi_chungha",
+    "name": "Chungha",
+    "english": "Chungha",
+    "group": "I.O.I",
+    "sourceUrl": "https://kprofiles.com/ioi-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/09/I.O.I-LOOP-CHUNGHA-600x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "faa225adc0d7204dd4c1853e23736d300db8ef010b12561860ef0bed8b786dd5"
+  },
+  {
+    "id": "g_ioi_chaeyeon",
+    "name": "Chaeyeon",
+    "english": "Chaeyeon",
+    "group": "I.O.I",
+    "sourceUrl": "https://kprofiles.com/ioi-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/09/I.O.I-LOOP-CHAEYEON-600x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "0b41511974847498447557a811f7bb2528976d2300ef97ba3235d62082244ae2"
+  },
+  {
+    "id": "g_ioi_kyulkyung",
+    "name": "Kyulkyung",
+    "english": "Kyulkyung",
+    "group": "I.O.I",
+    "sourceUrl": "https://kprofiles.com/ioi-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/09/I.O.I-Miss-Me-Kyulkyung-533x800.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "1477c4927906118dc0281b7d583ff2d91c2f61f1c31cf71de9fe80a086e89b1a"
+  },
+  {
+    "id": "g_ioi_sohye",
+    "name": "Sohye",
+    "english": "Sohye",
+    "group": "I.O.I",
+    "sourceUrl": "https://kprofiles.com/ioi-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/09/I.O.I-LOOP-SOHYE-600x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "b53b6d0a5bc266269a7dc3095d2fe1a26b08c45cc462f4b2682b5eab989aec6d"
+  },
+  {
+    "id": "g_ioi_somi",
+    "name": "Somi",
+    "english": "Somi",
+    "group": "I.O.I",
+    "sourceUrl": "https://kprofiles.com/ioi-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/09/I.O.I-LOOP-JEON-SOMI-600x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "2ba454594b84fbbfe3af7efea2aea6045c540dac4d1b763f506059ba359e4e38"
+  },
+  {
+    "id": "g_gugudan_mina",
+    "name": "미나",
+    "english": "Mina",
+    "group": "I.O.I",
+    "sourceUrl": "https://kprofiles.com/ioi-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/09/I.O.I-Miss-Me-Mina-533x800.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "b22d0191970d546b989e4608f77a4656d8e573654c7c928eb99c87504faec34e"
+  },
+  {
+    "id": "g_gugudan_sejeong",
+    "name": "Sejeong",
+    "english": "Sejeong",
+    "group": "I.O.I",
+    "sourceUrl": "https://kprofiles.com/ioi-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/09/I.O.I-LOOP-SEJEONG-600x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "cfaa141071a537283e5ea6f2337ea7e35355d56eb3242212c8f2365efc88369d"
+  },
+  {
+    "id": "g_wekimeki_yoojung",
+    "name": "Yoojung",
+    "english": "Yoojung",
+    "group": "I.O.I",
+    "sourceUrl": "https://kprofiles.com/ioi-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/09/I.O.I-LOOP-YOOJUNG-600x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "2de85555ffd9316259f8a9f85b43506c3cd2c920f43daaad93e25f5741c0b756"
+  },
+  {
+    "id": "g_wekimeki_doyeon",
+    "name": "Doyeon",
+    "english": "Doyeon",
+    "group": "I.O.I",
+    "sourceUrl": "https://kprofiles.com/ioi-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/09/I.O.I-LOOP-DOYEON-600x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "d82c567b8d6af76b81b46868ed9f71a419c4b585f72172f21a924a18618a1151"
+  },
+  {
+    "id": "g_momoland_hyebin",
+    "name": "Hyebin",
+    "english": "Hyebin",
+    "group": "모모랜드",
+    "sourceUrl": "https://kprofiles.com/momoland-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/02/IMG_1670-640x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "5336c2152f1ced964e660525b00328f79ccdc479b02878e3d11b1cedaaef4fb4"
+  },
+  {
+    "id": "g_momoland_jane",
+    "name": "Jane",
+    "english": "Jane",
+    "group": "모모랜드",
+    "sourceUrl": "https://kprofiles.com/momoland-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/02/IMG_1669-640x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "2f0f427eec8eb004b895a2d23d71dcf1d9035a99172566cda314c90ff62e263b"
+  },
+  {
+    "id": "g_momoland_nayun",
+    "name": "Nayun",
+    "english": "Nayun",
+    "group": "모모랜드",
+    "sourceUrl": "https://kprofiles.com/momoland-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/02/IMG_1668-640x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "bbe0c1d2ba404c5c99a238efa9905f358cd9aa32c36adbdd09ca0a9a162439de"
+  },
+  {
+    "id": "g_momoland_jooe",
+    "name": "JooE",
+    "english": "JooE",
+    "group": "모모랜드",
+    "sourceUrl": "https://kprofiles.com/momoland-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/02/IMG_1667-640x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "3eeb2644887d8d8468bcda875ab35f0b7c700e6443b903a129b50fea600a91b1"
+  },
+  {
+    "id": "g_momoland_ahin",
+    "name": "Ahin",
+    "english": "Ahin",
+    "group": "모모랜드",
+    "sourceUrl": "https://kprofiles.com/momoland-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/02/IMG_1666-640x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "f4ea169feee03ea54ba682371eaf45680adce18fbb7dadb2ff8a6ba968c68217"
+  },
+  {
+    "id": "g_momoland_nancy",
+    "name": "Nancy",
+    "english": "Nancy",
+    "group": "모모랜드",
+    "sourceUrl": "https://kprofiles.com/momoland-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/02/IMG_1665-640x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "671bfcf842a6605350e465fcda5bc3879a8d6f363c0e2b24673724f9523efa60"
+  },
+  {
+    "id": "g_rescene_liv",
+    "name": "Liv",
+    "english": "Liv",
+    "group": "RESCENE",
+    "sourceUrl": "https://kprofiles.com/rescene-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/02/RESCENE-Pretty-Girl-Special-Single-Concept-Photo-LIV-1-640x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "b9f274e712bf77a6cc7ee1c8255053484ff2b7834dc030c7c16b16c8b1c111de"
+  },
+  {
+    "id": "g_exid_solji",
+    "name": "솔지",
+    "english": "Solji",
+    "group": "EXID",
+    "sourceUrl": "https://kprofiles.com/exid-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/09/307074752_150650464323296_6747477091234211655_n-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "fda506c06ee6dd675e0baa66884ee89b2ee5fe4d4e6536b03fa98256b3b61453"
+  },
+  {
+    "id": "g_exid_elly",
+    "name": "엘리",
+    "english": "Elly",
+    "group": "EXID",
+    "sourceUrl": "https://kprofiles.com/exid-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/09/306915036_503774278248509_2999549886827679049_n-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "ae56fadbc31ecff64b582b2fa7329656170dbc85a16a7bc1b5a11d4b87706dda"
+  },
+  {
+    "id": "g_exid_hani",
+    "name": "하니",
+    "english": "Hani",
+    "group": "EXID",
+    "sourceUrl": "https://kprofiles.com/exid-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/09/307442930_2009010432630360_8423895834064738531_n-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "261783aa6451bef6b576aad2decc43309494a3e17fe5f79f1e6f437ec2c4a61d"
+  },
+  {
+    "id": "g_exid_hyerin",
+    "name": "혜린",
+    "english": "Hyerin",
+    "group": "EXID",
+    "sourceUrl": "https://kprofiles.com/exid-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/09/307686204_1260314291369445_9021660835857275652_n-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "1f246b18504a23e187be3b0d4bac498e8ca4108b20cbee84ab02694a650d7d4e"
+  },
+  {
+    "id": "g_exid_jeonghwa",
+    "name": "정화",
+    "english": "Jeonghwa",
+    "group": "EXID",
+    "sourceUrl": "https://kprofiles.com/exid-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/09/307530943_606359760929357_7126981846202470096_n-1-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "da9e4b83a5ed3f0df27e2c25e912e939be8e39f4bf9346e7b23aa060c6e4721d"
+  },
+  {
+    "id": "g_izna_mai",
+    "name": "Mai",
+    "english": "Mai",
+    "group": "izna",
+    "sourceUrl": "https://kprofiles.com/izna-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/07/MAI-3-534x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "e1de5f4ac6966474f1b17fece35903607f9d6b85b0847a6b964d99f02c8f27bd"
+  },
+  {
+    "id": "g_izna_koko",
+    "name": "Koko",
+    "english": "Koko",
+    "group": "izna",
+    "sourceUrl": "https://kprofiles.com/izna-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/07/KOKO-3-534x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "a2825bd91b9249beeb0bdb26d21a3207a52cd76de6bd0ee6f2d8dbe36baf5571"
+  },
+  {
+    "id": "g_izna_choijungeun",
+    "name": "Choi Jungeun",
+    "english": "Choi Jungeun",
+    "group": "izna",
+    "sourceUrl": "https://kprofiles.com/izna-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/07/CHOI-JUNGEUN-3-534x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "bd8b182c5ec870f3b25c1d9d714617031823f7a75716d6c9716494e45a54a696"
+  },
+  {
+    "id": "g_izna_jeongsaebi",
+    "name": "Jeong Saebi",
+    "english": "Jeong Saebi",
+    "group": "izna",
+    "sourceUrl": "https://kprofiles.com/izna-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/07/JEONG-SAEBI-3-900x600.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "a77e71c4f68d0f7fc1af47d56cbf8c2464385ce2ec5cc7e8d6ff2744f800cb0a"
+  },
+  {
+    "id": "g_saymyname_hita",
+    "name": "히토미",
+    "english": "Hitomi",
+    "group": "SAY MY NAME",
+    "sourceUrl": "https://kprofiles.com/say-my-name-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/08/hitomi3.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "a7a9409ba793ec68b4f4875629b393aaead717146f24740d44afb72052f341a3"
+  },
+  {
+    "id": "g_saymyname_dohee",
+    "name": "Dohee",
+    "english": "Dohee",
+    "group": "SAY MY NAME",
+    "sourceUrl": "https://kprofiles.com/say-my-name-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/08/dohee3.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "93e1e790db27b04a7869f9446ba8a479c9f0feb085ad157a98adf963218e941b"
+  },
+  {
+    "id": "g_saymyname_kanny",
+    "name": "Kanny",
+    "english": "Kanny",
+    "group": "SAY MY NAME",
+    "sourceUrl": "https://kprofiles.com/say-my-name-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/08/kanny3.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "d081c9a3b20a2418f70c70de1fd3f72d8aab6c03dd196ad00e0b738906f9aa37"
+  },
+  {
+    "id": "g_saymyname_mei",
+    "name": "Mei",
+    "english": "Mei",
+    "group": "SAY MY NAME",
+    "sourceUrl": "https://kprofiles.com/say-my-name-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/08/mei4.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "92d99540cc62a6b883692e20539ff58e996695fa6a9530fc6d2080fa8b614981"
+  },
+  {
+    "id": "g_saymyname_junhwi",
+    "name": "Junhwi",
+    "english": "Junhwi",
+    "group": "SAY MY NAME",
+    "sourceUrl": "https://kprofiles.com/say-my-name-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/08/junhwi3.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "eaa502add849dcae83be82c2658bde6c1ba5d18a8390077ccfb32ef65141d2fd"
+  },
+  {
+    "id": "g_saymyname_seyun",
+    "name": "승주",
+    "english": "Seungjoo",
+    "group": "SAY MY NAME",
+    "sourceUrl": "https://kprofiles.com/say-my-name-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/08/seungjoo3-2.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "e940fc374ef5209969d452e39ee20718d2fd8b853141f0d420f8f3dd03bc17cb"
+  },
+  {
+    "id": "g_saymyname_soha",
+    "name": "Soha",
+    "english": "Soha",
+    "group": "SAY MY NAME",
+    "sourceUrl": "https://kprofiles.com/say-my-name-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/08/soha4.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "7dcde40c07d4b4c80183adc216e551219bba5908c2bdc9ee6fb8a07daedd1bc2"
+  },
+  {
+    "id": "g_saymyname_shuie",
+    "name": "슈이",
+    "english": "Shuie",
+    "group": "SAY MY NAME",
+    "sourceUrl": "https://kprofiles.com/say-my-name-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/08/shuie3.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "6832ee61ac7e57fe88a314577ca0e0f29c400818f4ef02291ff74f165aa182f0"
+  },
+  {
+    "id": "g_gfriend_sinb",
+    "name": "SinB",
+    "english": "SinB",
+    "group": "여자친구",
+    "sourceUrl": "https://kprofiles.com/gfriend-profile-and-facts/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/06/SINB-1-900x603.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "1d1e323cf0be6b4a5ccd073613963adbc68d902b2b9c981015268ec97348cc06"
+  },
+  {
+    "id": "g_wekimeki_suyeon",
+    "name": "Suyeon",
+    "english": "Suyeon",
+    "group": "위키미키",
+    "sourceUrl": "https://kprofiles.com/weki-meki-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/07/JI-SUYEON-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "f2c4b4e3c743f6fcc7e3928d329e3ff1c3b37d995f987103aef7c9effd3998a8"
+  },
+  {
+    "id": "g_wekimeki_elly",
+    "name": "엘리",
+    "english": "Elly",
+    "group": "위키미키",
+    "sourceUrl": "https://kprofiles.com/weki-meki-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/07/ELLY-1-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "d0125436b8cc07be691729a387a22b624f39dd91ae76182085e03f86eae6b201"
+  },
+  {
+    "id": "g_wekimeki_sei",
+    "name": "Sei",
+    "english": "Sei",
+    "group": "위키미키",
+    "sourceUrl": "https://kprofiles.com/weki-meki-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/07/SEI-1-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "285ceeb0f67d1b8223cca9c994dced26af6b5808b087452f5e832e0dca32de12"
+  },
+  {
+    "id": "g_wekimeki_lua",
+    "name": "Lua",
+    "english": "Lua",
+    "group": "위키미키",
+    "sourceUrl": "https://kprofiles.com/weki-meki-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/07/LUA-1-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "6aa77ea9bd5a208faead73d7f0f9150266580b8c8a63ba66bd951242bc1bf1b2"
+  },
+  {
+    "id": "g_wekimeki_rina",
+    "name": "Rina",
+    "english": "Rina",
+    "group": "위키미키",
+    "sourceUrl": "https://kprofiles.com/weki-meki-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/07/RINA-1-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "7cd0d28f408d9f0f35177a5024e3175aa44d8a130ff91f405675c989c0723023"
+  },
+  {
+    "id": "g_wekimeki_lucy",
+    "name": "Lucy",
+    "english": "Lucy",
+    "group": "위키미키",
+    "sourceUrl": "https://kprofiles.com/weki-meki-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/07/LUCY-1-533x800.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "fa836c8e56e60b103ffa00aeda25783a7a53b7d0202a6182170ee6ead63e649c"
+  },
+  {
+    "id": "g_nature_sohee",
+    "name": "Sohee",
+    "english": "Sohee",
+    "group": "네이처",
+    "sourceUrl": "https://kprofiles.com/nature-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2018/07/095B81C2-96B0-44D0-A2A6-7FE5F616EBD6-640x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "9687f0cd70162c41a3874255e601a21f206460e62189490fe22c5783af8915c5"
+  },
+  {
+    "id": "g_nature_aurora",
+    "name": "Aurora",
+    "english": "Aurora",
+    "group": "네이처",
+    "sourceUrl": "https://kprofiles.com/nature-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2018/07/9E735BC5-69CE-4176-9E77-54EE9BA4F823-640x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "b045281cdd54c4c4d5722429c28976d4db96149359d30759f8a83d3fbc833d18"
+  },
+  {
+    "id": "g_nature_saebom",
+    "name": "Saebom",
+    "english": "Saebom",
+    "group": "네이처",
+    "sourceUrl": "https://kprofiles.com/nature-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2018/07/C47172CB-9152-4066-9760-778ECED68292-640x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "dabf85c63b1e36ac3e01cf2a781fbf9d4565296dada12e5653eb4df1032e3550"
+  },
+  {
+    "id": "g_nature_chaebin",
+    "name": "Chaebin",
+    "english": "Chaebin",
+    "group": "네이처",
+    "sourceUrl": "https://kprofiles.com/nature-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2018/07/B3D69A08-B48D-4A65-A502-3001B735052A-640x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "01ebe01a0fcdcd36edd610f0b0bb65a94b5f103529ae42a8942690eada360f4f"
+  },
+  {
+    "id": "g_nature_haru",
+    "name": "Haru",
+    "english": "Haru",
+    "group": "네이처",
+    "sourceUrl": "https://kprofiles.com/nature-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2018/07/AF9B47F5-92BE-471B-8279-4D5888A1E6B1-640x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "e33389dd77ec42da387fcb7ef6f70a42b215cb75d8fa9592cd75c265cb62aab6"
+  },
+  {
+    "id": "g_nature_luche",
+    "name": "루",
+    "english": "Lu",
+    "group": "네이처",
+    "sourceUrl": "https://kprofiles.com/nature-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2018/07/IMG_0599-533x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "7c29a6cec7d1accf363456dae316e1aa2c6091e44ab8ecc53535ff1b827befae"
+  },
+  {
+    "id": "g_nature_uchae",
+    "name": "Uchae",
+    "english": "Uchae",
+    "group": "네이처",
+    "sourceUrl": "https://kprofiles.com/nature-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2018/07/FCD666BF-2958-4F6E-B3CB-289B185CD266-640x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "d3f65a0d5b3a41de2081aeac926a0741cc1c0165164ac0d7ba485a8e05f04eb2"
+  },
+  {
+    "id": "g_nature_loha",
+    "name": "로하",
+    "english": "Loha",
+    "group": "네이처",
+    "sourceUrl": "https://kprofiles.com/nature-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2018/07/237885DE-BB8A-4D1A-BF34-F6E7915F7044-640x800.jpeg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "42ea07605c4d73a9f7ee0a30c24045f6235ae06f09a8237f817412cbf58f1396"
+  },
+  {
+    "id": "g_nature_sunshine",
+    "name": "선샤인",
+    "english": "Sunshine",
+    "group": "네이처",
+    "sourceUrl": "https://kprofiles.com/nature-members-profile/",
+    "imageUrl": "https://uploads.disquscdn.com/images/76ff209c85a3a227b25ed64e313afeb4dde80c73fffb5651ed2177c7e97f337e.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "44dc133a15d8942fc4b49589680a89aacad1838e11215532dd2a35d101a01004"
+  },
+  {
+    "id": "g_hpeprincess_coco",
+    "name": "Coco",
+    "english": "Coco",
+    "group": "H//PE Princess",
+    "sourceUrl": "https://kprofiles.com/h-pe-princess-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2025/12/coco.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "1333a683e91deb3c83133986f175d53effb68dfe95fc916be6ea08699f58d32e"
+  },
+  {
+    "id": "g_hpeprincess_ysy",
+    "name": "YSY",
+    "english": "YSY",
+    "group": "H//PE Princess",
+    "sourceUrl": "https://kprofiles.com/h-pe-princess-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2025/12/ysy.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "87e734ddf6e0d63db8d9465ca93a1a415966fd9617cfcc1158e9812c127bad8e"
+  },
+  {
+    "id": "g_hpeprincess_yuju",
+    "name": "Yuju",
+    "english": "Yuju",
+    "group": "H//PE Princess",
+    "sourceUrl": "https://kprofiles.com/h-pe-princess-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2025/12/yuju.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "320c1d171b389985a43a90b8f40b619b8112cfe0fca657e8b62453a42d724891"
+  },
+  {
+    "id": "g_hpeprincess_doi",
+    "name": "Doi",
+    "english": "Doi",
+    "group": "H//PE Princess",
+    "sourceUrl": "https://kprofiles.com/h-pe-princess-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2025/12/doi.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "bb657952ce437bab642695d51e6c097e2c72ba775f4391ceb48f40b59ab6d2d3"
+  },
+  {
+    "id": "g_hpeprincess_rino",
+    "name": "Rino",
+    "english": "Rino",
+    "group": "H//PE Princess",
+    "sourceUrl": "https://kprofiles.com/h-pe-princess-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2025/12/rino.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "59d8b4e374763b4708b962a11401f1755671a1b40e8457fc5628e6d70c364897"
+  },
+  {
+    "id": "g_hpeprincess_sujin",
+    "name": "Sujin",
+    "english": "Sujin",
+    "group": "H//PE Princess",
+    "sourceUrl": "https://kprofiles.com/h-pe-princess-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2025/12/sujin-1.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "011a77f4159bae6817e23618dcf7e95433e5639f906e0ff73206539105f63c7d"
+  },
+  {
+    "id": "g_gugudan_hana",
+    "name": "Hana",
+    "english": "Hana",
+    "group": "구구단",
+    "sourceUrl": "https://kprofiles.com/gugudan-members-profile/",
+    "imageUrl": "https://uploads.disquscdn.com/images/ced1022bc791ad26e7c62be6590a822cef1e08816cbef055d48b8a68875a34e6.jpg?w=800&h=450",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "6e5a298f621624cc12b1958783d1f65d64204577eb60863cb273cc10f993a500"
+  },
+  {
+    "id": "g_gugudan_mimi",
+    "name": "Mimi",
+    "english": "Mimi",
+    "group": "구구단",
+    "sourceUrl": "https://kprofiles.com/gugudan-members-profile/",
+    "imageUrl": "https://uploads.disquscdn.com/images/ee2e6b7a04f2930c84cb634a9c0bc175461af0cdef006840a54c68e05657628c.jpg?w=800&h=450",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "27b7f4888dff84c7853f353a75066c9fa1d9f5d35a5667a202159cf606dba528"
+  },
+  {
+    "id": "g_gugudan_nayoung",
+    "name": "Nayoung",
+    "english": "Nayoung",
+    "group": "구구단",
+    "sourceUrl": "https://kprofiles.com/gugudan-members-profile/",
+    "imageUrl": "https://uploads.disquscdn.com/images/8fb63886da12c29345b1e45a2d59a1e06d685f7beb0eaa9f722a0bf21c9caf5b.jpg?w=800&h=450",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "079ec3a6aecb2b086596c5cd5161f8d27c45a7f82a40b2e3d19460713d0367c9"
+  },
+  {
+    "id": "g_gugudan_haebin",
+    "name": "Haebin",
+    "english": "Haebin",
+    "group": "구구단",
+    "sourceUrl": "https://kprofiles.com/gugudan-members-profile/",
+    "imageUrl": "https://uploads.disquscdn.com/images/1651a085c92bba56db7d7160b414c614ee4daefc6ac2b2f2a65c01a51c086697.jpg?w=800&h=450",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "c16facfb85c2be83e1a8a98ea60089c02f0ee70ba87821010c6825d47af6d31d"
+  },
+  {
+    "id": "g_gugudan_sally",
+    "name": "Sally",
+    "english": "Sally",
+    "group": "구구단",
+    "sourceUrl": "https://kprofiles.com/gugudan-members-profile/",
+    "imageUrl": "https://uploads.disquscdn.com/images/8c98166a70443f75d6e35530e1ace0870e98fcf63503a0def1406b8d106ad4df.jpg?w=800&h=450",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "844b407e82ad1dcdcfa8b0c8d16469822cf6cae2c73f376c840deb2cd5df654e"
+  },
+  {
+    "id": "g_gugudan_soyee",
+    "name": "Soyee",
+    "english": "Soyee",
+    "group": "구구단",
+    "sourceUrl": "https://kprofiles.com/gugudan-members-profile/",
+    "imageUrl": "https://uploads.disquscdn.com/images/383fa8f727288c56cdcb935a3448945384eb3505c017835ae4b745ee02254f4c.jpg?w=800&h=563",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "bf44cc1d0ac4a9fd4718b08023db8a454ee083d55682f170ef9a3aa725f48070"
+  },
+  {
+    "id": "g_gugudan_hyeyeon",
+    "name": "Hyeyeon",
+    "english": "Hyeyeon",
+    "group": "구구단",
+    "sourceUrl": "https://kprofiles.com/gugudan-members-profile/",
+    "imageUrl": "https://0.soompi.io/wp-content/uploads/2018/01/18162303/Hyeyeon.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "94c81af380e3f2244494d39a88060b8d96683917e43343a5c9b51ccad255d67e"
+  },
+  {
+    "id": "g_badvillain_chloeyoung",
+    "name": "Chloe Young",
+    "english": "Chloe Young",
+    "group": "BADVILLAIN",
+    "sourceUrl": "https://kprofiles.com/badvillain-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/05/BADVILLAIN_Chloe_Young_Profile_Photo.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "b87bc6208dd6c1d0571ff6e0d2da7241aab4034c28f8c85d5df90564e499b7cf"
+  },
+  {
+    "id": "g_badvillain_ina",
+    "name": "Ina",
+    "english": "Ina",
+    "group": "BADVILLAIN",
+    "sourceUrl": "https://kprofiles.com/badvillain-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/05/BADVILLAIN_INA_Profile_Photo.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "4a2f1a8262b42d0b9bae55050c58ae66e08dd278a3012db1e3f29877f86166da"
+  },
+  {
+    "id": "g_badvillain_emma",
+    "name": "Emma",
+    "english": "Emma",
+    "group": "BADVILLAIN",
+    "sourceUrl": "https://kprofiles.com/badvillain-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/05/BADVILLAIN_Emma_Profile_Photo.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "4ee7494bad5732d1027853ed05f653f536e27dfaa8c97606c0f4eb12806ff1dd"
+  },
+  {
+    "id": "g_badvillain_hyeonbin",
+    "name": "휴이",
+    "english": "HU’E",
+    "group": "BADVILLAIN",
+    "sourceUrl": "https://kprofiles.com/badvillain-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/05/BADVILLAIN_HU27E_Profile_Photo.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "ccbc63a3a3e71940fd24611ae80a4ad43b2007c03605fed042c52376ccb3a231"
+  },
+  {
+    "id": "g_badvillain_yunseo",
+    "name": "Yunseo",
+    "english": "Yunseo",
+    "group": "BADVILLAIN",
+    "sourceUrl": "https://kprofiles.com/badvillain-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/05/BADVILLAIN_YunSeo_Profile_Photo.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "d0cb2673a8ede7c94eea5ae409876854e185dc962b813229da5511aa385b1d80"
+  },
+  {
+    "id": "g_badvillain_vin",
+    "name": "Vin",
+    "english": "Vin",
+    "group": "BADVILLAIN",
+    "sourceUrl": "https://kprofiles.com/badvillain-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/05/BADVILLAIN_Vin_Profile_Photo.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "976df8f94ced757479448ef8ecf4218803dc1ca735e6642445def0755244e83f"
+  },
+  {
+    "id": "g_badvillain_kelly",
+    "name": "Kelly",
+    "english": "Kelly",
+    "group": "BADVILLAIN",
+    "sourceUrl": "https://kprofiles.com/badvillain-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/05/BADVILLAIN_Kelly_Profile_Photo.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "2d3e81d2118615afa589363ca0d59d75477a46b36e14adc22f1d6cbbfa293bbe"
+  },
+  {
+    "id": "g_lightsum_sangah",
+    "name": "Sangah",
+    "english": "Sangah",
+    "group": "LIGHTSUM",
+    "sourceUrl": "https://kprofiles.com/lightsum-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/04/LIGHTSUM_Sangah_Re-Idol_concept_photo_1-640x800.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "c305d674fb560da7e253d9f21ae089b66fe0a819a61ac97bfd7ec736e2c66665"
+  },
+  {
+    "id": "g_lightsum_chowon",
+    "name": "Chowon",
+    "english": "Chowon",
+    "group": "LIGHTSUM",
+    "sourceUrl": "https://kprofiles.com/lightsum-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/04/LIGHTSUM_Chowon_Re-Idol_concept_photo_1-641x800.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "8f96eb16328fe07629e26c05da73a892f44387583812d3ab40249a6eb0d41db4"
+  },
+  {
+    "id": "g_lightsum_nayoung",
+    "name": "Nayoung",
+    "english": "Nayoung",
+    "group": "LIGHTSUM",
+    "sourceUrl": "https://kprofiles.com/lightsum-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/04/LIGHTSUM_Nayoung_Re-Idol_concept_photo_1-640x800.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "dce7ceccf0f10a6da885435d7b71a80b37009605e78448873252c2c3d2c860a4"
+  },
+  {
+    "id": "g_lightsum_hina",
+    "name": "Hina",
+    "english": "Hina",
+    "group": "LIGHTSUM",
+    "sourceUrl": "https://kprofiles.com/lightsum-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/04/LIGHTSUM_Hina_Re-Idol_concept_photo_1-640x800.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "979f4e9dd9d14e72bf1cba3d4b0a134199a14b92a5e8e9b887b68b019f9c3d34"
+  },
+  {
+    "id": "g_lightsum_juhyeon",
+    "name": "Juhyeon",
+    "english": "Juhyeon",
+    "group": "LIGHTSUM",
+    "sourceUrl": "https://kprofiles.com/lightsum-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/04/LIGHTSUM_Juhyeon_Re-Idol_concept_photo_1-640x800.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "9f3aa55c45bd81560edf0b23192892bac1d0c87292ab270d1fe8d947b624cbdc"
+  },
+  {
+    "id": "g_lightsum_yujeong",
+    "name": "Yujeong",
+    "english": "Yujeong",
+    "group": "LIGHTSUM",
+    "sourceUrl": "https://kprofiles.com/lightsum-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2021/04/LIGHTSUM_Yujeong_Re-Idol_concept_photo_1-640x800.webp",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "95f3e44041d2f894e4b033ee280a58fb780d9af0ffc5e177a19ff42c87382849"
+  },
+  {
+    "id": "g_lesserafim_sakura",
+    "name": "사쿠라",
+    "localPath": "photos/upload-20260926-g_lesserafim_sakura.jpeg",
+    "providedFile": "IMG_5401.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "8e494efdb66bbde67f3835ccac2652947cb8e431fd21bd11796dafaa5508505b"
+  },
+  {
+    "id": "g_lesserafim_chaewon",
+    "name": "김채원",
+    "localPath": "photos/upload-20260926-g_lesserafim_chaewon.jpeg",
+    "providedFile": "IMG_5402.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "cd2526775454a0d9acce55114c1072300e3c47274a00de681633def79429ccec"
+  },
+  {
+    "id": "g_izone_yuri",
+    "name": "조유리",
+    "localPath": "photos/upload-20260926-g_izone_yuri.jpeg",
+    "providedFile": "IMG_5403.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "493fea9407d0e3575a2ba5b61854edf9ffb31d1517ea0c8e2fe43134d2b30ac4"
+  },
+  {
+    "id": "g_izone_yena",
+    "name": "최예나",
+    "localPath": "photos/upload-20260926-g_izone_yena.jpeg",
+    "providedFile": "IMG_5405.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "4bb64b29e9e3fa39e78baed5c3a155ee79c8ced208db5a8321dc65d664db531d"
+  },
+  {
+    "id": "g_izone_hyewon",
+    "name": "강혜원",
+    "localPath": "photos/upload-20260926-g_izone_hyewon.jpeg",
+    "providedFile": "IMG_5406.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "1502a111e0601347015b98bbd5a2d7b5f9caaee142b190f4e1d059a7fd2747c1"
+  },
+  {
+    "id": "g_izone_eunbi",
+    "name": "권은비",
+    "localPath": "photos/upload-20260926-g_izone_eunbi.jpeg",
+    "providedFile": "IMG_5407.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "a5bfa9b80a0bd0e38b69e44e17cc79d86386863d997c3fb20c29d0f09664f286"
+  },
+  {
+    "id": "g_izone_chaeyeon",
+    "name": "이채연",
+    "localPath": "photos/upload-20260926-g_izone_chaeyeon.jpeg",
+    "providedFile": "IMG_5408.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "6fd0a084c533075cf64818661bcdf5804411851320fb6d237b7a907ffdec1e64"
+  },
+  {
+    "id": "g_redvelvet_seulgi",
+    "name": "슬기",
+    "localPath": "photos/upload-20260926-g_redvelvet_seulgi.jpeg",
+    "providedFile": "IMG_5409.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "6bacab8b2847ba5913c033ecffd5c3a9ddb16cb2e1dee15e44eae572e8fd7646"
+  },
+  {
+    "id": "g_redvelvet_irene",
+    "name": "아이린",
+    "localPath": "photos/upload-20260926-g_redvelvet_irene.jpeg",
+    "providedFile": "IMG_5410.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "4b0c5ebf4b335ac6f3d0696032010ebe1df87801264d0eec0d19f2a48f7e1712"
+  },
+  {
+    "id": "g_redvelvet_wendy",
+    "name": "웬디",
+    "localPath": "photos/upload-20260926-g_redvelvet_wendy.jpeg",
+    "providedFile": "IMG_5411.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "c03532f466fe1f152e2d71555fe4c2d63b7e4cd2203a454890615ee8fc6fb1d8"
+  },
+  {
+    "id": "g_redvelvet_joy",
+    "name": "조이",
+    "localPath": "photos/upload-20260927-g_redvelvet_joy.jpeg",
+    "providedFile": "IMG_5412.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "015b158636e0fb2579989629b09d2b5bafafae485116add96a4caef9e86e40b1"
+  },
+  {
+    "id": "g_redvelvet_yeri",
+    "name": "예리",
+    "localPath": "photos/upload-20260927-g_redvelvet_yeri.jpeg",
+    "providedFile": "IMG_5414.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "1e9ad4cb80c5055f9a9e0584a533b0f99eb7bd59d07798fe630702bb15f32b07"
+  },
+  {
+    "id": "g_twice_jeongyeon",
+    "name": "정연",
+    "localPath": "photos/upload-20260927-g_twice_jeongyeon.jpeg",
+    "providedFile": "IMG_5420.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "793874a140b95531253d48768075ed319c74e35b5804720839b28df8dcbfb690"
+  },
+  {
+    "id": "g_twice_nayeon",
+    "name": "나연",
+    "localPath": "photos/upload-20260927-g_twice_nayeon.jpeg",
+    "providedFile": "IMG_5421.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "584b50feb51da20e3f217b9a1e8d0e48c2dddabe2d7990566bec2fd0d5a9a0e5"
+  },
+  {
+    "id": "g_twice_sana",
+    "name": "사나",
+    "localPath": "photos/upload-20260927-g_twice_sana.jpeg",
+    "providedFile": "IMG_5422.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "3bdff84e5612efbd702218046594b50504491c58cb5f83ae48b6eaa59eaa4cd8"
+  },
+  {
+    "id": "g_twice_mina",
+    "name": "미나",
+    "localPath": "photos/upload-20260927-g_twice_mina.jpeg",
+    "providedFile": "IMG_5423.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "f214e2fdb590c83eb5e48e4a2d2425248ca971cd307bf9fe65f9af3500d2d363"
+  },
+  {
+    "id": "g_gfriend_yuju",
+    "name": "유주",
+    "localPath": "photos/upload-20260927-g_gfriend_yuju.jpeg",
+    "providedFile": "IMG_5424.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "1b46c417bf8eed32efc42eee24a932a7568e423961fda9380b11137bf645c453"
+  },
+  {
+    "id": "g_gfriend_umji",
+    "name": "엄지",
+    "localPath": "photos/upload-20260927-g_gfriend_umji.jpeg",
+    "providedFile": "IMG_5425.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "bb9f2e59804da93ea9a89a0d80f3207778109741b227d0baeedaf8f3f0794313"
+  },
+  {
+    "id": "g_twice_dahyun",
+    "name": "다현",
+    "localPath": "photos/upload-20260927-g_twice_dahyun.jpeg",
+    "providedFile": "IMG_5426.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "729406de819341ef05a2355df3c1ec97c1b69733a8e3755b8daccf6fbb45e2e8"
+  },
+  {
+    "id": "g_twice_chaeyoung",
+    "name": "채영",
+    "localPath": "photos/upload-20260927-g_twice_chaeyoung.jpeg",
+    "providedFile": "IMG_5428.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "c5674903ca245bdc9a07cab24a9cd5bf4400b3e07172936689f804e4a6bcb1d5"
+  },
+  {
+    "id": "g_twice_tzuyu",
+    "name": "쯔위",
+    "localPath": "photos/upload-20260927-g_twice_tzuyu.jpeg",
+    "providedFile": "IMG_5429.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "b843d4d91738755c5a8dce70f091d69dcaf2f94dff5ce5edc92cdbf2aa8542d0"
+  },
+  {
+    "id": "g_gfriend_eunha",
+    "name": "은하",
+    "localPath": "photos/upload-20260927-g_gfriend_eunha.jpeg",
+    "providedFile": "IMG_5430.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "df8002b1f1eba5a660b432ef9fcf0df89bb9d5142759c6f600ead241c182a8b4"
+  },
+  {
+    "id": "g_gfriend_yerin",
+    "name": "예린",
+    "localPath": "photos/upload-20260927-g_gfriend_yerin.jpeg",
+    "providedFile": "IMG_5431.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "0262eea2ba8e80b4d174126c480d9a26938e33297652f1450a21b0f8d36b389d"
+  },
+  {
+    "id": "g_gfriend_sowon",
+    "name": "소원",
+    "localPath": "photos/upload-20260927-g_gfriend_sowon.jpeg",
+    "providedFile": "IMG_5432.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "956bf3781b61388f4ce0df26fc9faf17a321ad5af34a7e78fbb13d76a796734f"
+  },
+  {
+    "id": "g_lovelyz_babysoul",
+    "name": "베이비소울",
+    "localPath": "photos/upload-20260927-g_lovelyz_babysoul.jpeg",
+    "providedFile": "IMG_5433.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "User-provided IMG_5657.jpeg",
+    "sha256": "5d3daa7af0250af36b7340b77227f3ff3497cc597a49e58f38cc05000d147393",
+    "sourceUrl": null,
+    "imageUrl": null
+  },
+  {
+    "id": "g_mamamoo_moonbyul",
+    "name": "문별",
+    "localPath": "photos/upload-20260927-g_mamamoo_moonbyul.jpeg",
+    "providedFile": "IMG_5434.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "4994db1704c456c62d731a97cf344987f62272aab3b54dd2db94b6e12e437ad5"
+  },
+  {
+    "id": "g_mamamoo_wheein",
+    "name": "휘인",
+    "localPath": "photos/upload-20260927-g_mamamoo_wheein.jpeg",
+    "providedFile": "IMG_5435.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "2a7612dd94c7cbebc60021f5dc1ab29eb1ecfbc300ebd9e4fbaf5711ec3f0fa0"
+  },
+  {
+    "id": "g_lovelyz_jisoo",
+    "name": "지수",
+    "localPath": "photos/upload-20260927-g_lovelyz_jisoo.jpeg",
+    "providedFile": "IMG_5436.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "5e3ff7910688543ed8706e4f72d4f8ce6e1067af73c662534235f86a70a471bc"
+  },
+  {
+    "id": "g_lovelyz_kei",
+    "name": "케이",
+    "localPath": "photos/upload-20260927-g_lovelyz_kei.jpeg",
+    "providedFile": "IMG_5437.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "5dbe0119773df5e4755924be089fadd9d72e6124d1544adb7eba035924b1203e"
+  },
+  {
+    "id": "g_lovelyz_mijoo",
+    "name": "미주",
+    "localPath": "photos/upload-20260927-g_lovelyz_mijoo.jpeg",
+    "providedFile": "IMG_5438.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "a08389b4f1879d3824b390c33da9aeff97bc79a9404031399ad05dc9c7bdfee3"
+  },
+  {
+    "id": "g_mamamoo_hwasa",
+    "name": "화사",
+    "localPath": "photos/upload-20260927-g_mamamoo_hwasa.jpeg",
+    "providedFile": "IMG_5439.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "92741ee29614d7256f6cf8994977ed98351a69d9d069a0b23aba12294b06189e"
+  },
+  {
+    "id": "g_lovelyz_yein",
+    "name": "예인",
+    "localPath": "photos/upload-20260927-g_lovelyz_yein.jpeg",
+    "providedFile": "IMG_5440.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "a7ad4ffce50d1e87f3b371315be360467ccbf012f99ca7d3d453d5d1a1e527a6"
+  },
+  {
+    "id": "g_lovelyz_sujeong",
+    "name": "수정",
+    "localPath": "photos/upload-20260927-g_lovelyz_sujeong.jpeg",
+    "providedFile": "IMG_5441.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "3534856e2fea217640618a5e6ae693242db658910f13d6a47f3d3e744b704f67"
+  },
+  {
+    "id": "g_lovelyz_jin",
+    "name": "진",
+    "localPath": "photos/upload-20260927-g_lovelyz_jin.jpeg",
+    "providedFile": "IMG_5442.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "78209a9b0b436f62db76d6fb63d70610ddd95676e339aaa45808d36b022b10d6"
+  },
+  {
+    "id": "g_lovelyz_jiae",
+    "name": "지애",
+    "localPath": "photos/upload-20260927-g_lovelyz_jiae.jpeg",
+    "providedFile": "IMG_5443.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "5f853d5d4c592731aa88176b70564e56958f3a19e9a772ce9e7bc608c2728652"
+  },
+  {
+    "id": "g_aespa_karina",
+    "name": "카리나",
+    "localPath": "photos/upload-20260927-g_aespa_karina.jpeg",
+    "providedFile": "IMG_5444.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "7b93bb2b69374c50a14c70743180f8b7485b02a82400b812cf1249224f9c107d"
+  },
+  {
+    "id": "g_aespa_giselle",
+    "name": "지젤",
+    "localPath": "photos/upload-20260927-g_aespa_giselle.jpeg",
+    "providedFile": "IMG_5445.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "62031c419b8a93b9c45621f26c91c1bc318a187ee7dc1f48374a731a444cd003"
+  },
+  {
+    "id": "g_aespa_winter",
+    "name": "윈터",
+    "localPath": "photos/upload-20260927-g_aespa_winter.jpeg",
+    "providedFile": "IMG_5447.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "312b337ec72f274a28842fd3a1d7dba5378b3af0525958bf6699d2b34860d05d"
+  },
+  {
+    "id": "g_aespa_ningning",
+    "name": "닝닝",
+    "localPath": "photos/upload-20260927-g_aespa_ningning.jpeg",
+    "providedFile": "IMG_5449.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "233bb726cb3afddb84223f95dd4d6d80668d7e2f7e472211cb60e183173191f6"
+  },
+  {
+    "id": "g_newjeans_minji",
+    "name": "민지",
+    "localPath": "photos/upload-20260927-g_newjeans_minji.jpeg",
+    "providedFile": "IMG_5450.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "5c6e267de6f39437c2f0246932ce05104cc349d0d3df408bf5b7235c9c44c0ec"
+  },
+  {
+    "id": "g_newjeans_danielle",
+    "name": "다니엘",
+    "localPath": "photos/upload-20260927-g_newjeans_danielle.jpeg",
+    "providedFile": "IMG_5451.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "8b10cae62804309b4f00c07539415eec62ff1409f3208654e0cd47e470af5684"
+  },
+  {
+    "id": "g_newjeans_hanni",
+    "name": "하니",
+    "localPath": "photos/upload-20260927-g_newjeans_hanni.jpeg",
+    "providedFile": "IMG_5453.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "6c1be1de6c20d7af0a96277359364bca8c7f51238f06b47bd7af302742a7462f"
+  },
+  {
+    "id": "g_ive_gaeul",
+    "name": "가을",
+    "localPath": "photos/upload-20260927-g_ive_gaeul.jpeg",
+    "providedFile": "IMG_5454.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "286aa27a4895345f8b12b98c4965d3177099f9b5c27359563c3b72297265c4ec"
+  },
+  {
+    "id": "g_ive_rei",
+    "name": "레이",
+    "localPath": "photos/upload-20260927-g_ive_rei.jpeg",
+    "providedFile": "IMG_5456.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "c0f67f5e95f460d1c1941ee553089b676c16ad7a7ee1b868c809a50ca803665b"
+  },
+  {
+    "id": "g_ive_wonyoung",
+    "name": "원영",
+    "localPath": "photos/upload-20260927-g_ive_wonyoung.jpeg",
+    "providedFile": "IMG_5457.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "0b608c111acfaff967947e886b25263f4da5033f112391b778d49231be012d42"
+  },
+  {
+    "id": "g_newjeans_haerin",
+    "name": "해린",
+    "localPath": "photos/upload-20260927-g_newjeans_haerin.jpeg",
+    "providedFile": "IMG_5458.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "1bd09f1b5785a1552f15103070f1d00803c5f9b11101030a9e9818075be6f0a5"
+  },
+  {
+    "id": "g_ive_liz",
+    "name": "리즈",
+    "localPath": "photos/upload-20260927-g_ive_liz.jpeg",
+    "providedFile": "IMG_5459.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "66f334e197dcf8044cc1cb52b8165522cb8c8ded9ab92089de91c2305b4dd288"
+  },
+  {
+    "id": "g_ive_leeseo",
+    "name": "이서",
+    "localPath": "photos/upload-20260927-g_ive_leeseo.jpeg",
+    "providedFile": "IMG_5460.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "6070801b94026ff63349e4373195b20e7ee5152afb8caf2a5419556484e9df64"
+  },
+  {
+    "id": "g_newjeans_hyein",
+    "name": "혜인",
+    "localPath": "photos/upload-20260927-g_newjeans_hyein.jpeg",
+    "providedFile": "IMG_5461.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "17b2bce03b46c59d87872f596d64c539ba8c808f0c2e81361b8a55567d1031e3"
+  },
+  {
+    "id": "g_stayc_yoon",
+    "name": "윤",
+    "localPath": "photos/upload-20260927-g_stayc_yoon.jpeg",
+    "providedFile": "IMG_5463(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "a66ce6fb26c84618b9bd3b9f1b6cfe49f1fb1cee950836330c7b1efd8e5af306"
+  },
+  {
+    "id": "g_stayc_sumin",
+    "name": "수민",
+    "localPath": "photos/upload-20260927-g_stayc_sumin.jpeg",
+    "providedFile": "IMG_5464(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "30fbba3ff6d5d53eba218e9a432db85a499e6178fcc1f874350295a77a06d096"
+  },
+  {
+    "id": "g_billlie_moonsua",
+    "name": "문수아",
+    "localPath": "photos/upload-20260927-g_billlie_moonsua.jpeg",
+    "providedFile": "IMG_5465(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "894e200e9c37463c3392a418a5699bcc2577dca94c25e632c5f1ac5893160f59"
+  },
+  {
+    "id": "g_classy_hyungseo",
+    "name": "형서",
+    "localPath": "photos/upload-20260927-g_classy_hyungseo.jpeg",
+    "providedFile": "IMG_5467(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "ab5e89151e969bd25d875447e7cb0d708953d2078e68da2e391a81fd5e492fad"
+  },
+  {
+    "id": "g_stayc_isa",
+    "name": "아이사",
+    "localPath": "photos/upload-20260927-g_stayc_isa.jpeg",
+    "providedFile": "IMG_5468(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "02c05a013bfb124fa72a0222dce9d362445fa3061c2f4e0748a463f39d014970"
+  },
+  {
+    "id": "g_classy_seonyou",
+    "name": "선유",
+    "localPath": "photos/upload-20260927-g_classy_seonyou.jpeg",
+    "providedFile": "IMG_5469(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "de565736e8d45acf81f27d9e175357d329064df861836241fccfd0abf54c1de6"
+  },
+  {
+    "id": "g_classy_boeun",
+    "name": "보은",
+    "localPath": "photos/upload-20260927-g_classy_boeun.jpeg",
+    "providedFile": "IMG_5470(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "bc937ee7a9aa1ba91df36f436409db4a0b7faee3b44adb705e58fe68ff5996e7"
+  },
+  {
+    "id": "g_classy_chaewon",
+    "name": "채원",
+    "localPath": "photos/upload-20260927-g_classy_chaewon.jpeg",
+    "providedFile": "IMG_5471(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "e15cdc4e60eb4307c04b72a71927f59e9e2c76eefc9028cfac8b936c63ed45d8"
+  },
+  {
+    "id": "g_classy_hyeju",
+    "name": "혜주",
+    "localPath": "photos/upload-20260927-g_classy_hyeju.jpeg",
+    "providedFile": "IMG_5472.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "0f0cab7a39e2d6a4cc74c935a9eac58e708a8015e6cf7d402b51714a8f0745c5"
+  },
+  {
+    "id": "g_billlie_haram",
+    "name": "하람",
+    "localPath": "photos/upload-20260927-g_billlie_haram.jpeg",
+    "providedFile": "IMG_5475.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "5daf81f83758ddd90a9363fbd49c2b433e94aaccb598776ca69e9e3fd1e67f53"
+  },
+  {
+    "id": "g_stayc_j",
+    "name": "재이",
+    "localPath": "photos/upload-20260927-g_stayc_j.jpeg",
+    "providedFile": "IMG_5477.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "51246f57bd66b08fdf43fda4371b63578f0f9e09fba65f0fa09d308536b93adb"
+  },
+  {
+    "id": "g_billlie_tsuki",
+    "name": "츠키",
+    "localPath": "photos/upload-20260927-g_billlie_tsuki.jpeg",
+    "providedFile": "IMG_5478.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "7c4977b39f78a055fd6c0eb634af5f41624c83540dc3501c71a0725bd9d9644c"
+  },
+  {
+    "id": "g_classy_riwon",
+    "name": "리원",
+    "localPath": "photos/upload-20260927-g_classy_riwon.jpeg",
+    "providedFile": "IMG_5479.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "9e1781b72b64028a299bae4fb72be23eab3c439f13aa710dbfcd62e0dcf1c0d9"
+  },
+  {
+    "id": "g_billlie_siyoon",
+    "name": "시윤",
+    "localPath": "photos/upload-20260927-g_billlie_siyoon.jpeg",
+    "providedFile": "IMG_5482.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "a9923bbcea66a7173797325a099fbfa037583ef96b619737e97aa8c69e317ee8"
+  },
+  {
+    "id": "g_billlie_haruna",
+    "name": "하루나",
+    "localPath": "photos/upload-20260927-g_billlie_haruna.jpeg",
+    "providedFile": "IMG_5483(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "7f62722ddd5d16427047b17b2eee3ec1da47f01ace8f2fa06d3f7a271af2f271"
+  },
+  {
+    "id": "g_illit_minju",
+    "name": "민주",
+    "localPath": "photos/upload-20260927-g_illit_minju.jpeg",
+    "providedFile": "IMG_5484(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "4bfa2d36e84a8d931b2804fe112f0ec323490967b50656838250a553544df96f"
+  },
+  {
+    "id": "g_babymonster_ruka",
+    "name": "루카",
+    "localPath": "photos/upload-20260927-g_babymonster_ruka.jpeg",
+    "providedFile": "IMG_5485(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "815411cee14a5b7013019a0aa8019dada3b883e99898cd47998f8f3b7542c12c"
+  },
+  {
+    "id": "g_illit_yunah",
+    "name": "윤아",
+    "localPath": "photos/upload-20260927-g_illit_yunah.jpeg",
+    "providedFile": "IMG_5486(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "0291f81ef773c9a10c5a6c84f3dc22bbc8dd7e57cbd4e39e86c1b49bc928711e"
+  },
+  {
+    "id": "g_rescene_woni",
+    "name": "원이",
+    "localPath": "photos/upload-20260927-g_rescene_woni.jpeg",
+    "providedFile": "IMG_5487(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "fa86f6bbd4094838c99db6f63821bafc41a9a6f567890ed8300c9d5359b84ce7"
+  },
+  {
+    "id": "g_babymonster_pharita",
+    "name": "파리타",
+    "localPath": "photos/upload-20260927-g_babymonster_pharita.jpeg",
+    "providedFile": "IMG_5488(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "93abfe1fdb6c1784bd0003eec14069a9096af0a578831766ec315865b3598c30"
+  },
+  {
+    "id": "g_blackpink_jisoo",
+    "name": "지수",
+    "localPath": "photos/upload-20260927-g_blackpink_jisoo.jpeg",
+    "providedFile": "IMG_5489(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "347bd914acfa74fa173de2fbca7c791879c0b18ad415abdbc95b6e812f286a19"
+  },
+  {
+    "id": "g_blackpink_jennie",
+    "name": "제니",
+    "localPath": "photos/upload-20260927-g_blackpink_jennie.jpeg",
+    "providedFile": "IMG_5490(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "3ee8c0ef0e44ad6055686563d028c93fb5138711a2d00184c0f17502234d9286"
+  },
+  {
+    "id": "g_blackpink_ros",
+    "name": "로제",
+    "localPath": "photos/upload-20260927-g_blackpink_ros.jpeg",
+    "providedFile": "IMG_5491(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "bff4b08238959fe01267092f742128fd8cfafcdaf987f11899b384ccbd854e50"
+  },
+  {
+    "id": "g_blackpink_lisa",
+    "name": "리사",
+    "localPath": "photos/upload-20260927-g_blackpink_lisa.jpeg",
+    "providedFile": "IMG_5492(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "f10b1f7e776e30c58b2fa0e790b294cc670b1ecaf31b482f60b221002e8b71fe"
+  },
+  {
+    "id": "g_illit_moka",
+    "name": "모카",
+    "localPath": "photos/upload-20260927-g_illit_moka.jpeg",
+    "providedFile": "IMG_5494.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "f328e8bdf6e6242aea247138ecb3ea13aeb24174e7b81e8f5b7500fedd0ee4fe"
+  },
+  {
+    "id": "g_illit_wonhee",
+    "name": "원희",
+    "localPath": "photos/upload-20260927-g_illit_wonhee.jpeg",
+    "providedFile": "IMG_5495.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "a5ffc29de4d978c10c4a452b4f450b9b7b633f3c650f38adf41ca6c1588715ba"
+  },
+  {
+    "id": "g_babymonster_ahyeon",
+    "name": "아현",
+    "localPath": "photos/upload-20260927-g_babymonster_ahyeon.jpeg",
+    "providedFile": "IMG_5496.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "92aae2d39780a8eaeb03f5f64efad20d56a1249e18ccbcf3c1a9f35408c28540"
+  },
+  {
+    "id": "g_babymonster_asa",
+    "name": "아사",
+    "localPath": "photos/upload-20260927-g_babymonster_asa.jpeg",
+    "providedFile": "IMG_5497.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "db073d0911c7e26de7aa2c0789da5e6c47c1429abcc89889730ea44cbd28d3a7"
+  },
+  {
+    "id": "g_rescene_minami",
+    "name": "미나미",
+    "localPath": "photos/upload-20260927-g_rescene_minami.jpeg",
+    "providedFile": "IMG_5499.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "287d16330b2d94607e4cd07a7f88cd7c4dde70216b7ebeb62d08a8029a24e9cc"
+  },
+  {
+    "id": "g_meovv_gawon",
+    "name": "가원",
+    "localPath": "photos/upload-20260927-g_meovv_gawon.jpeg",
+    "providedFile": "IMG_5500.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "8d52bc7a8860aa4bd52a647a4fef5b8a2f0006d50efd45be94dfe14e8fa520d9"
+  },
+  {
+    "id": "g_illit_iroha",
+    "name": "이로하",
+    "localPath": "photos/upload-20260927-g_illit_iroha.jpeg",
+    "providedFile": "IMG_5501.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "d00fb94272492c17cfc56f6a249ba9d70cbc65c6b26badb72117c0d276d3ba9b"
+  },
+  {
+    "id": "g_rescene_may",
+    "name": "메이",
+    "localPath": "photos/upload-20260927-g_rescene_may.jpeg",
+    "providedFile": "IMG_5502.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "d77d906b1fdbd24f58b600a87e29ff8f866173ee8ae8aae60b26296a85250446"
+  },
+  {
+    "id": "g_meovv_narin",
+    "name": "나린",
+    "localPath": "photos/upload-20260927-g_meovv_narin.jpeg",
+    "providedFile": "IMG_5503.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "b317a1284dd401abf2d18f71f0f083885d2647b2041378004b5d227393fff60c"
+  },
+  {
+    "id": "g_babymonster_rami",
+    "name": "라미",
+    "localPath": "photos/upload-20260927-g_babymonster_rami.jpeg",
+    "providedFile": "IMG_5504.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "91fc384d1a8eabb37438cd1242b695a78fa6cb33f101259dd6af4bd7562e4096"
+  },
+  {
+    "id": "g_rescene_zena",
+    "name": "제나",
+    "localPath": "photos/upload-20260927-g_rescene_zena.jpeg",
+    "providedFile": "IMG_5505.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "011f8526a907d71cdfbe166adf386055702a9106f1ee4e003a10771a5f6dfa0d"
+  },
+  {
+    "id": "g_meovv_ella",
+    "name": "엘라",
+    "localPath": "photos/upload-20260927-g_meovv_ella.jpeg",
+    "providedFile": "IMG_5506.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "8e4fdfcaef38f00a2291d45e267834673ffd59a0d5a3720ac2a637f5f24961ed"
+  },
+  {
+    "id": "g_babymonster_rora",
+    "name": "로라",
+    "localPath": "photos/upload-20260927-g_babymonster_rora.jpeg",
+    "providedFile": "IMG_5507.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "ae28e28b1d016a0fceeb0659eecce30b1b077b907155dedd5787a1e21f173a77"
+  },
+  {
+    "id": "g_babymonster_chiquita",
+    "name": "치키타",
+    "localPath": "photos/upload-20260927-g_babymonster_chiquita.jpeg",
+    "providedFile": "IMG_5508.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "b61a4ecb572c2ce039e0dc01046f0b6441b256229f4f3fba302f474a845202bf"
+  },
+  {
+    "id": "g_meovv_anna",
+    "name": "안나",
+    "localPath": "photos/upload-20260927-g_meovv_anna.jpeg",
+    "providedFile": "IMG_5509.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "dc3bc6c2100ff5dece1f5fa6d359720ec22b5e413e5d437a72d272ec5de1844f"
+  },
+  {
+    "id": "g_izna_bangjeemin",
+    "name": "방지민",
+    "localPath": "photos/upload-20260927-g_izna_bangjeemin.jpeg",
+    "providedFile": "IMG_5510.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "d3f3a54fb461376e251e3eaae625b50a0b806353b5dcf13afe6cf6fbd379b7f2"
+  },
+  {
+    "id": "g_izna_ryusarang",
+    "name": "유사랑",
+    "localPath": "photos/upload-20260927-g_izna_ryusarang.jpeg",
+    "providedFile": "IMG_5511.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "c3c9b2db37698710659406679f2e8b15939db23ecac0ccee6516a4c0ac94ad3b"
+  },
+  {
+    "id": "g_tuide_saki",
+    "name": "사키",
+    "localPath": "photos/upload-20260927-g_tuide_saki.jpeg",
+    "providedFile": "IMG_5512.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "42b34bd2b6803cd20684b4a1fbc8552f0bf5f68cfbc3eed3f44b6772af7ee31d"
+  },
+  {
+    "id": "g_lesserafim_yunjin",
+    "name": "윤진",
+    "localPath": "photos/upload-20260927-g_lesserafim_yunjin.jpeg",
+    "providedFile": "IMG_5522.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "f7820e6c60e26381a574b20f024e335d7bb65f3d3785e8d097f1711df651ec76"
+  },
+  {
+    "id": "g_lesserafim_eunchae",
+    "name": "은채",
+    "localPath": "photos/upload-20260927-g_lesserafim_eunchae.jpeg",
+    "providedFile": "IMG_5523(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "9870e191c0bea61e46b12c8409f4cf693d7db583f7edbd441693a18cd06f794b"
+  },
+  {
+    "id": "g_lesserafim_kazuha",
+    "name": "카즈하",
+    "localPath": "photos/upload-20260927-g_lesserafim_kazuha.jpeg",
+    "providedFile": "IMG_5524.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "3f01d6dcca7106f739acd55cf0415eeb99303f7bbb6e1c04f86a55934ffd00e4"
+  },
+  {
+    "id": "g_hearts2hearts_jiwoo",
+    "name": "지우",
+    "localPath": "photos/upload-20260927-g_hearts2hearts_jiwoo.jpeg",
+    "providedFile": "IMG_5521.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "db246387b4ba8335da89e011ad61e12b8add9142d95e53a91008eefc33982985"
+  },
+  {
+    "id": "g_hearts2hearts_juun",
+    "name": "주은",
+    "localPath": "photos/upload-20260927-g_hearts2hearts_juun.jpeg",
+    "providedFile": "IMG_5526.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "2fd18ea5353cbcd0a90aa1f842ca27bd5d9968abf8c733a800ffd347b1b939ca"
+  },
+  {
+    "id": "g_hearts2hearts_stella",
+    "name": "스텔라",
+    "localPath": "photos/upload-20260927-g_hearts2hearts_stella.jpeg",
+    "providedFile": "IMG_5527(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "a8be31c43971d5cecb56d01af67a62298e40896efee3003ecb939f308a362e53"
+  },
+  {
+    "id": "g_hearts2hearts_ian",
+    "name": "이안",
+    "localPath": "photos/upload-20260927-g_hearts2hearts_ian.jpeg",
+    "providedFile": "IMG_5528(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "88caf97bbc450a433454d4471a25cf98ec3a4db89a5d24442ed692d572dbee1d"
+  },
+  {
+    "id": "g_hearts2hearts_yeon",
+    "name": "예온",
+    "localPath": "photos/upload-20260927-g_hearts2hearts_yeon.jpeg",
+    "providedFile": "IMG_5529(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "e3c321a68eec6142298d6a9b3a18c0d58a53707bcf940f6408ea606adf43609d"
+  },
+  {
+    "id": "g_hearts2hearts_ana",
+    "name": "에이나",
+    "localPath": "photos/upload-20260927-g_hearts2hearts_ana.jpeg",
+    "providedFile": "IMG_5531(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "40b7bc78cd388bfb56536a071826b37738977749161f050161679e60eacef3bb"
+  },
+  {
+    "id": "g_hearts2hearts_yuha",
+    "name": "유하",
+    "localPath": "photos/upload-20260927-g_hearts2hearts_yuha.jpeg",
+    "providedFile": "IMG_5532(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "6fe595fc5401f14b3035464e2df3084e846a951dc4c99877e0de8a1098a3c123"
+  },
+  {
+    "id": "g_hearts2hearts_carmen",
+    "name": "카르멘",
+    "localPath": "photos/upload-20260927-g_hearts2hearts_carmen.jpeg",
+    "providedFile": "IMG_5533(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "7ccb68aa98a46bcfc65eaa748bd1eab97a7d0a4cb2f55dbeaa3eb523214386aa"
+  },
+  {
+    "id": "g_babydontcry_june",
+    "name": "이현",
+    "localPath": "photos/upload-20260927-g_babydontcry_june.jpeg",
+    "providedFile": "IMG_5534.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "05865512eae58d5c6db2f815df60b3cd4a660b6800a80be79ca0eb6ec2193cb0"
+  },
+  {
+    "id": "g_kissoflife_julie",
+    "name": "줄리",
+    "localPath": "photos/upload-20260927-g_kissoflife_julie.jpeg",
+    "providedFile": "IMG_5536.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "f2c31661050fa686c426bda702334bfe7eb797ad4a020ea8432ae6074cc224d6"
+  },
+  {
+    "id": "g_nmixx_sullyoon",
+    "name": "설윤",
+    "localPath": "photos/upload-20260927-g_nmixx_sullyoon.jpeg",
+    "providedFile": "IMG_5538.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "f45cee3e785f077a931c95789c58504d9deeefed107a14d8d1f3cadf4a704e3d"
+  },
+  {
+    "id": "g_nmixx_haewon",
+    "name": "해원",
+    "localPath": "photos/upload-20260927-g_nmixx_haewon.jpeg",
+    "providedFile": "IMG_5539.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "8a74d2c16aa6ff2abdaa0186db96a7fcb557439b0956212dc22fafce3946dfcc"
+  },
+  {
+    "id": "g_kissoflife_belle",
+    "name": "벨",
+    "localPath": "photos/upload-20260927-g_kissoflife_belle.jpeg",
+    "providedFile": "IMG_5543.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "270794b0348eb1da633953015830347d47ea779ccd5588bc645a7ee518b1490f"
+  },
+  {
+    "id": "g_kissoflife_natty",
+    "name": "나띠",
+    "localPath": "photos/upload-20260927-g_kissoflife_natty.jpeg",
+    "providedFile": "IMG_5544.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "6c2e22341eebe483d6afbe2900d34fb6ea914f7e2150fe99c43cbbdd9bea8bd9"
+  },
+  {
+    "id": "g_nmixx_kyujin",
+    "name": "규진",
+    "localPath": "photos/upload-20260927-g_nmixx_kyujin.jpeg",
+    "providedFile": "IMG_5546.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "89a175a97506117dc30cf8667ee5a2ec1db5c9d18bc6112e0b5d2a699acb0aee"
+  },
+  {
+    "id": "g_nmixx_jiwoo",
+    "name": "지우",
+    "localPath": "photos/upload-20260927-g_nmixx_jiwoo.jpeg",
+    "providedFile": "IMG_5547.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "f7e7675efd93542018e68ae658b6297402d6fe45637bf5ba57d7a822b1fdbea0"
+  },
+  {
+    "id": "g_kissoflife_haneul",
+    "name": "하늘",
+    "localPath": "photos/upload-20260927-g_kissoflife_haneul.jpeg",
+    "providedFile": "IMG_5549.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "90e18dd20af13b4221200eb3c4cf2a732f9e1705cd4daacc14e79123df1662ea"
+  },
+  {
+    "id": "g_triples_soomin",
+    "name": "김수민",
+    "localPath": "photos/upload-20260927-g_triples_soomin.jpeg",
+    "providedFile": "IMG_5550.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "b2a000306def285f35e44633f3c951aef766fdbe75814e59234f694b93b92af5"
+  },
+  {
+    "id": "g_triples_yooyeon",
+    "name": "김유연",
+    "localPath": "photos/upload-20260927-g_triples_yooyeon.jpeg",
+    "providedFile": "IMG_5551.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "3dda8d7f6e90f5bfb3d3ad1bc91c4bf15be63badf7b365d6f4b6206b87e1786e"
+  },
+  {
+    "id": "g_triples_chaeyeon",
+    "name": "김채연",
+    "localPath": "photos/upload-20260927-g_triples_chaeyeon.jpeg",
+    "providedFile": "IMG_5552.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "27b791b3e662c09ddf79f47705d1765aa27cd86356c30dc7dd3e62dd69351429"
+  },
+  {
+    "id": "g_triples_kaede",
+    "name": "카에데",
+    "localPath": "photos/upload-20260927-g_triples_kaede.jpeg",
+    "providedFile": "IMG_5553(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "e9b046aa0a1db505efbf47ca75d5d6bfd846e9a1bfe2ae8ac149c9c04b0f7347"
+  },
+  {
+    "id": "g_triples_nakyoung",
+    "name": "김나경",
+    "localPath": "photos/upload-20260927-g_triples_nakyoung.jpeg",
+    "providedFile": "IMG_5554(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "713b79d7303727c4407f2c849349d01933ad2c17a91e19f6c889bb76382adc3e"
+  },
+  {
+    "id": "g_triples_seoyeon",
+    "name": "윤서연",
+    "localPath": "photos/upload-20260927-g_triples_seoyeon.jpeg",
+    "providedFile": "IMG_5555(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "4dc473f56335022cc101b519e6413113a29839293f0fbdd90f9600978e04f629"
+  },
+  {
+    "id": "g_triples_jiwoo",
+    "name": "지우",
+    "localPath": "photos/upload-20260927-g_triples_jiwoo.jpeg",
+    "providedFile": "IMG_5556(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "95222245bc3f864a1de35dc10d6471fed54e54aa7296353a0376ac79fb7d5f8b"
+  },
+  {
+    "id": "g_triples_hyerin",
+    "name": "혜린",
+    "localPath": "photos/upload-20260927-g_triples_hyerin.jpeg",
+    "providedFile": "IMG_5557(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "4e94037c86b29749f32f60613d5007dd82e2c209b2f49df522d53d8c8918bdf9"
+  },
+  {
+    "id": "g_triples_yubin",
+    "name": "공유빈",
+    "localPath": "photos/upload-20260927-g_triples_yubin.jpeg",
+    "providedFile": "IMG_5558(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "957c391c264cc3359fc9f3568896fcb557f63974b5def92ade3bcdfe760a1485"
+  },
+  {
+    "id": "g_triples_mayu",
+    "name": "마유",
+    "localPath": "photos/upload-20260927-g_triples_mayu.jpeg",
+    "providedFile": "IMG_5559(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "4c0468b8beab6ba73468922e934b65d39a373b44d319d38a4dab331aa6452e71"
+  },
+  {
+    "id": "g_triples_xinyu",
+    "name": "신위",
+    "localPath": "photos/upload-20260927-g_triples_xinyu.jpeg",
+    "providedFile": "IMG_5560(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "d50a2928ea9acdad8ae5ad242c43a08c2c43303e7b9a4eb2b988a9f634724700"
+  },
+  {
+    "id": "g_triples_kotone",
+    "name": "코토네",
+    "localPath": "photos/upload-20260927-g_triples_kotone.jpeg",
+    "providedFile": "IMG_5561(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "d285c8390305b1b8247e83df6913d68ba75bc687b6af2ba6c4213fcab983fffe"
+  },
+  {
+    "id": "g_triples_sohyun",
+    "name": "박소현",
+    "localPath": "photos/upload-20260927-g_triples_sohyun.jpeg",
+    "providedFile": "IMG_5562(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "fc075e151de75bc5a111c27a8b93b58af2c8ce49fa655a6ec7fb431c00d1619f"
+  },
+  {
+    "id": "g_triples_nien",
+    "name": "니엔",
+    "localPath": "photos/upload-20260927-g_triples_nien.jpeg",
+    "providedFile": "IMG_5563.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "1178afbc357b998c85aade0a3782b6e296b441824e4e1b4d194bbf2f61e1a4f0"
+  },
+  {
+    "id": "g_triples_lynn",
+    "name": "린",
+    "localPath": "photos/upload-20260927-g_triples_lynn.jpeg",
+    "providedFile": "IMG_5565.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "880f5ca7c834b02be719b7bbba6fbecb23721b60b9be296d33e59fbc381110eb"
+  },
+  {
+    "id": "g_triples_joobin",
+    "name": "주빈",
+    "localPath": "photos/upload-20260927-g_triples_joobin.jpeg",
+    "providedFile": "IMG_5566.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "3c6e1f6f3b7a3579f698731237cbd311c50a8c90b601e908490b3ba058cc7c7f"
+  },
+  {
+    "id": "g_triples_dahyun",
+    "name": "다현",
+    "localPath": "photos/upload-20260927-g_triples_dahyun.jpeg",
+    "providedFile": "IMG_5567.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "4cff7a5f210ead7791c79de48d3fe6a313f219fa19e9262a4b2c8624485169fe"
+  },
+  {
+    "id": "g_triples_yeonji",
+    "name": "곽연지",
+    "localPath": "photos/upload-20260927-g_triples_yeonji.jpeg",
+    "providedFile": "IMG_5568.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "656bce6efa0b170920d9770acf2357fc225e216bd2c13eb3546177d05187fbbd"
+  },
+  {
+    "id": "g_triples_seoah",
+    "name": "서아",
+    "localPath": "photos/upload-20260927-g_triples_seoah.jpeg",
+    "providedFile": "IMG_5569.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "65a2d28358ad207c2f0a59d9ed18b73071d92878401fd5dea3ce131ac2cd8fac"
+  },
+  {
+    "id": "g_triples_hayeon",
+    "name": "정하연",
+    "localPath": "photos/upload-20260927-g_triples_hayeon.jpeg",
+    "providedFile": "IMG_5571.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "3b93640ff5d113d4ca945ad790ea51c1e200a65f9168e10380e316301eed3490"
+  },
+  {
+    "id": "g_triples_sullin",
+    "name": "설린",
+    "localPath": "photos/upload-20260927-g_triples_sullin.jpeg",
+    "providedFile": "IMG_5572.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "0b506ab91c93aa6216fd517a6bad3e07e38e0e45f56bedc8dd553f3e9305aedd"
+  },
+  {
+    "id": "g_triples_shion",
+    "name": "박시온",
+    "localPath": "photos/upload-20260927-g_triples_shion.jpeg",
+    "providedFile": "IMG_5573.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "54f3c34fcdb286b326d39327299c6bd3cfc036bad33882adef6f18db6a5198ef"
+  },
+  {
+    "id": "g_triples_chaewon",
+    "name": "채원",
+    "localPath": "photos/upload-20260927-g_triples_chaewon.jpeg",
+    "providedFile": "IMG_5574.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "1325ee23d352800c71afe5e7173900e5f586b66be866d4661255ae70f6df7ff4"
+  },
+  {
+    "id": "g_triples_jiyeon",
+    "name": "지연",
+    "localPath": "photos/upload-20260927-g_triples_jiyeon.jpeg",
+    "providedFile": "IMG_5575.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "d90382f4a6a0cc2d664ee62d69f5db59d248422cb8b9b05c6aa6a1b736b78bc3"
+  },
+  {
+    "id": "g_fromis9_jiwon",
+    "name": "지원",
+    "localPath": "photos/upload-20260927-g_fromis9_jiwon.jpeg",
+    "providedFile": "IMG_5577.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "1b5e7a99d9cd12719c3e8fa66a3382f85a5d35e439570dcdf604eb839cbabea9"
+  },
+  {
+    "id": "g_fromis9_hayoung",
+    "name": "하영",
+    "localPath": "photos/upload-20260927-g_fromis9_hayoung.jpeg",
+    "providedFile": "IMG_5578.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "b05af761dd17303493c579eacdc5702fad12c686050e00fede5cf022b0abc44d"
+  },
+  {
+    "id": "g_fromis9_chaeyoung",
+    "name": "채영",
+    "localPath": "photos/upload-20260927-g_fromis9_chaeyoung.jpeg",
+    "providedFile": "IMG_5579.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "4f4518aa93d12d1dbd5c4d47224debdcef49fc8ea1a5031927d8c984edbf87c9"
+  },
+  {
+    "id": "g_fromis9_jiheon",
+    "name": "지헌",
+    "localPath": "photos/upload-20260927-g_fromis9_jiheon.jpeg",
+    "providedFile": "IMG_5580.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "ad421b5dbd2d1950484ceb5c8a19acbee2fa636cd7f075cebc181ccc00e50c18"
+  },
+  {
+    "id": "g_itzy_yeji",
+    "name": "예지",
+    "localPath": "photos/upload-20260927-g_itzy_yeji.jpeg",
+    "providedFile": "IMG_5581.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "2bb9c67487fb31bb2e1f85e9ab8d3542a02eafdc1db15d1d9c63056d8c1b7817"
+  },
+  {
+    "id": "g_itzy_ryujin",
+    "name": "류진",
+    "localPath": "photos/upload-20260927-g_itzy_ryujin.jpeg",
+    "providedFile": "IMG_5582.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "dd97d5de365cff4642c38fc59ed86c44edb71198e00d14c802bac7871a14d6b3"
+  },
+  {
+    "id": "g_itzy_lia",
+    "name": "리아",
+    "localPath": "photos/upload-20260927-g_itzy_lia.jpeg",
+    "providedFile": "IMG_5584.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "3481dff1ba5dc4f74f677d22ffaa64e58f8df0a5d0328347dadfbe8b54c3ef9c"
+  },
+  {
+    "id": "g_itzy_chaeryeong",
+    "name": "채령",
+    "localPath": "photos/upload-20260927-g_itzy_chaeryeong.jpeg",
+    "providedFile": "IMG_5585.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "59b291940ae5cf4ed80ef7120933e181d66903bdbae6793c9b9c75329ada8023"
+  },
+  {
+    "id": "g_kiiikiii_sui",
+    "name": "수이",
+    "localPath": "photos/upload-20260927-g_kiiikiii_sui.jpeg",
+    "providedFile": "IMG_5586(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "657360889a83f0fc2c07bed72470cb72754c056c6377243f1e6434a01c86e354"
+  },
+  {
+    "id": "g_itzy_yuna",
+    "name": "유나",
+    "localPath": "photos/upload-20260927-g_itzy_yuna.jpeg",
+    "providedFile": "IMG_5587.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "1747d8d65b593f79fd5f325d329e91d29c7831f80d34c451afa5cde39905557f"
+  },
+  {
+    "id": "g_kiiikiii_kya",
+    "name": "키야",
+    "localPath": "photos/upload-20260927-g_kiiikiii_kya.jpeg",
+    "providedFile": "IMG_5588.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "b3057a36d13778ad09744667d18e541e83060bf82dc343d6603aebbe4e0eafbd"
+  },
+  {
+    "id": "g_kiiikiii_jiyu",
+    "name": "지유",
+    "localPath": "photos/upload-20260927-g_kiiikiii_jiyu.jpeg",
+    "providedFile": "IMG_5589.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "d5bdef04ce5af6fe010409fd69925604e875067a3435599890352fa0ef2fc2d1"
+  },
+  {
+    "id": "g_kiiikiii_haum",
+    "name": "하음",
+    "localPath": "photos/upload-20260927-g_kiiikiii_haum.jpeg",
+    "providedFile": "IMG_5590.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "bcc20a7e53355a63da39ecb3dc05cab953d9a68c9a52c4a1a1e1fd895bc5f32b"
+  },
+  {
+    "id": "g_kiiikiii_leesol",
+    "name": "이솔",
+    "localPath": "photos/upload-20260927-g_kiiikiii_leesol.jpeg",
+    "providedFile": "IMG_5591.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "437bac0f74477f172dc68c206fe04d5873529db8096e505b0b4c46c7e3153ef2"
+  },
+  {
+    "id": "g_izone_minju",
+    "name": "민주",
+    "localPath": "photos/upload-20260927-g_izone_minju.jpeg",
+    "providedFile": "IMG_5592.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "d360fc7f6db1042b53aab6657f6a9adf8bdbe7e8850b4fe828fe26dfa6d7f339"
+  },
+  {
+    "id": "g_izone_hitomi",
+    "name": "히토미",
+    "localPath": "photos/upload-20260927-g_izone_hitomi.jpeg",
+    "providedFile": "IMG_5593.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "5ef453a4692e3c675ac2edad0a6cfbe66dba42de2e2a13503b5f055c5aa2a849"
+  },
+  {
+    "id": "g_hpeprincess_niko",
+    "name": "니코",
+    "english": "Niko",
+    "group": "H//PE Princess",
+    "sourceUrl": "https://kprofiles.com/h-pe-princess-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2025/12/niko.jpg",
+    "matchMethod": "Exact adjacent Stage Name in individual profile section",
+    "sha256": "fd12e42eafa987a88cd2744a7bf413767362cf30ee1ed0a2fe02c4084f670977"
+  },
+  {
+    "id": "g_fiftyfifty_keena",
+    "name": "키나",
+    "localPath": "photos/upload-20260927-g_fiftyfifty_keena.jpeg",
+    "providedFile": "IMG_5595.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "0a44261ecafd22f8c46f4001f2b9a5adfaa3dc5bd2e28859f0515ecffb01d695"
+  },
+  {
+    "id": "g_fiftyfifty_chanellemoon",
+    "name": "문샤넬",
+    "localPath": "photos/upload-20260927-g_fiftyfifty_chanellemoon.jpeg",
+    "providedFile": "IMG_5596.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "13fa076e5cd9dccd5e2dcd17fa44543000ca80caa18bccbc1f97e3fdcfd1bae7"
+  },
+  {
+    "id": "g_fiftyfifty_yewon",
+    "name": "예원",
+    "localPath": "photos/upload-20260927-g_fiftyfifty_yewon.jpeg",
+    "providedFile": "IMG_5597.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "be962f3f19dd7c65a31e72fda7d4b913c6d8f2c58d36fdeb0e793940053185e9"
+  },
+  {
+    "id": "g_katseye_sophia",
+    "name": "소피아",
+    "localPath": "photos/upload-20260927-g_katseye_sophia.jpeg",
+    "providedFile": "IMG_5598.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "43aaea8e39dcb5e56a142ec9c7d590844a053e2e4498d94b8bcd325437f8f60a"
+  },
+  {
+    "id": "g_katseye_manon",
+    "name": "마농",
+    "localPath": "photos/upload-20260927-g_katseye_manon.jpeg",
+    "providedFile": "IMG_5599.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "5f75dc6e686ff11cb06b41871b13f8d4c4124aaf9bea1d2d83b599b1a4219b77"
+  },
+  {
+    "id": "g_katseye_yoonchae",
+    "name": "윤채",
+    "localPath": "photos/upload-20260927-g_katseye_yoonchae.jpeg",
+    "providedFile": "IMG_5600.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "1c46aeef75abeba5e5c745070d565b70b8a989fb7fe9092ba1008cd9aa811de1"
+  },
+  {
+    "id": "g_katseye_megan",
+    "name": "메간",
+    "localPath": "photos/upload-20260927-g_katseye_megan.jpeg",
+    "providedFile": "IMG_5601.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "1a95f64c2577a7e026b6720657c20daaf4cdb66827c340dd1dc2fb612027eb90"
+  },
+  {
+    "id": "g_fiftyfifty_athena",
+    "name": "아테나",
+    "localPath": "photos/upload-20260927-g_fiftyfifty_athena.jpeg",
+    "providedFile": "IMG_5602.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "cb51758750a6ddd70f26b1a5aa91d5cabc7e107282a24d5025b1c9cc85fcbdd7"
+  },
+  {
+    "id": "g_qwer_chodan",
+    "name": "쵸단",
+    "english": "Chodan",
+    "group": "QWER",
+    "sourceUrl": "https://weverse.io/qwer/highlight",
+    "imageUrl": "https://phinf.wevpstatic.net/MjAyNDEyMjdfNDAg/MDAxNzM1MjgwODQ2MzI2.jtyAWNdWlyoROpVC6tnpWP3rp6ypaBgPLSZsBgDVTXIg.1afDmvz5GbwRtSJJwO3wDKsA6yYsheH_pcR9b43CUe0g.JPEG/4257d061-0bca-4d06-93b7-59d1a7e5483e.jpeg?type=w670",
+    "sourceType": "official-web-link",
+    "matchMethod": "Weverse QWER 공식 멤버 프로필 이미지"
+  },
+  {
+    "id": "g_qwer_magenta",
+    "name": "마젠타",
+    "english": "Magenta",
+    "group": "QWER",
+    "sourceUrl": "https://weverse.io/qwer/highlight",
+    "imageUrl": "https://phinf.wevpstatic.net/MjAyNDEyMjdfMjUz/MDAxNzM1MjgwOTgzMDUz.mMsbEneSPchLTQoz7DVvx8qSo0Ost3i5Rj_iTHDjfAog.xG_oM3QJqZ6Ik9z9ZQLaI0d3IIHIwhOqtzrRhRyaqiUg.JPEG/01461d76-19ca-40ae-a314-2d15790c6274.jpeg?type=w670",
+    "sourceType": "official-web-link",
+    "matchMethod": "Weverse QWER 공식 멤버 프로필 이미지"
+  },
+  {
+    "id": "g_qwer_siyeon",
+    "name": "시연",
+    "english": "Siyeon",
+    "group": "QWER",
+    "sourceUrl": "https://weverse.io/qwer/highlight",
+    "imageUrl": "https://phinf.wevpstatic.net/MjAyNDEyMjdfMjU2/MDAxNzM1MjgxMDE2NDcx._tQEplf70jS8mgs4GPIld6L02m8bwXH1P4oTWOHNElcg.UQbArGgBadDQLRgrqcEOzgXIDgCKVFntjJMpyxi1sDUg.JPEG/d8e40c10-3cec-4821-b0ef-c88d1c2f5907.jpeg?type=w670",
+    "sourceType": "official-web-link",
+    "matchMethod": "Weverse QWER 공식 멤버 프로필 이미지"
+  },
+  {
+    "id": "g_fiftyfifty_hana",
+    "name": "하나",
+    "localPath": "photos/upload-20260927-g_fiftyfifty_hana.jpeg",
+    "providedFile": "IMG_5603.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "e548e77bdb4740591ccac2b5b13849d36e3342b7db87c99f4aaaeb86daa6691b"
+  },
+  {
+    "id": "g_qwer_hina",
+    "name": "히나",
+    "english": "Hina",
+    "group": "QWER",
+    "sourceUrl": "https://weverse.io/qwer/highlight",
+    "imageUrl": "https://phinf.wevpstatic.net/MjAyNDEyMjdfMjk1/MDAxNzM1MjgwOTk5NDcx.OuWYyEFLalTjq-4_gDWZsTKMkkdklzTRgZOjOGPAexcg.As-H4UAClLskutx3v9V21U71cxG6pdRKrPTza49sMI4g.JPEG/154582c3-5220-4430-99f3-e0fde74e89eb.jpeg?type=w670",
+    "sourceType": "official-web-link",
+    "matchMethod": "Weverse QWER 공식 멤버 프로필 이미지"
+  },
+  {
+    "id": "g_gidle_miyeon",
+    "name": "미연",
+    "localPath": "photos/upload-20260927-g_gidle_miyeon.jpeg",
+    "providedFile": "IMG_5516(3).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "57b583f2892facd2b807a20267741fb67671696f12f67a38b70b1b219ed143e8"
+  },
+  {
+    "id": "g_gidle_yuqi",
+    "name": "우기",
+    "localPath": "photos/upload-20260927-g_gidle_yuqi.jpeg",
+    "providedFile": "IMG_5518(3).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "df8965f66fe6180a1bd2ea4c5cb68f6a285eb00603ee30b15ff66ab9c8267caf"
+  },
+  {
+    "id": "g_gidle_shuhua",
+    "name": "슈화",
+    "localPath": "photos/upload-20260927-g_gidle_shuhua.jpeg",
+    "providedFile": "IMG_5519(3).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "a9411578440527ce1267cd877e22c4e7f0acff4a37d09c7c16cb202483d8753d"
+  },
+  {
+    "id": "g_gidle_soyeon",
+    "name": "소연",
+    "localPath": "photos/upload-20260927-g_gidle_soyeon.jpeg",
+    "providedFile": "IMG_5520(2).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "d4e3e2260e508ebc5844c4a5d38969ab5c65890f83133b998e84da1ec92c421a"
+  },
+  {
+    "id": "g_gidle_minnie",
+    "name": "민니",
+    "localPath": "photos/upload-20260927-g_gidle_minnie.jpeg",
+    "providedFile": "IMG_5525(1).jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "506c3dc2f4c0f956f851e3d8377524b864967aff9a7d605b85a75fa90409c4b2"
+  },
+  {
+    "id": "g_nmixx_lily",
+    "name": "릴리",
+    "localPath": "photos/upload-20260927-g_nmixx_lily.jpeg",
+    "providedFile": "IMG_5535.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서와 후속 정정",
+    "sha256": "0c20a4660791bd219495a1d442dbb4a4e198f4b107b73ed45c2e72d5f25f09a1"
+  },
+  {
+    "id": "g_nmixx_bae",
+    "name": "배이",
+    "localPath": "photos/upload-20260927-g_nmixx_bae.jpeg",
+    "providedFile": "IMG_5541.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서와 후속 정정",
+    "sha256": "97383ec2f8bd8260281d3c4d21593f5600cdb6a8839e100bcaee16f03f12cb1f"
+  },
+  {
+    "id": "g_stayc_sieun",
+    "name": "시은",
+    "localPath": "photos/upload-20260927-g_stayc_sieun.jpeg",
+    "providedFile": "IMG_5476.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자의 시은·세은 교체 정정",
+    "sha256": "8693d8bc835058d0bc24d2e9a0f650d495048e067ec8de9cdbeff4d76533882a"
+  },
+  {
+    "id": "g_stayc_seeun",
+    "name": "세은",
+    "localPath": "photos/upload-20260927-g_stayc_seeun.jpeg",
+    "providedFile": "IMG_5473.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자의 시은·세은 교체 정정",
+    "sha256": "3101224f2b15ca66d7c7ee98b2e3d38214e5030b04c3c2bb7d54d2804c19b6f5"
+  },
+  {
+    "id": "g_classy_jimin",
+    "name": "지민",
+    "localPath": "photos/upload-20260927-g_classy_jimin.png",
+    "sourceUrl": "https://kr.pinterest.com/pin/642818546859198768/sent/?invite_code=90bb8d7ca28e47e8ad1234fa55e23a9b&sender=855261922893954050&sfo=1",
+    "imageUrl": "https://i.pinimg.com/736x/85/0d/13/850d13b702ad588edf80394897be24d7.jpg",
+    "sourceType": "web-download-edited",
+    "matchMethod": "사용자가 지정한 Pinterest 사진을 얼굴 중심 상단 정사각형으로 크롭",
+    "sha256": "c6c1a7447d77f13b979bb07c59ea3b0b21eba27550f7ce550af0a76607f2a66d"
+  },
+  {
+    "id": "g_fromis9_nakyung",
+    "name": "이나경",
+    "localPath": "photos/upload-20260927-g_fromis9_nakyung.jpeg",
+    "providedFile": "IMG_5619.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "da24ac6d5b6fac308a3a344bae9c1ec1789b3b0d7383a4692b9efea1b5a91bf9"
+  },
+  {
+    "id": "g_fromis9_saerom",
+    "name": "이새롬",
+    "localPath": "photos/upload-20260927-g_fromis9_saerom.jpeg",
+    "providedFile": "IMG_5620.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "64bd42dde5231060bcd79f1a9ad431c2eba546fc79e8de487a08dda5b3691117"
+  },
+  {
+    "id": "g_fromis9_jisun",
+    "name": "노지선",
+    "localPath": "photos/upload-20260927-g_fromis9_jisun.jpeg",
+    "providedFile": "IMG_5621.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "4f3e932bd6ef917e5e2ad5737701693eb655d23d60503d23cd2fcaf2961fd85a"
+  },
+  {
+    "id": "g_fromis9_seoyeon",
+    "name": "이서연",
+    "localPath": "photos/upload-20260927-g_fromis9_seoyeon.jpeg",
+    "providedFile": "IMG_5622.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "ab9860640ec926e9e286d06801a56d5bb49c57b1ef341ae33bc0a65e0d6f3292"
+  },
+  {
+    "id": "g_fromis9_gyuri",
+    "name": "장규리",
+    "localPath": "photos/upload-20260927-g_fromis9_gyuri.jpeg",
+    "providedFile": "IMG_5623.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서",
+    "sha256": "110d968bf482600f0600e129f3f269dc0ba4ceaad46ffdc128af767c9b109757"
+  },
+  {
+    "id": "g_billlie_suhyeon",
+    "name": "수현",
+    "localPath": "photos/upload-20260927-g_billlie_suhyeon.jpeg",
+    "providedFile": "IMG_5625.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서와 활동명 정정",
+    "sha256": "86f1ecf36d7a80f6afac9aa5a4e2a380a636e64e03c5efd6ff3e8a210f87b5b1"
+  },
+  {
+    "id": "g_billlie_sheon",
+    "name": "션",
+    "localPath": "photos/upload-20260927-g_billlie_sheon.jpeg",
+    "providedFile": "IMG_5626.jpeg",
+    "sourceType": "user-upload",
+    "matchMethod": "사용자가 지정한 첨부 순서와 활동명 정정",
+    "sha256": "1b32a7d4d502791a677d58b61be4efce79b63117bb957dda8e0b5bef4a3c571d"
+  },
+  {
+    "id": "g_fx_victoria",
+    "name": "빅토리아",
+    "english": "Victoria",
+    "group": "f(x)",
+    "sourceUrl": "https://kprofiles.com/victoria-song-profile-facts/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2018/07/Eta6LMIXAAE6v0b-571x800.jpg",
+    "matchMethod": "Member-specific profile or adjacent labeled image; saved locally",
+    "sha256": "e0350710da9ad1e8f0b8cfa3046af0e566488c9fb1afeaeb6c54efc7d0c6ae8a"
+  },
+  {
+    "id": "g_fx_amber",
+    "name": "엠버",
+    "english": "Amber",
+    "group": "f(x)",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "matchMethod": "User-provided IMG_5653.jpeg; member label supplied in upload order",
+    "sha256": "ab5369ea8cbe40fde773f94d1088ab519d7284334afc08964efe92e494335896"
+  },
+  {
+    "id": "g_fx_luna",
+    "name": "루나",
+    "english": "Luna",
+    "group": "f(x)",
+    "sourceUrl": "https://kprofiles.com/fx-members-profile-updated/",
+    "imageUrl": "https://1.soompi.io/wp-content/uploads/2015/10/luna3-800x558.jpg",
+    "matchMethod": "Member-specific profile or adjacent labeled image; saved locally",
+    "sha256": "228996e8efc8dac5a2b50dc22867d4139c20cd8f614ccf92f01571900983a422"
+  },
+  {
+    "id": "g_fx_krystal",
+    "name": "크리스탈",
+    "english": "Krystal",
+    "group": "f(x)",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "matchMethod": "User-provided IMG_5645(1).jpeg; member label supplied in upload order",
+    "sha256": "6bb22a6dde260fd1fd6239f690235b609201a3d8a2749bc44928326735129307"
+  },
+  {
+    "id": "g_fx_sulli",
+    "name": "설리♡",
+    "english": "Sulli",
+    "group": "f(x)",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "matchMethod": "User-provided IMG_5640.jpeg; member label supplied in upload order",
+    "sha256": "d2766147bbe4f73ff9426ac3be7264fc64c47f244c97209d5eda431fac58ca04"
+  },
+  {
+    "id": "g_sistar_hyolyn",
+    "name": "효린",
+    "english": "Hyolyn",
+    "group": "씨스타",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "matchMethod": "User-provided IMG_5652.jpeg; member label supplied in upload order",
+    "sha256": "a2d24bef24eff5a29a78cd8594818fd8f5b7328db92e7e2e1ca828beb92e2ba8"
+  },
+  {
+    "id": "g_sistar_bora",
+    "name": "보라",
+    "english": "Bora",
+    "group": "씨스타",
+    "sourceUrl": "https://kprofiles.com/sistar-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/05/Bora.png",
+    "matchMethod": "Member-specific profile or adjacent labeled image; saved locally",
+    "sha256": "574be75a057bd435276126fdd1586b3e776c73e867f5eca83c7df1b1948722f9"
+  },
+  {
+    "id": "g_sistar_soyou",
+    "name": "소유",
+    "english": "Soyou",
+    "group": "씨스타",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "matchMethod": "User-provided IMG_5646.jpeg; member label supplied in upload order",
+    "sha256": "8da76c503e97548abea8dca6a29a7ec8e34eae43baa616732ef7d4a1c3aeb758"
+  },
+  {
+    "id": "g_sistar_dasom",
+    "name": "다솜",
+    "english": "Dasom",
+    "group": "씨스타",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "matchMethod": "User-provided IMG_5647.jpeg; member label supplied in upload order",
+    "sha256": "4d945fee21f4997226fb5f82daab52f9491b462459787c4dbbf06ccaa3747f17"
+  },
+  {
+    "id": "g_girlsday_sojin",
+    "name": "소진",
+    "english": "Sojin",
+    "group": "걸스데이",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "matchMethod": "User-provided IMG_5651.jpeg; member label supplied in upload order",
+    "sha256": "418c5dedecfee866903aa8c1b6fd6f98a722679a8a108f0d195bbeb607ffc4c1"
+  },
+  {
+    "id": "g_girlsday_yura",
+    "name": "유라",
+    "english": "Yura",
+    "group": "걸스데이",
+    "sourceUrl": "https://kprofiles.com/yura-profile-facts/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2020/10/yura_936_83113215_871411026612486_822040597170648664_n-640x800.jpg",
+    "matchMethod": "Member-specific profile or adjacent labeled image; saved locally",
+    "sha256": "b33a9820acec125c92ca1c6c4ebd9dc8bb82bf781b11aea10e4385ab7dba2aae"
+  },
+  {
+    "id": "g_girlsday_minah",
+    "name": "민아",
+    "english": "Minah",
+    "group": "걸스데이",
+    "sourceUrl": "https://kprofiles.com/bang-min-ah-profile-facts/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2019/11/D6aGkQlUcAAgf_n-533x800.jpg",
+    "matchMethod": "Member-specific profile or adjacent labeled image; saved locally",
+    "sha256": "7177cc54d6cd5114048110083f0acd0579e7f673ec86f7f4dc9d350f5328059c"
+  },
+  {
+    "id": "g_girlsday_hyeri",
+    "name": "혜리",
+    "english": "Hyeri",
+    "group": "걸스데이",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "matchMethod": "User-provided IMG_5641.jpeg; member label supplied in upload order",
+    "sha256": "5c4e06faf2b4af7b79ef96ef536842bd6c3e557a751a23df4b099fdfdc371f83"
+  },
+  {
+    "id": "g_apink_chorong",
+    "name": "초롱",
+    "english": "Chorong",
+    "group": "에이핑크",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "matchMethod": "User-provided IMG_5650.jpeg; member label supplied in upload order",
+    "sha256": "0a64f5ab5463e4f6c603412977ee421f90b0420f6950ea3b8694835b3444bf7b"
+  },
+  {
+    "id": "g_apink_bomi",
+    "name": "보미",
+    "english": "Bomi",
+    "group": "에이핑크",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "matchMethod": "User-provided IMG_5654.jpeg; member label supplied in upload order",
+    "sha256": "cfa419ce5cfc45dac9ddb0a20d45e6aafd5833ba29fd2236d92a15478b27fefe"
+  },
+  {
+    "id": "g_apink_eunji",
+    "name": "은지",
+    "english": "Eunji",
+    "group": "에이핑크",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "matchMethod": "User-provided IMG_5643.jpeg; member label supplied in upload order",
+    "sha256": "30acde74fd113683f67f168c34a9fd0ff1d903db325dcc1fb1951d5a9def3396"
+  },
+  {
+    "id": "g_apink_namjoo",
+    "name": "남주",
+    "english": "Namjoo",
+    "group": "에이핑크",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "matchMethod": "User-provided IMG_5648.jpeg; member label supplied in upload order",
+    "sha256": "027fc91fa81192e6ae58593668d1cc176c960b14284a450a4cb5be162a6c7264"
+  },
+  {
+    "id": "g_apink_hayoung",
+    "name": "하영",
+    "english": "Hayoung",
+    "group": "에이핑크",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "matchMethod": "User-provided IMG_5642.jpeg; member label supplied in upload order",
+    "sha256": "4e8d33db648c96dd7c72972bd7c33cb7918af263e600e58c232e9ed8f6315782"
+  },
+  {
+    "id": "g_apink_naeun",
+    "name": "손나은",
+    "english": "Naeun",
+    "group": "에이핑크",
+    "sourceUrl": null,
+    "imageUrl": null,
+    "matchMethod": "User-provided IMG_5649.jpeg; member label supplied in upload order",
+    "sha256": "f92bea909147fa210b4acc8bdac3731c1a59ef33a76a3df59813a706bb206ee6"
+  },
+  {
+    "id": "g_odd_youth_maika",
+    "name": "마이카",
+    "english": "Maika",
+    "group": "ODD YOUTH",
+    "sourceUrl": "https://kprofiles.com/odd-youth-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/11/MAIKA.webp",
+    "matchMethod": "Exact stage name in individual member profile section",
+    "sha256": "bbb362e6fd48ddcf0a88afcc0579f195fa44791d88b8c89b753e71a15f2dc7f9"
+  },
+  {
+    "id": "g_odd_youth_myah",
+    "name": "마야",
+    "english": "Myah",
+    "group": "ODD YOUTH",
+    "sourceUrl": "https://kprofiles.com/odd-youth-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/11/ODD_YOUTH_Myah_Babyface.webp",
+    "matchMethod": "Exact stage name in individual member profile section",
+    "sha256": "b1390dceee805d32de47b263276853755f772f38929665db3060ac20fab997c0"
+  },
+  {
+    "id": "g_odd_youth_kanie",
+    "name": "카니",
+    "english": "Kanie",
+    "group": "ODD YOUTH",
+    "sourceUrl": "https://kprofiles.com/odd-youth-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/11/KANIE.webp",
+    "matchMethod": "Exact stage name in individual member profile section",
+    "sha256": "1136a3ca9bf7d9abdcd31dc12486c24d0fe8ddff7f1bf223996580ed2c286230"
+  },
+  {
+    "id": "g_odd_youth_summer",
+    "name": "써머",
+    "english": "Summer",
+    "group": "ODD YOUTH",
+    "sourceUrl": "https://kprofiles.com/odd-youth-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/11/SUMMER.webp",
+    "matchMethod": "Exact stage name in individual member profile section",
+    "sha256": "4e5a9561337c1e6b016367a0d4384e594e733d0b87b8cba009c8a2760fd26ccd"
+  },
+  {
+    "id": "g_odd_youth_yeeum",
+    "name": "예음",
+    "english": "Yeeum",
+    "group": "ODD YOUTH",
+    "sourceUrl": "https://kprofiles.com/odd-youth-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/11/YEEUM.webp",
+    "matchMethod": "Exact stage name in individual member profile section",
+    "sha256": "defed7d9018af1d0cd2c1ae0c6ea02e5da6ffdf789256867be46ca12fed03be4"
+  },
+  {
+    "id": "g_uspeer_sian",
+    "name": "시안",
+    "english": "Sian",
+    "group": "USPEER",
+    "sourceUrl": "https://kprofiles.com/uspeer-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/07/image_2026-06-08_112024253-533x800.png",
+    "matchMethod": "Exact stage name in individual member profile section",
+    "sha256": "886d8c26dccd2ed09f179735584dbd83f67a14bf1d130d952347cb2121255b71"
+  },
+  {
+    "id": "g_uspeer_soee",
+    "name": "소이",
+    "english": "Soee",
+    "group": "USPEER",
+    "sourceUrl": "https://kprofiles.com/uspeer-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/07/image_2026-06-08_112016212-533x800.png",
+    "matchMethod": "Exact stage name in individual member profile section",
+    "sha256": "9cec1669341490bde5ea7035343e83c0e65546ba307bb42dc2a24ff6e1b0ce48"
+  },
+  {
+    "id": "g_uspeer_seoyu",
+    "name": "서유",
+    "english": "Seoyu",
+    "group": "USPEER",
+    "sourceUrl": "https://kprofiles.com/uspeer-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/07/image_2026-06-08_112038266-533x800.png",
+    "matchMethod": "Exact stage name in individual member profile section",
+    "sha256": "eb6e1b756f3684b18c03244bb40a246877e329a8a5d6f6ca74b921d37d21c1dd"
+  },
+  {
+    "id": "g_uspeer_daon",
+    "name": "다온",
+    "english": "Daon",
+    "group": "USPEER",
+    "sourceUrl": "https://kprofiles.com/uspeer-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/07/image_2026-06-08_112052802-533x800.png",
+    "matchMethod": "Exact stage name in individual member profile section",
+    "sha256": "09e3cc94ab0512a72e7781c7f759790254f73f527968c1aaefb941dbef519a59"
+  },
+  {
+    "id": "g_uspeer_chaena",
+    "name": "채나",
+    "english": "Chaena",
+    "group": "USPEER",
+    "sourceUrl": "https://kprofiles.com/uspeer-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/07/image_2026-06-08_112110602-900x600.png",
+    "matchMethod": "Exact stage name in individual member profile section",
+    "sha256": "058244931ec1625a6d3b310bfa5168bc298bf36f8d8b0b86a24ee1c437384a33"
+  },
+  {
+    "id": "g_uspeer_roa",
+    "name": "로아",
+    "english": "Roa",
+    "group": "USPEER",
+    "sourceUrl": "https://kprofiles.com/uspeer-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/07/image_2026-06-08_112125791-900x600.png",
+    "matchMethod": "Exact stage name in individual member profile section",
+    "sha256": "2cddd45f7b81bcc2d8ec3fb2a4d28723e3d31cd28a8f4d11d6c38bf23fe03f3a"
+  },
+  {
+    "id": "g_madein_serina",
+    "name": "세리나",
+    "english": "Serina",
+    "group": "MADEIN",
+    "sourceUrl": "https://kprofiles.com/madein-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/07/SERINA-1-533x800.jpeg",
+    "matchMethod": "Exact stage name in individual member profile section",
+    "sha256": "78f7fb357c70631db18b06bd718a8ba163642bbd02d059e0a51c57eea69d5598"
+  },
+  {
+    "id": "g_madein_nagomi",
+    "name": "나고미",
+    "english": "Nagomi",
+    "group": "MADEIN",
+    "sourceUrl": "https://kprofiles.com/madein-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2024/07/NAGOMI-1-533x800.jpeg",
+    "matchMethod": "Exact stage name in individual member profile section",
+    "sha256": "644d677116136d26d19c7a103cefce4d60f5c64136487e706cf52fbe4401373a"
+  },
+  {
+    "id": "g_kara_gyuri",
+    "name": "규리",
+    "english": "Gyuri",
+    "group": "카라",
+    "sourceUrl": "https://kprofiles.com/kara-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/06/GYURI-587x800.jpg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "498bdaec14f46b41e26c1e75c738c5de661ef4303aa532e77c5bb65672bcf268"
+  },
+  {
+    "id": "g_kara_seungyeon",
+    "name": "승연",
+    "english": "Seungyeon",
+    "group": "카라",
+    "sourceUrl": "https://karaofficial.kr/contents/637b927c988600288c747533",
+    "imageUrl": "https://image.static.bstage.in/cdn-cgi/image/metadata=none,dpr=1,width=640,format=auto/kara/a0c6d549-3623-4ab7-877c-dafc9dc3abac/3c781165-422b-4a9b-9fbc-b7d879041274/ori.jpg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "4aa5fc9fcd118c6cb989abff47dd778d33a0405246dfadb189fffd436b26e136"
+  },
+  {
+    "id": "g_kara_nicole",
+    "name": "니콜",
+    "english": "Nicole",
+    "group": "카라",
+    "sourceUrl": "https://kprofiles.com/kara-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/06/NICOLE-1-587x800.jpg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "655ce2f50b88d4c30c68d50b7a05a4aea63c85982dc094e4bf9ffb8175f1b601"
+  },
+  {
+    "id": "g_kara_jiyoung",
+    "name": "지영",
+    "english": "Jiyoung",
+    "group": "카라",
+    "sourceUrl": "https://karaofficial.kr/contents/637a40f1372117547c633b9a",
+    "imageUrl": "https://image.static.bstage.in/cdn-cgi/image/metadata=none,dpr=1,width=640,format=auto/kara/5184d2dd-9e11-4429-b7d2-a8746ef8ed71/1a609a3b-cd3b-4f46-a3fb-37f4de34d40c/ori.jpg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "065c53ff378f82caf3d6ac6c3af7698168e39bed984f17c28ea0f47f401d2615"
+  },
+  {
+    "id": "g_kara_youngji",
+    "name": "영지",
+    "english": "Youngji",
+    "group": "카라",
+    "sourceUrl": "https://karaofficial.kr/contents/637ce3f4988600288c747633",
+    "imageUrl": "https://image.static.bstage.in/cdn-cgi/image/metadata=none,dpr=1,width=640,format=auto/kara/af0ab253-bffa-4ead-b572-5d92ac98420f/aa86c716-9c7c-4494-a52e-5283c6c031d4/ori.jpg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "f6a1db6f7c3996936b610b0e3481002db336a6c6f329ade9a0aee9196bd54e71"
+  },
+  {
+    "id": "g_kara_hara",
+    "name": "구하라♡",
+    "english": "Hara",
+    "group": "카라",
+    "sourceUrl": null,
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/06/HARA.jpg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "385564c10bc0554b090f82e84dce2b35760d02fc3a94fd5250abb1e7b857bfa0",
+    "localPath": "photos/user-final-g_kara_hara.jpg"
+  },
+  {
+    "id": "g_snsd_taeyeon",
+    "name": "태연",
+    "english": "Taeyeon",
+    "group": "소녀시대",
+    "sourceUrl": null,
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/04/F1B27CF7-08A1-4474-B081-FA4C77B99ACA-571x800.jpeg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "246ccb0edfde7a5027a07cbb8983abed12d79a4c6000c7ae4b4e408dfd0d40ec",
+    "localPath": "photos/user-final-g_snsd_taeyeon.jpg"
+  },
+  {
+    "id": "g_snsd_sunny",
+    "name": "써니",
+    "english": "Sunny",
+    "group": "소녀시대",
+    "sourceUrl": null,
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/04/56FAD63E-15C6-47C6-8F18-7324CB04BEE6-571x800.jpeg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "aa6d9d14e3783bbe766f3a9083e78a94be116699110b3dde4de18db19bd13bd3",
+    "localPath": "photos/user-final-g_snsd_sunny.jpg"
+  },
+  {
+    "id": "g_snsd_tiffany",
+    "name": "티파니",
+    "english": "Tiffany",
+    "group": "소녀시대",
+    "sourceUrl": null,
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/04/6539F98B-32AE-4914-9CAC-2861C3EFDE83-571x800.jpeg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "96482163596db62f4685cd80e56f65803374c7530c267743d82282e846d3f3b4",
+    "localPath": "photos/user-final-g_snsd_tiffany.jpg"
+  },
+  {
+    "id": "g_snsd_hyoyeon",
+    "name": "효연",
+    "english": "Hyoyeon",
+    "group": "소녀시대",
+    "sourceUrl": "https://kprofiles.com/girls-generation-snsd-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/04/EEF0B027-EDDD-49A8-827D-50A670A45D80-571x800.jpeg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "67262e372e99ff2e9a1a624281136aa3ea16d27d3779535fa2077c91d24e144e"
+  },
+  {
+    "id": "g_snsd_yuri",
+    "name": "유리",
+    "english": "Yuri",
+    "group": "소녀시대",
+    "sourceUrl": null,
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/04/207EE06B-038F-4697-91D0-6F67AEFDF588-571x800.jpeg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "eaef624426bf9a9852ed088c95cf353a67e882ed676a0edcd576be27cbd65e58",
+    "localPath": "photos/user-final-g_snsd_yuri.jpg"
+  },
+  {
+    "id": "g_snsd_sooyoung",
+    "name": "수영",
+    "english": "Sooyoung",
+    "group": "소녀시대",
+    "sourceUrl": null,
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/04/578C37B1-92FF-4C38-91D7-4D3EDA7615B3-571x800.jpeg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "de0b8b319fb37ca8654ece8b440ed068befc4ddcc1ea11afddb5cc7c9e672fe6",
+    "localPath": "photos/user-final-g_snsd_sooyoung.jpg"
+  },
+  {
+    "id": "g_snsd_yoona",
+    "name": "윤아",
+    "english": "Yoona",
+    "group": "소녀시대",
+    "sourceUrl": null,
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/04/D16457B1-8C0C-48A0-BD6E-4675749FEC91-571x800.jpeg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "5367a8a427b5c9dcd3f1f86cf36527edf825b5a2528abd096bc0dd6f1b8a321c",
+    "localPath": "photos/user-final-g_snsd_yoona.jpg"
+  },
+  {
+    "id": "g_snsd_seohyun",
+    "name": "서현",
+    "english": "Seohyun",
+    "group": "소녀시대",
+    "sourceUrl": "https://kprofiles.com/seohyun-profile-facts/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2020/11/seoseohyun.jpg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "1d9dd3b9bcd540d4f9a5e11ce33532bc164a5730d4b232f068aa87bf08c37224"
+  },
+  {
+    "id": "g_2ne1_cl",
+    "name": "씨엘",
+    "english": "CL",
+    "group": "투애니원",
+    "sourceUrl": null,
+    "imageUrl": "https://pbs.twimg.com/media/E8mQ2DRVcAIA1EV?format=jpg&name=4096x4096",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "218dcbe5d75a769d4cf05ed5b47491bec889101beefbd1c702a910f822462502",
+    "localPath": "photos/user-final-g_2ne1_cl.jpg"
+  },
+  {
+    "id": "g_2ne1_bom",
+    "name": "박봄",
+    "english": "Bom",
+    "group": "투애니원",
+    "sourceUrl": "https://kstationtv.com/2024/12/04/park-bom-the-singers-new-visual/?lang=en",
+    "imageUrl": "https://i0.wp.com/kstationtv.com/wp-content/uploads/2024/12/PARK-BOM-1.jpg?w=649&ssl=1",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "0a1ef2b053c4a9121ce05613ce191b065d6454e70d5bf8fce845b5d204fb7b17"
+  },
+  {
+    "id": "g_2ne1_dara",
+    "name": "산다라박",
+    "english": "Dara",
+    "group": "투애니원",
+    "sourceUrl": null,
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2019/04/DARA-900x600.jpg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "d4a7936ba0f4ca42fcfdba52e119891ee3d66ec28c588dbf05d3b3dd705c07c1",
+    "localPath": "photos/user-final-g_2ne1_dara.jpg"
+  },
+  {
+    "id": "g_2ne1_minzy",
+    "name": "공민지",
+    "english": "Minzy",
+    "group": "투애니원",
+    "sourceUrl": null,
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/10/Minzy-1.jpg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "4f956a7fdbe1a0359808fca173f9d22ae92648b227ec311bd703d8aac9a277c6",
+    "localPath": "photos/user-final-g_2ne1_minzy.jpg"
+  },
+  {
+    "id": "g_tara_qri",
+    "name": "큐리",
+    "english": "Qri",
+    "group": "티아라",
+    "sourceUrl": null,
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/06/b0ccd4f8324858c71798ba2e485c6d3962af4f90a5b7a71ad350a254b9c37bdd-545x800.jpeg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "944cc574e38ebebde0a6a38b416a5f521e994445992f326f064a3e0814d06742",
+    "localPath": "photos/user-final-g_tara_qri.jpg"
+  },
+  {
+    "id": "g_tara_eunjung",
+    "name": "은정",
+    "english": "Eunjung",
+    "group": "티아라",
+    "sourceUrl": "https://kprofiles.com/t-ara-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/06/3e111e2435ca07b316b8caa11cce126649a54d5b506ee920abd5c30e2a27589d.jpeg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "a74bc1186a8ff86c65a8ad62b45057e002212aa1fc99ab64db393bef2e5fed37"
+  },
+  {
+    "id": "g_tara_hyomin",
+    "name": "효민",
+    "english": "Hyomin",
+    "group": "티아라",
+    "sourceUrl": null,
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/06/644cc224ba7a535612334281e07794444c39ba0c68bf1ca12c86220641a8e6c5-545x800.jpeg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "a37ad16d885c9059705437fdc6fcf67fadb89423fd46de8ca937e205cfe345da",
+    "localPath": "photos/user-final-g_tara_hyomin.jpg"
+  },
+  {
+    "id": "g_tara_jiyeon",
+    "name": "지연",
+    "english": "Jiyeon",
+    "group": "티아라",
+    "sourceUrl": null,
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/06/51e38b30ee8e6428683cb567df1437752995ec96ac1345cb02c1c97bbe79a8eb-545x800.jpeg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "a475120da62138a7a899ac5ed4c0ad77eb680992a55b33645365005122d15ea9",
+    "localPath": "photos/user-final-g_tara_jiyeon.jpg"
+  },
+  {
+    "id": "g_rocket_punch_yeonhee",
+    "name": "연희",
+    "english": "Yeonhee",
+    "group": "로켓펀치",
+    "sourceUrl": "https://kprofiles.com/rocket-punch-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2019/06/YEONHEE-1.jpg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "4d0129565d35c3ec0df2685f3168ac8b5ed846a70929f386dc942ea969cfacbb"
+  },
+  {
+    "id": "g_rocket_punch_suyun",
+    "name": "수윤",
+    "english": "Suyun",
+    "group": "로켓펀치",
+    "sourceUrl": "https://kprofiles.com/rocket-punch-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2019/06/SUYUN-1.jpg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "f3ea3f331a958da2de9e7a24fbf61401b7e5bd41d8b9f44b80a1ecdef311702a"
+  },
+  {
+    "id": "g_rocket_punch_yunkyoung",
+    "name": "윤경",
+    "english": "Yunkyoung",
+    "group": "로켓펀치",
+    "sourceUrl": "https://kprofiles.com/rocket-punch-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2019/06/YUNKYOUNG-1.jpg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "1540b7641489be092dd776036702c7ce006caaa34dab4b63dd8c907adeb172fd"
+  },
+  {
+    "id": "g_rocket_punch_sohee",
+    "name": "소희",
+    "english": "Sohee",
+    "group": "로켓펀치",
+    "sourceUrl": "https://kprofiles.com/rocket-punch-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2019/06/SOHEE-1.jpg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "b2c9e80103a2ebd54eaf79dfe07849794ca6987f04f1ef44e522cfc9196b6bc3"
+  },
+  {
+    "id": "g_rocket_punch_dahyun",
+    "name": "다현",
+    "english": "Dahyun",
+    "group": "로켓펀치",
+    "sourceUrl": "https://kprofiles.com/dahyun-rocket-punch-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2019/08/DAHYUN-2-900x636.jpg",
+    "matchMethod": "Photo verified against named member profile or official concept image; local JPEG copy",
+    "sha256": "f3ce6e0eb10babd02f287b50b99d016e01f00093e816f0eebfc9f97d628a5490"
+  },
+  {
+    "id": "g_wondergirls_yeeun",
+    "name": "예은",
+    "english": "Yeeun",
+    "group": "원더걸스",
+    "sourceUrl": "https://kprofiles.com/hatfelt-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/10/76D1B3B3-CA4C-440E-AE5A-7D6B949BD55C-536x800.jpeg",
+    "matchMethod": "Named member portrait on artist profile; local JPEG copy",
+    "sha256": "535adedfc0d04933b14cf7af260b47a47cc618e724fee7ebb0427ca4feef619a"
+  },
+  {
+    "id": "g_wondergirls_yubin",
+    "name": "유빈",
+    "english": "Yubin",
+    "group": "원더걸스",
+    "sourceUrl": "https://kprofiles.com/wonder-girls-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/05/Wonder-Girls-Yubin.jpg",
+    "matchMethod": "Named member portrait on artist profile; local JPEG copy",
+    "sha256": "f8b8fab29a94efb4e606a16b17cf6c552013fea378d008ddc54dc98fd28996c0"
+  },
+  {
+    "id": "g_wondergirls_sunmi",
+    "name": "선미",
+    "english": "Sunmi",
+    "group": "원더걸스",
+    "sourceUrl": "https://kprofiles.com/wonder-girls-members-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/05/Wonder-Girls-Sunmi.jpg",
+    "matchMethod": "Named member portrait on artist profile; local JPEG copy",
+    "sha256": "0ae0596c5a69e88e3c44920ded0dad63020c031bedd64e5a3c9588c5fd478118"
+  },
+  {
+    "id": "g_wondergirls_hyerim",
+    "name": "혜림",
+    "english": "Hyerim",
+    "group": "원더걸스",
+    "sourceUrl": "https://kprofiles.com/hyelim-profile-facts/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2020/04/hyelim.jpg",
+    "matchMethod": "Named member portrait on artist profile; local JPEG copy",
+    "sha256": "f4c62d7640789eac813e035298ef3f054f76a496d3bdfc3a681d73669882bf6d"
+  },
+  {
+    "id": "g_4minute_jihyun",
+    "name": "지현",
+    "english": "Jihyun",
+    "group": "포미닛",
+    "sourceUrl": "https://kprofiles.com/nam-jihyun-ex4minute-profile-and-facts/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2020/01/297993172_612270716917175_5019985715218596435_n-533x800.webp",
+    "matchMethod": "Named member portrait on artist profile; local JPEG copy",
+    "sha256": "3e57facddd0b7d13f0b376766157c292256130da80daeb90846e01f26178e5b7"
+  },
+  {
+    "id": "g_4minute_gayoon",
+    "name": "가윤",
+    "english": "Gayoon",
+    "group": "포미닛",
+    "sourceUrl": "https://kprofiles.com/heo-gayoon-profile-facts/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2020/04/gayoon2.jpg",
+    "matchMethod": "Named member portrait on artist profile; local JPEG copy",
+    "sha256": "8ccc9a36ecaebbd1febd552543a9b41c084ee83184ab3963dc203df6eb596dc4"
+  },
+  {
+    "id": "g_4minute_jiyoon",
+    "name": "지윤",
+    "english": "Jiyoon",
+    "group": "포미닛",
+    "sourceUrl": "https://kprofiles.com/jenyer-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2025/02/jenyer.jpg",
+    "matchMethod": "Named member portrait on artist profile; local JPEG copy",
+    "sha256": "746435674a56ea119b7935e58355bc038d179a17a98a3ea85dd32183d38c6fdc"
+  },
+  {
+    "id": "g_4minute_hyuna",
+    "name": "현아",
+    "english": "Hyuna",
+    "group": "포미닛",
+    "sourceUrl": "https://kprofiles.com/hyuna-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2017/11/hyuna-attitude.jpg",
+    "matchMethod": "Named member portrait on artist profile; local JPEG copy",
+    "sha256": "bc3f8f39f0579834713ff6bf5870e3f84e0cfa1ea0135320892ee91e8ba8edbd"
+  },
+  {
+    "id": "g_4minute_sohyun",
+    "name": "소현",
+    "english": "Sohyun",
+    "group": "포미닛",
+    "sourceUrl": "https://kprofiles.com/sohyun-profile-facts/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2020/04/kwonsohyun.jpg",
+    "matchMethod": "Named member portrait on artist profile; local JPEG copy",
+    "sha256": "428a365b0b5bce2308a29dee3463f8585b13fae7d60806f19f5ebb506426f770"
+  },
+  {
+    "id": "g_missa_fei",
+    "name": "페이",
+    "english": "Fei",
+    "group": "미쓰에이",
+    "sourceUrl": "https://kprofiles.com/fei-profile-facts/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2020/07/feigreatdancecrew2-449x800.jpg",
+    "matchMethod": "Named member portrait on artist profile; local JPEG copy",
+    "sha256": "4e4397b2bb2255c4f7c54eea13f1b55942816b2861ca5d0e24991f36cb2a79a1"
+  },
+  {
+    "id": "g_missa_jia",
+    "name": "지아",
+    "english": "Jia",
+    "group": "미쓰에이",
+    "sourceUrl": "https://kprofiles.com/jia-profile-facts/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2018/06/DY0C-JBUMAAfNmb-533x800.jpg",
+    "matchMethod": "Named member portrait on artist profile; local JPEG copy",
+    "sha256": "dc20889877721fd04ceceb65956743c335d301ec71a3837affb897641e9b292d"
+  },
+  {
+    "id": "g_missa_min",
+    "name": "민",
+    "english": "Min",
+    "group": "미쓰에이",
+    "sourceUrl": "https://kprofiles.com/min-ex-miss-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2020/09/minnov2021-1-800x800.jpg",
+    "matchMethod": "Named member portrait on artist profile; local JPEG copy",
+    "sha256": "e5b95a7857479e50f38e8d3c8976658d0aabf1179e0eda275fb8fce5640530a8"
+  },
+  {
+    "id": "g_missa_suzy",
+    "name": "수지",
+    "english": "Suzy",
+    "group": "미쓰에이",
+    "sourceUrl": "https://kprofiles.com/suzy-profile/",
+    "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/06/Bae-Suzy.jpeg",
+    "matchMethod": "Named member portrait on artist profile; local JPEG copy",
+    "sha256": "745ab52df65660e6a05cc27163810c9e749750babde06637e1b57b9b578473b6"
+  }
+]

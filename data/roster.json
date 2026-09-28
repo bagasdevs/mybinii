@@ -1,0 +1,6393 @@
+{
+  "checked": "2026-09-26",
+  "groups": [
+    {
+      "id": "f(x)",
+      "name": "f(x)",
+      "gen": 2,
+      "source": "https://kprofiles.com/fx-members-profile-updated/",
+      "debut": "2009-09-05"
+    },
+    {
+      "id": "SISTAR",
+      "name": "씨스타",
+      "gen": 2,
+      "source": "https://kprofiles.com/sistar-members-profile/",
+      "debut": "2010-06-03"
+    },
+    {
+      "id": "걸스데이",
+      "name": "걸스데이",
+      "gen": 2,
+      "source": "https://kprofiles.com/girls-day-profile/",
+      "debut": "2010-07-09"
+    },
+    {
+      "id": "에이핑크",
+      "name": "에이핑크",
+      "gen": 2,
+      "source": "https://kprofiles.com/apink-members-profile/",
+      "debut": "2011-04-19"
+    },
+    {
+      "id": "EXID",
+      "name": "EXID",
+      "gen": 3,
+      "source": "https://kprofiles.com/exid-members-profile/",
+      "disabled": false,
+      "debut": "2012-02-16"
+    },
+    {
+      "id": "크레용팝",
+      "name": "크레용팝",
+      "gen": 3,
+      "source": "https://kprofiles.com/crayon-pop-profile/",
+      "disabled": false,
+      "debut": "2012-07-18"
+    },
+    {
+      "id": "마마무",
+      "name": "마마무",
+      "gen": 3,
+      "source": "https://kprofiles.com/mamamoo-members-profile/",
+      "disabled": false,
+      "debut": "2014-06-19"
+    },
+    {
+      "id": "레드벨벳",
+      "name": "레드벨벳",
+      "gen": 3,
+      "source": "https://kprofiles.com/red-velvet-members-profile/",
+      "disabled": false,
+      "debut": "2014-08-01"
+    },
+    {
+      "id": "라붐",
+      "name": "라붐",
+      "gen": 3,
+      "source": "https://kprofiles.com/laboum-members-profile/",
+      "disabled": false,
+      "debut": "2014-08-28"
+    },
+    {
+      "id": "러블리즈",
+      "name": "러블리즈",
+      "gen": 3,
+      "source": "https://kprofiles.com/lovelyz-members-profile/",
+      "disabled": false,
+      "debut": "2014-11-12"
+    },
+    {
+      "id": "여자친구",
+      "name": "여자친구",
+      "gen": 3,
+      "source": "https://kprofiles.com/gfriend-profile-and-facts/",
+      "disabled": false,
+      "debut": "2015-01-16"
+    },
+    {
+      "id": "CLC",
+      "name": "CLC",
+      "gen": 3,
+      "source": "https://kprofiles.com/clc-members-profile/",
+      "disabled": false,
+      "debut": "2015-03-19"
+    },
+    {
+      "id": "오마이걸",
+      "name": "오마이걸",
+      "gen": 3,
+      "source": "https://kprofiles.com/oh-my-girl-members-profile/",
+      "disabled": false,
+      "debut": "2015-04-21"
+    },
+    {
+      "id": "APRIL",
+      "name": "APRIL",
+      "gen": 3,
+      "source": "https://kprofiles.com/april-members-profile/",
+      "disabled": false,
+      "debut": "2015-08-24"
+    },
+    {
+      "id": "TWICE",
+      "name": "TWICE",
+      "gen": 3,
+      "source": "https://kprofiles.com/twice-members-profile/",
+      "disabled": false,
+      "debut": "2015-10-20"
+    },
+    {
+      "id": "우주소녀",
+      "name": "우주소녀",
+      "gen": 3,
+      "source": "https://kprofiles.com/wjsn-cosmic-girls-profile/",
+      "disabled": false,
+      "debut": "2016-02-25"
+    },
+    {
+      "id": "I.O.I",
+      "name": "I.O.I",
+      "gen": 3,
+      "source": "https://kprofiles.com/ioi-members-profile/",
+      "disabled": false,
+      "debut": "2016-05-04"
+    },
+    {
+      "id": "구구단",
+      "name": "구구단",
+      "gen": 3,
+      "source": "https://kprofiles.com/gugudan-members-profile/",
+      "disabled": false,
+      "debut": "2016-06-28"
+    },
+    {
+      "id": "BLACKPINK",
+      "name": "BLACKPINK",
+      "gen": 3,
+      "source": "https://kprofiles.com/black-pink-members-profile/",
+      "disabled": false,
+      "debut": "2016-08-08"
+    },
+    {
+      "id": "모모랜드",
+      "name": "모모랜드",
+      "gen": 3,
+      "source": "https://kprofiles.com/momoland-members-profile/",
+      "disabled": false,
+      "debut": "2016-11-10"
+    },
+    {
+      "id": "드림캐쳐",
+      "name": "드림캐쳐",
+      "gen": 3,
+      "source": "https://kprofiles.com/dreamcatcher-members-profile/",
+      "disabled": false,
+      "debut": "2017-01-13"
+    },
+    {
+      "id": "PRISTIN",
+      "name": "PRISTIN",
+      "gen": 3,
+      "source": "https://kprofiles.com/pristin-members-profile/",
+      "disabled": false,
+      "debut": "2017-03-21"
+    },
+    {
+      "id": "위키미키",
+      "name": "위키미키",
+      "gen": 3,
+      "source": "https://kprofiles.com/weki-meki-members-profile/",
+      "disabled": false,
+      "debut": "2017-08-08"
+    },
+    {
+      "id": "프로미스나인",
+      "name": "프로미스나인",
+      "gen": 4,
+      "source": "https://kprofiles.com/fromis_9-members-profile/",
+      "disabled": false,
+      "debut": "2018-01-24"
+    },
+    {
+      "id": "아이들",
+      "name": "아이들",
+      "gen": 4,
+      "source": "https://kprofiles.com/idle-members-profile/",
+      "disabled": false,
+      "debut": "2018-05-02"
+    },
+    {
+      "id": "네이처",
+      "name": "네이처",
+      "gen": 4,
+      "source": "https://kprofiles.com/nature-members-profile/",
+      "disabled": false,
+      "debut": "2018-08-03"
+    },
+    {
+      "id": "이달의 소녀",
+      "name": "이달의 소녀",
+      "gen": 4,
+      "source": "https://kprofiles.com/loona-members-profile/",
+      "disabled": false,
+      "debut": "2018-08-20"
+    },
+    {
+      "id": "IZ*ONE",
+      "name": "IZ*ONE",
+      "gen": 4,
+      "source": "https://kprofiles.com/izone-members-profile/",
+      "disabled": false,
+      "debut": "2018-10-29"
+    },
+    {
+      "id": "ITZY",
+      "name": "ITZY",
+      "gen": 4,
+      "source": "https://kprofiles.com/itzy-members-profile/",
+      "disabled": false,
+      "debut": "2019-02-12"
+    },
+    {
+      "id": "EVERGLOW",
+      "name": "EVERGLOW",
+      "gen": 4,
+      "source": "https://kprofiles.com/everglow-members-profile/",
+      "disabled": false,
+      "debut": "2019-03-18"
+    },
+    {
+      "id": "woo!ah!",
+      "name": "woo!ah!",
+      "gen": 4,
+      "source": "https://kprofiles.com/wooah-members-profile/",
+      "disabled": false,
+      "debut": "2020-05-15"
+    },
+    {
+      "id": "Weeekly",
+      "name": "Weeekly",
+      "gen": 4,
+      "source": "https://kprofiles.com/weeekly-members-profile/",
+      "disabled": false,
+      "debut": "2020-06-30"
+    },
+    {
+      "id": "STAYC",
+      "name": "STAYC",
+      "gen": 4,
+      "source": "https://kprofiles.com/stayc-members-profile/",
+      "disabled": false,
+      "debut": "2020-11-12"
+    },
+    {
+      "id": "aespa",
+      "name": "aespa",
+      "gen": 4,
+      "source": "https://kprofiles.com/aespa-members-profile/",
+      "disabled": false,
+      "debut": "2020-11-17"
+    },
+    {
+      "id": "퍼플키스",
+      "name": "퍼플키스",
+      "gen": 4,
+      "source": "https://kprofiles.com/purple-kiss-members-profile/",
+      "disabled": false,
+      "debut": "2021-03-15"
+    },
+    {
+      "id": "LIGHTSUM",
+      "name": "LIGHTSUM",
+      "gen": 4,
+      "source": "https://kprofiles.com/lightsum-members-profile/",
+      "disabled": false,
+      "debut": "2021-06-10"
+    },
+    {
+      "id": "Billlie",
+      "name": "Billlie",
+      "gen": 4,
+      "source": "https://kprofiles.com/billlie-members-profile/",
+      "disabled": false,
+      "debut": "2021-11-10"
+    },
+    {
+      "id": "IVE",
+      "name": "IVE",
+      "gen": 4,
+      "source": "https://kprofiles.com/ive-members-profile/",
+      "disabled": false,
+      "debut": "2021-12-01"
+    },
+    {
+      "id": "Kep1er",
+      "name": "Kep1er",
+      "gen": 4,
+      "source": "https://kprofiles.com/kep1er-members-profile/",
+      "disabled": false,
+      "debut": "2022-01-03"
+    },
+    {
+      "id": "H1-KEY",
+      "name": "H1-KEY",
+      "gen": 4,
+      "source": "https://kprofiles.com/h1-key-members-profile/",
+      "disabled": false,
+      "debut": "2022-01-05"
+    },
+    {
+      "id": "VIVIZ",
+      "name": "비비지",
+      "gen": 4,
+      "disabled": false,
+      "source": null,
+      "debut": "2022-02-09"
+    },
+    {
+      "id": "NMIXX",
+      "name": "NMIXX",
+      "gen": 4,
+      "source": "https://kprofiles.com/nmixx-profile/",
+      "disabled": false,
+      "debut": "2022-02-22"
+    },
+    {
+      "id": "LE SSERAFIM",
+      "name": "LE SSERAFIM",
+      "gen": 4,
+      "source": "https://kprofiles.com/le-sserafim-members-profile/",
+      "disabled": false,
+      "debut": "2022-05-02"
+    },
+    {
+      "id": "CLASS:y",
+      "name": "CLASS:y",
+      "gen": 4,
+      "source": "https://kprofiles.com/classy-members-profile/",
+      "disabled": false,
+      "debut": "2022-05-05"
+    },
+    {
+      "id": "NewJeans",
+      "name": "NewJeans",
+      "gen": 4,
+      "source": "https://kprofiles.com/newjeans-members-profile/",
+      "disabled": false,
+      "debut": "2022-07-22"
+    },
+    {
+      "id": "FIFTY FIFTY",
+      "name": "FIFTY FIFTY",
+      "gen": 4,
+      "source": "https://kprofiles.com/fifty-fifty-members-profile/",
+      "disabled": false,
+      "debut": "2022-11-18"
+    },
+    {
+      "id": "MAVE:",
+      "name": "MAVE:",
+      "gen": 5,
+      "source": "https://kprofiles.com/mave-members-profile/",
+      "disabled": false,
+      "debut": "2023-01-25"
+    },
+    {
+      "id": "tripleS",
+      "name": "tripleS",
+      "gen": 5,
+      "source": "https://kprofiles.com/triples-members-profile-and-facts/",
+      "disabled": false,
+      "debut": "2023-02-13"
+    },
+    {
+      "id": "LIMELIGHT",
+      "name": "LIMELIGHT",
+      "gen": 5,
+      "source": "https://kprofiles.com/limelight-members-profile/",
+      "disabled": false,
+      "debut": "2023-02-17"
+    },
+    {
+      "id": "KISS OF LIFE",
+      "name": "KISS OF LIFE",
+      "gen": 5,
+      "source": "https://kprofiles.com/kiss-of-life-members-profile/",
+      "disabled": false,
+      "debut": "2023-07-05"
+    },
+    {
+      "id": "Loossemble",
+      "name": "Loossemble",
+      "gen": 5,
+      "source": "https://kprofiles.com/loossemble-members-profile/",
+      "disabled": false,
+      "debut": "2023-09-15"
+    },
+    {
+      "id": "QWER",
+      "name": "QWER",
+      "gen": 4,
+      "source": "https://weverse.io/qwer/highlight",
+      "disabled": false,
+      "debut": "2023-10-18"
+    },
+    {
+      "id": "BABYMONSTER",
+      "name": "BABYMONSTER",
+      "gen": 5,
+      "source": "https://kprofiles.com/babymonster-members-profile/",
+      "disabled": false,
+      "debut": "2023-11-27"
+    },
+    {
+      "id": "ILLIT",
+      "name": "ILLIT",
+      "gen": 5,
+      "source": "https://kprofiles.com/illit-members-profile/",
+      "disabled": false,
+      "debut": "2024-03-25"
+    },
+    {
+      "id": "RESCENE",
+      "name": "RESCENE",
+      "gen": 5,
+      "source": "https://kprofiles.com/rescene-members-profile/",
+      "disabled": false,
+      "debut": "2024-03-26"
+    },
+    {
+      "id": "UNIS",
+      "name": "UNIS",
+      "gen": 5,
+      "source": "https://kprofiles.com/unis-universe-ticket-members-profile/",
+      "disabled": false,
+      "debut": "2024-03-27"
+    },
+    {
+      "id": "ARTMS",
+      "name": "ARTMS",
+      "gen": 4,
+      "source": "https://kpopping.com/profiles/group/ARTMS",
+      "disabled": true,
+      "hidden": true,
+      "debut": "2024-05-31"
+    },
+    {
+      "id": "BADVILLAIN",
+      "name": "BADVILLAIN",
+      "gen": 5,
+      "source": "https://kprofiles.com/badvillain-members-profile/",
+      "disabled": false,
+      "debut": "2024-06-03"
+    },
+    {
+      "id": "KATSEYE",
+      "name": "KATSEYE",
+      "gen": 5,
+      "source": "https://kprofiles.com/katseye-members-profile/",
+      "disabled": false,
+      "debut": "2024-06-28"
+    },
+    {
+      "id": "MADEIN",
+      "name": "MADEIN",
+      "gen": 5,
+      "source": "https://kprofiles.com/madein-members-profile/",
+      "disabled": false,
+      "hidden": false,
+      "debut": "2024-09-03"
+    },
+    {
+      "id": "MEOVV",
+      "name": "MEOVV",
+      "gen": 5,
+      "source": "https://kprofiles.com/meovv-members-profile/",
+      "disabled": false,
+      "debut": "2024-09-06"
+    },
+    {
+      "id": "SAY MY NAME",
+      "name": "SAY MY NAME",
+      "gen": 5,
+      "source": "https://kprofiles.com/say-my-name-members-profile/",
+      "disabled": false,
+      "debut": "2024-10-16"
+    },
+    {
+      "id": "izna",
+      "name": "izna",
+      "gen": 5,
+      "source": "https://kprofiles.com/izna-members-profile/",
+      "disabled": false,
+      "debut": "2024-11-25"
+    },
+    {
+      "id": "Hearts2Hearts",
+      "name": "Hearts2Hearts",
+      "gen": 5,
+      "source": "https://kprofiles.com/hearts2hearts-members-profile/",
+      "disabled": false,
+      "debut": "2025-02-24"
+    },
+    {
+      "id": "KiiiKiii",
+      "name": "KiiiKiii",
+      "gen": 5,
+      "source": "https://kprofiles.com/kiiikiii-members-profile/",
+      "disabled": false,
+      "debut": "2025-03-24"
+    },
+    {
+      "id": "Baby DONT Cry",
+      "name": "Baby DONT Cry",
+      "gen": 5,
+      "source": "https://kprofiles.com/baby-dont-cry-members-profile/",
+      "disabled": false,
+      "debut": "2025-06-23"
+    },
+    {
+      "id": "UNCHILD",
+      "name": "UNCHILD",
+      "gen": 5,
+      "source": "https://kprofiles.com/unchild-members-profile/",
+      "disabled": false,
+      "debut": "2026-04-21"
+    },
+    {
+      "id": "H//PE Princess",
+      "name": "H//PE Princess",
+      "gen": 5,
+      "source": "https://kprofiles.com/h-pe-princess-members-profile/",
+      "disabled": false,
+      "debut": "2026-05-27"
+    },
+    {
+      "id": "OURBIRTHDAY",
+      "name": "OURBIRTHDAY",
+      "gen": 5,
+      "source": "https://kprofiles.com/ourbirthday-members-profile/",
+      "disabled": false,
+      "debut": "2026-08-19"
+    },
+    {
+      "id": "TUIDE",
+      "name": "TUIDE",
+      "gen": 5,
+      "source": "https://kprofiles.com/pledis-girls-members-profile/",
+      "disabled": false,
+      "debut": "2026-08-24"
+    },
+    {
+      "id": "ODD YOUTH",
+      "name": "ODD YOUTH",
+      "gen": 5,
+      "source": "https://kprofiles.com/odd-youth-members-profile/",
+      "disabled": false,
+      "debut": "2024-11-01"
+    },
+    {
+      "id": "USPEER",
+      "name": "USPEER",
+      "gen": 5,
+      "source": "https://kprofiles.com/uspeer-members-profile/",
+      "disabled": false,
+      "debut": "2025-06-04"
+    },
+    {
+      "id": "KARA",
+      "name": "카라",
+      "gen": 2,
+      "source": "https://kprofiles.com/kara-members-profile/",
+      "disabled": false,
+      "debut": "2007-03-29"
+    },
+    {
+      "id": "SNSD",
+      "name": "소녀시대",
+      "gen": 2,
+      "source": "https://kprofiles.com/girls-generation-snsd-members-profile/",
+      "disabled": false,
+      "debut": "2007-08-05"
+    },
+    {
+      "id": "2NE1",
+      "name": "투애니원",
+      "gen": 2,
+      "source": "https://kprofiles.com/2ne1-members-profile/",
+      "disabled": false,
+      "debut": "2009-05-17"
+    },
+    {
+      "id": "T-ARA",
+      "name": "티아라",
+      "gen": 2,
+      "source": "https://kprofiles.com/t-ara-members-profile/",
+      "disabled": false,
+      "debut": "2009-07-29"
+    },
+    {
+      "id": "Rocket Punch",
+      "name": "로켓펀치",
+      "gen": 4,
+      "source": "https://kprofiles.com/rocket-punch-members-profile/",
+      "disabled": false,
+      "debut": "2019-08-07"
+    },
+    {
+      "id": "Wonder Girls",
+      "name": "원더걸스",
+      "gen": 2,
+      "source": "https://kprofiles.com/wonder-girls-members-profile/",
+      "disabled": false,
+      "debut": "2007-02-13"
+    },
+    {
+      "id": "4Minute",
+      "name": "포미닛",
+      "gen": 2,
+      "source": "https://kprofiles.com/4minute-members-profile/",
+      "disabled": false,
+      "debut": "2009-06-15"
+    },
+    {
+      "id": "miss A",
+      "name": "미쓰에이",
+      "gen": 2,
+      "source": "https://kprofiles.com/miss-a-profile/",
+      "disabled": false,
+      "debut": "2010-07-01"
+    }
+  ],
+  "members": [
+    {
+      "id": "g_exid_solji",
+      "name": "솔지",
+      "groups": [
+        "EXID"
+      ],
+      "english": "Solji",
+      "image": "photos/profile-g_exid_solji.jpg",
+      "source": "https://kprofiles.com/exid-members-profile/"
+    },
+    {
+      "id": "g_exid_elly",
+      "name": "엘리",
+      "groups": [
+        "EXID"
+      ],
+      "english": "Elly",
+      "image": "photos/profile-g_exid_elly.jpg",
+      "source": "https://kprofiles.com/exid-members-profile/"
+    },
+    {
+      "id": "g_exid_hani",
+      "name": "하니",
+      "groups": [
+        "EXID"
+      ],
+      "english": "Hani",
+      "image": "photos/profile-g_exid_hani.jpg",
+      "source": "https://kprofiles.com/exid-members-profile/"
+    },
+    {
+      "id": "g_exid_hyerin",
+      "name": "혜린",
+      "groups": [
+        "EXID"
+      ],
+      "english": "Hyerin",
+      "image": "photos/profile-g_exid_hyerin.jpg",
+      "source": "https://kprofiles.com/exid-members-profile/"
+    },
+    {
+      "id": "g_exid_jeonghwa",
+      "name": "정화",
+      "groups": [
+        "EXID"
+      ],
+      "english": "Jeonghwa",
+      "image": "photos/profile-g_exid_jeonghwa.jpg",
+      "source": "https://kprofiles.com/exid-members-profile/"
+    },
+    {
+      "id": "g_crayonpop_geummi",
+      "name": "금미",
+      "groups": [
+        "크레용팝"
+      ],
+      "english": "Geummi",
+      "image": "photos/profile-g_crayonpop_geummi.jpg",
+      "source": "https://kprofiles.com/crayon-pop-profile/"
+    },
+    {
+      "id": "g_crayonpop_ellin",
+      "name": "엘린",
+      "groups": [
+        "크레용팝"
+      ],
+      "english": "Ellin",
+      "image": "photos/profile-g_crayonpop_ellin.jpg",
+      "source": "https://kprofiles.com/crayon-pop-profile/"
+    },
+    {
+      "id": "g_crayonpop_choa",
+      "name": "초아",
+      "groups": [
+        "크레용팝"
+      ],
+      "english": "Choa",
+      "image": "photos/profile-g_crayonpop_choa.jpg",
+      "source": "https://kprofiles.com/crayon-pop-profile/"
+    },
+    {
+      "id": "g_crayonpop_way",
+      "name": "웨이",
+      "groups": [
+        "크레용팝"
+      ],
+      "english": "Way",
+      "image": "photos/profile-g_crayonpop_way.jpg",
+      "source": "https://kprofiles.com/crayon-pop-profile/"
+    },
+    {
+      "id": "g_crayonpop_soyul",
+      "name": "소율",
+      "groups": [
+        "크레용팝"
+      ],
+      "english": "Soyul",
+      "image": "photos/profile-g_crayonpop_soyul.jpg",
+      "source": "https://kprofiles.com/crayon-pop-profile/"
+    },
+    {
+      "id": "g_redvelvet_irene",
+      "name": "아이린",
+      "groups": [
+        "레드벨벳"
+      ],
+      "english": "Irene",
+      "image": "photos/upload-20260926-g_redvelvet_irene.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_redvelvet_seulgi",
+      "name": "슬기",
+      "groups": [
+        "레드벨벳"
+      ],
+      "english": "Seulgi",
+      "image": "photos/upload-20260926-g_redvelvet_seulgi.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_redvelvet_wendy",
+      "name": "웬디",
+      "groups": [
+        "레드벨벳"
+      ],
+      "english": "Wendy",
+      "image": "photos/upload-20260926-g_redvelvet_wendy.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_redvelvet_joy",
+      "name": "조이",
+      "groups": [
+        "레드벨벳"
+      ],
+      "english": "Joy",
+      "image": "photos/upload-20260927-g_redvelvet_joy.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_redvelvet_yeri",
+      "name": "예리",
+      "groups": [
+        "레드벨벳"
+      ],
+      "english": "Yeri",
+      "image": "photos/upload-20260927-g_redvelvet_yeri.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_mamamoo_solar",
+      "name": "솔라",
+      "groups": [
+        "마마무"
+      ],
+      "english": "Solar",
+      "image": "photos/profile-g_mamamoo_solar.jpg",
+      "source": "https://kprofiles.com/mamamoo-members-profile/"
+    },
+    {
+      "id": "g_mamamoo_moonbyul",
+      "name": "문별",
+      "groups": [
+        "마마무"
+      ],
+      "english": "Moonbyul",
+      "image": "photos/upload-20260927-g_mamamoo_moonbyul.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_mamamoo_wheein",
+      "name": "휘인",
+      "groups": [
+        "마마무"
+      ],
+      "english": "Wheein",
+      "image": "photos/upload-20260927-g_mamamoo_wheein.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_mamamoo_hwasa",
+      "name": "화사",
+      "groups": [
+        "마마무"
+      ],
+      "english": "Hwasa",
+      "image": "photos/upload-20260927-g_mamamoo_hwasa.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_lovelyz_babysoul",
+      "name": "베이비소울",
+      "groups": [
+        "러블리즈"
+      ],
+      "english": "Baby Soul",
+      "image": "photos/user-20260927-v32-g_lovelyz_babysoul.jpeg",
+      "source": null
+    },
+    {
+      "id": "g_lovelyz_jiae",
+      "name": "지애",
+      "groups": [
+        "러블리즈"
+      ],
+      "english": "Jiae",
+      "image": "photos/upload-20260927-g_lovelyz_jiae.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_lovelyz_jisoo",
+      "name": "지수",
+      "groups": [
+        "러블리즈"
+      ],
+      "english": "Jisoo",
+      "image": "photos/upload-20260927-g_lovelyz_jisoo.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_lovelyz_mijoo",
+      "name": "미주",
+      "groups": [
+        "러블리즈"
+      ],
+      "english": "Mijoo",
+      "image": "photos/upload-20260927-g_lovelyz_mijoo.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_lovelyz_kei",
+      "name": "케이",
+      "groups": [
+        "러블리즈"
+      ],
+      "english": "Kei",
+      "image": "photos/upload-20260927-g_lovelyz_kei.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_lovelyz_jin",
+      "name": "진",
+      "groups": [
+        "러블리즈"
+      ],
+      "english": "Jin",
+      "image": "photos/upload-20260927-g_lovelyz_jin.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_lovelyz_sujeong",
+      "name": "수정",
+      "groups": [
+        "러블리즈"
+      ],
+      "english": "Sujeong",
+      "image": "photos/upload-20260927-g_lovelyz_sujeong.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_lovelyz_yein",
+      "name": "예인",
+      "groups": [
+        "러블리즈"
+      ],
+      "english": "Yein",
+      "image": "photos/upload-20260927-g_lovelyz_yein.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_laboum_yujeong",
+      "name": "유정",
+      "groups": [
+        "라붐"
+      ],
+      "english": "Yujeong",
+      "image": "photos/profile-g_laboum_yujeong.jpg",
+      "source": "https://kprofiles.com/laboum-members-profile/"
+    },
+    {
+      "id": "g_laboum_soyeon",
+      "name": "소연",
+      "groups": [
+        "라붐"
+      ],
+      "english": "Soyeon",
+      "image": "photos/profile-g_laboum_soyeon.jpg",
+      "source": "https://kprofiles.com/laboum-members-profile/"
+    },
+    {
+      "id": "g_laboum_zn",
+      "name": "진예",
+      "groups": [
+        "라붐"
+      ],
+      "english": "ZN",
+      "image": "photos/profile-g_laboum_zn.jpg",
+      "source": "https://kprofiles.com/laboum-members-profile/"
+    },
+    {
+      "id": "g_laboum_haein",
+      "name": "해인",
+      "groups": [
+        "라붐"
+      ],
+      "english": "Haein",
+      "image": "photos/profile-g_laboum_haein.jpg",
+      "source": "https://kprofiles.com/laboum-members-profile/"
+    },
+    {
+      "id": "g_laboum_solbin",
+      "name": "솔빈",
+      "groups": [
+        "라붐"
+      ],
+      "english": "Solbin",
+      "image": "photos/profile-g_laboum_solbin.jpg",
+      "source": "https://kprofiles.com/laboum-members-profile/"
+    },
+    {
+      "id": "g_twice_nayeon",
+      "name": "나연",
+      "groups": [
+        "TWICE"
+      ],
+      "english": "Nayeon",
+      "image": "photos/upload-20260927-g_twice_nayeon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_twice_jeongyeon",
+      "name": "정연",
+      "groups": [
+        "TWICE"
+      ],
+      "english": "Jeongyeon",
+      "image": "photos/upload-20260927-g_twice_jeongyeon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_twice_momo",
+      "name": "모모",
+      "groups": [
+        "TWICE"
+      ],
+      "english": "Momo",
+      "image": "photos/profile-g_twice_momo.jpg",
+      "source": "https://kprofiles.com/twice-members-profile/"
+    },
+    {
+      "id": "g_twice_sana",
+      "name": "사나",
+      "groups": [
+        "TWICE"
+      ],
+      "english": "Sana",
+      "image": "photos/upload-20260927-g_twice_sana.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_twice_jihyo",
+      "name": "지효",
+      "groups": [
+        "TWICE"
+      ],
+      "english": "Jihyo",
+      "image": "photos/profile-g_twice_jihyo.jpg",
+      "source": "https://kprofiles.com/twice-members-profile/"
+    },
+    {
+      "id": "g_twice_mina",
+      "name": "미나",
+      "groups": [
+        "TWICE"
+      ],
+      "english": "Mina",
+      "image": "photos/upload-20260927-g_twice_mina.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_twice_dahyun",
+      "name": "다현",
+      "groups": [
+        "TWICE"
+      ],
+      "english": "Dahyun",
+      "image": "photos/upload-20260927-g_twice_dahyun.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_twice_chaeyoung",
+      "name": "채영",
+      "groups": [
+        "TWICE"
+      ],
+      "english": "Chaeyoung",
+      "image": "photos/upload-20260927-g_twice_chaeyoung.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_twice_tzuyu",
+      "name": "쯔위",
+      "groups": [
+        "TWICE"
+      ],
+      "english": "Tzuyu",
+      "image": "photos/upload-20260927-g_twice_tzuyu.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_gfriend_sowon",
+      "name": "소원",
+      "groups": [
+        "여자친구"
+      ],
+      "english": "Sowon",
+      "image": "photos/upload-20260927-g_gfriend_sowon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_gfriend_yerin",
+      "name": "예린",
+      "groups": [
+        "여자친구"
+      ],
+      "english": "Yerin",
+      "image": "photos/upload-20260927-g_gfriend_yerin.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_gfriend_eunha",
+      "name": "은하",
+      "groups": [
+        "여자친구",
+        "VIVIZ"
+      ],
+      "english": "Eunha",
+      "image": "photos/upload-20260927-g_gfriend_eunha.jpeg",
+      "source": null,
+      "displayGroups": [
+        "여자친구",
+        "VIVIZ"
+      ],
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_gfriend_yuju",
+      "name": "유주",
+      "groups": [
+        "여자친구"
+      ],
+      "english": "Yuju",
+      "image": "photos/upload-20260927-g_gfriend_yuju.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_gfriend_sinb",
+      "name": "신비",
+      "groups": [
+        "여자친구",
+        "VIVIZ"
+      ],
+      "english": "SinB",
+      "image": "photos/profile-g_gfriend_sinb.jpg",
+      "source": "https://kprofiles.com/gfriend-profile-and-facts/",
+      "displayGroups": [
+        "여자친구",
+        "VIVIZ"
+      ]
+    },
+    {
+      "id": "g_gfriend_umji",
+      "name": "엄지",
+      "groups": [
+        "여자친구",
+        "VIVIZ"
+      ],
+      "english": "Umji",
+      "image": "photos/upload-20260927-g_gfriend_umji.jpeg",
+      "source": null,
+      "displayGroups": [
+        "여자친구",
+        "VIVIZ"
+      ],
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_ohmygirl_hyojung",
+      "name": "효정",
+      "groups": [
+        "오마이걸"
+      ],
+      "english": "Hyojung",
+      "image": "photos/profile-g_ohmygirl_hyojung.jpg",
+      "source": "https://kprofiles.com/oh-my-girl-members-profile/"
+    },
+    {
+      "id": "g_ohmygirl_mimi",
+      "name": "미미",
+      "groups": [
+        "오마이걸"
+      ],
+      "english": "Mimi",
+      "image": "photos/profile-g_ohmygirl_mimi.jpg",
+      "source": "https://kprofiles.com/oh-my-girl-members-profile/"
+    },
+    {
+      "id": "g_ohmygirl_yooa",
+      "name": "유아",
+      "groups": [
+        "오마이걸"
+      ],
+      "english": "YooA",
+      "image": "photos/profile-g_ohmygirl_yooa.jpg",
+      "source": "https://kprofiles.com/oh-my-girl-members-profile/"
+    },
+    {
+      "id": "g_ohmygirl_seunghee",
+      "name": "승희",
+      "groups": [
+        "오마이걸"
+      ],
+      "english": "Seunghee",
+      "image": "photos/profile-g_ohmygirl_seunghee.jpg",
+      "source": "https://kprofiles.com/oh-my-girl-members-profile/"
+    },
+    {
+      "id": "g_ohmygirl_yubin",
+      "name": "유빈",
+      "groups": [
+        "오마이걸"
+      ],
+      "english": "Yubin",
+      "image": "photos/profile-g_ohmygirl_yubin.jpg",
+      "source": "https://kprofiles.com/oh-my-girl-members-profile/"
+    },
+    {
+      "id": "g_ohmygirl_arin",
+      "name": "아린",
+      "groups": [
+        "오마이걸"
+      ],
+      "english": "Arin",
+      "image": "photos/profile-g_ohmygirl_arin.jpg",
+      "source": "https://kprofiles.com/oh-my-girl-members-profile/"
+    },
+    {
+      "id": "g_clc_seunghee",
+      "name": "승희",
+      "groups": [
+        "CLC"
+      ],
+      "english": "Seunghee",
+      "image": "photos/profile-g_clc_seunghee.jpg",
+      "source": "https://kprofiles.com/clc-members-profile/"
+    },
+    {
+      "id": "g_clc_seungyeon",
+      "name": "승연",
+      "groups": [
+        "CLC"
+      ],
+      "english": "Seungyeon",
+      "image": "photos/profile-g_clc_seungyeon.jpg",
+      "source": "https://kprofiles.com/clc-members-profile/"
+    },
+    {
+      "id": "g_clc_yeeun",
+      "name": "예은",
+      "groups": [
+        "CLC"
+      ],
+      "english": "Yeeun",
+      "image": "photos/profile-g_clc_yeeun.jpg",
+      "source": "https://kprofiles.com/clc-members-profile/"
+    },
+    {
+      "id": "g_clc_eunbin",
+      "name": "은빈",
+      "groups": [
+        "CLC"
+      ],
+      "english": "Eunbin",
+      "image": "photos/profile-g_clc_eunbin.jpg",
+      "source": "https://kprofiles.com/clc-members-profile/"
+    },
+    {
+      "id": "g_april_chaekyung",
+      "name": "채경",
+      "groups": [
+        "APRIL"
+      ],
+      "english": "Chaekyung",
+      "image": "photos/profile-g_april_chaekyung.jpg",
+      "source": "https://kprofiles.com/april-members-profile/"
+    },
+    {
+      "id": "g_april_chaewon",
+      "name": "채원",
+      "groups": [
+        "APRIL"
+      ],
+      "english": "Chaewon",
+      "image": "photos/profile-g_april_chaewon.jpg",
+      "source": "https://kprofiles.com/april-members-profile/"
+    },
+    {
+      "id": "g_april_naeun",
+      "name": "나은",
+      "groups": [
+        "APRIL"
+      ],
+      "english": "Naeun",
+      "image": "photos/profile-g_april_naeun.jpg",
+      "source": "https://kprofiles.com/april-members-profile/"
+    },
+    {
+      "id": "g_april_yena",
+      "name": "예나",
+      "groups": [
+        "APRIL"
+      ],
+      "english": "Yena",
+      "image": "photos/profile-g_april_yena.jpg",
+      "source": "https://kprofiles.com/april-members-profile/"
+    },
+    {
+      "id": "g_april_rachel",
+      "name": "레이첼",
+      "groups": [
+        "APRIL"
+      ],
+      "english": "Rachel",
+      "image": "photos/profile-g_april_rachel.jpg",
+      "source": "https://kprofiles.com/april-members-profile/"
+    },
+    {
+      "id": "g_april_jinsol",
+      "name": "진솔",
+      "groups": [
+        "APRIL"
+      ],
+      "english": "Jinsol",
+      "image": "photos/profile-g_april_jinsol.jpg",
+      "source": "https://kprofiles.com/april-members-profile/"
+    },
+    {
+      "id": "g_blackpink_jisoo",
+      "name": "지수",
+      "groups": [
+        "BLACKPINK"
+      ],
+      "english": "Jisoo",
+      "image": "photos/upload-20260927-g_blackpink_jisoo.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_blackpink_jennie",
+      "name": "제니",
+      "groups": [
+        "BLACKPINK"
+      ],
+      "english": "Jennie",
+      "image": "photos/upload-20260927-g_blackpink_jennie.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_blackpink_ros",
+      "name": "로제",
+      "groups": [
+        "BLACKPINK"
+      ],
+      "english": "Rosé",
+      "image": "photos/upload-20260927-g_blackpink_ros.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_blackpink_lisa",
+      "name": "리사",
+      "groups": [
+        "BLACKPINK"
+      ],
+      "english": "Lisa",
+      "image": "photos/upload-20260927-g_blackpink_lisa.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_wjsn_seola",
+      "name": "설아",
+      "groups": [
+        "우주소녀"
+      ],
+      "english": "Seola",
+      "image": "photos/user-20260927-v34-g_wjsn_seola.jpeg",
+      "source": null
+    },
+    {
+      "id": "g_wjsn_bona",
+      "name": "보나",
+      "groups": [
+        "우주소녀"
+      ],
+      "english": "Bona",
+      "image": "photos/profile-g_wjsn_bona.jpg",
+      "source": "https://kprofiles.com/wjsn-cosmic-girls-profile/"
+    },
+    {
+      "id": "g_wjsn_exy",
+      "name": "엑시",
+      "groups": [
+        "우주소녀"
+      ],
+      "english": "Exy",
+      "image": "photos/profile-g_wjsn_exy.jpg",
+      "source": "https://kprofiles.com/wjsn-cosmic-girls-profile/"
+    },
+    {
+      "id": "g_wjsn_soobin",
+      "name": "수빈",
+      "groups": [
+        "우주소녀"
+      ],
+      "english": "Soobin",
+      "image": "photos/profile-g_wjsn_soobin.jpg",
+      "source": "https://kprofiles.com/wjsn-cosmic-girls-profile/"
+    },
+    {
+      "id": "g_wjsn_luda",
+      "name": "루다",
+      "groups": [
+        "우주소녀"
+      ],
+      "english": "Luda",
+      "image": "photos/profile-g_wjsn_luda.jpg",
+      "source": "https://kprofiles.com/wjsn-cosmic-girls-profile/"
+    },
+    {
+      "id": "g_wjsn_dawon",
+      "name": "다원",
+      "groups": [
+        "우주소녀"
+      ],
+      "english": "Dawon",
+      "image": "photos/profile-g_wjsn_dawon.jpg",
+      "source": "https://kprofiles.com/wjsn-cosmic-girls-profile/"
+    },
+    {
+      "id": "g_wjsn_eunseo",
+      "name": "은서",
+      "groups": [
+        "우주소녀"
+      ],
+      "english": "Eunseo",
+      "image": "photos/profile-g_wjsn_eunseo.jpg",
+      "source": "https://kprofiles.com/wjsn-cosmic-girls-profile/"
+    },
+    {
+      "id": "g_wjsn_yeoreum",
+      "name": "여름",
+      "groups": [
+        "우주소녀"
+      ],
+      "english": "Yeoreum",
+      "image": "photos/profile-g_wjsn_yeoreum.jpg",
+      "source": "https://kprofiles.com/wjsn-cosmic-girls-profile/"
+    },
+    {
+      "id": "g_wjsn_dayoung",
+      "name": "다영",
+      "groups": [
+        "우주소녀"
+      ],
+      "english": "Dayoung",
+      "image": "photos/profile-g_wjsn_dayoung.jpg",
+      "source": "https://kprofiles.com/wjsn-cosmic-girls-profile/"
+    },
+    {
+      "id": "g_wjsn_yeonjung",
+      "name": "연정",
+      "groups": [
+        "우주소녀",
+        "I.O.I"
+      ],
+      "displayGroups": [
+        "우주소녀",
+        "I.O.I"
+      ],
+      "english": "Yeonjung",
+      "image": "photos/profile-g_wjsn_yeonjung.jpg",
+      "source": "https://kprofiles.com/wjsn-cosmic-girls-profile/"
+    },
+    {
+      "id": "g_ioi_chungha",
+      "name": "청하",
+      "groups": [
+        "I.O.I"
+      ],
+      "english": "Chungha",
+      "image": "photos/profile-g_ioi_chungha.jpg",
+      "source": "https://kprofiles.com/ioi-members-profile/"
+    },
+    {
+      "id": "g_ioi_chaeyeon",
+      "name": "채연",
+      "groups": [
+        "I.O.I"
+      ],
+      "english": "Chaeyeon",
+      "image": "photos/profile-g_ioi_chaeyeon.jpg",
+      "source": "https://kprofiles.com/ioi-members-profile/"
+    },
+    {
+      "id": "g_ioi_kyulkyung",
+      "name": "결경",
+      "groups": [
+        "I.O.I"
+      ],
+      "english": "Kyulkyung",
+      "image": "photos/profile-g_ioi_kyulkyung.jpg",
+      "source": "https://kprofiles.com/ioi-members-profile/"
+    },
+    {
+      "id": "g_ioi_sohye",
+      "name": "소혜",
+      "groups": [
+        "I.O.I"
+      ],
+      "english": "Sohye",
+      "image": "photos/profile-g_ioi_sohye.jpg",
+      "source": "https://kprofiles.com/ioi-members-profile/"
+    },
+    {
+      "id": "g_ioi_somi",
+      "name": "전소미",
+      "groups": [
+        "I.O.I"
+      ],
+      "english": "Somi",
+      "image": "photos/profile-g_ioi_somi.jpg",
+      "source": "https://kprofiles.com/ioi-members-profile/"
+    },
+    {
+      "id": "g_gugudan_hana",
+      "name": "하나",
+      "groups": [
+        "구구단"
+      ],
+      "english": "Hana",
+      "image": "photos/profile-g_gugudan_hana.jpg",
+      "source": "https://kprofiles.com/gugudan-members-profile/"
+    },
+    {
+      "id": "g_gugudan_mimi",
+      "name": "미미",
+      "groups": [
+        "구구단"
+      ],
+      "english": "Mimi",
+      "image": "photos/profile-g_gugudan_mimi.jpg",
+      "source": "https://kprofiles.com/gugudan-members-profile/"
+    },
+    {
+      "id": "g_gugudan_nayoung",
+      "name": "나영",
+      "groups": [
+        "구구단"
+      ],
+      "english": "Nayoung",
+      "image": "photos/profile-g_gugudan_nayoung.jpg",
+      "source": "https://kprofiles.com/gugudan-members-profile/"
+    },
+    {
+      "id": "g_gugudan_haebin",
+      "name": "해빈",
+      "groups": [
+        "구구단"
+      ],
+      "english": "Haebin",
+      "image": "photos/profile-g_gugudan_haebin.jpg",
+      "source": "https://kprofiles.com/gugudan-members-profile/"
+    },
+    {
+      "id": "g_gugudan_sally",
+      "name": "샐리",
+      "groups": [
+        "구구단"
+      ],
+      "english": "Sally",
+      "image": "photos/profile-g_gugudan_sally.jpg",
+      "source": "https://kprofiles.com/gugudan-members-profile/"
+    },
+    {
+      "id": "g_gugudan_mina",
+      "name": "미나",
+      "groups": [
+        "구구단",
+        "I.O.I"
+      ],
+      "displayGroups": [
+        "I.O.I"
+      ],
+      "english": "Mina",
+      "image": "photos/profile-g_gugudan_mina.jpg",
+      "source": "https://kprofiles.com/ioi-members-profile/"
+    },
+    {
+      "id": "g_gugudan_sejeong",
+      "name": "세정",
+      "groups": [
+        "구구단",
+        "I.O.I"
+      ],
+      "displayGroups": [
+        "I.O.I"
+      ],
+      "english": "Sejeong",
+      "image": "photos/profile-g_gugudan_sejeong.jpg",
+      "source": "https://kprofiles.com/ioi-members-profile/"
+    },
+    {
+      "id": "g_gugudan_soyee",
+      "name": "소이",
+      "groups": [
+        "구구단"
+      ],
+      "english": "Soyee",
+      "image": "photos/profile-g_gugudan_soyee.jpg",
+      "source": "https://kprofiles.com/gugudan-members-profile/"
+    },
+    {
+      "id": "g_gugudan_hyeyeon",
+      "name": "혜연",
+      "groups": [
+        "구구단"
+      ],
+      "english": "Hyeyeon",
+      "image": "photos/profile-g_gugudan_hyeyeon.jpg",
+      "source": "https://kprofiles.com/gugudan-members-profile/"
+    },
+    {
+      "id": "g_momoland_hyebin",
+      "name": "혜빈",
+      "groups": [
+        "모모랜드"
+      ],
+      "english": "Hyebin",
+      "image": "photos/profile-g_momoland_hyebin.jpg",
+      "source": "https://kprofiles.com/momoland-members-profile/"
+    },
+    {
+      "id": "g_momoland_jane",
+      "name": "제인",
+      "groups": [
+        "모모랜드"
+      ],
+      "english": "Jane",
+      "image": "photos/profile-g_momoland_jane.jpg",
+      "source": "https://kprofiles.com/momoland-members-profile/"
+    },
+    {
+      "id": "g_momoland_nayun",
+      "name": "나윤",
+      "groups": [
+        "모모랜드"
+      ],
+      "english": "Nayun",
+      "image": "photos/profile-g_momoland_nayun.jpg",
+      "source": "https://kprofiles.com/momoland-members-profile/"
+    },
+    {
+      "id": "g_momoland_jooe",
+      "name": "주이",
+      "groups": [
+        "모모랜드"
+      ],
+      "english": "JooE",
+      "image": "photos/profile-g_momoland_jooe.jpg",
+      "source": "https://kprofiles.com/momoland-members-profile/"
+    },
+    {
+      "id": "g_momoland_ahin",
+      "name": "아인",
+      "groups": [
+        "모모랜드"
+      ],
+      "english": "Ahin",
+      "image": "photos/profile-g_momoland_ahin.jpg",
+      "source": "https://kprofiles.com/momoland-members-profile/"
+    },
+    {
+      "id": "g_momoland_nancy",
+      "name": "낸시",
+      "groups": [
+        "모모랜드"
+      ],
+      "english": "Nancy",
+      "image": "photos/profile-g_momoland_nancy.jpg",
+      "source": "https://kprofiles.com/momoland-members-profile/"
+    },
+    {
+      "id": "g_dreamcatcher_jiu",
+      "name": "지유",
+      "groups": [
+        "드림캐쳐"
+      ],
+      "english": "JiU",
+      "image": "photos/profile-g_dreamcatcher_jiu.jpg",
+      "source": "https://kprofiles.com/dreamcatcher-members-profile/"
+    },
+    {
+      "id": "g_dreamcatcher_sua",
+      "name": "수아",
+      "groups": [
+        "드림캐쳐"
+      ],
+      "english": "SuA",
+      "image": "photos/profile-g_dreamcatcher_sua.jpg",
+      "source": "https://kprofiles.com/dreamcatcher-members-profile/"
+    },
+    {
+      "id": "g_dreamcatcher_siyeon",
+      "name": "시연",
+      "groups": [
+        "드림캐쳐"
+      ],
+      "english": "Siyeon",
+      "image": "photos/profile-g_dreamcatcher_siyeon.jpg",
+      "source": "https://kprofiles.com/dreamcatcher-members-profile/"
+    },
+    {
+      "id": "g_dreamcatcher_handong",
+      "name": "한동",
+      "groups": [
+        "드림캐쳐"
+      ],
+      "english": "Handong",
+      "image": "photos/profile-g_dreamcatcher_handong.jpg",
+      "source": "https://kprofiles.com/dreamcatcher-members-profile/"
+    },
+    {
+      "id": "g_dreamcatcher_yoohyeon",
+      "name": "유현",
+      "groups": [
+        "드림캐쳐"
+      ],
+      "english": "Yoohyeon",
+      "image": "photos/profile-g_dreamcatcher_yoohyeon.jpg",
+      "source": "https://kprofiles.com/dreamcatcher-members-profile/"
+    },
+    {
+      "id": "g_dreamcatcher_dami",
+      "name": "다미",
+      "groups": [
+        "드림캐쳐"
+      ],
+      "english": "Dami",
+      "image": "photos/profile-g_dreamcatcher_dami.jpg",
+      "source": "https://kprofiles.com/dreamcatcher-members-profile/"
+    },
+    {
+      "id": "g_dreamcatcher_gahyeon",
+      "name": "가현",
+      "groups": [
+        "드림캐쳐"
+      ],
+      "english": "Gahyeon",
+      "image": "photos/profile-g_dreamcatcher_gahyeon.jpg",
+      "source": "https://kprofiles.com/dreamcatcher-members-profile/"
+    },
+    {
+      "id": "g_pristin_nayoung",
+      "name": "나영",
+      "groups": [
+        "PRISTIN",
+        "I.O.I"
+      ],
+      "displayGroups": [
+        "I.O.I"
+      ],
+      "english": "Nayoung",
+      "image": "photos/profile-g_pristin_nayoung.jpg",
+      "source": "https://kprofiles.com/pristin-members-profile/"
+    },
+    {
+      "id": "g_pristin_roa",
+      "name": "로아",
+      "groups": [
+        "PRISTIN"
+      ],
+      "english": "RoA",
+      "image": "photos/profile-g_pristin_roa.jpg",
+      "source": "https://kprofiles.com/pristin-members-profile/"
+    },
+    {
+      "id": "g_pristin_yuha",
+      "name": "유하",
+      "groups": [
+        "PRISTIN"
+      ],
+      "english": "Yuha",
+      "image": "photos/profile-g_pristin_yuha.jpg",
+      "source": "https://kprofiles.com/pristin-members-profile/"
+    },
+    {
+      "id": "g_pristin_eunwoo",
+      "name": "은우",
+      "groups": [
+        "PRISTIN"
+      ],
+      "english": "Eunwoo",
+      "image": "photos/profile-g_pristin_eunwoo.jpg",
+      "source": "https://kprofiles.com/pristin-members-profile/"
+    },
+    {
+      "id": "g_pristin_rena",
+      "name": "레나",
+      "groups": [
+        "PRISTIN"
+      ],
+      "english": "Rena",
+      "image": "photos/profile-g_pristin_rena.jpg",
+      "source": "https://kprofiles.com/pristin-members-profile/"
+    },
+    {
+      "id": "g_pristin_kyulkyung",
+      "name": "결경",
+      "groups": [
+        "PRISTIN"
+      ],
+      "english": "Kyulkyung",
+      "image": "photos/profile-g_pristin_kyulkyung.jpg",
+      "source": "https://kprofiles.com/pristin-members-profile/"
+    },
+    {
+      "id": "g_pristin_yehana",
+      "name": "예하나",
+      "groups": [
+        "PRISTIN"
+      ],
+      "english": "Yehana",
+      "image": "photos/profile-g_pristin_yehana.jpg",
+      "source": "https://kprofiles.com/pristin-members-profile/"
+    },
+    {
+      "id": "g_pristin_sungyeon",
+      "name": "성연",
+      "groups": [
+        "PRISTIN"
+      ],
+      "english": "Sungyeon",
+      "image": "photos/profile-g_pristin_sungyeon.jpg",
+      "source": "https://kprofiles.com/pristin-members-profile/"
+    },
+    {
+      "id": "g_pristin_xiyeon",
+      "name": "시연",
+      "groups": [
+        "PRISTIN"
+      ],
+      "english": "Xiyeon",
+      "image": "photos/profile-g_pristin_xiyeon.jpg",
+      "source": "https://kprofiles.com/pristin-members-profile/"
+    },
+    {
+      "id": "g_pristin_kyla",
+      "name": "카일라",
+      "groups": [
+        "PRISTIN"
+      ],
+      "english": "Kyla",
+      "image": "photos/profile-g_pristin_kyla.jpg",
+      "source": "https://kprofiles.com/pristin-members-profile/"
+    },
+    {
+      "id": "g_wekimeki_suyeon",
+      "name": "지수연",
+      "groups": [
+        "위키미키"
+      ],
+      "english": "Suyeon",
+      "image": "photos/profile-g_wekimeki_suyeon.jpg",
+      "source": "https://kprofiles.com/weki-meki-members-profile/"
+    },
+    {
+      "id": "g_wekimeki_elly",
+      "name": "엘리",
+      "groups": [
+        "위키미키"
+      ],
+      "english": "Elly",
+      "image": "photos/profile-g_wekimeki_elly.jpg",
+      "source": "https://kprofiles.com/weki-meki-members-profile/"
+    },
+    {
+      "id": "g_wekimeki_yoojung",
+      "name": "유정",
+      "groups": [
+        "위키미키",
+        "I.O.I"
+      ],
+      "displayGroups": [
+        "I.O.I"
+      ],
+      "english": "Yoojung",
+      "image": "photos/profile-g_wekimeki_yoojung.jpg",
+      "source": "https://kprofiles.com/ioi-members-profile/"
+    },
+    {
+      "id": "g_wekimeki_doyeon",
+      "name": "도연",
+      "groups": [
+        "위키미키",
+        "I.O.I"
+      ],
+      "displayGroups": [
+        "I.O.I"
+      ],
+      "english": "Doyeon",
+      "image": "photos/profile-g_wekimeki_doyeon.jpg",
+      "source": "https://kprofiles.com/ioi-members-profile/"
+    },
+    {
+      "id": "g_wekimeki_sei",
+      "name": "세이",
+      "groups": [
+        "위키미키"
+      ],
+      "english": "Sei",
+      "image": "photos/profile-g_wekimeki_sei.jpg",
+      "source": "https://kprofiles.com/weki-meki-members-profile/"
+    },
+    {
+      "id": "g_wekimeki_lua",
+      "name": "루아",
+      "groups": [
+        "위키미키"
+      ],
+      "english": "Lua",
+      "image": "photos/profile-g_wekimeki_lua.jpg",
+      "source": "https://kprofiles.com/weki-meki-members-profile/"
+    },
+    {
+      "id": "g_wekimeki_rina",
+      "name": "리나",
+      "groups": [
+        "위키미키"
+      ],
+      "english": "Rina",
+      "image": "photos/profile-g_wekimeki_rina.jpg",
+      "source": "https://kprofiles.com/weki-meki-members-profile/"
+    },
+    {
+      "id": "g_wekimeki_lucy",
+      "name": "루시",
+      "groups": [
+        "위키미키"
+      ],
+      "english": "Lucy",
+      "image": "photos/profile-g_wekimeki_lucy.jpg",
+      "source": "https://kprofiles.com/weki-meki-members-profile/"
+    },
+    {
+      "id": "g_gidle_miyeon",
+      "name": "미연",
+      "groups": [
+        "아이들"
+      ],
+      "english": "Miyeon",
+      "image": "photos/upload-20260927-g_gidle_miyeon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_gidle_minnie",
+      "name": "민니",
+      "groups": [
+        "아이들"
+      ],
+      "english": "Minnie",
+      "image": "photos/upload-20260927-g_gidle_minnie.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_gidle_soyeon",
+      "name": "소연",
+      "groups": [
+        "아이들"
+      ],
+      "english": "Soyeon",
+      "image": "photos/upload-20260927-g_gidle_soyeon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_gidle_yuqi",
+      "name": "우기",
+      "groups": [
+        "아이들"
+      ],
+      "english": "Yuqi",
+      "image": "photos/upload-20260927-g_gidle_yuqi.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_gidle_shuhua",
+      "name": "슈화",
+      "groups": [
+        "아이들"
+      ],
+      "english": "Shuhua",
+      "image": "photos/upload-20260927-g_gidle_shuhua.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_fromis9_saerom",
+      "name": "이새롬",
+      "groups": [
+        "프로미스나인"
+      ],
+      "english": "Lee Saerom",
+      "image": "photos/upload-20260927-g_fromis9_saerom.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_fromis9_hayoung",
+      "name": "하영",
+      "groups": [
+        "프로미스나인"
+      ],
+      "english": "Hayoung",
+      "image": "photos/upload-20260927-g_fromis9_hayoung.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_fromis9_gyuri",
+      "name": "장규리",
+      "groups": [
+        "프로미스나인"
+      ],
+      "english": "Jang Gyuri",
+      "image": "photos/upload-20260927-g_fromis9_gyuri.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_fromis9_jiwon",
+      "name": "지원",
+      "groups": [
+        "프로미스나인"
+      ],
+      "english": "Jiwon",
+      "image": "photos/upload-20260927-g_fromis9_jiwon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_fromis9_jisun",
+      "name": "노지선",
+      "groups": [
+        "프로미스나인"
+      ],
+      "english": "Roh Jisun",
+      "image": "photos/upload-20260927-g_fromis9_jisun.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_fromis9_seoyeon",
+      "name": "이서연",
+      "groups": [
+        "프로미스나인"
+      ],
+      "english": "Lee Seoyeon",
+      "image": "photos/upload-20260927-g_fromis9_seoyeon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_fromis9_chaeyoung",
+      "name": "채영",
+      "groups": [
+        "프로미스나인"
+      ],
+      "english": "Chaeyoung",
+      "image": "photos/upload-20260927-g_fromis9_chaeyoung.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_fromis9_nakyung",
+      "name": "이나경",
+      "groups": [
+        "프로미스나인"
+      ],
+      "english": "Nagyung",
+      "image": "photos/upload-20260927-g_fromis9_nakyung.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_fromis9_jiheon",
+      "name": "지헌",
+      "groups": [
+        "프로미스나인"
+      ],
+      "english": "Jiheon",
+      "image": "photos/upload-20260927-g_fromis9_jiheon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_izone_eunbi",
+      "name": "권은비",
+      "groups": [
+        "IZ*ONE"
+      ],
+      "english": "Eunbi",
+      "image": "photos/upload-20260926-g_izone_eunbi.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_izone_hyewon",
+      "name": "강혜원",
+      "groups": [
+        "IZ*ONE"
+      ],
+      "english": "Hyewon",
+      "image": "photos/upload-20260926-g_izone_hyewon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_izone_yena",
+      "name": "최예나",
+      "groups": [
+        "IZ*ONE"
+      ],
+      "english": "Yena",
+      "image": "photos/upload-20260926-g_izone_yena.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_izone_chaeyeon",
+      "name": "이채연",
+      "groups": [
+        "IZ*ONE"
+      ],
+      "english": "Chaeyeon",
+      "image": "photos/upload-20260926-g_izone_chaeyeon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_izone_minju",
+      "name": "민주",
+      "groups": [
+        "IZ*ONE"
+      ],
+      "english": "Minju",
+      "image": "photos/upload-20260927-g_izone_minju.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_izone_nako",
+      "name": "나코",
+      "groups": [
+        "IZ*ONE"
+      ],
+      "english": "Nako",
+      "image": "photos/user-20260927-v33-g_izone_nako.jpeg",
+      "source": null
+    },
+    {
+      "id": "g_izone_hitomi",
+      "name": "히토미",
+      "groups": [
+        "IZ*ONE"
+      ],
+      "english": "Hitomi",
+      "image": "photos/upload-20260927-g_izone_hitomi.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_izone_yuri",
+      "name": "조유리",
+      "groups": [
+        "IZ*ONE"
+      ],
+      "english": "Yuri",
+      "image": "photos/upload-20260926-g_izone_yuri.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_loona_hyunjin",
+      "name": "현진",
+      "groups": [
+        "이달의 소녀",
+        "Loossemble"
+      ],
+      "english": "Hyunjin",
+      "image": "photos/profile-g_loona_hyunjin.jpg",
+      "source": "https://kprofiles.com/loona-members-profile/"
+    },
+    {
+      "id": "g_loona_yeojin",
+      "name": "여진",
+      "groups": [
+        "이달의 소녀",
+        "Loossemble"
+      ],
+      "english": "Yeojin",
+      "image": "photos/profile-g_loona_yeojin.jpg",
+      "source": "https://kprofiles.com/loona-members-profile/"
+    },
+    {
+      "id": "g_loona_vivi",
+      "name": "비비",
+      "groups": [
+        "이달의 소녀",
+        "Loossemble"
+      ],
+      "english": "Vivi",
+      "image": "photos/profile-g_loona_vivi.jpg",
+      "source": "https://kprofiles.com/loona-members-profile/"
+    },
+    {
+      "id": "g_loona_yves",
+      "name": "이브",
+      "groups": [
+        "이달의 소녀"
+      ],
+      "english": "Yves",
+      "image": "photos/profile-g_loona_yves.jpg",
+      "source": "https://kprofiles.com/loona-members-profile/"
+    },
+    {
+      "id": "g_loona_chuu",
+      "name": "츄",
+      "groups": [
+        "이달의 소녀"
+      ],
+      "english": "Chuu",
+      "image": "photos/profile-g_loona_chuu.jpg",
+      "source": "https://kprofiles.com/loona-members-profile/"
+    },
+    {
+      "id": "g_loona_gowon",
+      "name": "고원",
+      "groups": [
+        "이달의 소녀",
+        "Loossemble"
+      ],
+      "english": "Go Won",
+      "image": "photos/profile-g_loona_gowon.jpg",
+      "source": "https://kprofiles.com/loona-members-profile/"
+    },
+    {
+      "id": "g_loona_hyeju",
+      "name": "혜주",
+      "groups": [
+        "이달의 소녀",
+        "Loossemble"
+      ],
+      "english": "Hyeju",
+      "image": "photos/profile-g_loona_hyeju.jpg",
+      "source": "https://kprofiles.com/loona-members-profile/"
+    },
+    {
+      "id": "g_nature_sohee",
+      "name": "소희",
+      "groups": [
+        "네이처"
+      ],
+      "english": "Sohee",
+      "image": "photos/profile-g_nature_sohee.jpg",
+      "source": "https://kprofiles.com/nature-members-profile/"
+    },
+    {
+      "id": "g_nature_aurora",
+      "name": "오로라",
+      "groups": [
+        "네이처"
+      ],
+      "english": "Aurora",
+      "image": "photos/profile-g_nature_aurora.jpg",
+      "source": "https://kprofiles.com/nature-members-profile/"
+    },
+    {
+      "id": "g_nature_saebom",
+      "name": "새봄",
+      "groups": [
+        "네이처"
+      ],
+      "english": "Saebom",
+      "image": "photos/profile-g_nature_saebom.jpg",
+      "source": "https://kprofiles.com/nature-members-profile/"
+    },
+    {
+      "id": "g_nature_chaebin",
+      "name": "채빈",
+      "groups": [
+        "네이처"
+      ],
+      "english": "Chaebin",
+      "image": "photos/profile-g_nature_chaebin.jpg",
+      "source": "https://kprofiles.com/nature-members-profile/"
+    },
+    {
+      "id": "g_nature_haru",
+      "name": "하루",
+      "groups": [
+        "네이처"
+      ],
+      "english": "Haru",
+      "image": "photos/profile-g_nature_haru.jpg",
+      "source": "https://kprofiles.com/nature-members-profile/"
+    },
+    {
+      "id": "g_nature_luche",
+      "name": "루",
+      "groups": [
+        "네이처"
+      ],
+      "english": "Lu",
+      "image": "photos/profile-g_nature_luche.jpg",
+      "source": "https://kprofiles.com/nature-members-profile/"
+    },
+    {
+      "id": "g_nature_uchae",
+      "name": "유채",
+      "groups": [
+        "네이처"
+      ],
+      "english": "Uchae",
+      "image": "photos/profile-g_nature_uchae.jpg",
+      "source": "https://kprofiles.com/nature-members-profile/"
+    },
+    {
+      "id": "g_itzy_yeji",
+      "name": "예지",
+      "groups": [
+        "ITZY"
+      ],
+      "english": "Yeji",
+      "image": "photos/upload-20260927-g_itzy_yeji.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_itzy_lia",
+      "name": "리아",
+      "groups": [
+        "ITZY"
+      ],
+      "english": "Lia",
+      "image": "photos/upload-20260927-g_itzy_lia.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_itzy_ryujin",
+      "name": "류진",
+      "groups": [
+        "ITZY"
+      ],
+      "english": "Ryujin",
+      "image": "photos/upload-20260927-g_itzy_ryujin.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_itzy_chaeryeong",
+      "name": "채령",
+      "groups": [
+        "ITZY"
+      ],
+      "english": "Chaeryeong",
+      "image": "photos/upload-20260927-g_itzy_chaeryeong.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_itzy_yuna",
+      "name": "유나",
+      "groups": [
+        "ITZY"
+      ],
+      "english": "Yuna",
+      "image": "photos/upload-20260927-g_itzy_yuna.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_everglow_eu",
+      "name": "이유",
+      "groups": [
+        "EVERGLOW"
+      ],
+      "english": "E:U",
+      "image": "photos/profile-g_everglow_eu.jpg",
+      "source": "https://kprofiles.com/everglow-members-profile/"
+    },
+    {
+      "id": "g_everglow_sihyeon",
+      "name": "시현",
+      "groups": [
+        "EVERGLOW"
+      ],
+      "english": "Sihyeon",
+      "image": "photos/profile-g_everglow_sihyeon.jpg",
+      "source": "https://kprofiles.com/everglow-members-profile/"
+    },
+    {
+      "id": "g_everglow_mia",
+      "name": "미아",
+      "groups": [
+        "EVERGLOW"
+      ],
+      "english": "Mia",
+      "image": "photos/profile-g_everglow_mia.jpg",
+      "source": "https://kprofiles.com/everglow-members-profile/"
+    },
+    {
+      "id": "g_everglow_onda",
+      "name": "온다",
+      "groups": [
+        "EVERGLOW"
+      ],
+      "english": "Onda",
+      "image": "photos/profile-g_everglow_onda.jpg",
+      "source": "https://kprofiles.com/everglow-members-profile/"
+    },
+    {
+      "id": "g_everglow_aisha",
+      "name": "아샤",
+      "groups": [
+        "EVERGLOW"
+      ],
+      "english": "Aisha",
+      "image": "photos/profile-g_everglow_aisha.jpg",
+      "source": "https://kprofiles.com/everglow-members-profile/"
+    },
+    {
+      "id": "g_everglow_yiren",
+      "name": "이런",
+      "groups": [
+        "EVERGLOW"
+      ],
+      "english": "Yiren",
+      "image": "photos/profile-g_everglow_yiren.jpg",
+      "source": "https://kprofiles.com/everglow-members-profile/"
+    },
+    {
+      "id": "g_aespa_karina",
+      "name": "카리나",
+      "groups": [
+        "aespa"
+      ],
+      "english": "Karina",
+      "image": "photos/upload-20260927-g_aespa_karina.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_aespa_giselle",
+      "name": "지젤",
+      "groups": [
+        "aespa"
+      ],
+      "english": "Giselle",
+      "image": "photos/upload-20260927-g_aespa_giselle.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_aespa_winter",
+      "name": "윈터",
+      "groups": [
+        "aespa"
+      ],
+      "english": "Winter",
+      "image": "photos/upload-20260927-g_aespa_winter.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_aespa_ningning",
+      "name": "닝닝",
+      "groups": [
+        "aespa"
+      ],
+      "english": "Ningning",
+      "image": "photos/upload-20260927-g_aespa_ningning.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_stayc_sumin",
+      "name": "수민",
+      "groups": [
+        "STAYC"
+      ],
+      "english": "Sumin",
+      "image": "photos/upload-20260927-g_stayc_sumin.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_stayc_sieun",
+      "name": "시은",
+      "groups": [
+        "STAYC"
+      ],
+      "english": "Sieun",
+      "image": "photos/upload-20260927-g_stayc_sieun.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_stayc_isa",
+      "name": "아이사",
+      "groups": [
+        "STAYC"
+      ],
+      "english": "Isa",
+      "image": "photos/upload-20260927-g_stayc_isa.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_stayc_seeun",
+      "name": "세은",
+      "groups": [
+        "STAYC"
+      ],
+      "english": "Seeun",
+      "image": "photos/upload-20260927-g_stayc_seeun.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_stayc_yoon",
+      "name": "윤",
+      "groups": [
+        "STAYC"
+      ],
+      "english": "Yoon",
+      "image": "photos/upload-20260927-g_stayc_yoon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_stayc_j",
+      "name": "재이",
+      "groups": [
+        "STAYC"
+      ],
+      "english": "J",
+      "image": "photos/upload-20260927-g_stayc_j.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_weeekly_monday",
+      "name": "루네디",
+      "groups": [
+        "Weeekly"
+      ],
+      "english": "Monday",
+      "image": "photos/profile-g_weeekly_monday.jpg",
+      "source": "https://kprofiles.com/weeekly-members-profile/"
+    },
+    {
+      "id": "g_weeekly_soojin",
+      "name": "이수진",
+      "groups": [
+        "Weeekly"
+      ],
+      "english": "Soojin",
+      "image": "photos/user-final-g_weeekly_soojin.jpg",
+      "source": null
+    },
+    {
+      "id": "g_weeekly_soeun",
+      "name": "박소은",
+      "groups": [
+        "Weeekly"
+      ],
+      "english": "Soeun",
+      "image": "photos/profile-g_weeekly_soeun.jpg",
+      "source": "https://kprofiles.com/weeekly-members-profile/"
+    },
+    {
+      "id": "g_weeekly_jaehee",
+      "name": "이재희",
+      "groups": [
+        "Weeekly"
+      ],
+      "english": "Jaehee",
+      "image": "photos/profile-g_weeekly_jaehee.jpg",
+      "source": "https://kprofiles.com/weeekly-members-profile/"
+    },
+    {
+      "id": "g_weeekly_jihan",
+      "name": "지한",
+      "groups": [
+        "Weeekly"
+      ],
+      "english": "Jihan",
+      "image": "photos/profile-g_weeekly_jihan.jpg",
+      "source": "https://kprofiles.com/weeekly-members-profile/"
+    },
+    {
+      "id": "g_weeekly_zoa",
+      "name": "조아",
+      "groups": [
+        "Weeekly"
+      ],
+      "english": "Zoa",
+      "image": "photos/profile-g_weeekly_zoa.jpg",
+      "source": "https://kprofiles.com/weeekly-members-profile/"
+    },
+    {
+      "id": "g_wooah_nana",
+      "name": "나나",
+      "groups": [
+        "woo!ah!"
+      ],
+      "english": "Nana",
+      "image": "photos/profile-g_wooah_nana.jpg",
+      "source": "https://kprofiles.com/wooah-members-profile/"
+    },
+    {
+      "id": "g_wooah_wooyeon",
+      "name": "우연",
+      "groups": [
+        "woo!ah!"
+      ],
+      "english": "Wooyeon",
+      "image": "photos/profile-g_wooah_wooyeon.jpg",
+      "source": "https://kprofiles.com/wooah-members-profile/"
+    },
+    {
+      "id": "g_wooah_sora",
+      "name": "소라",
+      "groups": [
+        "woo!ah!"
+      ],
+      "english": "Sora",
+      "image": "photos/profile-g_wooah_sora.jpg",
+      "source": "https://kprofiles.com/wooah-members-profile/"
+    },
+    {
+      "id": "g_wooah_lucy",
+      "name": "루시",
+      "groups": [
+        "woo!ah!"
+      ],
+      "english": "Lucy",
+      "image": "photos/profile-g_wooah_lucy.jpg",
+      "source": "https://kprofiles.com/wooah-members-profile/"
+    },
+    {
+      "id": "g_wooah_minseo",
+      "name": "민서",
+      "groups": [
+        "woo!ah!"
+      ],
+      "english": "Minseo",
+      "image": "photos/profile-g_wooah_minseo.jpg",
+      "source": "https://kprofiles.com/wooah-members-profile/"
+    },
+    {
+      "id": "g_ive_gaeul",
+      "name": "가을",
+      "groups": [
+        "IVE"
+      ],
+      "english": "Gaeul",
+      "image": "photos/upload-20260927-g_ive_gaeul.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_ive_yujin",
+      "name": "유진",
+      "groups": [
+        "IVE",
+        "IZ*ONE"
+      ],
+      "english": "Yujin",
+      "image": "photos/profile-g_ive_yujin.jpg",
+      "source": "https://kprofiles.com/ive-members-profile/"
+    },
+    {
+      "id": "g_ive_rei",
+      "name": "레이",
+      "groups": [
+        "IVE"
+      ],
+      "english": "Rei",
+      "image": "photos/upload-20260927-g_ive_rei.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_ive_wonyoung",
+      "name": "원영",
+      "groups": [
+        "IVE",
+        "IZ*ONE"
+      ],
+      "english": "Wonyoung",
+      "image": "photos/upload-20260927-g_ive_wonyoung.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_ive_liz",
+      "name": "리즈",
+      "groups": [
+        "IVE"
+      ],
+      "english": "Liz",
+      "image": "photos/upload-20260927-g_ive_liz.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_ive_leeseo",
+      "name": "이서",
+      "groups": [
+        "IVE"
+      ],
+      "english": "Leeseo",
+      "image": "photos/upload-20260927-g_ive_leeseo.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_billlie_moonsua",
+      "name": "문수아",
+      "groups": [
+        "Billlie"
+      ],
+      "english": "Moon Sua",
+      "image": "photos/upload-20260927-g_billlie_moonsua.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_billlie_suhyeon",
+      "name": "수현",
+      "groups": [
+        "Billlie"
+      ],
+      "english": "Suhyeon",
+      "image": "photos/upload-20260927-g_billlie_suhyeon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 38,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_billlie_haram",
+      "name": "하람",
+      "groups": [
+        "Billlie"
+      ],
+      "english": "Haram",
+      "image": "photos/upload-20260927-g_billlie_haram.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_billlie_tsuki",
+      "name": "츠키",
+      "groups": [
+        "Billlie"
+      ],
+      "english": "Tsuki",
+      "image": "photos/upload-20260927-g_billlie_tsuki.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_billlie_sheon",
+      "name": "션",
+      "groups": [
+        "Billlie"
+      ],
+      "english": "Sheon",
+      "image": "photos/upload-20260927-g_billlie_sheon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 42,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_billlie_siyoon",
+      "name": "시윤",
+      "groups": [
+        "Billlie"
+      ],
+      "english": "Siyoon",
+      "image": "photos/upload-20260927-g_billlie_siyoon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_billlie_haruna",
+      "name": "하루나",
+      "groups": [
+        "Billlie"
+      ],
+      "english": "Haruna",
+      "image": "photos/upload-20260927-g_billlie_haruna.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_purplekiss_nagoeun",
+      "name": "나고은",
+      "groups": [
+        "퍼플키스"
+      ],
+      "english": "Na Goeun",
+      "image": "photos/profile-g_purplekiss_nagoeun.jpg",
+      "source": "https://kprofiles.com/purple-kiss-members-profile/"
+    },
+    {
+      "id": "g_purplekiss_dosie",
+      "name": "도시",
+      "groups": [
+        "퍼플키스"
+      ],
+      "english": "Dosie",
+      "image": "photos/profile-g_purplekiss_dosie.jpg",
+      "source": "https://kprofiles.com/purple-kiss-members-profile/"
+    },
+    {
+      "id": "g_purplekiss_ireh",
+      "name": "이레",
+      "groups": [
+        "퍼플키스"
+      ],
+      "english": "Ireh",
+      "image": "photos/profile-g_purplekiss_ireh.jpg",
+      "source": "https://kprofiles.com/purple-kiss-members-profile/"
+    },
+    {
+      "id": "g_purplekiss_yuki",
+      "name": "유키",
+      "groups": [
+        "퍼플키스"
+      ],
+      "english": "Yuki",
+      "image": "photos/profile-g_purplekiss_yuki.jpg",
+      "source": "https://kprofiles.com/purple-kiss-members-profile/"
+    },
+    {
+      "id": "g_purplekiss_chaein",
+      "name": "채인",
+      "groups": [
+        "퍼플키스"
+      ],
+      "english": "Chaein",
+      "image": "photos/profile-g_purplekiss_chaein.jpg",
+      "source": "https://kprofiles.com/purple-kiss-members-profile/"
+    },
+    {
+      "id": "g_purplekiss_swan",
+      "name": "수안",
+      "groups": [
+        "퍼플키스"
+      ],
+      "english": "Swan",
+      "image": "photos/profile-g_purplekiss_swan.jpg",
+      "source": "https://kprofiles.com/purple-kiss-members-profile/"
+    },
+    {
+      "id": "g_lightsum_sangah",
+      "name": "상아",
+      "groups": [
+        "LIGHTSUM"
+      ],
+      "english": "Sangah",
+      "image": "photos/profile-g_lightsum_sangah.jpg",
+      "source": "https://kprofiles.com/lightsum-members-profile/"
+    },
+    {
+      "id": "g_lightsum_chowon",
+      "name": "초원",
+      "groups": [
+        "LIGHTSUM"
+      ],
+      "english": "Chowon",
+      "image": "photos/profile-g_lightsum_chowon.jpg",
+      "source": "https://kprofiles.com/lightsum-members-profile/"
+    },
+    {
+      "id": "g_lightsum_nayoung",
+      "name": "나영",
+      "groups": [
+        "LIGHTSUM"
+      ],
+      "english": "Nayoung",
+      "image": "photos/profile-g_lightsum_nayoung.jpg",
+      "source": "https://kprofiles.com/lightsum-members-profile/"
+    },
+    {
+      "id": "g_lightsum_hina",
+      "name": "히나",
+      "groups": [
+        "LIGHTSUM"
+      ],
+      "english": "Hina",
+      "image": "photos/profile-g_lightsum_hina.jpg",
+      "source": "https://kprofiles.com/lightsum-members-profile/"
+    },
+    {
+      "id": "g_lightsum_juhyeon",
+      "name": "주현",
+      "groups": [
+        "LIGHTSUM"
+      ],
+      "english": "Juhyeon",
+      "image": "photos/profile-g_lightsum_juhyeon.jpg",
+      "source": "https://kprofiles.com/lightsum-members-profile/"
+    },
+    {
+      "id": "g_lightsum_yujeong",
+      "name": "유정",
+      "groups": [
+        "LIGHTSUM"
+      ],
+      "english": "Yujeong",
+      "image": "photos/profile-g_lightsum_yujeong.jpg",
+      "source": "https://kprofiles.com/lightsum-members-profile/"
+    },
+    {
+      "id": "g_lesserafim_sakura",
+      "name": "사쿠라",
+      "groups": [
+        "LE SSERAFIM",
+        "IZ*ONE"
+      ],
+      "english": "Sakura",
+      "image": "photos/upload-20260926-g_lesserafim_sakura.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_lesserafim_chaewon",
+      "name": "김채원",
+      "groups": [
+        "LE SSERAFIM",
+        "IZ*ONE"
+      ],
+      "english": "Chaewon",
+      "image": "photos/upload-20260926-g_lesserafim_chaewon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_lesserafim_yunjin",
+      "name": "윤진",
+      "groups": [
+        "LE SSERAFIM"
+      ],
+      "english": "Yunjin",
+      "image": "photos/upload-20260927-g_lesserafim_yunjin.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_lesserafim_kazuha",
+      "name": "카즈하",
+      "groups": [
+        "LE SSERAFIM"
+      ],
+      "english": "Kazuha",
+      "image": "photos/upload-20260927-g_lesserafim_kazuha.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_lesserafim_eunchae",
+      "name": "은채",
+      "groups": [
+        "LE SSERAFIM"
+      ],
+      "english": "Eunchae",
+      "image": "photos/upload-20260927-g_lesserafim_eunchae.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_newjeans_minji",
+      "name": "민지",
+      "groups": [
+        "NewJeans"
+      ],
+      "english": "Minji",
+      "image": "photos/upload-20260927-g_newjeans_minji.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_newjeans_hanni",
+      "name": "하니",
+      "groups": [
+        "NewJeans"
+      ],
+      "english": "Hanni",
+      "image": "photos/upload-20260927-g_newjeans_hanni.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_newjeans_danielle",
+      "name": "다니엘",
+      "groups": [
+        "NewJeans"
+      ],
+      "english": "Danielle",
+      "image": "photos/upload-20260927-g_newjeans_danielle.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_newjeans_haerin",
+      "name": "해린",
+      "groups": [
+        "NewJeans"
+      ],
+      "english": "Haerin",
+      "image": "photos/upload-20260927-g_newjeans_haerin.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_newjeans_hyein",
+      "name": "혜인",
+      "groups": [
+        "NewJeans"
+      ],
+      "english": "Hyein",
+      "image": "photos/upload-20260927-g_newjeans_hyein.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_nmixx_lily",
+      "name": "릴리",
+      "groups": [
+        "NMIXX"
+      ],
+      "english": "Lily",
+      "image": "photos/upload-20260927-g_nmixx_lily.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_nmixx_haewon",
+      "name": "해원",
+      "groups": [
+        "NMIXX"
+      ],
+      "english": "Haewon",
+      "image": "photos/upload-20260927-g_nmixx_haewon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_nmixx_sullyoon",
+      "name": "설윤",
+      "groups": [
+        "NMIXX"
+      ],
+      "english": "Sullyoon",
+      "image": "photos/upload-20260927-g_nmixx_sullyoon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_nmixx_bae",
+      "name": "배이",
+      "groups": [
+        "NMIXX"
+      ],
+      "english": "Bae",
+      "image": "photos/upload-20260927-g_nmixx_bae.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_nmixx_jiwoo",
+      "name": "지우",
+      "groups": [
+        "NMIXX"
+      ],
+      "english": "Jiwoo",
+      "image": "photos/upload-20260927-g_nmixx_jiwoo.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_nmixx_kyujin",
+      "name": "규진",
+      "groups": [
+        "NMIXX"
+      ],
+      "english": "Kyujin",
+      "image": "photos/upload-20260927-g_nmixx_kyujin.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_kep1er_yujin",
+      "name": "유진",
+      "groups": [
+        "Kep1er",
+        "CLC"
+      ],
+      "displayGroups": [
+        "Kep1er"
+      ],
+      "english": "Yujin",
+      "image": "photos/profile-g_kep1er_yujin.jpg",
+      "source": "https://kprofiles.com/kep1er-members-profile/"
+    },
+    {
+      "id": "g_kep1er_xiaoting",
+      "name": "샤오팅",
+      "groups": [
+        "Kep1er"
+      ],
+      "english": "Xiaoting",
+      "image": "photos/profile-g_kep1er_xiaoting.jpg",
+      "source": "https://kprofiles.com/kep1er-members-profile/"
+    },
+    {
+      "id": "g_kep1er_chaehyun",
+      "name": "채현",
+      "groups": [
+        "Kep1er"
+      ],
+      "english": "Chaehyun",
+      "image": "photos/profile-g_kep1er_chaehyun.jpg",
+      "source": "https://kprofiles.com/kep1er-members-profile/"
+    },
+    {
+      "id": "g_kep1er_dayeon",
+      "name": "다연",
+      "groups": [
+        "Kep1er"
+      ],
+      "english": "Dayeon",
+      "image": "photos/profile-g_kep1er_dayeon.jpg",
+      "source": "https://kprofiles.com/kep1er-members-profile/"
+    },
+    {
+      "id": "g_kep1er_hikaru",
+      "name": "히카루",
+      "groups": [
+        "Kep1er"
+      ],
+      "english": "Hikaru",
+      "image": "photos/profile-g_kep1er_hikaru.jpg",
+      "source": "https://kprofiles.com/kep1er-members-profile/"
+    },
+    {
+      "id": "g_kep1er_bahiyyih",
+      "name": "휴닝바히에",
+      "groups": [
+        "Kep1er"
+      ],
+      "english": "Bahiyyih",
+      "image": "photos/profile-g_kep1er_bahiyyih.jpg",
+      "source": "https://kprofiles.com/kep1er-members-profile/"
+    },
+    {
+      "id": "g_kep1er_mashiro",
+      "name": "마시로",
+      "groups": [
+        "Kep1er",
+        "MADEIN"
+      ],
+      "displayGroups": [
+        "Kep1er",
+        "MADEIN"
+      ],
+      "english": "Mashiro",
+      "image": "photos/profile-g_kep1er_mashiro.jpg",
+      "source": "https://kprofiles.com/kep1er-members-profile/"
+    },
+    {
+      "id": "g_kep1er_yeseo",
+      "name": "예서",
+      "groups": [
+        "Kep1er",
+        "MADEIN"
+      ],
+      "displayGroups": [
+        "Kep1er",
+        "MADEIN"
+      ],
+      "english": "Yeseo",
+      "image": "photos/profile-g_kep1er_yeseo.jpg",
+      "source": "https://kprofiles.com/kep1er-members-profile/"
+    },
+    {
+      "id": "g_kep1er_youngeun",
+      "name": "영은",
+      "groups": [
+        "Kep1er"
+      ],
+      "english": "Youngeun",
+      "image": "photos/profile-g_kep1er_youngeun.jpg",
+      "source": "https://kprofiles.com/kep1er-members-profile/"
+    },
+    {
+      "id": "g_h1key_seoi",
+      "name": "서이",
+      "groups": [
+        "H1-KEY"
+      ],
+      "english": "Seoi",
+      "image": "photos/profile-g_h1key_seoi.jpg",
+      "source": "https://kprofiles.com/h1-key-members-profile/"
+    },
+    {
+      "id": "g_h1key_riina",
+      "name": "리이나",
+      "groups": [
+        "H1-KEY"
+      ],
+      "english": "Riina",
+      "image": "photos/profile-g_h1key_riina.jpg",
+      "source": "https://kprofiles.com/h1-key-members-profile/"
+    },
+    {
+      "id": "g_h1key_hwiseo",
+      "name": "휘서",
+      "groups": [
+        "H1-KEY"
+      ],
+      "english": "Hwiseo",
+      "image": "photos/profile-g_h1key_hwiseo.jpg",
+      "source": "https://kprofiles.com/h1-key-members-profile/"
+    },
+    {
+      "id": "g_h1key_yel",
+      "name": "한신영",
+      "groups": [
+        "H1-KEY"
+      ],
+      "english": "Yel",
+      "image": "photos/profile-g_h1key_yel.jpg",
+      "source": "https://kprofiles.com/h1-key-members-profile/"
+    },
+    {
+      "id": "g_classy_hyungseo",
+      "name": "형서",
+      "groups": [
+        "CLASS:y"
+      ],
+      "english": "Hyungseo",
+      "image": "photos/upload-20260927-g_classy_hyungseo.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_classy_chaewon",
+      "name": "채원",
+      "groups": [
+        "CLASS:y"
+      ],
+      "english": "Chaewon",
+      "image": "photos/upload-20260927-g_classy_chaewon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_classy_hyeju",
+      "name": "혜주",
+      "groups": [
+        "CLASS:y"
+      ],
+      "english": "Hyeju",
+      "image": "photos/upload-20260927-g_classy_hyeju.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_classy_riwon",
+      "name": "리원",
+      "groups": [
+        "CLASS:y"
+      ],
+      "english": "Riwon",
+      "image": "photos/upload-20260927-g_classy_riwon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_classy_jimin",
+      "name": "지민",
+      "groups": [
+        "CLASS:y"
+      ],
+      "english": "Jimin",
+      "image": "photos/upload-20260927-g_classy_jimin.png",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 50,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_classy_boeun",
+      "name": "보은",
+      "groups": [
+        "CLASS:y"
+      ],
+      "english": "Bo-eun",
+      "image": "photos/upload-20260927-g_classy_boeun.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_classy_seonyou",
+      "name": "선유",
+      "groups": [
+        "CLASS:y"
+      ],
+      "english": "Seonyou",
+      "image": "photos/upload-20260927-g_classy_seonyou.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_fiftyfifty_keena",
+      "name": "키나",
+      "groups": [
+        "FIFTY FIFTY"
+      ],
+      "english": "Keena",
+      "image": "photos/upload-20260927-g_fiftyfifty_keena.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_fiftyfifty_chanellemoon",
+      "name": "문샤넬",
+      "groups": [
+        "FIFTY FIFTY"
+      ],
+      "english": "Chanelle Moon",
+      "image": "photos/upload-20260927-g_fiftyfifty_chanellemoon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_fiftyfifty_yewon",
+      "name": "예원",
+      "groups": [
+        "FIFTY FIFTY"
+      ],
+      "english": "Yewon",
+      "image": "photos/upload-20260927-g_fiftyfifty_yewon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_fiftyfifty_hana",
+      "name": "하나",
+      "groups": [
+        "FIFTY FIFTY"
+      ],
+      "english": "Hana",
+      "image": "photos/upload-20260927-g_fiftyfifty_hana.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_fiftyfifty_athena",
+      "name": "아테나",
+      "groups": [
+        "FIFTY FIFTY"
+      ],
+      "english": "Athena",
+      "image": "photos/upload-20260927-g_fiftyfifty_athena.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_kissoflife_julie",
+      "name": "줄리",
+      "groups": [
+        "KISS OF LIFE"
+      ],
+      "english": "Julie",
+      "image": "photos/upload-20260927-g_kissoflife_julie.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_kissoflife_natty",
+      "name": "나띠",
+      "groups": [
+        "KISS OF LIFE"
+      ],
+      "english": "Natty",
+      "image": "photos/upload-20260927-g_kissoflife_natty.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_kissoflife_belle",
+      "name": "벨",
+      "groups": [
+        "KISS OF LIFE"
+      ],
+      "english": "Belle",
+      "image": "photos/upload-20260927-g_kissoflife_belle.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_kissoflife_haneul",
+      "name": "하늘",
+      "groups": [
+        "KISS OF LIFE"
+      ],
+      "english": "Haneul",
+      "image": "photos/upload-20260927-g_kissoflife_haneul.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_seoyeon",
+      "name": "윤서연",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Seoyeon",
+      "image": "photos/upload-20260927-g_triples_seoyeon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_hyerin",
+      "name": "혜린",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Hyerin",
+      "image": "photos/upload-20260927-g_triples_hyerin.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_jiwoo",
+      "name": "지우",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Jiwoo",
+      "image": "photos/upload-20260927-g_triples_jiwoo.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_chaeyeon",
+      "name": "김채연",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Chaeyeon",
+      "image": "photos/upload-20260927-g_triples_chaeyeon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_yooyeon",
+      "name": "김유연",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Yooyeon",
+      "image": "photos/upload-20260927-g_triples_yooyeon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_soomin",
+      "name": "김수민",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Soomin",
+      "image": "photos/upload-20260927-g_triples_soomin.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_nakyoung",
+      "name": "김나경",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Nakyoung",
+      "image": "photos/upload-20260927-g_triples_nakyoung.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_yubin",
+      "name": "공유빈",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Yubin",
+      "image": "photos/upload-20260927-g_triples_yubin.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_kaede",
+      "name": "카에데",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Kaede",
+      "image": "photos/upload-20260927-g_triples_kaede.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_dahyun",
+      "name": "다현",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Dahyun",
+      "image": "photos/upload-20260927-g_triples_dahyun.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_kotone",
+      "name": "코토네",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Kotone",
+      "image": "photos/upload-20260927-g_triples_kotone.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_yeonji",
+      "name": "곽연지",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Yeonji",
+      "image": "photos/upload-20260927-g_triples_yeonji.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_nien",
+      "name": "니엔",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Nien",
+      "image": "photos/upload-20260927-g_triples_nien.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_sohyun",
+      "name": "박소현",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Sohyun",
+      "image": "photos/upload-20260927-g_triples_sohyun.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_xinyu",
+      "name": "신위",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Xinyu",
+      "image": "photos/upload-20260927-g_triples_xinyu.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_mayu",
+      "name": "마유",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Mayu",
+      "image": "photos/upload-20260927-g_triples_mayu.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_lynn",
+      "name": "린",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Lynn",
+      "image": "photos/upload-20260927-g_triples_lynn.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_joobin",
+      "name": "주빈",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Joobin",
+      "image": "photos/upload-20260927-g_triples_joobin.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_hayeon",
+      "name": "정하연",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Hayeon",
+      "image": "photos/upload-20260927-g_triples_hayeon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_shion",
+      "name": "박시온",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Shion",
+      "image": "photos/upload-20260927-g_triples_shion.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_chaewon",
+      "name": "채원",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Chaewon",
+      "image": "photos/upload-20260927-g_triples_chaewon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_sullin",
+      "name": "설린",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Sullin",
+      "image": "photos/upload-20260927-g_triples_sullin.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_seoah",
+      "name": "서아",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Seoah",
+      "image": "photos/upload-20260927-g_triples_seoah.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_triples_jiyeon",
+      "name": "지연",
+      "groups": [
+        "tripleS"
+      ],
+      "english": "Jiyeon",
+      "image": "photos/upload-20260927-g_triples_jiyeon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_limelight_gaeun",
+      "name": "가은",
+      "groups": [
+        "LIMELIGHT"
+      ],
+      "english": "Gaeun",
+      "image": "photos/profile-g_limelight_gaeun.jpg",
+      "source": "https://kprofiles.com/limelight-members-profile/"
+    },
+    {
+      "id": "g_mave_siu",
+      "name": "시우",
+      "groups": [
+        "MAVE:"
+      ],
+      "english": "SIU",
+      "image": "photos/profile-g_mave_siu.jpg",
+      "source": "https://kprofiles.com/mave-members-profile/"
+    },
+    {
+      "id": "g_mave_zena",
+      "name": "제나",
+      "groups": [
+        "MAVE:"
+      ],
+      "english": "ZENA",
+      "image": "photos/profile-g_mave_zena.jpg",
+      "source": "https://kprofiles.com/mave-members-profile/"
+    },
+    {
+      "id": "g_mave_tyra",
+      "name": "타이라",
+      "groups": [
+        "MAVE:"
+      ],
+      "english": "TYRA",
+      "image": "photos/profile-g_mave_tyra.jpg",
+      "source": "https://kprofiles.com/mave-members-profile/"
+    },
+    {
+      "id": "g_mave_marty",
+      "name": "마티",
+      "groups": [
+        "MAVE:"
+      ],
+      "english": "MARTY",
+      "image": "photos/profile-g_mave_marty.jpg",
+      "source": "https://kprofiles.com/mave-members-profile/"
+    },
+    {
+      "id": "g_babymonster_ruka",
+      "name": "루카",
+      "groups": [
+        "BABYMONSTER"
+      ],
+      "english": "Ruka",
+      "image": "photos/upload-20260927-g_babymonster_ruka.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_babymonster_pharita",
+      "name": "파리타",
+      "groups": [
+        "BABYMONSTER"
+      ],
+      "english": "Pharita",
+      "image": "photos/upload-20260927-g_babymonster_pharita.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_babymonster_asa",
+      "name": "아사",
+      "groups": [
+        "BABYMONSTER"
+      ],
+      "english": "Asa",
+      "image": "photos/upload-20260927-g_babymonster_asa.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_babymonster_ahyeon",
+      "name": "아현",
+      "groups": [
+        "BABYMONSTER"
+      ],
+      "english": "Ahyeon",
+      "image": "photos/upload-20260927-g_babymonster_ahyeon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_babymonster_rami",
+      "name": "라미",
+      "groups": [
+        "BABYMONSTER"
+      ],
+      "english": "Rami",
+      "image": "photos/upload-20260927-g_babymonster_rami.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_babymonster_rora",
+      "name": "로라",
+      "groups": [
+        "BABYMONSTER"
+      ],
+      "english": "Rora",
+      "image": "photos/upload-20260927-g_babymonster_rora.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_babymonster_chiquita",
+      "name": "치키타",
+      "groups": [
+        "BABYMONSTER"
+      ],
+      "english": "Chiquita",
+      "image": "photos/upload-20260927-g_babymonster_chiquita.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_illit_yunah",
+      "name": "윤아",
+      "groups": [
+        "ILLIT"
+      ],
+      "english": "Yunah",
+      "image": "photos/upload-20260927-g_illit_yunah.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_illit_minju",
+      "name": "민주",
+      "groups": [
+        "ILLIT"
+      ],
+      "english": "Minju",
+      "image": "photos/upload-20260927-g_illit_minju.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_illit_moka",
+      "name": "모카",
+      "groups": [
+        "ILLIT"
+      ],
+      "english": "Moka",
+      "image": "photos/upload-20260927-g_illit_moka.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_illit_wonhee",
+      "name": "원희",
+      "groups": [
+        "ILLIT"
+      ],
+      "english": "Wonhee",
+      "image": "photos/upload-20260927-g_illit_wonhee.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_illit_iroha",
+      "name": "이로하",
+      "groups": [
+        "ILLIT"
+      ],
+      "english": "Iroha",
+      "image": "photos/upload-20260927-g_illit_iroha.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_unis_hyeonju",
+      "name": "현주",
+      "groups": [
+        "UNIS"
+      ],
+      "english": "Hyeonju",
+      "image": "photos/profile-g_unis_hyeonju.jpg",
+      "source": "https://kprofiles.com/unis-universe-ticket-members-profile/"
+    },
+    {
+      "id": "g_unis_nana",
+      "name": "나나",
+      "groups": [
+        "UNIS"
+      ],
+      "english": "Nana",
+      "image": "photos/profile-g_unis_nana.jpg",
+      "source": "https://kprofiles.com/unis-universe-ticket-members-profile/"
+    },
+    {
+      "id": "g_unis_gehlee",
+      "name": "젤리",
+      "groups": [
+        "UNIS"
+      ],
+      "english": "Gehlee",
+      "image": "photos/profile-g_unis_gehlee.jpg",
+      "source": "https://kprofiles.com/unis-universe-ticket-members-profile/"
+    },
+    {
+      "id": "g_unis_kotarou",
+      "name": "코토코",
+      "groups": [
+        "UNIS"
+      ],
+      "english": "Kotoko",
+      "image": "photos/profile-g_unis_kotarou.jpg",
+      "source": "https://kprofiles.com/unis-universe-ticket-members-profile/"
+    },
+    {
+      "id": "g_unis_yunha",
+      "name": "윤하",
+      "groups": [
+        "UNIS"
+      ],
+      "english": "Yunha",
+      "image": "photos/profile-g_unis_yunha.jpg",
+      "source": "https://kprofiles.com/unis-universe-ticket-members-profile/"
+    },
+    {
+      "id": "g_unis_elisia",
+      "name": "엘리시아",
+      "groups": [
+        "UNIS"
+      ],
+      "english": "Elisia",
+      "image": "photos/profile-g_unis_elisia.jpg",
+      "source": "https://kprofiles.com/unis-universe-ticket-members-profile/"
+    },
+    {
+      "id": "g_unis_yoona",
+      "name": "오윤아",
+      "groups": [
+        "UNIS"
+      ],
+      "english": "Yoona",
+      "image": "photos/profile-g_unis_yoona.jpg",
+      "source": "https://kprofiles.com/unis-universe-ticket-members-profile/"
+    },
+    {
+      "id": "g_unis_seowon",
+      "name": "서원",
+      "groups": [
+        "UNIS"
+      ],
+      "english": "Seowon",
+      "image": "photos/profile-g_unis_seowon.jpg",
+      "source": "https://kprofiles.com/unis-universe-ticket-members-profile/"
+    },
+    {
+      "id": "g_rescene_woni",
+      "name": "원이",
+      "groups": [
+        "RESCENE"
+      ],
+      "english": "Woni",
+      "image": "photos/upload-20260927-g_rescene_woni.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_rescene_liv",
+      "name": "리브",
+      "groups": [
+        "RESCENE"
+      ],
+      "english": "Liv",
+      "image": "photos/profile-g_rescene_liv.jpg",
+      "source": "https://kprofiles.com/rescene-members-profile/"
+    },
+    {
+      "id": "g_rescene_minami",
+      "name": "미나미",
+      "groups": [
+        "RESCENE"
+      ],
+      "english": "Minami",
+      "image": "photos/upload-20260927-g_rescene_minami.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_rescene_may",
+      "name": "메이",
+      "groups": [
+        "RESCENE"
+      ],
+      "english": "May",
+      "image": "photos/upload-20260927-g_rescene_may.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_rescene_zena",
+      "name": "제나",
+      "groups": [
+        "RESCENE"
+      ],
+      "english": "Zena",
+      "image": "photos/upload-20260927-g_rescene_zena.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_meovv_sooin",
+      "name": "수인",
+      "groups": [
+        "MEOVV"
+      ],
+      "english": "Sooin",
+      "image": "photos/profile-g_meovv_sooin.jpg",
+      "source": "https://kprofiles.com/meovv-members-profile/"
+    },
+    {
+      "id": "g_meovv_gawon",
+      "name": "가원",
+      "groups": [
+        "MEOVV"
+      ],
+      "english": "Gawon",
+      "image": "photos/upload-20260927-g_meovv_gawon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_meovv_anna",
+      "name": "안나",
+      "groups": [
+        "MEOVV"
+      ],
+      "english": "Anna",
+      "image": "photos/upload-20260927-g_meovv_anna.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_meovv_narin",
+      "name": "나린",
+      "groups": [
+        "MEOVV"
+      ],
+      "english": "Narin",
+      "image": "photos/upload-20260927-g_meovv_narin.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_meovv_ella",
+      "name": "엘라",
+      "groups": [
+        "MEOVV"
+      ],
+      "english": "Ella",
+      "image": "photos/upload-20260927-g_meovv_ella.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_badvillain_chloeyoung",
+      "name": "클로이영",
+      "groups": [
+        "BADVILLAIN"
+      ],
+      "english": "Chloe Young",
+      "image": "photos/profile-g_badvillain_chloeyoung.jpg",
+      "source": "https://kprofiles.com/badvillain-members-profile/"
+    },
+    {
+      "id": "g_badvillain_ina",
+      "name": "이나",
+      "groups": [
+        "BADVILLAIN"
+      ],
+      "english": "Ina",
+      "image": "photos/profile-g_badvillain_ina.jpg",
+      "source": "https://kprofiles.com/badvillain-members-profile/"
+    },
+    {
+      "id": "g_badvillain_emma",
+      "name": "엠마",
+      "groups": [
+        "BADVILLAIN"
+      ],
+      "english": "Emma",
+      "image": "photos/profile-g_badvillain_emma.jpg",
+      "source": "https://kprofiles.com/badvillain-members-profile/"
+    },
+    {
+      "id": "g_badvillain_hyeonbin",
+      "name": "휴이",
+      "groups": [
+        "BADVILLAIN"
+      ],
+      "english": "HU’E",
+      "image": "photos/profile-g_badvillain_hyeonbin.jpg",
+      "source": "https://kprofiles.com/badvillain-members-profile/"
+    },
+    {
+      "id": "g_badvillain_yunseo",
+      "name": "윤서",
+      "groups": [
+        "BADVILLAIN"
+      ],
+      "english": "Yunseo",
+      "image": "photos/profile-g_badvillain_yunseo.jpg",
+      "source": "https://kprofiles.com/badvillain-members-profile/"
+    },
+    {
+      "id": "g_badvillain_vin",
+      "name": "최서빈",
+      "groups": [
+        "BADVILLAIN"
+      ],
+      "english": "Vin",
+      "image": "photos/profile-g_badvillain_vin.jpg",
+      "source": "https://kprofiles.com/badvillain-members-profile/"
+    },
+    {
+      "id": "g_badvillain_kelly",
+      "name": "켈리",
+      "groups": [
+        "BADVILLAIN"
+      ],
+      "english": "Kelly",
+      "image": "photos/profile-g_badvillain_kelly.jpg",
+      "source": "https://kprofiles.com/badvillain-members-profile/"
+    },
+    {
+      "id": "g_izna_mai",
+      "name": "마이",
+      "groups": [
+        "izna"
+      ],
+      "english": "Mai",
+      "image": "photos/profile-g_izna_mai.jpg",
+      "source": "https://kprofiles.com/izna-members-profile/"
+    },
+    {
+      "id": "g_izna_koko",
+      "name": "코코",
+      "groups": [
+        "izna"
+      ],
+      "english": "Koko",
+      "image": "photos/profile-g_izna_koko.jpg",
+      "source": "https://kprofiles.com/izna-members-profile/"
+    },
+    {
+      "id": "g_izna_bangjeemin",
+      "name": "방지민",
+      "groups": [
+        "izna"
+      ],
+      "english": "Bang Jeemin",
+      "image": "photos/upload-20260927-g_izna_bangjeemin.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_izna_ryusarang",
+      "name": "유사랑",
+      "groups": [
+        "izna"
+      ],
+      "english": "Ryu Sarang",
+      "image": "photos/upload-20260927-g_izna_ryusarang.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_izna_choijungeun",
+      "name": "최정은",
+      "groups": [
+        "izna"
+      ],
+      "english": "Choi Jungeun",
+      "image": "photos/profile-g_izna_choijungeun.jpg",
+      "source": "https://kprofiles.com/izna-members-profile/"
+    },
+    {
+      "id": "g_izna_jeongsaebi",
+      "name": "정세비",
+      "groups": [
+        "izna"
+      ],
+      "english": "Jeong Saebi",
+      "image": "photos/profile-g_izna_jeongsaebi.jpg",
+      "source": "https://kprofiles.com/izna-members-profile/"
+    },
+    {
+      "id": "g_saymyname_hita",
+      "name": "히토미",
+      "groups": [
+        "SAY MY NAME"
+      ],
+      "english": "Hitomi",
+      "image": "photos/profile-g_saymyname_hita.jpg",
+      "source": "https://kprofiles.com/say-my-name-members-profile/"
+    },
+    {
+      "id": "g_saymyname_dohee",
+      "name": "도희",
+      "groups": [
+        "SAY MY NAME"
+      ],
+      "english": "Dohee",
+      "image": "photos/profile-g_saymyname_dohee.jpg",
+      "source": "https://kprofiles.com/say-my-name-members-profile/"
+    },
+    {
+      "id": "g_saymyname_kanny",
+      "name": "카니",
+      "groups": [
+        "SAY MY NAME"
+      ],
+      "english": "Kanny",
+      "image": "photos/profile-g_saymyname_kanny.jpg",
+      "source": "https://kprofiles.com/say-my-name-members-profile/"
+    },
+    {
+      "id": "g_saymyname_mei",
+      "name": "메이",
+      "groups": [
+        "SAY MY NAME"
+      ],
+      "english": "Mei",
+      "image": "photos/profile-g_saymyname_mei.jpg",
+      "source": "https://kprofiles.com/say-my-name-members-profile/"
+    },
+    {
+      "id": "g_saymyname_junhwi",
+      "name": "준휘",
+      "groups": [
+        "SAY MY NAME"
+      ],
+      "english": "Junhwi",
+      "image": "photos/profile-g_saymyname_junhwi.jpg",
+      "source": "https://kprofiles.com/say-my-name-members-profile/"
+    },
+    {
+      "id": "g_saymyname_seyun",
+      "name": "승주",
+      "groups": [
+        "SAY MY NAME"
+      ],
+      "english": "Seungjoo",
+      "image": "photos/profile-g_saymyname_seyun.jpg",
+      "source": "https://kprofiles.com/say-my-name-members-profile/"
+    },
+    {
+      "id": "g_saymyname_soha",
+      "name": "소하",
+      "groups": [
+        "SAY MY NAME"
+      ],
+      "english": "Soha",
+      "image": "photos/profile-g_saymyname_soha.jpg",
+      "source": "https://kprofiles.com/say-my-name-members-profile/"
+    },
+    {
+      "id": "g_katseye_manon",
+      "name": "마농",
+      "groups": [
+        "KATSEYE"
+      ],
+      "english": "Manon",
+      "image": "photos/upload-20260927-g_katseye_manon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_katseye_sophia",
+      "name": "소피아",
+      "groups": [
+        "KATSEYE"
+      ],
+      "english": "Sophia",
+      "image": "photos/upload-20260927-g_katseye_sophia.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_katseye_daniela",
+      "name": "다니엘라",
+      "groups": [
+        "KATSEYE"
+      ],
+      "english": "Daniela",
+      "image": "photos/profile-g_katseye_daniela.jpg",
+      "source": "https://kprofiles.com/katseye-members-profile/"
+    },
+    {
+      "id": "g_katseye_lara",
+      "name": "라라",
+      "groups": [
+        "KATSEYE"
+      ],
+      "english": "Lara",
+      "image": "photos/profile-g_katseye_lara.jpg",
+      "source": "https://kprofiles.com/katseye-members-profile/"
+    },
+    {
+      "id": "g_katseye_megan",
+      "name": "메간",
+      "groups": [
+        "KATSEYE"
+      ],
+      "english": "Megan",
+      "image": "photos/upload-20260927-g_katseye_megan.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_katseye_yoonchae",
+      "name": "윤채",
+      "groups": [
+        "KATSEYE"
+      ],
+      "english": "Yoonchae",
+      "image": "photos/upload-20260927-g_katseye_yoonchae.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_hearts2hearts_carmen",
+      "name": "카르멘",
+      "groups": [
+        "Hearts2Hearts"
+      ],
+      "english": "Carmen",
+      "image": "photos/upload-20260927-g_hearts2hearts_carmen.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_hearts2hearts_jiwoo",
+      "name": "지우",
+      "groups": [
+        "Hearts2Hearts"
+      ],
+      "english": "Jiwoo",
+      "image": "photos/upload-20260927-g_hearts2hearts_jiwoo.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_hearts2hearts_yuha",
+      "name": "유하",
+      "groups": [
+        "Hearts2Hearts"
+      ],
+      "english": "Yuha",
+      "image": "photos/upload-20260927-g_hearts2hearts_yuha.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_hearts2hearts_stella",
+      "name": "스텔라",
+      "groups": [
+        "Hearts2Hearts"
+      ],
+      "english": "Stella",
+      "image": "photos/upload-20260927-g_hearts2hearts_stella.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_hearts2hearts_juun",
+      "name": "주은",
+      "groups": [
+        "Hearts2Hearts"
+      ],
+      "english": "Juun",
+      "image": "photos/upload-20260927-g_hearts2hearts_juun.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_hearts2hearts_ana",
+      "name": "에이나",
+      "groups": [
+        "Hearts2Hearts"
+      ],
+      "english": "A-na",
+      "image": "photos/upload-20260927-g_hearts2hearts_ana.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_hearts2hearts_ian",
+      "name": "이안",
+      "groups": [
+        "Hearts2Hearts"
+      ],
+      "english": "Ian",
+      "image": "photos/upload-20260927-g_hearts2hearts_ian.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_hearts2hearts_yeon",
+      "name": "예온",
+      "groups": [
+        "Hearts2Hearts"
+      ],
+      "english": "Ye-on",
+      "image": "photos/upload-20260927-g_hearts2hearts_yeon.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_kiiikiii_jiyu",
+      "name": "지유",
+      "groups": [
+        "KiiiKiii"
+      ],
+      "english": "Jiyu",
+      "image": "photos/upload-20260927-g_kiiikiii_jiyu.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_kiiikiii_leesol",
+      "name": "이솔",
+      "groups": [
+        "KiiiKiii"
+      ],
+      "english": "Leesol",
+      "image": "photos/upload-20260927-g_kiiikiii_leesol.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_kiiikiii_sui",
+      "name": "수이",
+      "groups": [
+        "KiiiKiii"
+      ],
+      "english": "Sui",
+      "image": "photos/upload-20260927-g_kiiikiii_sui.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_kiiikiii_haum",
+      "name": "하음",
+      "groups": [
+        "KiiiKiii"
+      ],
+      "english": "Haum",
+      "image": "photos/upload-20260927-g_kiiikiii_haum.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_kiiikiii_kya",
+      "name": "키야",
+      "groups": [
+        "KiiiKiii"
+      ],
+      "english": "Kya",
+      "image": "photos/upload-20260927-g_kiiikiii_kya.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_babydontcry_beni",
+      "name": "베니",
+      "groups": [
+        "Baby DONT Cry"
+      ],
+      "english": "Beni",
+      "image": "photos/profile-g_babydontcry_beni.jpg",
+      "source": "https://kprofiles.com/baby-dont-cry-members-profile/"
+    },
+    {
+      "id": "g_babydontcry_kumi",
+      "name": "쿠미",
+      "groups": [
+        "Baby DONT Cry"
+      ],
+      "english": "Kumi",
+      "image": "photos/profile-g_babydontcry_kumi.jpg",
+      "source": "https://kprofiles.com/baby-dont-cry-members-profile/"
+    },
+    {
+      "id": "g_babydontcry_mia",
+      "name": "미아",
+      "groups": [
+        "Baby DONT Cry"
+      ],
+      "english": "Mia",
+      "image": "photos/profile-g_babydontcry_mia.jpg",
+      "source": "https://kprofiles.com/baby-dont-cry-members-profile/"
+    },
+    {
+      "id": "g_babydontcry_june",
+      "name": "이현",
+      "groups": [
+        "Baby DONT Cry"
+      ],
+      "english": "Yihyun",
+      "image": "photos/upload-20260927-g_babydontcry_june.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_unchild_yeeun",
+      "name": "예은",
+      "groups": [
+        "UNCHILD"
+      ],
+      "english": "Yeeun",
+      "image": "photos/profile-g_unchild_yeeun.jpg",
+      "source": "https://kprofiles.com/unchild-members-profile/"
+    },
+    {
+      "id": "g_unchild_heekie",
+      "name": "히키",
+      "groups": [
+        "UNCHILD"
+      ],
+      "english": "Heekie",
+      "image": "photos/profile-g_unchild_heekie.jpg",
+      "source": "https://kprofiles.com/unchild-members-profile/"
+    },
+    {
+      "id": "g_unchild_tina",
+      "name": "티나",
+      "groups": [
+        "UNCHILD"
+      ],
+      "english": "Tina",
+      "image": "photos/profile-g_unchild_tina.jpg",
+      "source": "https://kprofiles.com/unchild-members-profile/"
+    },
+    {
+      "id": "g_unchild_ako",
+      "name": "아코",
+      "groups": [
+        "UNCHILD"
+      ],
+      "english": "Ako",
+      "image": "photos/profile-g_unchild_ako.jpg",
+      "source": "https://kprofiles.com/unchild-members-profile/"
+    },
+    {
+      "id": "g_unchild_evon",
+      "name": "이본",
+      "groups": [
+        "UNCHILD"
+      ],
+      "english": "Evon",
+      "image": "photos/profile-g_unchild_evon.jpg",
+      "source": "https://kprofiles.com/unchild-members-profile/"
+    },
+    {
+      "id": "g_unchild_haeun",
+      "name": "하은",
+      "groups": [
+        "UNCHILD"
+      ],
+      "english": "Haeun",
+      "image": "photos/profile-g_unchild_haeun.jpg",
+      "source": "https://kprofiles.com/unchild-members-profile/"
+    },
+    {
+      "id": "g_hpeprincess_coco",
+      "name": "코코",
+      "groups": [
+        "H//PE Princess"
+      ],
+      "english": "Coco",
+      "image": "photos/profile-g_hpeprincess_coco.jpg",
+      "source": "https://kprofiles.com/h-pe-princess-members-profile/"
+    },
+    {
+      "id": "g_hpeprincess_ysy",
+      "name": "윤서영",
+      "groups": [
+        "H//PE Princess"
+      ],
+      "english": "YSY",
+      "image": "photos/profile-g_hpeprincess_ysy.jpg",
+      "source": "https://kprofiles.com/h-pe-princess-members-profile/"
+    },
+    {
+      "id": "g_hpeprincess_yuju",
+      "name": "유주",
+      "groups": [
+        "H//PE Princess"
+      ],
+      "english": "Yuju",
+      "image": "photos/profile-g_hpeprincess_yuju.jpg",
+      "source": "https://kprofiles.com/h-pe-princess-members-profile/"
+    },
+    {
+      "id": "g_hpeprincess_doi",
+      "name": "도이",
+      "groups": [
+        "H//PE Princess"
+      ],
+      "english": "Doi",
+      "image": "photos/profile-g_hpeprincess_doi.jpg",
+      "source": "https://kprofiles.com/h-pe-princess-members-profile/"
+    },
+    {
+      "id": "g_hpeprincess_rino",
+      "name": "리노",
+      "groups": [
+        "H//PE Princess"
+      ],
+      "english": "Rino",
+      "image": "photos/profile-g_hpeprincess_rino.jpg",
+      "source": "https://kprofiles.com/h-pe-princess-members-profile/"
+    },
+    {
+      "id": "g_hpeprincess_niko",
+      "name": "니코",
+      "groups": [
+        "H//PE Princess"
+      ],
+      "english": "Niko",
+      "image": "photos/profile-g_hpeprincess_niko.jpg",
+      "source": "https://kprofiles.com/h-pe-princess-members-profile/"
+    },
+    {
+      "id": "g_hpeprincess_sujin",
+      "name": "수진",
+      "groups": [
+        "H//PE Princess"
+      ],
+      "english": "Sujin",
+      "image": "photos/profile-g_hpeprincess_sujin.jpg",
+      "source": "https://kprofiles.com/h-pe-princess-members-profile/"
+    },
+    {
+      "id": "g_ourbirthday_chohyejin",
+      "name": "조혜진",
+      "groups": [
+        "OURBIRTHDAY"
+      ],
+      "english": "Cho Hyejin",
+      "image": "photos/profile-g_ourbirthday_chohyejin.jpg",
+      "source": "https://kprofiles.com/ourbirthday-members-profile/"
+    },
+    {
+      "id": "g_ourbirthday_achiraya",
+      "name": "아치라야",
+      "groups": [
+        "OURBIRTHDAY"
+      ],
+      "english": "Achiraya",
+      "image": "photos/profile-g_ourbirthday_achiraya.jpg",
+      "source": "https://kprofiles.com/ourbirthday-members-profile/"
+    },
+    {
+      "id": "g_ourbirthday_baby",
+      "name": "베이비",
+      "groups": [
+        "OURBIRTHDAY"
+      ],
+      "english": "Baby",
+      "image": "photos/profile-g_ourbirthday_baby.jpg",
+      "source": "https://kprofiles.com/ourbirthday-members-profile/"
+    },
+    {
+      "id": "g_ourbirthday_kukchorok",
+      "name": "국초록",
+      "groups": [
+        "OURBIRTHDAY"
+      ],
+      "english": "Kuk Chorok",
+      "image": "photos/profile-g_ourbirthday_kukchorok.jpg",
+      "source": "https://kprofiles.com/ourbirthday-members-profile/"
+    },
+    {
+      "id": "g_ourbirthday_kilala",
+      "name": "키라라",
+      "groups": [
+        "OURBIRTHDAY"
+      ],
+      "english": "Kilala",
+      "image": "photos/profile-g_ourbirthday_kilala.jpg",
+      "source": "https://kprofiles.com/ourbirthday-members-profile/"
+    },
+    {
+      "id": "g_ourbirthday_u",
+      "name": "유",
+      "groups": [
+        "OURBIRTHDAY"
+      ],
+      "english": "U",
+      "image": "photos/profile-g_ourbirthday_u.jpg",
+      "source": "https://kprofiles.com/ourbirthday-members-profile/"
+    },
+    {
+      "id": "g_ourbirthday_shinhyewon",
+      "name": "신혜원",
+      "groups": [
+        "OURBIRTHDAY"
+      ],
+      "english": "Shin Hyewon",
+      "image": "photos/profile-g_ourbirthday_shinhyewon.jpg",
+      "source": "https://kprofiles.com/ourbirthday-members-profile/"
+    },
+    {
+      "id": "g_tuide_seohee",
+      "name": "서희",
+      "groups": [
+        "TUIDE"
+      ],
+      "english": "Seohee",
+      "image": "photos/profile-g_tuide_seohee.jpg",
+      "source": "https://kprofiles.com/pledis-girls-members-profile/"
+    },
+    {
+      "id": "g_tuide_seoyeon",
+      "name": "서연",
+      "groups": [
+        "TUIDE"
+      ],
+      "english": "Seoyeon",
+      "image": "photos/profile-g_tuide_seoyeon.jpg",
+      "source": "https://kprofiles.com/pledis-girls-members-profile/"
+    },
+    {
+      "id": "g_tuide_elena",
+      "name": "엘레나",
+      "groups": [
+        "TUIDE"
+      ],
+      "english": "Elena",
+      "image": "photos/profile-g_tuide_elena.jpg",
+      "source": "https://kprofiles.com/pledis-girls-members-profile/"
+    },
+    {
+      "id": "g_tuide_jia",
+      "name": "지아",
+      "groups": [
+        "TUIDE"
+      ],
+      "english": "Jia",
+      "image": "photos/profile-g_tuide_jia.jpg",
+      "source": "https://kprofiles.com/pledis-girls-members-profile/"
+    },
+    {
+      "id": "g_tuide_saki",
+      "name": "사키",
+      "groups": [
+        "TUIDE"
+      ],
+      "english": "Saki",
+      "image": "photos/upload-20260927-g_tuide_saki.jpeg",
+      "source": null,
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_tuide_seah",
+      "name": "세아",
+      "groups": [
+        "TUIDE"
+      ],
+      "english": "Seah",
+      "image": "photos/profile-g_tuide_seah.jpg",
+      "source": "https://kprofiles.com/pledis-girls-members-profile/"
+    },
+    {
+      "id": "g_tuide_yihani",
+      "name": "이하늬",
+      "groups": [
+        "TUIDE"
+      ],
+      "english": "Yi Hani",
+      "image": "photos/profile-g_tuide_yihani.jpg",
+      "source": "https://kprofiles.com/pledis-girls-members-profile/"
+    },
+    {
+      "id": "g_artms_heejin",
+      "name": "희진",
+      "groups": [
+        "ARTMS",
+        "이달의 소녀"
+      ],
+      "displayGroups": [
+        "이달의 소녀",
+        "ARTMS"
+      ],
+      "english": "Heejin",
+      "image": "photos/user-20260927-v34-g_artms_heejin.jpeg",
+      "source": null
+    },
+    {
+      "id": "g_artms_haseul",
+      "name": "하슬",
+      "groups": [
+        "ARTMS",
+        "이달의 소녀"
+      ],
+      "displayGroups": [
+        "이달의 소녀",
+        "ARTMS"
+      ],
+      "english": "Haseul",
+      "image": "photos/profile-g_artms_haseul.jpg",
+      "source": "https://kprofiles.com/loona-members-profile/"
+    },
+    {
+      "id": "g_artms_kimlip",
+      "name": "김립",
+      "groups": [
+        "ARTMS",
+        "이달의 소녀"
+      ],
+      "displayGroups": [
+        "이달의 소녀",
+        "ARTMS"
+      ],
+      "english": "Kim Lip",
+      "image": "photos/profile-g_artms_kimlip.jpg",
+      "source": "https://kprofiles.com/loona-members-profile/"
+    },
+    {
+      "id": "g_artms_jinsoul",
+      "name": "진솔",
+      "groups": [
+        "ARTMS",
+        "이달의 소녀"
+      ],
+      "displayGroups": [
+        "이달의 소녀",
+        "ARTMS"
+      ],
+      "english": "Jinsoul",
+      "image": "photos/profile-g_artms_jinsoul.jpg",
+      "source": "https://kprofiles.com/loona-members-profile/"
+    },
+    {
+      "id": "g_artms_choerry",
+      "name": "최리",
+      "groups": [
+        "ARTMS",
+        "이달의 소녀"
+      ],
+      "displayGroups": [
+        "이달의 소녀",
+        "ARTMS"
+      ],
+      "english": "Choerry",
+      "image": "photos/profile-g_artms_choerry.jpg",
+      "source": "https://kprofiles.com/loona-members-profile/"
+    },
+    {
+      "id": "g_madein_miu",
+      "name": "미유",
+      "groups": [
+        "MADEIN",
+        "LIMELIGHT"
+      ],
+      "displayGroups": [
+        "LIMELIGHT",
+        "MADEIN"
+      ],
+      "english": "MiU",
+      "image": "photos/profile-g_madein_miu.jpg",
+      "source": "https://kprofiles.com/limelight-members-profile/"
+    },
+    {
+      "id": "g_madein_suhye",
+      "name": "수혜",
+      "groups": [
+        "MADEIN",
+        "LIMELIGHT"
+      ],
+      "displayGroups": [
+        "LIMELIGHT",
+        "MADEIN"
+      ],
+      "english": "Suhye",
+      "image": "photos/profile-g_madein_suhye.jpg",
+      "source": "https://kprofiles.com/limelight-members-profile/"
+    },
+    {
+      "id": "g_saymyname_shuie",
+      "name": "슈이",
+      "groups": [
+        "SAY MY NAME"
+      ],
+      "english": "Shuie",
+      "image": "photos/profile-g_saymyname_shuie.jpg",
+      "source": "https://kprofiles.com/say-my-name-members-profile/"
+    },
+    {
+      "id": "g_nature_loha",
+      "name": "로하",
+      "groups": [
+        "네이처"
+      ],
+      "english": "Loha",
+      "image": "photos/profile-g_nature_loha.jpg",
+      "source": "https://kprofiles.com/nature-members-profile/"
+    },
+    {
+      "id": "g_nature_sunshine",
+      "name": "선샤인",
+      "groups": [
+        "네이처"
+      ],
+      "english": "Sunshine",
+      "image": "photos/profile-g_nature_sunshine.jpg",
+      "source": "https://kprofiles.com/nature-members-profile/"
+    },
+    {
+      "id": "g_qwer_chodan",
+      "name": "쵸단",
+      "groups": [
+        "QWER"
+      ],
+      "english": "Chodan",
+      "image": "https://phinf.wevpstatic.net/MjAyNDEyMjdfNDAg/MDAxNzM1MjgwODQ2MzI2.jtyAWNdWlyoROpVC6tnpWP3rp6ypaBgPLSZsBgDVTXIg.1afDmvz5GbwRtSJJwO3wDKsA6yYsheH_pcR9b43CUe0g.JPEG/4257d061-0bca-4d06-93b7-59d1a7e5483e.jpeg?type=w670",
+      "source": "https://weverse.io/qwer/highlight",
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_qwer_magenta",
+      "name": "마젠타",
+      "groups": [
+        "QWER"
+      ],
+      "english": "Magenta",
+      "image": "https://phinf.wevpstatic.net/MjAyNDEyMjdfMjUz/MDAxNzM1MjgwOTgzMDUz.mMsbEneSPchLTQoz7DVvx8qSo0Ost3i5Rj_iTHDjfAog.xG_oM3QJqZ6Ik9z9ZQLaI0d3IIHIwhOqtzrRhRyaqiUg.JPEG/01461d76-19ca-40ae-a314-2d15790c6274.jpeg?type=w670",
+      "source": "https://weverse.io/qwer/highlight",
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_qwer_siyeon",
+      "name": "시연",
+      "groups": [
+        "QWER"
+      ],
+      "english": "Siyeon",
+      "image": "https://phinf.wevpstatic.net/MjAyNDEyMjdfMjU2/MDAxNzM1MjgxMDE2NDcx._tQEplf70jS8mgs4GPIld6L02m8bwXH1P4oTWOHNElcg.UQbArGgBadDQLRgrqcEOzgXIDgCKVFntjJMpyxi1sDUg.JPEG/d8e40c10-3cec-4821-b0ef-c88d1c2f5907.jpeg?type=w670",
+      "source": "https://weverse.io/qwer/highlight",
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_qwer_hina",
+      "name": "히나",
+      "groups": [
+        "QWER"
+      ],
+      "english": "Hina",
+      "image": "https://phinf.wevpstatic.net/MjAyNDEyMjdfMjk1/MDAxNzM1MjgwOTk5NDcx.OuWYyEFLalTjq-4_gDWZsTKMkkdklzTRgZOjOGPAexcg.As-H4UAClLskutx3v9V21U71cxG6pdRKrPTza49sMI4g.JPEG/154582c3-5220-4430-99f3-e0fde74e89eb.jpeg?type=w670",
+      "source": "https://weverse.io/qwer/highlight",
+      "crop": {
+        "x": 50,
+        "y": 25,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "g_fx_victoria",
+      "name": "빅토리아",
+      "groups": [
+        "f(x)"
+      ],
+      "english": "Victoria",
+      "image": "photos/profile-g_fx_victoria.jpg",
+      "source": "https://kprofiles.com/victoria-song-profile-facts/"
+    },
+    {
+      "id": "g_fx_amber",
+      "name": "엠버",
+      "groups": [
+        "f(x)"
+      ],
+      "english": "Amber",
+      "image": "photos/user-20260927-v30-g_fx_amber.jpeg",
+      "source": null
+    },
+    {
+      "id": "g_fx_luna",
+      "name": "루나",
+      "groups": [
+        "f(x)"
+      ],
+      "english": "Luna",
+      "image": "photos/profile-g_fx_luna.jpg",
+      "source": "https://kprofiles.com/fx-members-profile-updated/"
+    },
+    {
+      "id": "g_fx_krystal",
+      "name": "크리스탈",
+      "groups": [
+        "f(x)"
+      ],
+      "english": "Krystal",
+      "image": "photos/user-20260927-v30-g_fx_krystal.jpeg",
+      "source": null
+    },
+    {
+      "id": "g_fx_sulli",
+      "name": "설리♡",
+      "groups": [
+        "f(x)"
+      ],
+      "english": "Sulli",
+      "image": "photos/user-20260927-g_fx_sulli.jpeg",
+      "source": null
+    },
+    {
+      "id": "g_sistar_hyolyn",
+      "name": "효린",
+      "groups": [
+        "SISTAR"
+      ],
+      "english": "Hyolyn",
+      "image": "photos/user-20260927-v30-g_sistar_hyolyn.jpeg",
+      "source": null
+    },
+    {
+      "id": "g_sistar_bora",
+      "name": "보라",
+      "groups": [
+        "SISTAR"
+      ],
+      "english": "Bora",
+      "image": "photos/profile-g_sistar_bora.png",
+      "source": "https://kprofiles.com/sistar-members-profile/"
+    },
+    {
+      "id": "g_sistar_soyou",
+      "name": "소유",
+      "groups": [
+        "SISTAR"
+      ],
+      "english": "Soyou",
+      "image": "photos/user-20260927-g_sistar_soyou.jpeg",
+      "source": null
+    },
+    {
+      "id": "g_sistar_dasom",
+      "name": "다솜",
+      "groups": [
+        "SISTAR"
+      ],
+      "english": "Dasom",
+      "image": "photos/user-20260927-g_sistar_dasom.jpeg",
+      "source": null
+    },
+    {
+      "id": "g_girlsday_sojin",
+      "name": "소진",
+      "groups": [
+        "걸스데이"
+      ],
+      "english": "Sojin",
+      "image": "photos/user-20260927-v30-g_girlsday_sojin.jpeg",
+      "source": null
+    },
+    {
+      "id": "g_girlsday_yura",
+      "name": "유라",
+      "groups": [
+        "걸스데이"
+      ],
+      "english": "Yura",
+      "image": "photos/profile-g_girlsday_yura.jpg",
+      "source": "https://kprofiles.com/yura-profile-facts/"
+    },
+    {
+      "id": "g_girlsday_minah",
+      "name": "민아",
+      "groups": [
+        "걸스데이"
+      ],
+      "english": "Minah",
+      "image": "photos/profile-g_girlsday_minah.jpg",
+      "source": "https://kprofiles.com/bang-min-ah-profile-facts/"
+    },
+    {
+      "id": "g_girlsday_hyeri",
+      "name": "혜리",
+      "groups": [
+        "걸스데이"
+      ],
+      "english": "Hyeri",
+      "image": "photos/user-20260927-g_girlsday_hyeri.jpeg",
+      "source": null
+    },
+    {
+      "id": "g_apink_chorong",
+      "name": "초롱",
+      "groups": [
+        "에이핑크"
+      ],
+      "english": "Chorong",
+      "image": "photos/user-20260927-g_apink_chorong.jpeg",
+      "source": null
+    },
+    {
+      "id": "g_apink_bomi",
+      "name": "보미",
+      "groups": [
+        "에이핑크"
+      ],
+      "english": "Bomi",
+      "image": "photos/user-20260927-v30-g_apink_bomi.jpeg",
+      "source": null
+    },
+    {
+      "id": "g_apink_eunji",
+      "name": "은지",
+      "groups": [
+        "에이핑크"
+      ],
+      "english": "Eunji",
+      "image": "photos/user-20260927-g_apink_eunji.jpeg",
+      "source": null
+    },
+    {
+      "id": "g_apink_namjoo",
+      "name": "남주",
+      "groups": [
+        "에이핑크"
+      ],
+      "english": "Namjoo",
+      "image": "photos/user-20260927-g_apink_namjoo.jpeg",
+      "source": null
+    },
+    {
+      "id": "g_apink_hayoung",
+      "name": "하영",
+      "groups": [
+        "에이핑크"
+      ],
+      "english": "Hayoung",
+      "image": "photos/user-20260927-g_apink_hayoung.jpeg",
+      "source": null
+    },
+    {
+      "id": "g_apink_naeun",
+      "name": "손나은",
+      "groups": [
+        "에이핑크"
+      ],
+      "english": "Naeun",
+      "image": "photos/user-20260927-g_apink_naeun.jpeg",
+      "source": null
+    },
+    {
+      "id": "g_odd_youth_maika",
+      "name": "마이카",
+      "groups": [
+        "ODD YOUTH"
+      ],
+      "english": "Maika",
+      "image": "photos/profile-g_odd_youth_maika.webp",
+      "source": "https://kprofiles.com/odd-youth-members-profile/"
+    },
+    {
+      "id": "g_odd_youth_myah",
+      "name": "마야",
+      "groups": [
+        "ODD YOUTH"
+      ],
+      "english": "Myah",
+      "image": "photos/profile-g_odd_youth_myah.webp",
+      "source": "https://kprofiles.com/odd-youth-members-profile/"
+    },
+    {
+      "id": "g_odd_youth_kanie",
+      "name": "카니",
+      "groups": [
+        "ODD YOUTH"
+      ],
+      "english": "Kanie",
+      "image": "photos/profile-g_odd_youth_kanie.webp",
+      "source": "https://kprofiles.com/odd-youth-members-profile/"
+    },
+    {
+      "id": "g_odd_youth_summer",
+      "name": "써머",
+      "groups": [
+        "ODD YOUTH"
+      ],
+      "english": "Summer",
+      "image": "photos/profile-g_odd_youth_summer.webp",
+      "source": "https://kprofiles.com/odd-youth-members-profile/"
+    },
+    {
+      "id": "g_odd_youth_yeeum",
+      "name": "예음",
+      "groups": [
+        "ODD YOUTH"
+      ],
+      "english": "Yeeum",
+      "image": "photos/profile-g_odd_youth_yeeum.webp",
+      "source": "https://kprofiles.com/odd-youth-members-profile/"
+    },
+    {
+      "id": "g_uspeer_sian",
+      "name": "시안",
+      "groups": [
+        "USPEER"
+      ],
+      "english": "Sian",
+      "image": "photos/profile-g_uspeer_sian.png",
+      "source": "https://kprofiles.com/uspeer-members-profile/"
+    },
+    {
+      "id": "g_uspeer_soee",
+      "name": "소이",
+      "groups": [
+        "USPEER"
+      ],
+      "english": "Soee",
+      "image": "photos/profile-g_uspeer_soee.png",
+      "source": "https://kprofiles.com/uspeer-members-profile/"
+    },
+    {
+      "id": "g_uspeer_seoyu",
+      "name": "서유",
+      "groups": [
+        "USPEER"
+      ],
+      "english": "Seoyu",
+      "image": "photos/profile-g_uspeer_seoyu.png",
+      "source": "https://kprofiles.com/uspeer-members-profile/"
+    },
+    {
+      "id": "g_uspeer_daon",
+      "name": "다온",
+      "groups": [
+        "USPEER"
+      ],
+      "english": "Daon",
+      "image": "photos/profile-g_uspeer_daon.png",
+      "source": "https://kprofiles.com/uspeer-members-profile/"
+    },
+    {
+      "id": "g_uspeer_chaena",
+      "name": "채나",
+      "groups": [
+        "USPEER"
+      ],
+      "english": "Chaena",
+      "image": "photos/profile-g_uspeer_chaena.png",
+      "source": "https://kprofiles.com/uspeer-members-profile/"
+    },
+    {
+      "id": "g_uspeer_roa",
+      "name": "로아",
+      "groups": [
+        "USPEER"
+      ],
+      "english": "Roa",
+      "image": "photos/profile-g_uspeer_roa.png",
+      "source": "https://kprofiles.com/uspeer-members-profile/"
+    },
+    {
+      "id": "g_madein_serina",
+      "name": "세리나",
+      "groups": [
+        "MADEIN"
+      ],
+      "english": "Serina",
+      "image": "photos/profile-g_madein_serina.jpeg",
+      "source": "https://kprofiles.com/madein-members-profile/"
+    },
+    {
+      "id": "g_madein_nagomi",
+      "name": "나고미",
+      "groups": [
+        "MADEIN"
+      ],
+      "english": "Nagomi",
+      "image": "photos/profile-g_madein_nagomi.jpeg",
+      "source": "https://kprofiles.com/madein-members-profile/"
+    },
+    {
+      "id": "g_kara_gyuri",
+      "name": "규리",
+      "groups": [
+        "KARA"
+      ],
+      "english": "Gyuri",
+      "image": "photos/profile-g_kara_gyuri.jpg",
+      "source": "https://kprofiles.com/kara-members-profile/"
+    },
+    {
+      "id": "g_kara_seungyeon",
+      "name": "승연",
+      "groups": [
+        "KARA"
+      ],
+      "english": "Seungyeon",
+      "image": "photos/profile-g_kara_seungyeon.jpg",
+      "source": "https://karaofficial.kr/contents/637b927c988600288c747533"
+    },
+    {
+      "id": "g_kara_nicole",
+      "name": "니콜",
+      "groups": [
+        "KARA"
+      ],
+      "english": "Nicole",
+      "image": "photos/profile-g_kara_nicole.jpg",
+      "source": "https://kprofiles.com/kara-members-profile/"
+    },
+    {
+      "id": "g_kara_jiyoung",
+      "name": "지영",
+      "groups": [
+        "KARA"
+      ],
+      "english": "Jiyoung",
+      "image": "photos/profile-g_kara_jiyoung.jpg",
+      "source": "https://karaofficial.kr/contents/637a40f1372117547c633b9a"
+    },
+    {
+      "id": "g_kara_youngji",
+      "name": "영지",
+      "groups": [
+        "KARA"
+      ],
+      "english": "Youngji",
+      "image": "photos/profile-g_kara_youngji.jpg",
+      "source": "https://karaofficial.kr/contents/637ce3f4988600288c747633"
+    },
+    {
+      "id": "g_kara_hara",
+      "name": "구하라♡",
+      "groups": [
+        "KARA"
+      ],
+      "english": "Hara",
+      "image": "photos/user-final-g_kara_hara.jpg",
+      "source": null
+    },
+    {
+      "id": "g_snsd_taeyeon",
+      "name": "태연",
+      "groups": [
+        "SNSD"
+      ],
+      "english": "Taeyeon",
+      "image": "photos/user-final-g_snsd_taeyeon.jpg",
+      "source": null
+    },
+    {
+      "id": "g_snsd_sunny",
+      "name": "써니",
+      "groups": [
+        "SNSD"
+      ],
+      "english": "Sunny",
+      "image": "photos/user-final-g_snsd_sunny.jpg",
+      "source": null
+    },
+    {
+      "id": "g_snsd_tiffany",
+      "name": "티파니",
+      "groups": [
+        "SNSD"
+      ],
+      "english": "Tiffany",
+      "image": "photos/user-final-g_snsd_tiffany.jpg",
+      "source": null
+    },
+    {
+      "id": "g_snsd_hyoyeon",
+      "name": "효연",
+      "groups": [
+        "SNSD"
+      ],
+      "english": "Hyoyeon",
+      "image": "photos/profile-g_snsd_hyoyeon.jpg",
+      "source": "https://kprofiles.com/girls-generation-snsd-members-profile/"
+    },
+    {
+      "id": "g_snsd_yuri",
+      "name": "유리",
+      "groups": [
+        "SNSD"
+      ],
+      "english": "Yuri",
+      "image": "photos/user-final-g_snsd_yuri.jpg",
+      "source": null
+    },
+    {
+      "id": "g_snsd_sooyoung",
+      "name": "수영",
+      "groups": [
+        "SNSD"
+      ],
+      "english": "Sooyoung",
+      "image": "photos/user-final-g_snsd_sooyoung.jpg",
+      "source": null
+    },
+    {
+      "id": "g_snsd_yoona",
+      "name": "윤아",
+      "groups": [
+        "SNSD"
+      ],
+      "english": "Yoona",
+      "image": "photos/user-final-g_snsd_yoona.jpg",
+      "source": null
+    },
+    {
+      "id": "g_snsd_seohyun",
+      "name": "서현",
+      "groups": [
+        "SNSD"
+      ],
+      "english": "Seohyun",
+      "image": "photos/profile-g_snsd_seohyun.jpg",
+      "source": "https://kprofiles.com/seohyun-profile-facts/"
+    },
+    {
+      "id": "g_2ne1_cl",
+      "name": "씨엘",
+      "groups": [
+        "2NE1"
+      ],
+      "english": "CL",
+      "image": "photos/user-final-g_2ne1_cl.jpg",
+      "source": null
+    },
+    {
+      "id": "g_2ne1_bom",
+      "name": "박봄",
+      "groups": [
+        "2NE1"
+      ],
+      "english": "Bom",
+      "image": "photos/profile-g_2ne1_bom.jpg",
+      "source": "https://kstationtv.com/2024/12/04/park-bom-the-singers-new-visual/?lang=en"
+    },
+    {
+      "id": "g_2ne1_dara",
+      "name": "산다라박",
+      "groups": [
+        "2NE1"
+      ],
+      "english": "Dara",
+      "image": "photos/user-final-g_2ne1_dara.jpg",
+      "source": null
+    },
+    {
+      "id": "g_2ne1_minzy",
+      "name": "공민지",
+      "groups": [
+        "2NE1"
+      ],
+      "english": "Minzy",
+      "image": "photos/user-final-g_2ne1_minzy.jpg",
+      "source": null
+    },
+    {
+      "id": "g_tara_qri",
+      "name": "큐리",
+      "groups": [
+        "T-ARA"
+      ],
+      "english": "Qri",
+      "image": "photos/user-final-g_tara_qri.jpg",
+      "source": null
+    },
+    {
+      "id": "g_tara_eunjung",
+      "name": "은정",
+      "groups": [
+        "T-ARA"
+      ],
+      "english": "Eunjung",
+      "image": "photos/profile-g_tara_eunjung.jpg",
+      "source": "https://kprofiles.com/t-ara-members-profile/"
+    },
+    {
+      "id": "g_tara_hyomin",
+      "name": "효민",
+      "groups": [
+        "T-ARA"
+      ],
+      "english": "Hyomin",
+      "image": "photos/user-final-g_tara_hyomin.jpg",
+      "source": null
+    },
+    {
+      "id": "g_tara_jiyeon",
+      "name": "지연",
+      "groups": [
+        "T-ARA"
+      ],
+      "english": "Jiyeon",
+      "image": "photos/user-final-g_tara_jiyeon.jpg",
+      "source": null
+    },
+    {
+      "id": "g_rocket_punch_yeonhee",
+      "name": "연희",
+      "groups": [
+        "Rocket Punch"
+      ],
+      "english": "Yeonhee",
+      "image": "photos/profile-g_rocket_punch_yeonhee.jpg",
+      "source": "https://kprofiles.com/rocket-punch-members-profile/"
+    },
+    {
+      "id": "g_rocket_punch_suyun",
+      "name": "수윤",
+      "groups": [
+        "Rocket Punch"
+      ],
+      "english": "Suyun",
+      "image": "photos/profile-g_rocket_punch_suyun.jpg",
+      "source": "https://kprofiles.com/rocket-punch-members-profile/"
+    },
+    {
+      "id": "g_rocket_punch_yunkyoung",
+      "name": "윤경",
+      "groups": [
+        "Rocket Punch"
+      ],
+      "english": "Yunkyoung",
+      "image": "photos/profile-g_rocket_punch_yunkyoung.jpg",
+      "source": "https://kprofiles.com/rocket-punch-members-profile/"
+    },
+    {
+      "id": "g_rocket_punch_sohee",
+      "name": "소희",
+      "groups": [
+        "Rocket Punch"
+      ],
+      "english": "Sohee",
+      "image": "photos/profile-g_rocket_punch_sohee.jpg",
+      "source": "https://kprofiles.com/rocket-punch-members-profile/"
+    },
+    {
+      "id": "g_rocket_punch_dahyun",
+      "name": "다현",
+      "groups": [
+        "Rocket Punch"
+      ],
+      "english": "Dahyun",
+      "image": "photos/profile-g_rocket_punch_dahyun.jpg",
+      "source": "https://kprofiles.com/dahyun-rocket-punch-profile/"
+    },
+    {
+      "id": "g_wondergirls_yeeun",
+      "name": "예은",
+      "groups": [
+        "Wonder Girls"
+      ],
+      "english": "Yeeun",
+      "image": "photos/profile-g_wondergirls_yeeun.jpg",
+      "source": "https://kprofiles.com/hatfelt-profile/"
+    },
+    {
+      "id": "g_wondergirls_yubin",
+      "name": "유빈",
+      "groups": [
+        "Wonder Girls"
+      ],
+      "english": "Yubin",
+      "image": "photos/profile-g_wondergirls_yubin.jpg",
+      "source": "https://kprofiles.com/wonder-girls-members-profile/"
+    },
+    {
+      "id": "g_wondergirls_sunmi",
+      "name": "선미",
+      "groups": [
+        "Wonder Girls"
+      ],
+      "english": "Sunmi",
+      "image": "photos/profile-g_wondergirls_sunmi.jpg",
+      "source": "https://kprofiles.com/wonder-girls-members-profile/"
+    },
+    {
+      "id": "g_wondergirls_hyerim",
+      "name": "혜림",
+      "groups": [
+        "Wonder Girls"
+      ],
+      "english": "Hyerim",
+      "image": "photos/profile-g_wondergirls_hyerim.jpg",
+      "source": "https://kprofiles.com/hyelim-profile-facts/"
+    },
+    {
+      "id": "g_4minute_jihyun",
+      "name": "지현",
+      "groups": [
+        "4Minute"
+      ],
+      "english": "Jihyun",
+      "image": "photos/profile-g_4minute_jihyun.jpg",
+      "source": "https://kprofiles.com/nam-jihyun-ex4minute-profile-and-facts/"
+    },
+    {
+      "id": "g_4minute_gayoon",
+      "name": "가윤",
+      "groups": [
+        "4Minute"
+      ],
+      "english": "Gayoon",
+      "image": "photos/profile-g_4minute_gayoon.jpg",
+      "source": "https://kprofiles.com/heo-gayoon-profile-facts/"
+    },
+    {
+      "id": "g_4minute_jiyoon",
+      "name": "지윤",
+      "groups": [
+        "4Minute"
+      ],
+      "english": "Jiyoon",
+      "image": "photos/profile-g_4minute_jiyoon.jpg",
+      "source": "https://kprofiles.com/jenyer-profile/"
+    },
+    {
+      "id": "g_4minute_hyuna",
+      "name": "현아",
+      "groups": [
+        "4Minute"
+      ],
+      "english": "Hyuna",
+      "image": "photos/profile-g_4minute_hyuna.jpg",
+      "source": "https://kprofiles.com/hyuna-profile/"
+    },
+    {
+      "id": "g_4minute_sohyun",
+      "name": "소현",
+      "groups": [
+        "4Minute"
+      ],
+      "english": "Sohyun",
+      "image": "photos/profile-g_4minute_sohyun.jpg",
+      "source": "https://kprofiles.com/sohyun-profile-facts/"
+    },
+    {
+      "id": "g_missa_fei",
+      "name": "페이",
+      "groups": [
+        "miss A"
+      ],
+      "english": "Fei",
+      "image": "photos/profile-g_missa_fei.jpg",
+      "source": "https://kprofiles.com/fei-profile-facts/"
+    },
+    {
+      "id": "g_missa_jia",
+      "name": "지아",
+      "groups": [
+        "miss A"
+      ],
+      "english": "Jia",
+      "image": "photos/profile-g_missa_jia.jpg",
+      "source": "https://kprofiles.com/jia-profile-facts/"
+    },
+    {
+      "id": "g_missa_min",
+      "name": "민",
+      "groups": [
+        "miss A"
+      ],
+      "english": "Min",
+      "image": "photos/profile-g_missa_min.jpg",
+      "source": "https://kprofiles.com/min-ex-miss-profile/"
+    },
+    {
+      "id": "g_missa_suzy",
+      "name": "수지",
+      "groups": [
+        "miss A"
+      ],
+      "english": "Suzy",
+      "image": "photos/profile-g_missa_suzy.jpg",
+      "source": "https://kprofiles.com/suzy-profile/"
+    }
+  ]
+}

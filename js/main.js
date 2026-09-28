@@ -159,9 +159,7 @@ function applyDocumentChrome() {
   document.querySelector('#credits').textContent = t('credits.button');
   document.querySelector('#closeDialog').textContent = t('dialog.close');
   langSwitch.setAttribute('aria-label', t('lang.aria'));
-  for (const button of langSwitch.querySelectorAll('button')) {
-    button.setAttribute('aria-pressed', String(button.dataset.lang === state.lang));
-  }
+  langSwitch.value = state.lang;
 }
 
 // `app.innerHTML` membuang elemen yang sedang fokus, jadi pengguna keyboard
@@ -225,10 +223,9 @@ function redrawAll() {
   draw();
 }
 
-langSwitch.addEventListener('click', (event) => {
-  const button = event.target.closest('button[data-lang]');
-  if (!button) return;
-  act.setLang(state, button.dataset.lang);
+// `change`, bukan `input`: Safari lama hanya memicu change untuk <select>.
+langSwitch.addEventListener('change', () => {
+  act.setLang(state, langSwitch.value);
   safeSet('listidol.lang', state.lang);
   redrawAll();
 });

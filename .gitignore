@@ -17,4 +17,9 @@ Thumbs.db
 
 # There must be no dependencies: if this folder appears, something is wrong.
 node_modules/
+
+# Working notes and the design spec (never part of the deployed site).
 docs/
+
+# Local GitNexus index (~35 MB), rebuilt on demand by `npx gitnexus analyze`.
+.gitnexus/

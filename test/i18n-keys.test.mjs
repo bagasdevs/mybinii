@@ -4,6 +4,7 @@ import { readdirSync, readFileSync } from 'node:fs';
 import en from '../i18n/en.js';
 import id from '../i18n/id.js';
 import ko from '../i18n/ko.js';
+import { LOCALES } from '../js/i18n.js';
 
 // Kunci memuat huruf besar (setup.selectAll, crop.errSize, ...), jadi kelas
 // karakternya tidak boleh [a-z] saja.
@@ -73,4 +74,12 @@ test('placeholder di semua kamus untuk key yang sama sama-sama cocok', () => {
     assert.deepEqual(names(en[key]), names(ko[key]), `placeholder beda pada ${key} (en)`);
     assert.deepEqual(names(id[key]), names(ko[key]), `placeholder beda pada ${key} (id)`);
   }
+});
+
+test('setiap locale punya <option> di pemilih bahasa', () => {
+  const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+  const options = [...html.matchAll(/<option value="([^"]+)"/g)].map((m) => m[1]);
+  // Penjaga anti-tautologi: kalau markup berubah bentuk, daftar kosong tidak lolos.
+  assert.ok(options.length >= 3, `hanya ${options.length} option terpindai`);
+  assert.deepEqual(options.sort(), [...LOCALES].sort());
 });

@@ -36,9 +36,14 @@ Requires Node 26+. Tests use the built-in runner; no framework.
 
 ## Deploy
 
-Upload this folder as-is to Cloudflare Pages (drag & drop, or
-`npx wrangler pages deploy .`). There is no `node_modules` and no build output.
-Make sure `photos/` is uploaded too.
+Cloudflare Pages serves https://mybinii.pages.dev/ from
+[`bagasdevs/mybinii`](https://github.com/bagasdevs/mybinii): the committed tree
+is the site. There is no build command, no output directory and no
+`node_modules`, so `photos/` (475 files, ~59 MB) is committed on purpose — do
+not add it to `.gitignore`.
+
+Fallback if the repo is not connected: drag this folder onto the Pages dashboard
+(or `npx wrangler pages deploy .`).
 
 ## Layout
 
@@ -69,8 +74,12 @@ Modules marked `[pure]` never touch the DOM and are tested directly in Node.
 1. Copy `i18n/ko.js` to `i18n/<code>.js` and translate the values.
 2. Add the language code to `LOCALES` in `js/i18n.js`.
 3. Import and register the dictionary in `js/main.js`.
+4. Add an `<option>` for it to the header `<select id="langSwitch">` in
+   `index.html` — the language names live only there, each tagged with `lang`
+   so a screen reader pronounces it in its own language.
 
-Nothing else. `test/i18n-keys.test.mjs` fails if any key is left untranslated.
+Nothing else. `test/i18n-keys.test.mjs` fails if any key is left untranslated, or
+if a locale in `LOCALES` has no `<option>` to reach it.
 
 ## Updating the data
 

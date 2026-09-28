@@ -31,3 +31,10 @@
 /* --- toast: sembunyi via visibility supaya role=status tetap terbaca AT --- */
 #toast{position:fixed;left:50%;bottom:95px;transform:translateX(-50%);z-index:50;max-width:90%;background:#181818;color:white;padding:12px 20px;border-radius:10px;font-size:14px;visibility:hidden;opacity:0;transition:opacity .2s,visibility .2s}
 #toast.show{visibility:visible;opacity:1}
+/* --- animasi masuk (CSS saja, tanpa dependensi) --- */
+/* ponytail: hanya elemen yang mount sekali per fase. Grid kartu sengaja tidak
+   dianimasikan: draw() mengganti innerHTML tiap klik, jadi animasinya akan
+   mengulang setiap kali pengguna memilih. */
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+#dialog[open],.poster,#toast.show,.save-preview{animation:rise .18s ease-out}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}

@@ -5,6 +5,7 @@ export default {
   'app.brand': 'My 9 Picks',
   'app.kicker': '2nd–5th gen girl groups',
   'app.eyebrow': 'K-POP girl groups',
+  'app.resume': 'Picked up where you left off',
   'step.groups': 'Pick groups',
   'step.heat': 'Shortlist',
   'step.challenge': 'Second chance',

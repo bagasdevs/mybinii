@@ -8,6 +8,9 @@ Live: https://mybinii.pages.dev/
 Extras compared with the site that inspired it: **search** (Korean names and
 romanisations) and **i18n** (한국어 / English / Bahasa Indonesia).
 
+Progress is saved to `localStorage`: a reload lands back on the same heat board
+or the same pairwise comparison, and every phase has a way back to setup.
+
 ## Run it
 
 No build step, no dependencies. The page uses ES modules, so it must be served
@@ -75,11 +78,25 @@ node --test
   `twice`. Korean member names do work: in the heat phase, `나연` finds TWICE.
   Adding Korean aliases means adding a small map in `js/view.js` (same shape as
   `EN_GROUP_OVERRIDES`) and feeding that label into the group index.
-- **Ranking progress is not persisted.** A reload sends you back to setup.
+- **Uploaded photos are not saved.** Progress (phase, picks, comparisons) is
+  restored from `localStorage`, but photos you swapped in live as blob URLs and
+  are gone after a reload — the poster falls back to the default photos.
 - **Photo files are large.** 475 mirrored JPEG/PNG files, no thumbnails and no
   AVIF/WebP, so mobile data use is noticeable.
 
 ## Credits and licence
 
-See [CREDITS.md](CREDITS.md). The roster and photos are not owned by this
-project. Personal use only, not for commercial use.
+- **Roster data** from [mygirlnine.pages.dev](https://mygirlnine.pages.dev/)
+  ("여돌 구절판"), fetched 2026-09-26. Per-group profile data is referenced from
+  kprofiles.com through the `source` field in `data/roster.json`.
+- **Photos** mirrored from the same site and verified against the `sha256`
+  values in `data/photo-sources.json` (457 of 475 files are byte-identical).
+  Rights stay with the original holders — "사진 권리는 원 권리자에게 있습니다".
+- **Code** written from scratch. The phase flow (setup → heat → sort → result),
+  poster layout, and data schema follow the source site so results stay
+  comparable; search, i18n, undo, saved progress, and the accessibility work are
+  additions here.
+
+The roster and photos are not owned by this project. Personal use only — no
+commercial use, and keep this attribution for as long as the photos ship with
+the code.

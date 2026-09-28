@@ -36,5 +36,7 @@
    dianimasikan: draw() mengganti innerHTML tiap klik, jadi animasinya akan
    mengulang setiap kali pengguna memilih. */
 @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-#dialog[open],.poster,#toast.show,.save-preview{animation:rise .18s ease-out}
+#dialog[open],.poster,.save-preview{animation:rise .18s ease-out}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+/* --- bottom bar: tombol ulangi duduk rapi di samping hitungan --- */
+.bar-inner>div:first-child{display:flex;align-items:center;gap:14px}

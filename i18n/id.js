@@ -5,6 +5,7 @@ export default {
   'app.brand': 'My 9 Picks',
   'app.kicker': 'Girl group generasi 2–5',
   'app.eyebrow': 'Grup girl K-POP',
+  'app.resume': 'Lanjut dari pilihan terakhirmu',
   'step.groups': 'Pilih grup',
   'step.heat': 'Seleksi',
   'step.challenge': 'Kesempatan kedua',

@@ -34,6 +34,8 @@ export function renderSort(state, ctx) {
     // Nilai sort.pick memuat <em>, jadi sengaja tidak di-escape.
     `<h1>${t('sort.pick')}</h1>` +
     `<div class="member-grid" style="grid-template-columns:repeat(2,1fr);max-width:620px">${pair}</div>` +
-    `<div class="page-nav">${undo}</div>`
+    `<div class="page-nav">${undo}` +
+    `<button class="text-button" type="button" data-action="restart">${esc(t('result.restart'))}</button>` +
+    `</div>`
   );
 }

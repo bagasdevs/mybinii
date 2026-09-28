@@ -57,6 +57,11 @@ export function renderHeat(state, ctx) {
     `<button class="primary" type="button" data-action="heatNext" ` +
     `${heat.selected.size !== need ? 'disabled' : ''}>${esc(nextLabel)}</button>`;
 
+  // Jalan keluar dari sesi yang dipulihkan: tanpa ini heat yang dilanjutkan
+  // tidak bisa dibatalkan.
+  const restart =
+    `<button class="text-button" type="button" data-action="restart">${esc(t('result.restart'))}</button>`;
+
   return (
     steps(state, t) +
     `<div class="progress-head"><strong>${esc(stageLabel)}</strong>` +
@@ -69,6 +74,10 @@ export function renderHeat(state, ctx) {
     searchBox +
     `<div class="member-grid">${cards}</div>` +
     `<div class="search-count" data-role="searchCount">${resultCount}</div>${empty}` +
-    bar(`<span class="count">${esc(t('heat.count', { picked: heat.selected.size, need }))}</span>`, next)
+    bar(
+      `<span class="count">${esc(t('heat.count', { picked: heat.selected.size, need }))}</span>` +
+        restart,
+      next,
+    )
   );
 }

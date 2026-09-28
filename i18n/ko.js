@@ -5,6 +5,7 @@ export default {
   'app.brand': '여돌 구절판',
   'app.kicker': '2·2.5·3·4·5세대 여돌',
   'app.eyebrow': 'K-POP 여성 아이돌',
+  'app.resume': '지난 진행을 그대로 이어서 불러왔어요',
   'step.groups': '그룹 선택',
   'step.heat': '후보 압축',
   'step.challenge': '재도전',

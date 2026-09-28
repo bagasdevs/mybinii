@@ -10,6 +10,7 @@ import {
   pickMember,
   pickSort,
   undoSort,
+  restore,
   resetCrop,
   selectAllVisible,
   setCrop,
@@ -17,6 +18,7 @@ import {
   setQuery,
   setTitle,
   startGame,
+  snapshot,
   toggleDebut,
   toggleGeneration,
   toggleGroup,
@@ -387,4 +389,57 @@ test('aksi crop tidak menyentuh selected, pool, atau fase', () => {
   assert.deepEqual([...state.selected].sort(), selected);
   assert.equal(state.phase, 'setup');
   assert.deepEqual(state.pool, []);
+});
+
+// --- simpan/muat progres ---------------------------------------------------
+
+test('snapshot → restore mengembalikan fase dan perbandingan yang sama', () => {
+  const state = smallGame();
+  pickSort(state, state.sort.left);
+  pickSort(state, state.sort.left);
+  const before = {
+    left: state.sort.left,
+    right: state.sort.right,
+    comparisons: state.sort.comparisons,
+  };
+
+  const loaded = createState();
+  assert.equal(restore(loaded, JSON.parse(JSON.stringify(snapshot(state)))), true);
+  assert.equal(loaded.phase, 'sort');
+  assert.equal(loaded.sort.comparisons, before.comparisons);
+  assert.equal(loaded.sort.left, before.left);
+  assert.equal(loaded.sort.right, before.right);
+  assert.deepEqual([...loaded.selected], [...state.selected]);
+
+  // Perbandingan setelah dipulihkan harus tetap jalan, bukan macet.
+  pickSort(loaded, loaded.sort.left);
+  assert.equal(loaded.sort.comparisons, before.comparisons + 1);
+});
+
+test('snapshot → restore mengembalikan Set (bukan array) di heat', () => {
+  const state = createState();
+  startGame(state, {});
+  pickMember(state, state.heat.current[0]);
+
+  const loaded = createState();
+  assert.equal(restore(loaded, JSON.parse(JSON.stringify(snapshot(state)))), true);
+  assert.equal(loaded.phase, 'heat');
+  assert.ok(loaded.heat.selected instanceof Set);
+  assert.equal(loaded.heat.selected.size, 1);
+  assert.ok(loaded.selected instanceof Set);
+});
+
+test('restore menolak paket yang tidak dikenal', () => {
+  const state = createState();
+  const base = { v: 1, phase: 'result', selected: [], sort: { stack: [] } };
+  assert.equal(restore(state, null), false);
+  assert.equal(restore(state, { ...base, v: 99 }), false, 'versi lain ditolak');
+  assert.equal(restore(state, { ...base, phase: 'misteri' }), false, 'fase lain ditolak');
+  assert.equal(restore(state, { ...base, selected: ['GRUP-HANTU'] }), false, 'grup hilang ditolak');
+  assert.equal(
+    restore(state, { ...base, sort: { stack: [{ ids: ['bukan-member'] }] } }),
+    false,
+    'member hilang ditolak',
+  );
+  assert.equal(state.phase, 'setup', 'state tidak tersentuh bila paket ditolak');
 });

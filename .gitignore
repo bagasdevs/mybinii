@@ -17,3 +17,4 @@ Thumbs.db
 
 # There must be no dependencies: if this folder appears, something is wrong.
 node_modules/
+docs/

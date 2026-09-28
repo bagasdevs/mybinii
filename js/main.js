@@ -26,6 +26,16 @@ const memberById = new Map(MEMBERS.map((m) => [m.id, m]));
 
 const safeGet = (key) => { try { return localStorage.getItem(key); } catch { return null; } };
 const safeSet = (key, value) => { try { localStorage.setItem(key, value); } catch { /* mode privat */ } };
+const PROGRESS_KEY = 'listidol.progress';
+// localStorage bisa berisi apa saja (privat mode, kuota penuh, disunting
+// manual), jadi baca dan tulis selalu dibungkus.
+const readProgress = () => {
+  try {
+    return JSON.parse(safeGet(PROGRESS_KEY) ?? 'null');
+  } catch {
+    return null;
+  }
+};
 
 const state = act.createState();
 state.lang = detectLocale({
@@ -33,6 +43,9 @@ state.lang = detectLocale({
   stored: safeGet('listidol.lang'),
   navigatorLangs: navigator.languages ?? [navigator.language],
 });
+
+// Lanjutkan progres tersimpan (kalau ada) sebelum render pertama.
+const resumed = act.restore(state, readProgress());
 
 const t = createTranslator(dicts, () => state.lang);
 
@@ -131,8 +144,13 @@ function applyDocumentChrome() {
   }
 }
 
+// Simpan progres setiap render. Di-debounce karena mengetik di kotak search
+// merender ulang untuk setiap tombol.
+let saveTimer;
 function draw() {
   app.innerHTML = render(state, ctx);
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(() => safeSet(PROGRESS_KEY, JSON.stringify(act.snapshot(state))), 300);
 }
 
 const cropDialog = createCropDialog({ state, t, memberById, toast, toastError, redraw: draw });
@@ -300,3 +318,4 @@ document.querySelector('#credits').addEventListener('click', () => {
 });
 
 redrawAll();
+if (resumed && state.phase !== 'setup') toast(t('app.resume'));

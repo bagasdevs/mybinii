@@ -229,3 +229,72 @@ export function resetCrop(state, memberId) {
   state.cropId = memberId;
   return photoDefaults(memberId);
 }
+
+// --- simpan/muat progres ---------------------------------------------------
+
+const SAVE_VERSION = 1;
+const PHASES = new Set(['setup', 'heat', 'sort', 'result']);
+const groupIds = new Set(GROUPS.map((g) => g.id));
+
+/**
+ * Ringkasan yang aman disimpan: Set jadi array, riwayat undo dibuang.
+ * Foto unggahan (`custom`) sengaja tidak ikut — isinya blob URL yang mati
+ * begitu halaman ditutup.
+ */
+export function snapshot(state) {
+  return {
+    v: SAVE_VERSION,
+    debutDesc: state.debutDesc,
+    selected: [...state.selected],
+    phase: state.phase,
+    pool: state.pool,
+    finalists: state.finalists,
+    title: state.title,
+    titleTouched: state.titleTouched,
+    heat: { ...state.heat, selected: [...state.heat.selected] },
+    sort: state.sort,
+  };
+}
+
+const isIdList = (list) => Array.isArray(list) && list.every((id) => memberById.has(id));
+
+/**
+ * Pulihkan hasil `snapshot` ke `state`. `false` bila paket tidak dikenal atau
+ * berisi id yang sudah tidak ada di roster — mulai dari awal lebih aman
+ * daripada merender member yang hilang.
+ */
+export function restore(state, data) {
+  if (data?.v !== SAVE_VERSION || !PHASES.has(data.phase)) return false;
+
+  const frames = data.sort?.stack;
+  const selected = data.selected;
+  if (!Array.isArray(frames) || !Array.isArray(selected)) return false;
+  if (!selected.every((id) => groupIds.has(id))) return false;
+
+  const heat = data.heat ?? {};
+  const lists = [
+    data.pool,
+    data.finalists,
+    heat.pool,
+    heat.winners,
+    heat.losers,
+    heat.current,
+    heat.selected,
+    heat.mainSurvivors,
+    ...frames.flatMap((f) => [f.ids, f.left, f.right, f.out]),
+  ];
+  if (!lists.every((list) => list === undefined || isIdList(list))) return false;
+
+  state.debutDesc = Boolean(data.debutDesc);
+  state.selected = new Set(selected);
+  state.pool = data.pool ?? [];
+  state.finalists = data.finalists ?? [];
+  state.title = data.title ?? '';
+  state.titleTouched = Boolean(data.titleTouched);
+  state.heat = { ...createHeat(), ...heat, selected: new Set(heat.selected ?? []) };
+  state.sort = { ...createSort(), ...data.sort, stack: frames };
+  state.sortPast = [];
+  state.cropId = null;
+  setPhase(state, data.phase);
+  return true;
+}

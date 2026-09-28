@@ -51,29 +51,37 @@ Sengaja **tidak** dibangun. Jangan tambahkan tanpa keputusan baru:
 listidol/
   index.html                 shell: <header> <main id=app> <footer> <dialog> <div id=toast>
   style.css                  port dari aslinya + gaya kotak search
-  data/roster.js             ES module: export GROUPS, MEMBERS, CHECKED
+  data/roster.json           sumber data (hasil scrape, 80 grup + 475 member)
+  data/roster.js             ES module hasil generate: GROUPS, MEMBERS, CHECKED
   data/photo-sources.json    provenance 478 foto (kredit/atribusi)
-  i18n/ko.json  i18n/en.json kamus datar key→string
+  i18n/ko.js  i18n/en.js    kamus datar key→string (export default)
   js/main.js                 bootstrap: locale → kamus → wire event → render()
   js/state.js                satu objek state + semua action
-  js/i18n.js                 t(), setLocale(), detectLocale()
-  js/search.js               normalize(), buildIndex(), query()   ← murni, unit-testable
-  js/render.js               render() dispatch per fase + helper (esc, portrait, steps, bar)
+  js/i18n.js                 detectLocale(), createTranslator(), genLabel()  ← murni
+  js/search.js               normalize(), buildIndex(), search()             ← murni
+  js/game.js                 turnamen + merge-sort                           ← murni
+  js/view.js                 helper HTML (esc, portrait, steps, bar, label)   ← murni
+  js/render.js               render() dispatch per fase
   js/phases/setup.js
   js/phases/heat.js
   js/phases/sort.js
   js/phases/result.js
-  js/poster.js               canvas draw + toBlob → download
+  js/poster.js               canvas 1080×1600 → toBlob → download
   js/photo.js                dialog crop, default crop, upload foto sendiri
-  test/search.test.mjs
-  test/i18n.test.mjs
-  test/roster.test.mjs
+  js/credits.js              dialog kredit & sumber foto                        ← murni
+  test/{roster,i18n,search,game,view,state,credits,i18n-keys}.test.mjs
+  tools/build-roster.mjs     regenerate data/roster.js dari data/roster.json
   tools/mirror-photos.mjs    sekali jalan: unduh 475 foto + verifikasi sha256
   photos/                    475 jpg hasil mirror (~35 MB, ikut di-commit: Pages serve dari git)
   CREDITS.md                 atribusi kprofiles & sumber foto
   README.md                  cara jalankan lokal + deploy
-  docs/superpowers/specs/    dokumen ini
+  docs/superpowers/          spec (dokumen ini) + plan implementasi
 ```
+
+`js/game.js`, `js/view.js`, dan `js/credits.js` tidak ada di draf pertama spec ini;
+ketiganya muncul saat menyusun plan implementasi. Alasannya sama untuk ketiganya:
+memisahkan logika yang bisa diuji di Node dari kode yang menyentuh DOM. Lihat
+`docs/superpowers/plans/2026-09-28-listidol-clone.md`, bagian File Structure.
 
 ## 5. Model data
 
@@ -122,7 +130,6 @@ EN_GROUP_OVERRIDES = { 'SNSD': "Girls' Generation", ... }   // daftar kecil, dii
 {
   lang: 'ko',
   query: '',
-  gen: 0,                    // 0 = semua
   debutDesc: false,
   selected: Set<groupId>,
   phase: 'setup',
@@ -135,6 +142,13 @@ EN_GROUP_OVERRIDES = { 'SNSD': "Girls' Generation", ... }   // daftar kecil, dii
   sort:  { stack, left, right, comparisons, candidateCount, out },
 }
 ```
+
+`state.gen` **tidak ada** di versi ini. Di `app.js` asli, variabel `gen` hanya
+di-assign sekali saat inisialisasi (`gen=0`) dan tidak pernah diubah, sehingga
+`visibleGroups()` tidak pernah memfilter berdasarkan generasi; tab generasi
+sebenarnya hanya melakukan pilih/hapus massal per generasi. Port ini
+mempertahankan perilaku itu lewat `toggleGeneration(state, gen)`, dan membuang
+variabel matinya.
 
 Situs asli memakai belasan variabel modul (`let selected=new Set(...), gen=0,
 phase='setup', pool=[], ...`). Dikonsolidasi karena ganti bahasa memerlukan
@@ -177,8 +191,17 @@ search: state.query → search.query() → subset id → phases/setup.js
 
 Modul murni, tanpa DOM — ini yang membuatnya bisa diuji di Node.
 
-**`normalize(s)`** — lowercase → NFKD → buang combining mark (`\p{M}`) → buang
-tanda baca → rapatkan spasi. Hangul tetap utuh; **tidak** didekomposisi ke jamo.
+**`normalize(s)`** — lowercase → `NFD` → buang combining mark (`\p{M}+`) →
+**`NFC`** → hapus `[^\p{L}\p{N}\s]+` → rapatkan spasi.
+
+Dua detail yang tidak intuitif dan sudah diverifikasi di Node:
+
+- **Harus `NFD` lalu `NFC`, bukan `NFKD`.** `NFKD` ikut mendekomposisi suku kata
+  Hangul menjadi jamo (`트와이스` → `트와이스`). `NFD` + buang mark + `NFC`
+  mengembalikan Hangul utuh **dan** tetap membuang diakritik Latin (`café` → `cafe`).
+- **Tanda baca dihapus, bukan diganti spasi.** Diganti spasi akan membuat index
+  berisi `iz one` sehingga query `izone` tidak cocok. Dihapus → `IZ*ONE` → `izone`,
+  `woo!ah!` → `wooah`, `H1-KEY` → `h1key`.
 
 **`buildIndex(members, groups)`** — dipanggil sekali saat boot. Satu haystack
 per member:
@@ -247,9 +270,26 @@ menampilkan baris grup (`labels(m)` = `displayGroups || groups`).
 
 ## 12. Testing
 
-`node --test test/*.test.mjs` — runner bawaan Node 26. **Tanpa framework, tanpa
-dependensi.** Modul ES murni bisa di-import langsung di Node justru karena tidak
-ada langkah build; ini keuntungan nyata dari keputusan #1.
+`node --test` — runner bawaan Node 26. **Tanpa framework, tanpa dependensi.**
+Modul ES murni bisa di-import langsung di Node justru karena tidak ada langkah
+build; ini keuntungan nyata dari keputusan #1.
+
+- **`game.test.mjs`** — `roundCount`/`sortLimit` terhadap nilai yang dihitung
+tangan, `initialOrder`, `interleave`, `heatSize`, `eligibleMembers`, `sortGroups`
+(termasuk `debut` hilang), alur heat 21 member sampai menghasilkan kandidat sort,
+dan merge-sort (selalu kiri = urutan tetap, selalu kanan = urutan terbalik, jumlah
+perbandingan tidak melebihi `sortLimit`).
+- **`view.test.mjs`** — `esc`, `visibleGroups`, label grup KO/EN (termasuk peta
+override dan jaminan tidak ada label EN ber-Hangul), `labelsOf`/`groupLines`
+dengan id grup asing, `defaultPhoto`/`portrait`, `stepIndex`.
+- **`state.test.mjs`** — invariant §9 (filter tidak mengubah `selected`, transisi
+fase mengosongkan `query`), pemilihan grup, `startGame` (heat vs sort langsung),
+aksi heat, `pickSort`, aksi crop, dan `setTitle`.
+- **`credits.test.mjs`** — satu baris per grup non-hidden, tanggal per bahasa,
+tautan ke `photo-sources.json`.
+- **`i18n-keys.test.mjs`** — memindai `js/**/*.js` untuk key yang dipakai dan
+memastikan semuanya ada di kedua kamus, himpunan key ko/en identik, tidak ada
+nilai kosong, dan placeholder `{...}` cocok antar bahasa.
 
 - **`search.test.mjs`** — normalize (huruf besar/kecil, tanda baca, diakritik,
   Hangul utuh); token AND order-free; `"twice"` / `"트와이스"` / `"sana"` /
@@ -264,9 +304,10 @@ ada langkah build; ini keuntungan nyata dari keputusan #1.
   dan ada entri `photo-sources.json` yang cocok. Tiga entri yatim AOA (§5) tidak
   diharapkan ada di disk.
 
-**Smoke manual** (bukan test permanen, dijalankan sekali sebelum selesai):
-empat fase × dua bahasa; unduh poster dan periksa Hangul ter-render; dialog
-crop; refresh tidak mempertahankan pilihan (sesuai desain).
+**Smoke manual** (bukan test permanen, dijalankan sekali sebelum selesai, lihat
+Task 14 plan): empat fase × dua bahasa; unduh poster dan periksa Hangul
+ter-render sebagai huruf; dialog crop termasuk unggah foto; mode offline untuk
+memeriksa avatar inisial; `?lang=fr`; refresh tidak mempertahankan pilihan.
 
 **Ditunda:** search 초성 (mis. `"ㅌㅇ"` → 트와이스). Butuh dekomposisi jamo;
 tambahkan hanya bila pencarian Korea terasa kurang.

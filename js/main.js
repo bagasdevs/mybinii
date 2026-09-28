@@ -99,6 +99,12 @@ app.addEventListener('click', (event) => {
     draw();
     return;
   }
+  if (button.dataset.sort !== undefined) {
+    act.pickSort(state, button.dataset.sort);
+    draw();
+    scrollTo(0, 0);
+    return;
+  }
   if (button.dataset.member !== undefined && state.phase === 'heat') {
     const outcome = act.pickMember(state, button.dataset.member);
     if (outcome === 'full') {

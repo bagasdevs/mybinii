@@ -3,6 +3,7 @@ import {
   advanceHeat,
   beginHeat,
   beginSort,
+  chooseSort,
   createHeat,
   createSort,
   eligibleMembers,
@@ -151,4 +152,16 @@ export function confirmHeat(state, { onNeedMore, onTooFew } = {}) {
     setPhase(state, 'setup');
   }
   return true;
+}
+
+// --- sort ------------------------------------------------------------------
+
+/** Mencatat satu perbandingan; mengisi `finalists` dan pindah ke fase result bila selesai. */
+export function pickSort(state, memberId) {
+  const result = chooseSort(state.sort, memberId);
+  if (result.done) {
+    state.finalists = result.result;
+    setPhase(state, 'result');
+  }
+  return result;
 }

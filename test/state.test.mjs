@@ -8,6 +8,7 @@ import {
   createState,
   enterSort,
   pickMember,
+  pickSort,
   selectAllVisible,
   setPhase,
   setQuery,
@@ -221,4 +222,49 @@ test('confirmHeat selalu mengosongkan pilihan layar berikutnya', () => {
   for (const id of state.heat.current.slice(0, 3)) pickMember(state, id);
   confirmHeat(state, {});
   assert.equal(state.heat.selected.size, 0);
+});
+
+// --- sort ------------------------------------------------------------------
+
+const smallGame = () => {
+  const state = createState();
+  clearAllVisible(state);
+  for (const id of ['TWICE', 'BLACKPINK']) toggleGroup(state, id);
+  startGame(state, {});
+  return state;
+};
+
+test('pickSort berjalan sampai selesai dan mengisi finalists', () => {
+  const state = smallGame();
+  assert.equal(state.phase, 'sort');
+  assert.equal(state.sort.candidateCount, 13);
+
+  let guard = 0;
+  while (state.phase === 'sort') {
+    if (guard++ > 500) throw new Error('sort tidak pernah selesai');
+    assert.notEqual(state.sort.left, null, 'left kosong saat masih butuh perbandingan');
+    assert.notEqual(state.sort.right, null, 'right kosong saat masih butuh perbandingan');
+    pickSort(state, state.sort.left);
+  }
+
+  assert.equal(state.phase, 'result');
+  assert.equal(state.query, '');
+  assert.equal(state.finalists.length, 9);
+  assert.equal(new Set(state.finalists).size, 9);
+});
+
+test('pickSort mengabaikan id yang bukan kandidat', () => {
+  const state = smallGame();
+  const before = state.sort.comparisons;
+  pickSort(state, 'bukan-kandidat');
+  assert.equal(state.sort.comparisons, before);
+  assert.equal(state.phase, 'sort');
+});
+
+test('finalists selalu berisi 9 id unik milik pool yang dipilih', () => {
+  const state = smallGame();
+  let guard = 0;
+  while (state.phase === 'sort' && guard++ < 500) pickSort(state, state.sort.right);
+  assert.equal(state.finalists.length, 9);
+  for (const id of state.finalists) assert.ok(state.pool.includes(id), `${id} bukan bagian pool`);
 });

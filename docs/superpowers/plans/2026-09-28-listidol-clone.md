@@ -2995,16 +2995,22 @@ git commit -m "feat: fase heat dengan pemilihan member per layar"
 
 - [ ] **Step 1: Tambahkan test sort**
 
-Tambahkan `pickSort` ke daftar import dari `../js/state.js`, lalu tambahkan di akhir `test/state.test.mjs`:
+Tambahkan `pickSort` ke daftar import dari `../js/state.js`, lalu tambahkan di akhir `test/state.test.mjs`.
+Ketiga test memakai setup yang sama, jadi ia dijadikan helper sekali saja:
 
 ```js
 // --- sort ------------------------------------------------------------------
 
-test('pickSort berjalan sampai selesai dan mengisi finalists', () => {
+const smallGame = () => {
   const state = createState();
   clearAllVisible(state);
   for (const id of ['TWICE', 'BLACKPINK']) toggleGroup(state, id);
   startGame(state, {});
+  return state;
+};
+
+test('pickSort berjalan sampai selesai dan mengisi finalists', () => {
+  const state = smallGame();
   assert.equal(state.phase, 'sort');
   assert.equal(state.sort.candidateCount, 13);
 
@@ -3023,10 +3029,7 @@ test('pickSort berjalan sampai selesai dan mengisi finalists', () => {
 });
 
 test('pickSort mengabaikan id yang bukan kandidat', () => {
-  const state = createState();
-  clearAllVisible(state);
-  for (const id of ['TWICE', 'BLACKPINK']) toggleGroup(state, id);
-  startGame(state, {});
+  const state = smallGame();
   const before = state.sort.comparisons;
   pickSort(state, 'bukan-kandidat');
   assert.equal(state.sort.comparisons, before);
@@ -3034,10 +3037,7 @@ test('pickSort mengabaikan id yang bukan kandidat', () => {
 });
 
 test('finalists selalu berisi 9 id unik milik pool yang dipilih', () => {
-  const state = createState();
-  clearAllVisible(state);
-  for (const id of ['TWICE', 'BLACKPINK']) toggleGroup(state, id);
-  startGame(state, {});
+  const state = smallGame();
   let guard = 0;
   while (state.phase === 'sort' && guard++ < 500) pickSort(state, state.sort.right);
   assert.equal(state.finalists.length, 9);
@@ -3130,7 +3130,10 @@ Expected: PASS — termasuk 24 test di `test/state.test.mjs`.
 
 1. Di layar setup: `선택 해제`, lalu pilih hanya `TWICE` dan `BLACKPINK` (13 member, ≤ 20).
 2. Klik `시작 →`: langsung masuk fase `순위 비교` tanpa fase heat.
-3. Halaman menampilkan dua kartu berdampingan, penghitung `0 / 최대 33회`, dan progres 0%.
+3. Halaman menampilkan dua kartu berdampingan, penghitung `0 / 최대 37회`, dan progres 0%.
+   `sortLimit(13) = 37` adalah batas **atas** (kasus terburuk merge-sort), bukan jumlah
+   perbandingan yang akan terjadi: pada data nyata 13 kandidat selesai dalam 22 klik.
+   Sudah diverifikasi dengan 300 urutan acak: hasil selalu 9 teratas yang benar.
 4. Klik salah satu kartu: penghitung bertambah, pasangan berikutnya muncul, progres bertambah.
 5. Selesaikan seluruh perbandingan lewat konsol browser:
 
@@ -3144,6 +3147,9 @@ const loop = setInterval(() => {
 ```
 
 Expected: berhenti dengan log `sort selesai`, halaman berpindah ke fase result, dan tidak ada error di konsol.
+Verifikasi tambahan yang sudah dijalankan: `.progress-head` naik satu per klik,
+`[role=progressbar] > div` melebar, dan mengganti bahasa di tengah fase sort
+menulis ulang judul (`순위 비교`) tanpa kehilangan progres.
 
 - [ ] **Step 8: Commit**
 

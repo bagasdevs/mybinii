@@ -164,14 +164,51 @@ function applyDocumentChrome() {
   }
 }
 
+// `app.innerHTML` membuang elemen yang sedang fokus, jadi pengguna keyboard
+// dilempar ke awal dokumen setiap kali memilih. Identitas elemen disimpan
+// sebelum render dan dipulihkan sesudahnya.
+const FOCUS_ATTRS = ['data-action', 'data-member', 'data-sort', 'data-group', 'data-gen', 'data-photo'];
+const focusSelector = (el) => {
+  if (!el || !app.contains(el)) return null;
+  const attr = FOCUS_ATTRS.find((name) => el.hasAttribute(name));
+  return attr ? `[${attr}="${CSS.escape(el.getAttribute(attr))}"]` : null;
+};
+
+/**
+ * Sasaran pengganti saat elemen lama hilang: papan berikutnya sudah tampil.
+ * Sengaja `button[data-member]` — `data-member` juga ada di `<img>` di dalam
+ * kartu, dan `<img>` tidak bisa menerima fokus.
+ */
+const firstCard = () =>
+  [...app.querySelectorAll('button[data-member], [data-sort], button[data-group]')].find(
+    (el) => !el.disabled,
+  );
+
+/**
+ * Pulihkan fokus: elemen yang sama bila masih ada (memilih di papan yang sama),
+ * kalau tidak kartu pertama papan baru (heatNext, pilih di sort, ulangi).
+ * `disabled` penting: tombol `heatNext` ada di papan baru tapi mati sampai tiga
+ * nama dipilih, dan elemen mati tidak bisa menerima fokus — tanpa cek ini fokus
+ * tetap jatuh ke `body`.
+ * `preventScroll` supaya tidak berkelahi dengan `scrollTo(0, 0)` pemanggilnya.
+ */
+function restoreFocus(previous) {
+  if (!previous) return;
+  const target = app.querySelector(previous);
+  const usable = target && !target.disabled ? target : firstCard();
+  usable?.focus({ preventScroll: true });
+}
+
 // Simpan progres setiap render. Di-debounce karena mengetik di kotak search
 // merender ulang untuk setiap tombol.
 let saveTimer;
 function draw() {
+  const previous = focusSelector(document.activeElement);
   app.innerHTML = render(state, ctx);
   // Footer sengaja disembunyikan sampai render pertama selesai: kalau tidak,
   // ia ikut tergeser saat #app terisi dan menyumbang CLS 0.17.
   document.documentElement.classList.remove('booting');
+  restoreFocus(previous);
   clearTimeout(saveTimer);
   // Tampilan hasil bersama tidak ditulis ke localStorage: membuka tautan orang
   // lain tidak boleh menghapus permainan yang sedang berjalan di perangkat ini.

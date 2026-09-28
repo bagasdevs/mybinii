@@ -14,6 +14,7 @@ import {
   portrait,
   stepIndex,
   steps,
+  thumbUrl,
   visibleGroups,
 } from '../js/view.js';
 import { GROUPS } from '../data/roster.js';
@@ -163,6 +164,30 @@ test('alt portrait mengikuti bahasa yang aktif', () => {
   const member = { id: 'a', image: 'photos/a.jpg', name: '사나', english: 'Sana' };
   assert.ok(portrait(member, {}, 'en').includes('alt="Sana"'));
   assert.ok(portrait(member, {}, 'ko').includes('alt="사나"'));
+});
+
+// Grid memuat thumbnail WebP; berkas aslinya tetap dipakai poster dan
+// pratinjau crop (test/poster.test.mjs memakai member.image langsung).
+test('thumbUrl menurunkan jalur thumbnail dari ekstensi apa pun', () => {
+  assert.equal(thumbUrl('photos/profile-a.jpg'), 'photos/thumb/profile-a.webp');
+  assert.equal(thumbUrl('photos/upload-20260927-g_a_b.jpeg'), 'photos/thumb/upload-20260927-g_a_b.webp');
+  assert.equal(thumbUrl('photos/profile-a.png'), 'photos/thumb/profile-a.webp');
+  assert.equal(thumbUrl('blob:upload-1'), null, 'foto unggahan tidak punya thumbnail');
+  // Member tanpa image tetap boleh dirender (avatar inisial), bukan crash.
+  assert.equal(thumbUrl(undefined), null);
+});
+
+test('portrait memakai thumbnail untuk foto bawaan', () => {
+  const member = { id: 'a', image: 'photos/profile-a.jpeg', name: '에이', english: 'A' };
+  assert.ok(portrait(member, {}, 'en').includes('src="photos/thumb/profile-a.webp"'));
+});
+
+test('portrait tidak menulis ulang foto unggahan pengguna', () => {
+  const member = { id: 'a', image: 'photos/profile-a.jpg', name: '에이', english: 'A' };
+  const custom = { a: { url: 'blob:upload-1', x: 50, y: 25, zoom: 1 } };
+  const html = portrait(member, custom, 'en');
+  assert.ok(html.includes('src="blob:upload-1"'));
+  assert.ok(!html.includes('thumb'), 'blob tidak boleh dipetakan ke thumbnail');
 });
 
 test('initialsOf memakai dua huruf pertama label', () => {

@@ -83,15 +83,30 @@ export function photoOf(member, custom) {
 }
 
 /**
+ * Thumbnail grid untuk foto bawaan. Berkas asli tetap dipakai poster dan
+ * pratinjau crop; sel grid terbesar ~202 CSS px, jadi 480px cukup dan totalnya
+ * 53,6 MB -> 8,7 MB untuk 475 foto (dibuat oleh tools/build-thumbs.py).
+ * Jalur diturunkan dari nama berkas, bukan disimpan di roster, supaya data/
+ * tetap bersih; test/roster.test.mjs menjaga setiap `member.image` punya
+ * thumbnail, karena berkas yang hilang hanya tampak sebagai avatar inisial.
+ */
+export function thumbUrl(url) {
+  const name = typeof url === 'string' && url.startsWith('photos/') ? url.slice('photos/'.length) : null;
+  return name ? `photos/thumb/${name.replace(/\.[^.]+$/, '')}.webp` : null;
+}
+
+/**
  * Alt mengikuti bahasa aktif; label member memang ditampilkan di sebelah foto.
  * `eager` dipakai foto di layar pertama: `loading="lazy"` menunda LCP sampai
  * setelah render (terukur 2,2s di heat) padahal grid selalu tampil di atas.
  */
 export function portrait(member, custom, locale, { eager = false } = {}) {
   const photo = photoOf(member, custom);
+  // Foto unggahan pengguna berupa blob dan tidak punya thumbnail.
+  const src = photo.url === member.image ? (thumbUrl(photo.url) ?? photo.url) : photo.url;
   const load = eager ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
   return (
-    `<img src="${esc(photo.url)}" alt="${esc(memberLabel(member, locale))}" ${load} ` +
+    `<img src="${esc(src)}" alt="${esc(memberLabel(member, locale))}" ${load} ` +
     `data-member="${esc(member.id)}" ` +
     `style="object-position:${photo.x}% ${photo.y}%;transform:scale(${photo.zoom})">`
   );

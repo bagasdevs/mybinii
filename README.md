@@ -58,6 +58,10 @@ js/photo.js            crop + upload dialog
 js/credits.js          credits dialog
 ```
 
+`photos/` holds the 475 originals plus `photos/thumb/`, the 480px WebP copies the
+grids actually load. The poster and the crop preview always read the originals,
+so a download stays full resolution.
+
 Modules marked `[pure]` never touch the DOM and are tested directly in Node.
 
 ## Adding a language
@@ -73,8 +77,12 @@ Nothing else. `test/i18n-keys.test.mjs` fails if any key is left untranslated.
 ```bash
 node tools/build-roster.mjs    # after editing data/roster.json
 node tools/mirror-photos.mjs   # download new photos, verify sha256
+python tools/build-thumbs.py   # rebuild photos/thumb/ (needs Pillow)
 node --test
 ```
+
+`test/roster.test.mjs` fails if any member photo has no thumbnail, so a new
+member without a rebuilt `photos/thumb/` is caught before it ships.
 
 ## Known limitations
 
@@ -86,23 +94,11 @@ node --test
 - **Uploaded photos are not saved.** Progress (phase, picks, comparisons) is
   restored from `localStorage`, but photos you swapped in live as blob URLs and
   are gone after a reload — the poster falls back to the default photos.
-- **Photo files are large.** 475 mirrored JPEG/PNG files, no thumbnails and no
-  AVIF/WebP, so mobile data use is noticeable.
+- **Originals are still heavy.** The grid loads 480px WebP thumbnails
+  (53.6 MB → 8.7 MB), but the poster and the crop preview pull the full-size
+  originals: 9 files, up to ~2 MB each, at download time. AVIF is not generated.
 - **Shared links carry only the nine picks and the title.** Uploaded photos and
   crop edits stay on the device that made them.
-
-## Credits and licence
-
-- **Roster data** from [mygirlnine.pages.dev](https://mygirlnine.pages.dev/)
-  ("여돌 구절판"), fetched 2026-09-26. Per-group profile data is referenced from
-  kprofiles.com through the `source` field in `data/roster.json`.
-- **Photos** mirrored from the same site and verified against the `sha256`
-  values in `data/photo-sources.json` (457 of 475 files are byte-identical).
-  Rights stay with the original holders — "사진 권리는 원 권리자에게 있습니다".
-- **Code** written from scratch. The phase flow (setup → heat → sort → result),
-  poster layout, and data schema follow the source site so results stay
-  comparable; search, i18n, undo, saved progress, and the accessibility work are
-  additions here.
 
 The roster and photos are not owned by this project. Personal use only — no
 commercial use, and keep this attribution for as long as the photos ship with

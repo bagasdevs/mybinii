@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, statSync } from 'node:fs';
 import { CHECKED, GROUPS, MEMBERS } from '../data/roster.js';
+import { thumbUrl } from '../js/view.js';
 
 const PHOTOS = JSON.parse(
   readFileSync(new URL('../data/photo-sources.json', import.meta.url), 'utf8'),
@@ -75,6 +76,22 @@ test('setiap member punya berkas foto di photos/', () => {
   for (const m of MEMBERS) {
     const file = new URL(`../${m.image}`, import.meta.url);
     assert.ok(existsSync(file), `berkas hilang: ${m.image}`);
+  }
+});
+
+// Grid memuat thumbnail (53,6 MB -> 8,7 MB); berkas asli hanya untuk poster dan
+// pratinjau crop. Jalur thumbnail diturunkan di js/view.js, jadi berkas yang
+// hilang tidak error — hanya tampil sebagai avatar inisial. Test ini yang
+// menjaga setiap foto baru ikut dibuatkan thumbnail.
+test('setiap image punya thumbnail WebP yang lebih kecil', () => {
+  for (const m of MEMBERS) {
+    const thumb = new URL(`../${thumbUrl(m.image)}`, import.meta.url);
+    assert.ok(existsSync(thumb), `thumbnail hilang: ${thumbUrl(m.image)}`);
+    const original = statSync(new URL(`../${m.image}`, import.meta.url)).size;
+    assert.ok(
+      statSync(thumb).size < original,
+      `thumbnail tidak lebih kecil dari aslinya: ${m.image}`,
+    );
   }
 });
 

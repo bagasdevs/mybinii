@@ -26,8 +26,9 @@ Sengaja **tidak** dibangun. Jangan tambahkan tanpa keputusan baru:
 
 - URL per member/grup, prerender, SSG, SEO (`sitemap.xml`, `robots.txt`, OG tags).
 - Backend, akun, database, analytics.
-- Persistensi lintas sesi (localStorage untuk hasil/pilihan). Situs asli pun
-  tidak menyimpan — foto hasil edit hanya hidup di memori.
+- Persistensi lintas sesi untuk **hasil atau pilihan**. Situs asli pun tidak
+  menyimpan — foto hasil edit hanya hidup di memori. Satu-satunya nilai yang
+  disimpan di localStorage adalah preferensi bahasa (`lang`, §8).
 - Share link berbasis URL.
 - Dark mode.
 - Pencarian fuzzy/Levenshtein.
@@ -93,7 +94,18 @@ Fakta terverifikasi yang membentuk desain:
 - 40 nama `english` duplikat (Jisoo, Mina, Chaeyoung, ...).
 - Semua member punya `image` dan `english`; semua referensi grup valid; tidak ada id duplikat.
 - `ARTMS` = `disabled` + `hidden`.
-- `photo-sources.json`: 478 entri `{id, name, english, group, sourceUrl, imageUrl, matchMethod, sha256, ...}`.
+- `photo-sources.json`: 478 entri = **475 member roster + 3 entri yatim** (`g_aoa_hyejeong`, `g_aoa_seolhyun`, `g_aoa_dohwa`) yang tidak ada di roster. Metadata yatim dibiarkan apa adanya; yang di-mirror hanya 475 yang dirujuk roster.
+
+**Struktur fase (terverifikasi dari `app.js` asli) — menentukan di mana search dipasang:**
+
+| Fase | Grid yang dirender | Isi |
+|---|---|---|
+| `setup` | `.group-grid` | pilih **grup** + tab generasi + switch urutan debut + 전체 선택/해제 |
+| `heat` | `.member-grid` (via `card(id)`) | pilih **member**: "N명 중 3명 선택", per layar/ronde (`heatStage`: `main`/`challenge`/`final`) |
+| `sort` | dua kartu | perbandingan berpasangan (merge-sort) |
+| `result` | grid poster | judul + unduh PNG + edit foto |
+
+Tidak ada grid member di `setup`; pemilihan member terjadi di `heat`. Karena itu search hanya bermakna di `setup` (cari grup) dan `heat` (cari member).
 
 Aturan tampilan nama:
 
@@ -189,9 +201,22 @@ menambah kode dan menurunkan presisi.
 Mengetik lalu mengubah query tidak boleh mengubah pilihan. Ini bug klasik pada
 implementasi search-over-grid dan wajib ditutup test.
 
-**UI.** `<input type="search">` di `selection-head` + penghitung hasil.
-Grid grup **dan** grid member sama-sama difilter; digabung **AND** dengan tab
-generasi; sort debut tetap berlaku. Hasil kosong → empty state terlokalisasi.
+**UI — dipasang di dua tempat, tidak di `sort`/`result`:**
+
+| Fase | Yang difilter | Catatan |
+|---|---|---|
+| `setup` | `.group-grid` (`visibleGroups()`) | cari grup lewat `name`, `id`, atau generasi |
+| `heat` | `.member-grid` = `heatCurrent` (layar kandidat saat ini) | bukan seluruh 475 — `heatCurrent` memang per layar |
+
+`<input type="search">` dirender di kepala fase + penghitung hasil. Digabung
+**AND** dengan tab generasi dan filter grup yang sudah aktif; urutan debut tetap
+berlaku. Hasil kosong → empty state terlokalisasi. `sort` dan `result` tidak
+memakai search: `sort` hanya menampilkan dua kartu, `result` sudah final.
+
+**`state.query` di-reset ke `''` pada setiap transisi fase.** Satu baris di
+action transisi. Alasannya: `heatCurrent` adalah layar baru dengan kandidat yang
+berbeda, sehingga query sisa dari `setup` akan menyembunyikan kandidat secara
+tak terduga. Reset = perilaku yang bisa diprediksi.
 
 **Disambiguasi.** Karena 40 nama EN duplikat, setiap kartu member selalu
 menampilkan baris grup (`labels(m)` = `displayGroups || groups`).
@@ -229,12 +254,15 @@ ada langkah build; ini keuntungan nyata dari keputusan #1.
 - **`search.test.mjs`** — normalize (huruf besar/kecil, tanda baca, diakritik,
   Hangul utuh); token AND order-free; `"twice"` / `"트와이스"` / `"sana"` /
   `"사나"` semua menemukan hasil; query kosong = semua; query tak match = 0;
-  filter tidak mengubah `selected`.
+  **filter tidak mengubah `selected`** (invariant §9); **`query` kembali `''`
+  setelah transisi fase** (invariant §9).
 - **`i18n.test.mjs`** — urutan resolusi locale; `?lang=fr` jatuh ke sumber
   berikutnya; interpolasi `{n}`; key hilang mengembalikan key dan warn sekali.
 - **`roster.test.mjs`** — id unik; setiap `groups[]` dan `displayGroups[]` member
   menunjuk grup yang ada; `displayGroups ⊆ groups`; `gen ∈ {2,3,4,5}`; setiap
-  member punya `image` dan `english`; setiap foto di `photo-sources.json` ada di disk.
+  member punya `image` dan `english`; **setiap `member.image` punya berkas di disk**
+  dan ada entri `photo-sources.json` yang cocok. Tiga entri yatim AOA (§5) tidak
+  diharapkan ada di disk.
 
 **Smoke manual** (bukan test permanen, dijalankan sekali sebelum selesai):
 empat fase × dua bahasa; unduh poster dan periksa Hangul ter-render; dialog
@@ -245,9 +273,19 @@ tambahkan hanya bila pencarian Korea terasa kurang.
 
 ## 13. Sumber data, mirroring, kredit
 
-- `tools/mirror-photos.mjs`: unduh 475 foto dari situs asli ke `photos/`,
-  verifikasi terhadap `sha256` di `photo-sources.json`, lewati berkas yang sudah
-  ada dan cocok. Idempoten — aman dijalankan ulang.
+- `tools/mirror-photos.mjs`: unduh 475 foto dari `https://mygirlnine.pages.dev/photos/<member.image>`
+  ke `photos/`, verifikasi `sha256` terhadap `photo-sources.json`, lewati berkas
+  yang sudah ada dan cocok. Idempoten — aman dijalankan ulang.
+- **Terverifikasi:** `sha256` di `photo-sources.json` adalah hash dari berkas yang
+  disajikan situs asli, bukan dari `imageUrl` kprofiles. Contoh `g_exid_solji`:
+  75.600 byte, `fda506c0…1453` cocok persis. Karena itu mirror mengambil dari
+  situs asli (sudah dinormalkan ke 640×800), bukan dari kprofiles langsung —
+  sumber kprofiles hanya dipakai untuk atribusi.
+- Hanya 475 id yang dirujuk roster yang diunduh. Tiga entri yatim AOA (§5)
+  dilewati; keberadaannya di `photo-sources.json` tidak mengganggu.
+- `photo-sources.json` juga mencatat `sourceType` (`web-download-edited`,
+  `official-web-link`, `user-upload`) dan `providedFile` (mis. `IMG_5401.jpeg`)
+  untuk foto yang disediakan operator. Ini masuk ke `CREDITS.md`.
 - `CREDITS.md`: menyebut kprofiles.com sebagai sumber profil & foto, dan situs
   asal sebagai sumber data roster. Situs asli sendiri menyatakan
   "사진 권리는 원 권리자에게 있습니다" (hak foto milik pemegang hak aslinya).

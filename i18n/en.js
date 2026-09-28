@@ -48,7 +48,7 @@ export default {
   'result.titleInput.aria': 'Platter title',
   'result.rank': '#{n}',
   'result.editPhoto': 'Edit photo',
-  'result.foot': 'MY 9 PICKS',
+  'result.foot': 'MY 9 PICKS - By Bagas',
   'result.privacy': 'Changed photos stay on this screen and are never uploaded.',
   'result.restart': 'Start over',
   'result.download': 'Save image ↓',

@@ -48,7 +48,7 @@ export default {
   'result.titleInput.aria': '구절판 제목',
   'result.rank': '{n}위',
   'result.editPhoto': '사진 편집',
-  'result.foot': 'MY 9 PICKS · 여돌 구절판',
+  'result.foot': 'MY 9 PICKS - By Bagas',
   'result.privacy': '바꾼 사진은 이 화면에서만 사용하며 서버로 전송하지 않아요.',
   'result.restart': '새로 만들기',
   'result.download': '이미지 저장 ↓',

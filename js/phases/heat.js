@@ -1,4 +1,5 @@
 import { heatSize } from '../game.js';
+import { search } from '../search.js';
 import { bar, esc, memberCard, steps } from '../view.js';
 
 export function renderHeat(state, ctx) {
@@ -17,7 +18,30 @@ export function renderHeat(state, ctx) {
         ? t('heat.stage.final')
         : t('heat.stage.challenge');
 
-  const cards = heat.current
+  // Query hanya menyaring layar ini (bukan seluruh pool) dan tidak pernah
+  // menyentuh heat.selected — sama seperti invariant search di layar setup.
+  const searching = state.query.trim() !== '';
+  const matched = search(state.query, ctx.memberIndex);
+  const visible = heat.current.filter((id) => matched.has(id));
+
+  const searchBox =
+    `<div class="search-row">` +
+    `<input type="search" data-action="search" value="${esc(state.query)}" ` +
+    `placeholder="${esc(t('search.placeholder'))}" aria-label="${esc(t('search.aria'))}" ` +
+    `autocomplete="off" spellcheck="false">` +
+    (searching
+      ? `<button class="text-button" type="button" data-action="clearQuery">${esc(t('search.clear'))}</button>`
+      : '') +
+    `</div>`;
+
+  const resultCount = esc(
+    t('search.count.members', { n: visible.length, total: heat.current.length }),
+  );
+  const empty = visible.length
+    ? ''
+    : `<p class="empty" data-role="searchEmpty">${esc(t('search.empty'))}</p>`;
+
+  const cards = visible
     .map((id) =>
       memberCard(ctx.memberById.get(id), {
         custom: state.custom,
@@ -42,7 +66,9 @@ export function renderHeat(state, ctx) {
     `<div style="width:${(100 * (screen - 1)) / total}%"></div></div>` +
     // Nilai heat.pick memuat <em>, jadi sengaja tidak di-escape.
     `<h1>${t('heat.pick', { total: heat.current.length, need })}</h1>` +
+    searchBox +
     `<div class="member-grid">${cards}</div>` +
+    `<div class="search-count" data-role="searchCount">${resultCount}</div>${empty}` +
     bar(`<span class="count">${esc(t('heat.count', { picked: heat.selected.size, need }))}</span>`, next)
   );
 }

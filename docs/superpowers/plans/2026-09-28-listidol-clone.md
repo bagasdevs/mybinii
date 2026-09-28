@@ -2693,14 +2693,19 @@ git commit -m "feat: search live di layar setup + test invariant state"
 - Modify: `js/state.js` (tambah `pickMember`, `confirmHeat`)
 - Modify: `js/main.js` (wire `data-member` dan `data-action="heatNext"`)
 - Modify: `test/state.test.mjs` (tambah test heat)
+- Modify: `i18n/ko.js` dan `i18n/en.js` (key `search.count.members` untuk penghitung kotak search heat)
+- Create: `test/heat.test.mjs` (test search di fase heat)
 
 **Interfaces:**
-- Consumes: `finishHeat`, `advanceHeat`, `beginHeat`, `heatSize` dari `js/game.js`; `memberCard`, `bar`, `steps` dari `js/view.js`
+- Consumes: `finishHeat`, `advanceHeat`, `beginHeat`, `heatSize` dari `js/game.js`; `memberCard`, `bar`, `steps` dari `js/view.js`; `search()` dan `ctx.memberIndex` dari `js/search.js`
 - Produces:
   - `pickMember(state, memberId) -> 'ok' | 'full'`
   - `confirmHeat(state, { onNeedMore, onTooFew }) -> boolean`
+  - Markup search di fase heat: `data-action="search"`, `data-action="clearQuery"`, `data-role="searchCount"`, `data-role="searchEmpty"` — pola yang sama dengan setup (Task 8), sehingga handler input/compositionend di `js/main.js` yang sudah ada ikut bekerja tanpa perubahan.
 
 **Konteks:** `finishHeat`/`advanceHeat` sudah diuji di Task 5. Task ini hanya menyambungkannya ke state dan DOM.
+
+**Konteks — search fase heat adalah keputusan spec §3 #4, bukan tambahan.** Spec memilih search berada "di tengah proses memilih 9", dan §5 menetapkan search bermakna di `setup` (cari grup) **dan** `heat` (cari member); §9 menaruh kotak search di kepala fase heat dengan sasaran `.member-grid` = `heatCurrent`, bukan seluruh 475. `ctx.memberIndex` sudah dibangun sejak Task 7 tapi belum ada yang membacanya — Step 4 di bawah yang memakainya.
 
 - [ ] **Step 1: Tambahkan test heat ke `test/state.test.mjs`**
 
@@ -2839,6 +2844,7 @@ export function confirmHeat(state, { onNeedMore, onTooFew } = {}) {
 
 ```js
 import { heatSize } from '../game.js';
+import { search } from '../search.js';
 import { bar, esc, memberCard, steps } from '../view.js';
 
 export function renderHeat(state, ctx) {
@@ -2857,7 +2863,30 @@ export function renderHeat(state, ctx) {
         ? t('heat.stage.final')
         : t('heat.stage.challenge');
 
-  const cards = heat.current
+  // Query hanya menyaring layar ini (bukan seluruh pool) dan tidak pernah
+  // menyentuh heat.selected — sama seperti invariant search di layar setup.
+  const searching = state.query.trim() !== '';
+  const matched = search(state.query, ctx.memberIndex);
+  const visible = heat.current.filter((id) => matched.has(id));
+
+  const searchBox =
+    `<div class="search-row">` +
+    `<input type="search" data-action="search" value="${esc(state.query)}" ` +
+    `placeholder="${esc(t('search.placeholder'))}" aria-label="${esc(t('search.aria'))}" ` +
+    `autocomplete="off" spellcheck="false">` +
+    (searching
+      ? `<button class="text-button" type="button" data-action="clearQuery">${esc(t('search.clear'))}</button>`
+      : '') +
+    `</div>`;
+
+  const resultCount = esc(
+    t('search.count.members', { n: visible.length, total: heat.current.length }),
+  );
+  const empty = visible.length
+    ? ''
+    : `<p class="empty" data-role="searchEmpty">${esc(t('search.empty'))}</p>`;
+
+  const cards = visible
     .map((id) =>
       memberCard(ctx.memberById.get(id), {
         custom: state.custom,
@@ -2881,13 +2910,44 @@ export function renderHeat(state, ctx) {
     `aria-valuenow="${screen - 1}" aria-valuemin="0" aria-valuemax="${total}">` +
     `<div style="width:${(100 * (screen - 1)) / total}%"></div></div>` +
     `<h1>${t('heat.pick', { total: heat.current.length, need })}</h1>` +
+    searchBox +
     `<div class="member-grid">${cards}</div>` +
+    `<div class="search-count" data-role="searchCount">${resultCount}</div>${empty}` +
     bar(`<span class="count">${esc(t('heat.count', { picked: heat.selected.size, need }))}</span>`, next)
   );
 }
 ```
 
 **Catatan:** `t('heat.pick')` sengaja **tidak** di-escape karena nilainya memuat `<em>`.
+
+- [ ] **Step 4b: Tambahkan test search heat ke `test/heat.test.mjs`**
+
+`renderHeat` murni (tidak menyentuh DOM), jadi bisa diuji langsung di Node —
+sama seperti modul murni lain. Berkas ini menutup tiga hal yang tidak bisa
+dilihat test state: query hanya menyaring layar ini, query tidak mengubah
+`heat.selected`, dan syarat pilih tetap dihitung dari layar penuh.
+
+```js
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { GROUPS, MEMBERS } from '../data/roster.js';
+import en from '../i18n/en.js';
+import ko from '../i18n/ko.js';
+import { beginHeat, createHeat } from '../js/game.js';
+import { createTranslator, genLabel } from '../js/i18n.js';
+import { renderHeat } from '../js/phases/heat.js';
+import { buildIndex, groupText, memberText } from '../js/search.js';
+
+const t = createTranslator({ ko, en }, () => 'ko', () => {});
+const genLabelFn = (gen) => genLabel(gen, t);
+// ... groupById/memberById/memberIndex/ctx seperti di js/main.js
+```
+
+Tujuh test: kotak search selalu dirender; query nama Korea menyaring; query
+romanisasi menemukan member yang sama; query tanpa hasil memunculkan empty
+state; query **tidak** menjangkau member di layar berikutnya; menyaring tidak
+mengubah `heat.selected`; penghitung pilihan memakai jumlah layar, bukan jumlah
+hasil filter.
 
 - [ ] **Step 5: Wire di `js/main.js`**
 
@@ -2940,6 +3000,21 @@ Muat ulang `http://localhost:8080/` (semua grup terpilih secara bawaan → 475 m
 5. Tombol `다음 →` tetap `disabled` sampai tepat 3 terpilih.
 6. Tekan `다음 →`: layar berikutnya termuat, pilihan kosong kembali, penghitung `0 / 3명`, progres bertambah.
 7. Ganti bahasa ke English di tengah heat: label tahap, judul, penghitung, dan nama member semuanya berganti tanpa kehilangan pilihan di layar itu.
+7b. Kotak search di kepala fase heat (spec §3 #4 dan §9):
+   - tanpa query: 9 kartu, penghitung `9명 / 9명`, tanpa tombol `지우기`.
+   - ketik nama Korea satu member di layar itu (mis. `나연`): tersisa 1 kartu, penghitung `1명 / 9명`.
+   - ketik romanisasinya (`nayeon`): kartu yang sama muncul.
+   - ketik `zzzz`: 0 kartu, empty state `검색 결과가 없습니다`, penghitung `0명 / 9명`.
+   - ketik nama member yang ada di pool tetapi **bukan** di layar ini: 0 kartu —
+     search hanya menyaring layar ini, bukan seluruh pool (spec §9).
+   - INVARIANT: pilih 3 member, lalu ketik `zzzz` dan hapus lagi — bilah bawah
+     tetap `3 / 3명`, tombol `다음 →` tetap aktif, dan ketiga id terpilih tidak berubah.
+   - tekan `다음 →` dengan query aktif: query ikut dikosongkan (`setPhase`).
+   - mode English: penghitung `n / 9 members`, placeholder `Search name or group`,
+     dan query romanisasi tetap menemukan.
+   - jalur IME: event `input` dengan `isComposing: true` tidak mengganti grid,
+     lalu `compositionend` menyelesaikannya — handler di `js/main.js` terdelegasi
+     pada `#app`, jadi bekerja di fase ini tanpa perubahan.
 8. Jalankan sisa turnamen lewat konsol browser, lalu pastikan halaman masuk ke fase `sort`:
 
 ```js
@@ -2975,8 +3050,8 @@ Expected: log `sampai fase sort` setelah 85 layar tanpa error di konsol.
 - [ ] **Step 8: Commit**
 
 ```bash
-git add js/phases/heat.js js/state.js js/main.js test/state.test.mjs
-git commit -m "feat: fase heat dengan pemilihan member per layar"
+git add js/phases/heat.js js/state.js js/main.js test/state.test.mjs test/heat.test.mjs i18n/ko.js i18n/en.js
+git commit -m "feat: fase heat dengan pemilihan member per layar + search"
 ```
 
 ---
@@ -4207,7 +4282,7 @@ git commit -m "test: penjaga key i18n + smoke akhir dua bahasa"
 | §3 keputusan #1 tanpa build | Seluruh task; tidak ada `package.json` |
 | §3 #2 data + mirror | Task 1, 2 |
 | §3 #3 ko+en | Task 3, 7, 14 |
-| §3 #4 search di layar pilih | Task 8, dan di heat Task 9 (input tetap ada di header fase) |
+| §3 #4 search di layar pilih | Task 8 (cari grup di `setup`) dan Task 9 Step 4/4b (cari member di `heat`, sasaran `heatCurrent`) |
 | §3 #5 semua fase | Task 7, 9, 10, 11 |
 | §3 #6 state tunggal + render idempoten | Task 7 |
 | §4 struktur file | Sesuai, dengan tambahan `js/view.js` dan `js/game.js` yang didokumentasikan |

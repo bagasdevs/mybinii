@@ -296,6 +296,11 @@ nilai kosong, dan placeholder `{...}` cocok antar bahasa.
   `"사나"` semua menemukan hasil; query kosong = semua; query tak match = 0;
   **filter tidak mengubah `selected`** (invariant §9); **`query` kembali `''`
   setelah transisi fase** (invariant §9).
+- **`heat.test.mjs`** — `renderHeat` murni, jadi diuji di Node: kotak search
+  selalu dirender; query nama Korea dan romanisasi menyaring layar yang sama;
+  query tanpa hasil memunculkan empty state; query **tidak** menjangkau member di
+  layar berikutnya (§9: sasaran search di heat adalah `heatCurrent`); menyaring
+  tidak mengubah `heat.selected`; syarat pilih tetap dihitung dari layar penuh.
 - **`i18n.test.mjs`** — urutan resolusi locale; `?lang=fr` jatuh ke sumber
   berikutnya; interpolasi `{n}`; key hilang mengembalikan key dan warn sekali.
 - **`roster.test.mjs`** — id unik; setiap `groups[]` dan `displayGroups[]` member

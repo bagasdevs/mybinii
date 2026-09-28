@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   EN_GROUP_OVERRIDES,
+  KO_GROUP_OVERRIDES,
   bar,
   defaultPhoto,
   esc,
@@ -47,7 +48,10 @@ test('visibleGroups menyembunyikan grup hidden', () => {
 
 test('groupLabel memakai name untuk ko', () => {
   assert.equal(groupLabel(byId('이달의 소녀'), 'ko'), '이달의 소녀');
-  assert.equal(groupLabel(byId('TWICE'), 'ko'), 'TWICE');
+  // Grup yang nama Korea bakunya belum ada tetap memakai `name` apa adanya.
+  assert.equal(groupLabel(byId('TUIDE'), 'ko'), 'TUIDE');
+  // Yang punya override memakai nama Korea, bukan `name` latinnya.
+  assert.equal(groupLabel(byId('TWICE'), 'ko'), '트와이스');
 });
 
 test('groupLabel memakai override untuk grup ber-id Hangul', () => {
@@ -104,17 +108,17 @@ test('memberLabel mengikuti bahasa', () => {
 
 test('labelsOf memakai displayGroups bila ada', () => {
   const member = { id: 'x', groups: ['구구단', 'I.O.I'], displayGroups: ['I.O.I'] };
-  assert.equal(labelsOf(member, groupById, 'ko'), 'I.O.I');
+  assert.equal(labelsOf(member, groupById, 'ko'), '아이오아이');
 });
 
 test('labelsOf memakai groups bila displayGroups kosong', () => {
   const member = { id: 'x', groups: ['TWICE'] };
-  assert.equal(labelsOf(member, groupById, 'ko'), 'TWICE');
+  assert.equal(labelsOf(member, groupById, 'ko'), '트와이스');
 });
 
 test('labelsOf: displayGroups berisi id asing -> jatuh ke groups', () => {
   const member = { id: 'x', groups: ['TWICE'], displayGroups: ['TIDAK-ADA'] };
-  assert.equal(labelsOf(member, groupById, 'ko'), 'TWICE');
+  assert.equal(labelsOf(member, groupById, 'ko'), '트와이스');
 });
 
 test('labelsOf tidak pernah mencetak undefined saat semua id asing', () => {
@@ -126,7 +130,7 @@ test('labelsOf tidak pernah mencetak undefined saat semua id asing', () => {
 
 test('groupLines mengembalikan satu entri per grup', () => {
   const member = { id: 'x', groups: ['구구단', 'I.O.I'], displayGroups: ['I.O.I'] };
-  assert.deepEqual(groupLines(member, groupById, 'ko'), ['I.O.I']);
+  assert.deepEqual(groupLines(member, groupById, 'ko'), ['아이오아이']);
   const multi = { id: 'y', groups: ['여자친구', 'VIVIZ'], displayGroups: ['여자친구', 'VIVIZ'] };
   assert.deepEqual(groupLines(multi, groupById, 'en'), ['GFRIEND', 'VIVIZ']);
 });
@@ -180,6 +184,34 @@ test('thumbUrl menurunkan jalur thumbnail dari ekstensi apa pun', () => {
 test('portrait memakai thumbnail untuk foto bawaan', () => {
   const member = { id: 'a', image: 'photos/profile-a.jpeg', name: '에이', english: 'A' };
   assert.ok(portrait(member, {}, 'en').includes('src="photos/thumb/profile-a.webp"'));
+});
+
+test('KO_GROUP_OVERRIDES hanya berisi grup yang ada, dan hanya yang perlu', () => {
+  for (const [id, ko] of Object.entries(KO_GROUP_OVERRIDES)) {
+    const group = groupById.get(id);
+    assert.ok(group, `id grup tidak dikenal: ${id}`);
+    assert.match(ko, /[\uAC00-\uD7AF]/, `${id} bukan Hangul: ${ko}`);
+    assert.notEqual(ko, group.name, `${id} namanya sudah Korea, override tidak perlu`);
+    assert.equal(groupLabel(group, 'ko'), ko);
+  }
+});
+
+// Nama Korea yang belum baku sengaja dibiarkan latin daripada ditebak. Test ini
+// mengunci daftarnya supaya penambahan/pengurangan terlihat, bukan diam-diam.
+test('tepat delapan grup masih memakai nama latin di label Korea', () => {
+  const latin = GROUPS.filter((g) => !/[\uAC00-\uD7AF]/.test(groupLabel(g, 'ko')))
+    .map((g) => g.id)
+    .sort();
+  assert.deepEqual(latin, [
+    'Baby DONT Cry',
+    'H//PE Princess',
+    'LIMELIGHT',
+    'ODD YOUTH',
+    'OURBIRTHDAY',
+    'TUIDE',
+    'UNCHILD',
+    'USPEER',
+  ]);
 });
 
 test('portrait tidak menulis ulang foto unggahan pengguna', () => {

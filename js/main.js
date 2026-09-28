@@ -11,7 +11,7 @@ import { render } from './render.js';
 import { buildIndex, groupText, memberText } from './search.js';
 import { decodeShare, encodeShare } from './share.js';
 import * as act from './state.js';
-import { esc, groupLabel, initialsOf } from './view.js';
+import { esc, groupSearchText, initialsOf } from './view.js';
 
 const dicts = { ko, en, id };
 const app = document.querySelector('#app');
@@ -57,15 +57,14 @@ let ctx = buildContext();
 
 function buildContext() {
   const genLabelFn = (gen) => genLabel(gen, t);
-  // Label Inggris ikut diindeks di samping nama Korea, jadi pencarian bekerja
-  // lintas aksara di bahasa mana pun ("loona" maupun "이달의 소녀").
-  const enLabel = (g) => groupLabel(g, 'en');
+  // Kedua label grup diindeks, jadi pencarian bekerja lintas aksara di bahasa
+  // mana pun ("loona" maupun "이달의 소녀", "twice" maupun "트와이스").
   return {
     t,
     groupById,
     memberById,
-    groupIndex: buildIndex(GROUPS, (g) => groupText(g, genLabelFn, enLabel)),
-    memberIndex: buildIndex(MEMBERS, (m) => memberText(m, groupById, genLabelFn, enLabel)),
+    groupIndex: buildIndex(GROUPS, (g) => groupText(g, genLabelFn, groupSearchText)),
+    memberIndex: buildIndex(MEMBERS, (m) => memberText(m, groupById, genLabelFn, groupSearchText)),
   };
 }
 

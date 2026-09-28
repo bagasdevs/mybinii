@@ -86,11 +86,14 @@ member without a rebuilt `photos/thumb/` is caught before it ships.
 
 ## Known limitations
 
-- **Korean group names are incomplete.** 50 of 79 groups only carry a Latin name
-  (`TWICE`, `aespa`, `BLACKPINK`, …), so searching `트와이스` finds nothing — use
-  `twice`. Korean member names do work: in the heat phase, `나연` finds TWICE.
-  Adding Korean aliases means adding a small map in `js/view.js` (same shape as
-  `EN_GROUP_OVERRIDES`) and feeding that label into the group index.
+- **Eight groups still show a Latin name in Korean.** 51 of the 80 groups carry
+  only a Latin name in the source data (the source site shows `TWICE` in its
+  Korean UI too). `KO_GROUP_OVERRIDES` in `js/view.js` supplies the standard
+  Korean name for 43 of them, and `groupSearchText` indexes both scripts, so
+  `트와이스` and `twice` both find TWICE. The other eight — `LIMELIGHT`, `TUIDE`,
+  `ODD YOUTH`, `USPEER`, `UNCHILD`, `OURBIRTHDAY`, `H//PE Princess`,
+  `Baby DONT Cry` — have no settled Korean name to copy, so they are left alone
+  rather than guessed; `test/view.test.mjs` locks that list.
 - **Uploaded photos are not saved.** Progress (phase, picks, comparisons) is
   restored from `localStorage`, but photos you swapped in live as blob URLs and
   are gone after a reload — the poster falls back to the default photos.

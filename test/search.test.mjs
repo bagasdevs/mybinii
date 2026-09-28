@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { buildIndex, groupText, memberText, normalize, search } from '../js/search.js';
+import { GROUPS as ROSTER_GROUPS, MEMBERS as ROSTER_MEMBERS } from '../data/roster.js';
+import { groupSearchText } from '../js/view.js';
 
 const GROUPS = [
   { id: 'TWICE', name: 'TWICE', gen: 3, debut: '2015-10-20' },
@@ -19,6 +21,19 @@ const MEMBERS = [
 const index = buildIndex(MEMBERS, (m) => memberText(m, groupById, genLabel));
 
 const hits = (q) => [...search(q, index)].sort();
+
+// Indeks roster asli memakai groupSearchText (label latin + Korea sekaligus),
+// jadi pencarian lintas aksara bekerja di bahasa mana pun — bukan hanya di
+// bahasa yang sedang aktif.
+const rosterIndex = buildIndex(ROSTER_GROUPS, (g) => groupText(g, genLabel, groupSearchText));
+const rosterHits = (q) => [...search(q, rosterIndex)].sort();
+
+// Layar heat memakai indeks member, jadi nama grup Korea harus sampai ke sana
+// juga — kalau tidak, "트와이스" menemukan grup di setup tapi tidak di heat.
+const rosterMemberIndex = buildIndex(ROSTER_MEMBERS, (m) =>
+  memberText(m, new Map(ROSTER_GROUPS.map((g) => [g.id, g])), genLabel, groupSearchText),
+);
+const memberHits = (q) => [...search(q, rosterMemberIndex)].sort();
 
 // --- normalize -------------------------------------------------------------
 
@@ -137,4 +152,26 @@ test('labelOf menambahkan label bahasa kedua ke index grup', () => {
 test('labelOf menambahkan label grup bahasa kedua ke index member', () => {
   const withEn = buildIndex(MEMBERS, (m) => memberText(m, groupById, genLabel, enLabel));
   assert.deepEqual([...search('loona chuu', withEn)].sort(), ['g_loona_chuu']);
+});
+
+// Sebelum KO_GROUP_OVERRIDES, 51 grup hanya punya nama latin di data sumber,
+// jadi pencarian "트와이스" tidak menemukan apa pun di bahasa Korea.
+test('indeks roster asli: aksara latin dan Korea sama-sama menemukan grup', () => {
+  assert.deepEqual(rosterHits('twice'), ['TWICE']);
+  assert.deepEqual(rosterHits('트와이스'), ['TWICE']);
+  assert.deepEqual(rosterHits('블랙핑크'), ['BLACKPINK']);
+  assert.deepEqual(rosterHits('blackpink'), ['BLACKPINK']);
+  assert.deepEqual(rosterHits('있지'), ['ITZY']);
+  // Grup yang namanya sudah Korea sejak awal tidak boleh ikut terpengaruh.
+  assert.deepEqual(rosterHits('이달의 소녀'), ['이달의 소녀']);
+  assert.deepEqual(rosterHits('loona'), ['이달의 소녀']);
+  assert.deepEqual(rosterHits('씨스타'), ['SISTAR']);
+});
+
+test('indeks member asli: nama grup Korea menemukan anggotanya', () => {
+  const twice = memberHits('트와이스');
+  assert.equal(twice.length, 9);
+  assert.ok(twice.every((id) => id.startsWith('g_twice_')), twice.join(','));
+  assert.ok(memberHits('사나').includes('g_twice_sana'), 'nama Korea member tetap bekerja');
+  assert.deepEqual(memberHits('트와이스 사나'), ['g_twice_sana']);
 });

@@ -38,13 +38,73 @@ export const EN_GROUP_OVERRIDES = {
   퍼플키스: 'PURPLE KISS',
 };
 
+/**
+ * 51 grup hanya punya nama latin di data sumber — situs aslinya pun menampilkan
+ * "TWICE" di antarmuka Korea. Peta ini menambal nama Korea yang sudah baku,
+ * supaya pencarian "트와이스" menemukan grupnya dan label Korea tidak campur
+ * aksara. Delapan grup terbaru yang namanya belum baku (LIMELIGHT, TUIDE, …)
+ * sengaja dibiarkan latin daripada ditebak; daftarnya di README.
+ */
+export const KO_GROUP_OVERRIDES = {
+  'f(x)': '에프엑스',
+  EXID: '이엑스아이디',
+  CLC: '씨엘씨',
+  APRIL: '에이프릴',
+  TWICE: '트와이스',
+  'I.O.I': '아이오아이',
+  BLACKPINK: '블랙핑크',
+  PRISTIN: '프리스틴',
+  'IZ*ONE': '아이즈원',
+  ITZY: '있지',
+  EVERGLOW: '에버글로우',
+  'woo!ah!': '우아',
+  Weeekly: '위클리',
+  STAYC: '스테이씨',
+  aespa: '에스파',
+  LIGHTSUM: '라잇썸',
+  Billlie: '빌리',
+  IVE: '아이브',
+  Kep1er: '케플러',
+  'H1-KEY': '하이키',
+  NMIXX: '엔믹스',
+  'LE SSERAFIM': '르세라핌',
+  'CLASS:y': '클라씨',
+  NewJeans: '뉴진스',
+  'FIFTY FIFTY': '피프티 피프티',
+  'MAVE:': '메이브',
+  tripleS: '트리플에스',
+  'KISS OF LIFE': '키스 오브 라이프',
+  Loossemble: '루셈블',
+  QWER: '큐더블유이알',
+  BABYMONSTER: '베이비몬스터',
+  ILLIT: '아일릿',
+  RESCENE: '리센느',
+  UNIS: '유니스',
+  ARTMS: '아르테미스',
+  BADVILLAIN: '배드빌런',
+  KATSEYE: '캣츠아이',
+  MADEIN: '메이딘',
+  MEOVV: '미야오',
+  'SAY MY NAME': '세이마이네임',
+  izna: '이즈나',
+  Hearts2Hearts: '하츠투하츠',
+  KiiiKiii: '키키',
+};
+
 // Label non-EN = name Korea; id memakai label Inggris (latin) supaya terbaca
 // pengguna Indonesia. Satu-satunya pengecualian nyata, bukan pola umum.
 export function groupLabel(group, locale) {
   if (!group) return '';
-  if (locale === 'ko') return group.name;
+  if (locale === 'ko') return KO_GROUP_OVERRIDES[group.id] ?? group.name;
   return EN_GROUP_OVERRIDES[group.id] ?? (group.id !== group.name ? group.id : group.name);
 }
+
+/**
+ * Label yang diindeks untuk pencarian grup: kedua aksara sekaligus, jadi
+ * "twice" dan "트와이스" sama-sama menemukan grup yang sama di bahasa mana pun.
+ * Dipakai js/main.js dan test, supaya indeksnya tidak bisa menyimpang.
+ */
+export const groupSearchText = (group) => `${groupLabel(group, 'en')} ${groupLabel(group, 'ko')}`;
 
 export function memberLabel(member, locale) {
   if (!member) return '';

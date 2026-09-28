@@ -20,3 +20,7 @@
 .save-preview{display:block;width:100%;max-width:320px;margin:12px auto 0;border-radius:14px;border:1px solid var(--line)}
 /* ponytail: override, bukan refactor baris raksasa line 2 — satukan saat style.css dipecah */
 .steps{display:flex;gap:20px;font-size:13px;color:#5b6050;margin:0 0 24px;padding:0;list-style:none;flex-wrap:wrap;row-gap:6px}
+/* --- layout setup: search tumbuh, tab rata kanan, aksi + kartu mobile rapi --- */
+.selection-head>.search-row{flex:1 1 220px;max-width:360px;margin:0}
+.selection-head>.tabs{margin-left:auto}
+@media(max-width:650px){.selection-head>.search-row{flex:1 1 100%;max-width:none}.selection-head>.tabs{margin-left:0;flex-wrap:nowrap;overflow-x:auto;max-width:100%;scrollbar-width:none}.selection-head>.tabs::-webkit-scrollbar{display:none}.selection-head .tab{white-space:nowrap;flex-shrink:0}.selection-actions{width:100%;gap:8px}.debut-switch{flex:1 1 100%;margin-right:0;justify-content:flex-start;font-size:12px}.selection-actions .text-button{white-space:nowrap;flex-shrink:0}.group .meta{font-size:12px;line-height:1.45}}

@@ -7,10 +7,12 @@ import {
   confirmHeat,
   createState,
   enterSort,
+  leaveShared,
+  loadShared,
   pickMember,
   pickSort,
-  undoSort,
   restore,
+  undoSort,
   resetCrop,
   selectAllVisible,
   setCrop,
@@ -429,6 +431,27 @@ test('snapshot → restore mengembalikan Set (bukan array) di heat', () => {
   assert.ok(loaded.selected instanceof Set);
 });
 
+// `heat.winners` menyimpan satu daftar pemenang per layar, jadi bersarang.
+// Validasi flat pernah menolak setiap simpanan yang sudah lewat layar pertama.
+test('snapshot → restore menerima heat.winners yang bersarang', () => {
+  const state = createState();
+  startGame(state, {});
+  for (const id of state.heat.current.slice(0, 3)) pickMember(state, id);
+  assert.equal(confirmHeat(state, {}), true);
+  assert.ok(Array.isArray(state.heat.winners[0]), 'satu daftar per layar');
+
+  const loaded = createState();
+  assert.equal(restore(loaded, JSON.parse(JSON.stringify(snapshot(state)))), true);
+  assert.equal(loaded.phase, 'heat');
+  assert.deepEqual(loaded.heat.winners, state.heat.winners);
+});
+
+test('restore menolak heat.winners yang tidak bersarang', () => {
+  const state = createState();
+  const base = { v: 1, phase: 'heat', selected: [], sort: { stack: [] } };
+  assert.equal(restore(state, { ...base, heat: { winners: [MEMBERS[0].id] } }), false);
+});
+
 test('restore menolak paket yang tidak dikenal', () => {
   const state = createState();
   const base = { v: 1, phase: 'result', selected: [], sort: { stack: [] } };
@@ -442,4 +465,40 @@ test('restore menolak paket yang tidak dikenal', () => {
     'member hilang ditolak',
   );
   assert.equal(state.phase, 'setup', 'state tidak tersentuh bila paket ditolak');
+});
+
+// --- tautan hasil bersama --------------------------------------------------
+
+test('loadShared membuka fase result dengan sembilan finalis', () => {
+  const state = createState();
+  const ids = MEMBERS.slice(0, 9).map((m) => m.id);
+  loadShared(state, { finalists: ids, title: '구절판' });
+
+  assert.equal(state.phase, 'result');
+  assert.deepEqual(state.finalists, ids);
+  assert.equal(state.title, '구절판');
+  assert.equal(state.titleTouched, true, 'judul bersama dipakai apa adanya');
+  assert.equal(state.shared, true, 'penulisan progres harus ditahan');
+  assert.equal(state.sortPast.length, 0);
+});
+
+test('loadShared tanpa judul membiarkan judul bawaan bahasa aktif', () => {
+  const state = createState();
+  loadShared(state, { finalists: MEMBERS.slice(0, 9).map((m) => m.id), title: '' });
+  assert.equal(state.titleTouched, false);
+});
+
+test('leaveShared melepas penahan progres', () => {
+  const state = createState();
+  loadShared(state, { finalists: MEMBERS.slice(0, 9).map((m) => m.id), title: '' });
+  leaveShared(state);
+  assert.equal(state.shared, false);
+});
+
+test('restore tidak pernah menyalakan flag shared', () => {
+  // Kalau paket simpanan bisa menyalakan `shared`, progres pengguna berhenti
+  // tersimpan setelah reload.
+  const state = createState();
+  assert.equal(restore(state, { v: 1, phase: 'setup', selected: [], sort: { stack: [] } }), true);
+  assert.equal(state.shared, false);
 });

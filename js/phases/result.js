@@ -39,7 +39,8 @@ export function renderResult(state, ctx) {
     `<p class="small" style="text-align:center">${esc(t('result.privacy'))}</p>` +
     bar(
       `<button class="outline" type="button" data-action="restart">${esc(t('result.restart'))}</button>`,
-      `<button class="primary lime" type="button" data-action="download">${esc(t('result.download'))}</button>`,
+      `<button class="outline" type="button" data-action="share">${esc(t('result.share'))}</button>` +
+        `<button class="primary lime" type="button" data-action="download">${esc(t('result.download'))}</button>`,
     )
   );
 }

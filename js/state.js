@@ -33,6 +33,9 @@ export function createState() {
     heat: createHeat(),
     sort: createSort(),
     sortPast: [],
+    // true = sedang menampilkan hasil dari tautan bersama; progres pengguna
+    // sendiri tidak boleh ditimpa selama ini.
+    shared: false,
   };
 }
 
@@ -133,6 +136,30 @@ export function enterSort(state, ids) {
   state.sortPast = [];
   setPhase(state, 'sort');
   return true;
+}
+
+// --- tautan hasil bersama --------------------------------------------------
+
+/**
+ * Buka hasil yang dibagikan lewat hash. `shared` menahan penulisan progres,
+ * supaya membuka tautan orang lain tidak menghapus permainan yang sedang
+ * berjalan di perangkat ini.
+ */
+export function loadShared(state, { finalists, title }) {
+  state.pool = [...finalists];
+  state.finalists = [...finalists];
+  state.heat = createHeat();
+  state.sort = createSort();
+  state.sortPast = [];
+  state.title = title;
+  state.titleTouched = title !== '';
+  state.shared = true;
+  setPhase(state, 'result');
+}
+
+/** Keluar dari tampilan bersama; progres kembali disimpan. */
+export function leaveShared(state) {
+  state.shared = false;
 }
 
 // --- heat ------------------------------------------------------------------
@@ -257,6 +284,8 @@ export function snapshot(state) {
 }
 
 const isIdList = (list) => Array.isArray(list) && list.every((id) => memberById.has(id));
+/** `heat.winners` menyimpan satu daftar pemenang per layar, jadi bersarang. */
+const isIdListList = (list) => Array.isArray(list) && list.every(isIdList);
 
 /**
  * Pulihkan hasil `snapshot` ke `state`. `false` bila paket tidak dikenal atau
@@ -276,7 +305,6 @@ export function restore(state, data) {
     data.pool,
     data.finalists,
     heat.pool,
-    heat.winners,
     heat.losers,
     heat.current,
     heat.selected,
@@ -284,6 +312,7 @@ export function restore(state, data) {
     ...frames.flatMap((f) => [f.ids, f.left, f.right, f.out]),
   ];
   if (!lists.every((list) => list === undefined || isIdList(list))) return false;
+  if (heat.winners !== undefined && !isIdListList(heat.winners)) return false;
 
   state.debutDesc = Boolean(data.debutDesc);
   state.selected = new Set(selected);

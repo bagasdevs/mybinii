@@ -9,6 +9,7 @@ import { createCropDialog } from './photo.js';
 import { buildPoster } from './poster.js';
 import { render } from './render.js';
 import { buildIndex, groupText, memberText } from './search.js';
+import { decodeShare, encodeShare } from './share.js';
 import * as act from './state.js';
 import { esc, groupLabel, initialsOf } from './view.js';
 
@@ -44,8 +45,11 @@ state.lang = detectLocale({
   navigatorLangs: navigator.languages ?? [navigator.language],
 });
 
-// Lanjutkan progres tersimpan (kalau ada) sebelum render pertama.
-const resumed = act.restore(state, readProgress());
+// Tautan hasil bersama menang atas progres tersimpan: yang mengklik tautan
+// ingin melihat hasil orang lain, bukan melanjutkan permainannya sendiri.
+const shared = decodeShare(location.hash, memberById);
+const resumed = shared ? false : act.restore(state, readProgress());
+if (shared) act.loadShared(state, shared);
 
 const t = createTranslator(dicts, () => state.lang);
 
@@ -131,6 +135,23 @@ function showSavedPreview(url) {
   dialog.showModal();
 }
 
+async function shareResult() {
+  const title = effectiveTitle(state, t);
+  const url = `${location.origin}${location.pathname}#${encodeShare({ finalists: state.finalists, title })}`;
+  try {
+    if (navigator.share) {
+      await navigator.share({ title, url });
+      return;
+    }
+    await navigator.clipboard.writeText(url);
+    toast(t('result.share.copied'));
+  } catch (error) {
+    // Menutup lembar berbagi bawaan sistem bukan kegagalan.
+    if (error?.name === 'AbortError') return;
+    toastError(t('result.share.error'));
+  }
+}
+
 function applyDocumentChrome() {
   document.documentElement.lang = state.lang;
   titleEl.textContent = t('app.title');
@@ -153,7 +174,11 @@ function draw() {
   // ia ikut tergeser saat #app terisi dan menyumbang CLS 0.17.
   document.documentElement.classList.remove('booting');
   clearTimeout(saveTimer);
-  saveTimer = setTimeout(() => safeSet(PROGRESS_KEY, JSON.stringify(act.snapshot(state))), 300);
+  // Tampilan hasil bersama tidak ditulis ke localStorage: membuka tautan orang
+  // lain tidak boleh menghapus permainan yang sedang berjalan di perangkat ini.
+  if (!state.shared) {
+    saveTimer = setTimeout(() => safeSet(PROGRESS_KEY, JSON.stringify(act.snapshot(state))), 300);
+  }
 }
 
 const cropDialog = createCropDialog({ state, t, memberById, toast, toastError, redraw: draw });
@@ -236,8 +261,12 @@ app.addEventListener('click', async (event) => {
       act.undoSort(state);
       break;
     case 'restart':
+      act.leaveShared(state);
       act.setPhase(state, 'setup');
       break;
+    case 'share':
+      await shareResult();
+      return;
     case 'download':
       await downloadPoster();
       return;
@@ -321,4 +350,5 @@ document.querySelector('#credits').addEventListener('click', () => {
 });
 
 redrawAll();
-if (resumed && state.phase !== 'setup') toast(t('app.resume'));
+if (shared) toast(t('app.shared'));
+else if (resumed && state.phase !== 'setup') toast(t('app.resume'));

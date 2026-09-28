@@ -40,5 +40,6 @@
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 /* --- bottom bar: tombol ulangi duduk rapi di samping hitungan --- */
 .bar-inner>div:first-child{display:flex;align-items:center;gap:14px}
+.bar-inner>div:last-child{display:flex;align-items:center;gap:10px}
 /* --- boot: footer baru tampil setelah render pertama (CLS 0.17 -> 0) --- */
 .booting footer{visibility:hidden}

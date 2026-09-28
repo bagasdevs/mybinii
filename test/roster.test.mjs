@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { CHECKED, GROUPS, MEMBERS } from '../data/roster.js';
 
 const PHOTOS = JSON.parse(
@@ -60,6 +60,21 @@ test('sha256, bila ada, selalu 64 heksadesimal', () => {
     const { sha256 } = photoById.get(m.id);
     if (sha256 === undefined) continue;
     assert.match(sha256, /^[0-9a-f]{64}$/, `${m.id} sha256 tidak valid`);
+  }
+});
+
+// Mirror memindahkan foto ke photos/ dan menulis ulang nilai `image`; situs
+// tidak boleh menyentuh jaringan saat runtime.
+test('setiap image menunjuk berkas lokal di photos/', () => {
+  for (const m of MEMBERS) {
+    assert.match(m.image, /^photos\//, `${m.id} masih menunjuk URL luar: ${m.image}`);
+  }
+});
+
+test('setiap member punya berkas foto di photos/', () => {
+  for (const m of MEMBERS) {
+    const file = new URL(`../${m.image}`, import.meta.url);
+    assert.ok(existsSync(file), `berkas hilang: ${m.image}`);
   }
 });
 

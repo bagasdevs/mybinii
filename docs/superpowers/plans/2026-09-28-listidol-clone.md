@@ -229,8 +229,10 @@ git commit -m "feat: data roster sebagai ES module + generator + test struktur"
 
 **Files:**
 - Create: `tools/mirror-photos.mjs`
-- Create: `photos/*.jpg` (475 berkas)
-- Modify: `test/roster.test.mjs` (tambah satu test keberadaan berkas)
+- Create: `photos/*.jpg` (475 berkas, 53,6 MB)
+- Modify: `data/roster.json` (4 nilai `image` absolut ditulis ulang ke path lokal)
+- Modify: `data/roster.js` (regenerate setelah penulisan ulang)
+- Modify: `test/roster.test.mjs` (tambah dua test: berkas ada di disk, dan `image` selalu path lokal)
 
 **Interfaces:**
 - Consumes: `MEMBERS` dari `data/roster.js`; `sha256` per member dari `data/photo-sources.json`
@@ -318,21 +320,44 @@ if (bad.length) {
 console.log(`OK: ${results.length} foto terverifikasi di photos/`);
 ```
 
+**Catatan penyimpangan:** blok kode di atas adalah versi awal; skrip yang benar-benar
+dikirim di `tools/mirror-photos.mjs` menambahkan empat hal yang baru ketahuan saat
+Task 2 dijalankan — penjaga magic byte AVIF/WebP/GIF (15 berkas disajikan bukan-JPEG
+di path `.jpg`), `hasStaleHash`/`trustLevel` (13 berkas `user-final-*` punya sha256
+basi), `localName` (4 member QWER ber-URL absolut), dan `--force`. Lihat ruling
+Task 2 di ledger. Rinciannya di berkas itu sendiri, bukan di sini.
+
 - [ ] **Step 2: Jalankan mirror**
 
 Run: `node tools/mirror-photos.mjs`
-Expected: `{ downloaded: 475 }` lalu `OK: 475 foto terverifikasi di photos/`
+Expected pada run pertama di mesin kosong: `{ downloaded: 475 }` lalu
+`OK: 475 foto terverifikasi di photos/`.
 
 - [ ] **Step 3: Jalankan ulang untuk membuktikan idempoten**
 
-Run: `node tools/mirror-photos.mjs`
-Expected: `{ cached: 475 }` lalu `OK: 475 foto terverifikasi di photos/` — tanpa unduhan baru.
+Run: `node tools/build-roster.mjs && node tools/mirror-photos.mjs`
+Expected: `{ cached: 457, 'cached-unverified': 5, 'cached-stale-hash': 13 }` lalu
+`OK: 475 foto terverifikasi di photos/` — tanpa unduhan baru, dan **tanpa** baris
+`data/roster.json: N nilai image diubah ke path lokal`.
+
+Urutan `build-roster` lalu `mirror` penting: `mirror-photos.mjs` mengimpor `MEMBERS`
+dari `data/roster.js` yang di-generate, jadi bila `roster.js` masih memuat URL
+absolut, `normalizeRoster` akan melaporkan "4 nilai diubah" pada setiap run
+walaupun `roster.json` sudah lokal — tulisannya no-op, tapi laporannya menyesatkan.
 
 - [ ] **Step 4: Tambahkan test keberadaan berkas**
 
 Tambahkan ke `test/roster.test.mjs`:
 
 ```js
+// Mirror memindahkan foto ke photos/ dan menulis ulang nilai `image`; situs
+// tidak boleh menyentuh jaringan saat runtime.
+test('setiap image menunjuk berkas lokal di photos/', () => {
+  for (const m of MEMBERS) {
+    assert.match(m.image, /^photos\//, `${m.id} masih menunjuk URL luar: ${m.image}`);
+  }
+});
+
 test('setiap member punya berkas foto di photos/', () => {
   for (const m of MEMBERS) {
     const file = new URL(`../${m.image}`, import.meta.url);
@@ -340,6 +365,10 @@ test('setiap member punya berkas foto di photos/', () => {
   }
 });
 ```
+
+Test pertama menangkap regresi yang sebenarnya mungkin terjadi: `normalizeRoster`
+gagal menulis ulang URL absolut, lalu situs diam-diam hotlink ke CDN pihak ketiga
+saat runtime. Test kedua menangkap berkas yang hilang dari mirror.
 
 Dan ubah baris import di puncak berkas menjadi:
 
@@ -350,14 +379,18 @@ import { existsSync, readFileSync } from 'node:fs';
 - [ ] **Step 5: Jalankan test**
 
 Run: `node --test test/roster.test.mjs`
-Expected: PASS, 8 test lulus.
+Expected: PASS, 11 test lulus (8 dari Task 1, 1 dari plan ini, plus 2 test
+pengecualian sha256 yang ditambahkan saat Task 1).
 
 - [ ] **Step 6: Commit**
 
 ```bash
-git add tools/mirror-photos.mjs photos test/roster.test.mjs
+git add tools/mirror-photos.mjs photos test/roster.test.mjs data/roster.json data/roster.js
 git commit -m "feat: mirror 475 foto dengan verifikasi sha256"
 ```
+
+`data/roster.json` dan `data/roster.js` ikut karena mirror-lah yang menulis ulang
+keduanya; memisahkannya akan meninggalkan commit yang datanya tidak konsisten.
 
 ---
 

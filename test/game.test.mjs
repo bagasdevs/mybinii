@@ -191,6 +191,14 @@ test('beginSort menolak kandidat kurang dari 9', () => {
   assert.equal(res.reason, 'too-few');
 });
 
+// Tanpa `ok: true` di jalur sukses, pemanggil yang memeriksa `!res.ok`
+// (enterSort di js/state.js) salah membaca sort yang berhasil sebagai gagal.
+test('beginSort melaporkan ok:true saat berhasil', () => {
+  const res = beginSort(createSort(), ids(15));
+  assert.equal(res.ok, true);
+  assert.equal(res.done, false);
+});
+
 test('selalu memilih kiri mempertahankan urutan masukan', () => {
   const input = ids(9);
   const { result } = runSort(input, (st) => st.left);

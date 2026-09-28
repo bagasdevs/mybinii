@@ -1,6 +1,7 @@
 import { GROUPS, MEMBERS } from '../../data/roster.js';
 import { eligibleMembers, sortGroups } from '../game.js';
 import { genLabel } from '../i18n.js';
+import { search } from '../search.js';
 import { bar, esc, groupLabel, steps, visibleGroups } from '../view.js';
 
 const GENERATION_TABS = [0, 2, 3, 4, 5];
@@ -9,7 +10,22 @@ export function renderSetup(state, ctx) {
   const { t } = ctx;
   const locale = state.lang;
   const eligible = eligibleMembers(MEMBERS, state.selected);
-  const groups = sortGroups(visibleGroups(), state.debutDesc);
+  const matched = search(state.query, ctx.groupIndex);
+  const groups = sortGroups(
+    visibleGroups().filter((g) => matched.has(g.id)),
+    state.debutDesc,
+  );
+
+  const searching = state.query.trim() !== '';
+  const searchBox =
+    `<div class="search-row">` +
+    `<input type="search" data-action="search" value="${esc(state.query)}" ` +
+    `placeholder="${esc(t('search.placeholder'))}" aria-label="${esc(t('search.aria'))}" ` +
+    `autocomplete="off" spellcheck="false">` +
+    (searching
+      ? `<button class="text-button" type="button" data-action="clearQuery">${esc(t('search.clear'))}</button>`
+      : '') +
+    `</div>`;
 
   const tabs = GENERATION_TABS.map((gen) => {
     const subset = GROUPS.filter((g) => !g.disabled && !g.hidden && (!gen || g.gen === gen));
@@ -36,6 +52,13 @@ export function renderSetup(state, ctx) {
     })
     .join('');
 
+  const resultCount = esc(
+    t('search.count.groups', { n: groups.length, total: visibleGroups().length }),
+  );
+  const empty = groups.length
+    ? ''
+    : `<p class="empty" data-role="searchEmpty">${esc(t('search.empty'))}</p>`;
+
   const count = t('setup.count', { teams: state.selected.size, members: eligible.length });
   const hint = eligible.length < 9 ? `<div class="small">${esc(t('setup.minMembers'))}</div>` : '';
   const start =
@@ -45,7 +68,7 @@ export function renderSetup(state, ctx) {
   return (
     `<div class="intro intro-compact"><div><div class="kicker">${esc(t('app.kicker'))}</div>` +
     `<h1>${esc(t('app.brand'))}</h1></div></div>` +
-    `<div class="selection-head"><div class="tabs">${tabs}</div>` +
+    `<div class="selection-head">${searchBox}<div class="tabs">${tabs}</div>` +
     `<div class="selection-actions">` +
     `<button class="debut-switch" type="button" role="switch" aria-checked="${state.debutDesc}" ` +
     `aria-label="${esc(t('setup.debut.aria', { order: state.debutDesc ? t('setup.debut.desc') : t('setup.debut.asc') }))}" ` +
@@ -55,6 +78,7 @@ export function renderSetup(state, ctx) {
     `<button class="text-button" type="button" data-action="clearVisible">${esc(t('setup.clearAll'))}</button>` +
     `</div></div>` +
     `<div class="group-grid">${cards}</div>` +
+    `<div class="search-count" data-role="searchCount">${resultCount}</div>${empty}` +
     bar(`<span class="count">${esc(count)}</span>${hint}`, start)
   );
 }

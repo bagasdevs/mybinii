@@ -690,8 +690,10 @@ git commit -m "feat: modul i18n murni + kamus ko/en + test"
   - `normalize(value: unknown) -> string`
   - `buildIndex(items: {id}[], textOf: (item) => string) -> Map<id, string>`
   - `search(query: string, index: Map<id,string>) -> Set<id>` — query kosong/`"   "`/`"*"` mengembalikan **semua** id (tanpa filter)
-  - `memberText(member, groupById: Map, genLabelFn: (gen) => string) -> string`
-  - `groupText(group, genLabelFn) -> string`
+  - `memberText(member, groupById: Map, genLabelFn: (gen) => string, labelOf?: (group) => string) -> string`
+  - `groupText(group, genLabelFn, labelOf?: (group) => string) -> string`
+    (`labelOf` default `(g) => g.name`; pemanggil mengirim label bahasa kedua supaya
+    pencarian bekerja lintas aksara — lihat Task 8)
 
 **Konteks:** `genLabelFn` disuntikkan sebagai parameter supaya `js/search.js` tetap murni dan tidak mengimpor i18n.
 
@@ -867,21 +869,26 @@ export function search(query, index) {
   return out;
 }
 
-export function memberText(member, groupById, genLabelFn) {
+/**
+ * Teks yang diindeks untuk satu member. `labelOf` disuntikkan (bukan diimpor)
+ * supaya modul ini tetap murni; pemanggil mengirim label grup dalam bahasa
+ * kedua, sehingga "loona" dan "이달의 소녀" sama-sama menemukan grup yang sama.
+ */
+export function memberText(member, groupById, genLabelFn, labelOf = (g) => g.name) {
   const groups = member.groups.map((id) => groupById.get(id)).filter(Boolean);
   return [
     member.id,
     member.name,
     member.english,
     ...(member.displayGroups ?? []),
-    ...groups.flatMap((g) => [g.id, g.name, String(g.gen), genLabelFn(g.gen)]),
+    ...groups.flatMap((g) => [g.id, g.name, labelOf(g), String(g.gen), genLabelFn(g.gen)]),
   ]
     .filter(Boolean)
     .join(' ');
 }
 
-export function groupText(group, genLabelFn) {
-  return [group.id, group.name, String(group.gen), genLabelFn(group.gen)]
+export function groupText(group, genLabelFn, labelOf = (g) => g.name) {
+  return [group.id, group.name, labelOf(group), String(group.gen), genLabelFn(group.gen)]
     .filter(Boolean)
     .join(' ');
 }
@@ -890,7 +897,7 @@ export function groupText(group, genLabelFn) {
 - [ ] **Step 4: Jalankan test untuk memastikan lulus**
 
 Run: `node --test test/search.test.mjs`
-Expected: PASS, 16 test lulus.
+Expected: PASS, 18 test lulus (16 + 2 test `labelOf` yang ditambahkan di Task 8).
 
 - [ ] **Step 5: Commit**
 
@@ -922,7 +929,7 @@ git commit -m "feat: modul search murni (normalize, index, query AND) + test"
   - `finishHeat(hs, pickedIds: string[]) -> { ok: false, need } | { ok: true, action: 'continue'|'advance' }`
   - `advanceHeat(hs) -> { next: 'heat' } | { next: 'sort', ids: string[] }`
   - `createSort() -> SortState`
-  - `beginSort(st, ids: string[]) -> { ok: false, reason } | { done: boolean, result?: string[] }`
+  - `beginSort(st, ids: string[]) -> { ok: false, reason } | { ok: true, done: boolean, result?: string[] }`
   - `chooseSort(st, id: string) -> { done: boolean, result?: string[] }`
 
 **Konteks:** seluruh perilaku turnamen dan merge-sort diport apa adanya dari `app.js` asli; hanya variabel modul yang diganti menjadi field pada objek state yang dikembalikan.
@@ -1360,7 +1367,9 @@ export function beginSort(st, ids) {
   st.comparisons = 0;
   st.done = false;
   st.result = [];
-  return beginMerge(st);
+  // beginMerge hanya melaporkan {done}; bungkus supaya pemanggil bisa
+  // membedakan "mulai gagal" dari "mulai sukses" lewat satu field `ok`.
+  return { ok: true, ...beginMerge(st) };
 }
 
 /**
@@ -1442,7 +1451,7 @@ export function chooseSort(st, id) {
 - [ ] **Step 4: Jalankan test untuk memastikan lulus**
 
 Run: `node --test test/game.test.mjs`
-Expected: PASS, 20 test lulus.
+Expected: PASS, 21 test lulus.
 
 - [ ] **Step 5: Commit**
 
@@ -2189,7 +2198,7 @@ import { createTranslator, detectLocale, genLabel } from './i18n.js';
 import { render } from './render.js';
 import { buildIndex, groupText, memberText } from './search.js';
 import * as act from './state.js';
-import { initialsOf } from './view.js';
+import { groupLabel, initialsOf } from './view.js';
 
 const dicts = { ko, en };
 const app = document.querySelector('#app');
@@ -2218,12 +2227,15 @@ let ctx = buildContext();
 
 function buildContext() {
   const genLabelFn = (gen) => genLabel(gen, t);
+  // Label Inggris ikut diindeks di samping nama Korea, jadi pencarian bekerja
+  // lintas aksara di bahasa mana pun ("loona" maupun "이달의 소녀").
+  const enLabel = (g) => groupLabel(g, 'en');
   return {
     t,
     groupById,
     memberById,
-    groupIndex: buildIndex(GROUPS, (g) => groupText(g, genLabelFn)),
-    memberIndex: buildIndex(MEMBERS, (m) => memberText(m, groupById, genLabelFn)),
+    groupIndex: buildIndex(GROUPS, (g) => groupText(g, genLabelFn, enLabel)),
+    memberIndex: buildIndex(MEMBERS, (m) => memberText(m, groupById, genLabelFn, enLabel)),
   };
 }
 
@@ -2508,14 +2520,18 @@ test('startGame dengan seluruh grup masuk ke fase heat', () => {
   assert.ok(state.heat.pool.length > 20, `pool = ${state.heat.pool.length}`);
 });
 
+// ITZY(5) + IVE(6) + aespa(4) = 15 member: di bawah ambang 20, jadi langsung sort.
+// TWICE(9) tidak dipakai karena 9+5+6+4 = 24 > 20, sehingga jalurnya heat.
 test('startGame dengan sedikit grup langsung masuk ke fase sort', () => {
   const state = createState();
   clearAllVisible(state);
-  for (const id of ['TWICE', 'ITZY', 'IVE', 'aespa']) toggleGroup(state, id);
+  for (const id of ['ITZY', 'IVE', 'aespa']) toggleGroup(state, id);
+  const eligible = MEMBERS.filter((m) => m.groups.some((g) => state.selected.has(g))).length;
+  assert.ok(eligible > 8 && eligible <= 20, `eligible = ${eligible}`);
   const ok = startGame(state, {});
   assert.equal(ok, true);
   assert.equal(state.phase, 'sort');
-  assert.ok(state.sort.candidateCount <= 20);
+  assert.equal(state.sort.candidateCount, eligible);
 });
 
 test('enterSort menolak kandidat kurang dari 9', () => {
@@ -2592,17 +2608,30 @@ setelah grid.
 Tambahkan sebelum `redrawAll()` di akhir berkas:
 
 ```js
-app.addEventListener('input', (event) => {
-  if (event.target.dataset.action !== 'search') return;
-  const input = event.target;
-  const caret = input.selectionStart;
-  act.setQuery(state, input.value);
+// Kotak search diganti seluruhnya setiap kali query berubah, jadi fokus dan
+// posisi kursor harus dipulihkan sendiri.
+function redrawSearch(previous) {
+  const caret = previous.selectionStart;
   draw();
   const next = app.querySelector('input[data-action="search"]');
-  if (next) {
-    next.focus();
-    next.setSelectionRange(caret, caret);
-  }
+  if (!next) return;
+  next.focus();
+  if (caret !== null) next.setSelectionRange(caret, caret);
+}
+
+app.addEventListener('input', (event) => {
+  if (event.target.dataset.action !== 'search') return;
+  act.setQuery(state, event.target.value);
+  // Saat IME Hangul masih menyusun suku kata, mengganti node input akan
+  // membatalkan komposisinya. Tunggu compositionend.
+  if (event.isComposing) return;
+  redrawSearch(event.target);
+});
+
+app.addEventListener('compositionend', (event) => {
+  if (event.target.dataset.action !== 'search') return;
+  act.setQuery(state, event.target.value);
+  redrawSearch(event.target);
 });
 ```
 
@@ -2616,30 +2645,33 @@ Dan tambahkan kasus baru di dalam `switch (button.dataset.action)`:
 
 - [ ] **Step 5: Tambahkan gaya kotak search ke `style.css`**
 
+Tambahkan ke blok `/* --- tambahan listidol --- */` yang sudah ada di akhir
+`style.css` (`.lang-switch` dan `.portrait-fallback` sudah ditulis di Task 7; jangan
+digandakan):
+
 ```css
-/* --- kotak search (tambahan listidol) --- */
 .search-row{display:flex;gap:8px;align-items:center;margin:0 0 12px}
 .search-row input[type=search]{flex:1;min-width:0;font:500 15px 'Noto Sans KR',sans-serif;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:11px 14px}
 .search-row input[type=search]:focus{outline:2px solid var(--accent);outline-offset:1px}
 .search-count{color:var(--muted);font-size:13px;margin:10px 0 0}
 .empty{color:var(--muted);font-size:14px;text-align:center;padding:28px 0}
-.lang-switch{display:flex;gap:6px}
-.lang-switch button{font:600 13px 'Noto Sans KR',sans-serif;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;padding:5px 12px;cursor:pointer}
-.lang-switch button[aria-pressed=true]{color:var(--ink);background:var(--accent);border-color:var(--accent)}
-.portrait-fallback{display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:var(--line);color:var(--muted);font:800 28px 'Noto Sans KR',sans-serif}
 ```
 
 - [ ] **Step 6: Jalankan seluruh test**
 
 Run: `node --test`
-Expected: PASS — termasuk 15 test di `test/state.test.mjs`.
+Expected: PASS — termasuk 15 test di `test/state.test.mjs` dan 18 di `test/search.test.mjs`.
 
 - [ ] **Step 7: Verifikasi di browser**
 
 Server masih jalan di `http://localhost:8080/`. Periksa:
 
 1. Ketik `twice` di kotak search: grid grup hanya menyisakan grup yang cocok, penghitung menampilkan `n / total 팀`.
-2. Ketik `이달의 소녀`: hanya grup itu tersisa. Ganti ke English lalu ketik `loona`: grup yang sama tetap ditemukan.
+2. Ketik `이달의 소녀`: hanya grup itu tersisa. Ganti ke English lalu ketik `loona`:
+   grup yang sama tetap ditemukan. Ini yang membuat label bahasa kedua harus ikut
+   diindeks — tanpa `labelOf`, id grup Hangul tidak memuat "loona" sama sekali dan
+   hasilnya nol. Periksa juga arah sebaliknya di UI English: `프로미스나인` harus
+   tetap menemukan `fromis_9`.
 3. Ketik `zzz`: muncul empty state `검색 결과가 없습니다`, bukan grid kosong tanpa penjelasan.
 4. Kosongkan query lewat tombol `지우기`: grid kembali penuh.
 5. **Invariant:** pilih beberapa grup, catat pilihannya, ketik dan hapus query berulang kali — pilihan tidak berubah sama sekali. Centang di kartu tetap sama.

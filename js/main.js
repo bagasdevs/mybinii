@@ -5,7 +5,7 @@ import { createTranslator, detectLocale, genLabel } from './i18n.js';
 import { render } from './render.js';
 import { buildIndex, groupText, memberText } from './search.js';
 import * as act from './state.js';
-import { initialsOf } from './view.js';
+import { groupLabel, initialsOf } from './view.js';
 
 const dicts = { ko, en };
 const app = document.querySelector('#app');
@@ -34,12 +34,15 @@ let ctx = buildContext();
 
 function buildContext() {
   const genLabelFn = (gen) => genLabel(gen, t);
+  // Label Inggris ikut diindeks di samping nama Korea, jadi pencarian bekerja
+  // lintas aksara di bahasa mana pun ("loona" maupun "이달의 소녀").
+  const enLabel = (g) => groupLabel(g, 'en');
   return {
     t,
     groupById,
     memberById,
-    groupIndex: buildIndex(GROUPS, (g) => groupText(g, genLabelFn)),
-    memberIndex: buildIndex(MEMBERS, (m) => memberText(m, groupById, genLabelFn)),
+    groupIndex: buildIndex(GROUPS, (g) => groupText(g, genLabelFn, enLabel)),
+    memberIndex: buildIndex(MEMBERS, (m) => memberText(m, groupById, genLabelFn, enLabel)),
   };
 }
 
@@ -110,6 +113,9 @@ app.addEventListener('click', (event) => {
     case 'start':
       if (!act.startGame(state, { onTooFew: () => toast(t('setup.tooFew')) })) return;
       break;
+    case 'clearQuery':
+      act.setQuery(state, '');
+      break;
     default:
       return;
   }
@@ -132,6 +138,32 @@ app.addEventListener(
   },
   true,
 );
+
+// Kotak search diganti seluruhnya setiap kali query berubah, jadi fokus dan
+// posisi kursor harus dipulihkan sendiri.
+function redrawSearch(previous) {
+  const caret = previous.selectionStart;
+  draw();
+  const next = app.querySelector('input[data-action="search"]');
+  if (!next) return;
+  next.focus();
+  if (caret !== null) next.setSelectionRange(caret, caret);
+}
+
+app.addEventListener('input', (event) => {
+  if (event.target.dataset.action !== 'search') return;
+  act.setQuery(state, event.target.value);
+  // Saat IME Hangul masih menyusun suku kata, mengganti node input akan
+  // membatalkan komposisinya. Tunggu compositionend.
+  if (event.isComposing) return;
+  redrawSearch(event.target);
+});
+
+app.addEventListener('compositionend', (event) => {
+  if (event.target.dataset.action !== 'search') return;
+  act.setQuery(state, event.target.value);
+  redrawSearch(event.target);
+});
 
 document.querySelector('#closeDialog').addEventListener('click', () => {
   document.querySelector('#dialog').close();

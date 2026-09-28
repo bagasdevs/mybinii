@@ -5,10 +5,13 @@
 
 .intro-compact{margin-bottom:6px}.intro-compact h1{font-size:clamp(32px,5vw,52px);letter-spacing:-2px;margin:4px 0 12px}.progress-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;font-size:16px}.progress-head strong{font-size:20px}.progress-head span{font-variant-numeric:tabular-nums;color:#52554d;font-weight:700}.progress-head+.progress{margin:12px 0 25px;height:6px;border-radius:8px;overflow:hidden}footer{justify-content:flex-end}
 
-/* Tambahan (bukan bagian dari style.css asli): pemilih bahasa di header. */
+/* --- tambahan listidol: kotak search, pemilih bahasa, avatar inisial --- */
+.search-row{display:flex;gap:8px;align-items:center;margin:0 0 12px}
+.search-row input[type=search]{flex:1;min-width:0;font:500 15px 'Noto Sans KR',sans-serif;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:11px 14px}
+.search-row input[type=search]:focus{outline:2px solid var(--accent);outline-offset:1px}
+.search-count{color:var(--muted);font-size:13px;margin:10px 0 0}
+.empty{color:var(--muted);font-size:14px;text-align:center;padding:28px 0}
 .lang-switch{display:flex;gap:6px}
-.lang-switch button{background:transparent;border:1px solid var(--line);padding:7px 12px;border-radius:50px;font-size:13px;color:#53554c}
-.lang-switch button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
-
-/* Tambahan: avatar inisial saat foto gagal dimuat. */
-.portrait-fallback{display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:var(--line);color:#52554d;font-weight:700;font-size:22px}
+.lang-switch button{font:600 13px 'Noto Sans KR',sans-serif;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;padding:5px 12px;cursor:pointer}
+.lang-switch button[aria-pressed=true]{color:var(--ink);background:var(--accent);border-color:var(--accent)}
+.portrait-fallback{display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:var(--line);color:var(--muted);font:800 28px 'Noto Sans KR',sans-serif}

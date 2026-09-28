@@ -33,21 +33,26 @@ export function search(query, index) {
   return out;
 }
 
-export function memberText(member, groupById, genLabelFn) {
+/**
+ * Teks yang diindeks untuk satu member. `labelOf` disuntikkan (bukan diimpor)
+ * supaya modul ini tetap murni; pemanggil mengirim label grup dalam bahasa
+ * kedua, sehingga "loona" dan "이달의 소녀" sama-sama menemukan grup yang sama.
+ */
+export function memberText(member, groupById, genLabelFn, labelOf = (g) => g.name) {
   const groups = member.groups.map((id) => groupById.get(id)).filter(Boolean);
   return [
     member.id,
     member.name,
     member.english,
     ...(member.displayGroups ?? []),
-    ...groups.flatMap((g) => [g.id, g.name, String(g.gen), genLabelFn(g.gen)]),
+    ...groups.flatMap((g) => [g.id, g.name, labelOf(g), String(g.gen), genLabelFn(g.gen)]),
   ]
     .filter(Boolean)
     .join(' ');
 }
 
-export function groupText(group, genLabelFn) {
-  return [group.id, group.name, String(group.gen), genLabelFn(group.gen)]
+export function groupText(group, genLabelFn, labelOf = (g) => g.name) {
+  return [group.id, group.name, labelOf(group), String(group.gen), genLabelFn(group.gen)]
     .filter(Boolean)
     .join(' ');
 }

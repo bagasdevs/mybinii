@@ -121,3 +121,20 @@ test('groupText memuat id, name, dan label generasi', () => {
   assert.ok(text.includes('TWICE'));
   assert.ok(text.includes('3세대'));
 });
+
+// --- label bahasa kedua ----------------------------------------------------
+
+const enLabel = (g) => ({ '이달의 소녀': 'LOONA' }[g.id] ?? g.name);
+
+test('labelOf menambahkan label bahasa kedua ke index grup', () => {
+  const plain = buildIndex(GROUPS, (g) => groupText(g, genLabel));
+  const withEn = buildIndex(GROUPS, (g) => groupText(g, genLabel, enLabel));
+  assert.deepEqual([...search('loona', plain)], [], 'tanpa labelOf label Inggris memang tidak ada');
+  assert.deepEqual([...search('loona', withEn)].sort(), ['이달의 소녀']);
+  assert.deepEqual([...search('이달의 소녀', withEn)].sort(), ['이달의 소녀'], 'label Korea tetap ada');
+});
+
+test('labelOf menambahkan label grup bahasa kedua ke index member', () => {
+  const withEn = buildIndex(MEMBERS, (m) => memberText(m, groupById, genLabel, enLabel));
+  assert.deepEqual([...search('loona chuu', withEn)].sort(), ['g_loona_chuu']);
+});

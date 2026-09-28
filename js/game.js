@@ -190,7 +190,9 @@ export function beginSort(st, ids) {
   st.comparisons = 0;
   st.done = false;
   st.result = [];
-  return beginMerge(st);
+  // beginMerge hanya melaporkan {done}; bungkus supaya pemanggil bisa
+  // membedakan "mulai gagal" dari "mulai sukses" lewat satu field `ok`.
+  return { ok: true, ...beginMerge(st) };
 }
 
 /**

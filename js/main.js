@@ -99,6 +99,14 @@ app.addEventListener('click', (event) => {
     draw();
     return;
   }
+  if (button.dataset.member !== undefined && state.phase === 'heat') {
+    const outcome = act.pickMember(state, button.dataset.member);
+    if (outcome === 'full') {
+      toast(t('heat.maxPick', { need: Math.min(3, state.heat.current.length) }));
+    }
+    draw();
+    return;
+  }
 
   switch (button.dataset.action) {
     case 'toggleDebut':
@@ -116,10 +124,24 @@ app.addEventListener('click', (event) => {
     case 'clearQuery':
       act.setQuery(state, '');
       break;
+    case 'heatNext':
+      if (
+        !act.confirmHeat(state, {
+          onNeedMore: (need) => toast(t('heat.needMore', { need })),
+          onTooFew: () => toast(t('setup.tooFew')),
+        })
+      ) {
+        return;
+      }
+      break;
+    case 'restart':
+      act.setPhase(state, 'setup');
+      break;
     default:
       return;
   }
   draw();
+  scrollTo(0, 0);
 });
 
 // `error` tidak bubble; pakai fase capture lalu ganti dengan avatar inisial.

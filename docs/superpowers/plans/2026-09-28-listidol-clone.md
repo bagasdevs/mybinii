@@ -2944,18 +2944,33 @@ Muat ulang `http://localhost:8080/` (semua grup terpilih secara bawaan → 475 m
 
 ```js
 // tempel di konsol halaman
+// PENTING: setiap klik mengganti seluruh DOM (draw() menulis ulang app.innerHTML),
+// jadi NodeList yang dikumpulkan sekali akan langsung basi — query ulang tiap langkah.
 const loop = setInterval(() => {
-  document.querySelectorAll('[data-member]').forEach((b) => b.click());
+  for (let guard = 0; guard < 10; guard++) {
+    const picked = document.querySelector('.member-grid .member.picked');
+    if (!picked) break;
+    picked.click();
+  }
+  for (let k = 0; k < 3; k++) {
+    const card = [...document.querySelectorAll('.member-grid .member')].find(
+      (b) => !b.classList.contains('picked'),
+    );
+    if (!card) break;
+    card.click();
+  }
   const next = document.querySelector('[data-action="heatNext"]');
-  if (next && !next.disabled) next.click();
-  if (document.querySelector('[data-sort]')) {
+  if (!next || next.disabled) return;
+  next.click();
+  // [data-sort] baru ada setelah Task 10; sebelum itu deteksinya lewat indikator langkah.
+  if (document.querySelector('.steps .current')?.textContent.includes('05')) {
     clearInterval(loop);
     console.log('sampai fase sort');
   }
 }, 30);
 ```
 
-Expected: log `sampai fase sort` tanpa error di konsol.
+Expected: log `sampai fase sort` setelah 85 layar tanpa error di konsol.
 
 - [ ] **Step 8: Commit**
 

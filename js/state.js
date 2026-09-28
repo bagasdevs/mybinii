@@ -1,10 +1,12 @@
 import { GROUPS, MEMBERS } from '../data/roster.js';
 import {
+  advanceHeat,
   beginHeat,
   beginSort,
   createHeat,
   createSort,
   eligibleMembers,
+  finishHeat,
   initialOrder,
   roundCount,
 } from './game.js';
@@ -104,5 +106,49 @@ export function enterSort(state, ids) {
   if (!res.ok) return false;
   state.sort = sort;
   setPhase(state, 'sort');
+  return true;
+}
+
+// --- heat ------------------------------------------------------------------
+
+const needOnScreen = (state) => Math.min(3, state.heat.current.length);
+
+/** Mengembalikan 'full' bila layar ini sudah penuh dan member belum terpilih. */
+export function pickMember(state, memberId) {
+  const picked = state.heat.selected;
+  if (picked.has(memberId)) {
+    picked.delete(memberId);
+    return 'ok';
+  }
+  if (picked.size >= needOnScreen(state)) return 'full';
+  picked.add(memberId);
+  return 'ok';
+}
+
+export function confirmHeat(state, { onNeedMore, onTooFew } = {}) {
+  const need = needOnScreen(state);
+  if (state.heat.selected.size !== need) {
+    onNeedMore?.(need);
+    return false;
+  }
+
+  const result = finishHeat(state.heat, [...state.heat.selected]);
+  if (!result.ok) {
+    onNeedMore?.(result.need);
+    return false;
+  }
+
+  if (result.action === 'continue') {
+    beginHeat(state.heat);
+    return true;
+  }
+
+  const next = advanceHeat(state.heat);
+  if (next.next === 'heat') return true;
+
+  if (!enterSort(state, next.ids)) {
+    onTooFew?.();
+    setPhase(state, 'setup');
+  }
   return true;
 }

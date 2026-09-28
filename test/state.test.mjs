@@ -4,8 +4,10 @@ import { GROUPS, MEMBERS } from '../data/roster.js';
 import { buildIndex, groupText, memberText } from '../js/search.js';
 import {
   clearAllVisible,
+  confirmHeat,
   createState,
   enterSort,
+  pickMember,
   selectAllVisible,
   setPhase,
   setQuery,
@@ -154,4 +156,69 @@ test('startGame mereset custom dan finalists', () => {
   startGame(state, {});
   assert.deepEqual(state.custom, {});
   assert.deepEqual(state.finalists, []);
+});
+
+// --- heat ------------------------------------------------------------------
+
+test('pickMember menghormati batas 3 per layar', () => {
+  const state = createState();
+  startGame(state, {});
+  const [a, b, c, d] = state.heat.current;
+  assert.equal(pickMember(state, a), 'ok');
+  assert.equal(pickMember(state, b), 'ok');
+  assert.equal(pickMember(state, c), 'ok');
+  assert.equal(pickMember(state, d), 'full');
+  assert.equal(state.heat.selected.size, 3);
+});
+
+test('pickMember membatalkan pilihan yang sama', () => {
+  const state = createState();
+  startGame(state, {});
+  const id = state.heat.current[0];
+  assert.equal(pickMember(state, id), 'ok');
+  assert.equal(state.heat.selected.has(id), true);
+  assert.equal(pickMember(state, id), 'ok');
+  assert.equal(state.heat.selected.has(id), false);
+});
+
+test('pickMember tidak mengubah daftar grup terpilih', () => {
+  const state = createState();
+  startGame(state, {});
+  const before = [...state.selected].sort();
+  pickMember(state, state.heat.current[0]);
+  assert.deepEqual([...state.selected].sort(), before);
+});
+
+test('confirmHeat menolak bila pilihan belum lengkap', () => {
+  const state = createState();
+  startGame(state, {});
+  let need = 0;
+  assert.equal(confirmHeat(state, { onNeedMore: (n) => { need = n; } }), false);
+  assert.equal(need, 3);
+  assert.equal(state.phase, 'heat');
+});
+
+test('confirmHeat memajukan layar sampai seluruh turnamen selesai', () => {
+  const state = createState();
+  startGame(state, {});
+  assert.equal(state.phase, 'heat');
+
+  let guard = 0;
+  while (state.phase === 'heat') {
+    if (guard++ > 500) throw new Error('heat tidak pernah selesai');
+    for (const id of state.heat.current.slice(0, 3)) pickMember(state, id);
+    assert.equal(confirmHeat(state, {}), true);
+  }
+
+  assert.equal(state.phase, 'sort');
+  assert.equal(state.query, '');
+  assert.ok(state.sort.candidateCount >= 9, `kandidat = ${state.sort.candidateCount}`);
+});
+
+test('confirmHeat selalu mengosongkan pilihan layar berikutnya', () => {
+  const state = createState();
+  startGame(state, {});
+  for (const id of state.heat.current.slice(0, 3)) pickMember(state, id);
+  confirmHeat(state, {});
+  assert.equal(state.heat.selected.size, 0);
 });

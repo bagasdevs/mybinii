@@ -28,3 +28,6 @@
 #dialog{padding:0}
 #dialogBody{padding:25px 25px 0;max-height:calc(85vh - 90px);overflow:auto}
 .dialog-foot{position:sticky;bottom:0;display:flex;justify-content:flex-end;gap:8px;padding:14px 25px;background:var(--bg);border-top:1px solid var(--line);border-radius:0 0 18px 18px}
+/* --- toast: sembunyi via visibility supaya role=status tetap terbaca AT --- */
+#toast{position:fixed;left:50%;bottom:95px;transform:translateX(-50%);z-index:50;max-width:90%;background:#181818;color:white;padding:12px 20px;border-radius:10px;font-size:14px;visibility:hidden;opacity:0;transition:opacity .2s,visibility .2s}
+#toast.show{visibility:visible;opacity:1}

@@ -44,7 +44,7 @@ test('tanpa query: seluruh layar tampil dan kotak search tetap dirender', () => 
   const html = renderHeat(screen(pool), ctx);
   assert.equal(pool.length, 14);
   assert.equal(cards(html).length, 9, 'layar pertama berisi 9 kandidat');
-  assert.equal(searchCount(html), '9명 / 9명');
+  assert.equal(searchCount(html), '9명 / 9명 · 이 화면만 검색');
   assert.ok(html.includes('data-action="search"'));
   assert.ok(!html.includes('data-action="clearQuery"'), 'tombol hapus hanya muncul saat mencari');
   assert.ok(!html.includes('data-role="searchEmpty"'));
@@ -56,7 +56,7 @@ test('query nama Korea menyaring layar ke member yang cocok', () => {
   st.query = memberById.get(pool[3]).name;
   const html = renderHeat(st, ctx);
   assert.deepEqual(cards(html), [pool[3]]);
-  assert.equal(searchCount(html), '1명 / 9명');
+  assert.equal(searchCount(html), '1명 / 9명 · 이 화면만 검색');
   assert.ok(html.includes('data-action="clearQuery"'));
 });
 
@@ -75,7 +75,7 @@ test('query tanpa hasil: grid kosong dan empty state muncul', () => {
   st.query = 'zzzz';
   const html = renderHeat(st, ctx);
   assert.deepEqual(cards(html), []);
-  assert.equal(searchCount(html), '0명 / 9명');
+  assert.equal(searchCount(html), '0명 / 9명 · 이 화면만 검색');
   assert.ok(html.includes('data-role="searchEmpty"'));
 });
 

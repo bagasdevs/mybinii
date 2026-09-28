@@ -32,6 +32,7 @@ export function createState() {
     custom: {},
     heat: createHeat(),
     sort: createSort(),
+    sortPast: [],
   };
 }
 
@@ -129,6 +130,7 @@ export function enterSort(state, ids) {
   const res = beginSort(sort, ids);
   if (!res.ok) return false;
   state.sort = sort;
+  state.sortPast = [];
   setPhase(state, 'sort');
   return true;
 }
@@ -187,12 +189,23 @@ export function confirmHeat(state, { onNeedMore, onTooFew } = {}) {
 
 /** Mencatat satu perbandingan; mengisi `finalists` dan pindah ke fase result bila selesai. */
 export function pickSort(state, memberId) {
+  state.sortPast.push(structuredClone(state.sort));
   const result = chooseSort(state.sort, memberId);
   if (result.done) {
     state.finalists = result.result;
     setPhase(state, 'result');
+  } else if (result.ignored) {
+    state.sortPast.pop();
   }
   return result;
+}
+
+/** Batalkan satu perbandingan terakhir; false bila tidak ada riwayat. */
+export function undoSort(state) {
+  const previous = state.sortPast.pop();
+  if (!previous) return false;
+  state.sort = previous;
+  return true;
 }
 
 // --- crop foto -------------------------------------------------------------

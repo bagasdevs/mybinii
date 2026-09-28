@@ -35,7 +35,7 @@ export function renderHeat(state, ctx) {
     `</div>`;
 
   const resultCount = esc(
-    t('search.count.members', { n: visible.length, total: heat.current.length }),
+    t('search.count.members.heat', { n: visible.length, total: heat.current.length }),
   );
   const empty = visible.length
     ? ''

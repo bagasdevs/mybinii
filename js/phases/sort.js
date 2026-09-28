@@ -20,6 +20,10 @@ export function renderSort(state, ctx) {
     .map(card)
     .join('');
 
+  const undo =
+    `<button class="outline" type="button" data-action="undoSort" ` +
+    `${state.sortPast.length ? '' : 'disabled'}>${esc(t('sort.undo'))}</button>`;
+
   return (
     steps(state, t) +
     `<div class="progress-head"><strong>${esc(t('sort.title'))}</strong>` +
@@ -29,6 +33,7 @@ export function renderSort(state, ctx) {
     `<div style="width:${(100 * sort.comparisons) / limit}%"></div></div>` +
     // Nilai sort.pick memuat <em>, jadi sengaja tidak di-escape.
     `<h1>${t('sort.pick')}</h1>` +
-    `<div class="member-grid" style="grid-template-columns:repeat(2,1fr);max-width:620px">${pair}</div>`
+    `<div class="member-grid" style="grid-template-columns:repeat(2,1fr);max-width:620px">${pair}</div>` +
+    `<div class="page-nav">${undo}</div>`
   );
 }

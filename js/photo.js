@@ -11,7 +11,7 @@ const SLIDERS = [
   ['y', 'crop.y', { min: 0, max: 100, step: 1 }],
 ];
 
-export function createCropDialog({ state, t, memberById, toast, redraw }) {
+export function createCropDialog({ state, t, memberById, toast, toastError = toast, redraw }) {
   const dialog = document.querySelector('#dialog');
   const body = document.querySelector('#dialogBody');
 
@@ -47,15 +47,15 @@ export function createCropDialog({ state, t, memberById, toast, redraw }) {
     body.querySelector('#upload').addEventListener('change', async (event) => {
       const file = event.target.files?.[0];
       if (!file) return;
-      if (!file.type.startsWith('image/')) return toast(t('crop.errType'));
-      if (file.size > MAX_BYTES) return toast(t('crop.errSize'));
+      if (!file.type.startsWith('image/')) return toastError(t('crop.errType'));
+      if (file.size > MAX_BYTES) return toastError(t('crop.errSize'));
 
       const url = URL.createObjectURL(file);
       try {
         await loadImage(url);
       } catch {
         URL.revokeObjectURL(url);
-        return toast(t('crop.errRead'));
+        return toastError(t('crop.errRead'));
       }
 
       const previous = currentPhoto();

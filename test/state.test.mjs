@@ -9,6 +9,7 @@ import {
   enterSort,
   pickMember,
   pickSort,
+  undoSort,
   resetCrop,
   selectAllVisible,
   setCrop,
@@ -292,6 +293,26 @@ test('finalists selalu berisi 9 id unik milik pool yang dipilih', () => {
   while (state.phase === 'sort' && guard++ < 500) pickSort(state, state.sort.right);
   assert.equal(state.finalists.length, 9);
   for (const id of state.finalists) assert.ok(state.pool.includes(id), `${id} bukan bagian pool`);
+});
+
+test('undoSort membatalkan satu perbandingan terakhir', () => {
+  const state = smallGame();
+  assert.equal(undoSort(state), false, 'tanpa riwayat tidak bisa undo');
+  const before = { left: state.sort.left, right: state.sort.right, comparisons: state.sort.comparisons };
+  pickSort(state, state.sort.left);
+  assert.equal(state.sort.comparisons, before.comparisons + 1);
+  assert.equal(undoSort(state), true);
+  assert.equal(state.sort.comparisons, before.comparisons);
+  assert.equal(state.sort.left, before.left);
+  assert.equal(state.sort.right, before.right);
+  assert.equal(undoSort(state), false, 'riwayat habis setelah satu undo');
+});
+
+test('pickSort yang diabaikan tidak menambah riwayat undo', () => {
+  const state = smallGame();
+  pickSort(state, 'bukan-kandidat');
+  assert.equal(state.sortPast.length, 0);
+  assert.equal(undoSort(state), false);
 });
 
 // --- judul poster ----------------------------------------------------------

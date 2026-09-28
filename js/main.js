@@ -53,12 +53,15 @@ function buildContext() {
 }
 
 let toastTimer;
-function toast(message) {
+// `duration`: info 3000ms, error 6000ms. Visibilitas pakai class (bukan
+// display:none) supaya live region tetap dikenali screen reader.
+function toast(message, duration = 3000) {
   toastEl.textContent = message;
-  toastEl.style.display = 'block';
+  toastEl.classList.add('show');
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => { toastEl.style.display = 'none'; }, 3000);
+  toastTimer = setTimeout(() => toastEl.classList.remove('show'), duration);
 }
+const toastError = (message) => toast(message, 6000);
 
 // Blob URL poster aktif; di-revoke saat dialog ditutup supaya tidak bocor.
 let posterUrl = null;
@@ -95,7 +98,7 @@ async function downloadPoster() {
 
     showSavedPreview(posterUrl);
   } catch {
-    toast(t('result.error'));
+    toastError(t('result.error'));
   } finally {
     button.disabled = false;
     button.textContent = original;
@@ -132,7 +135,7 @@ function draw() {
   app.innerHTML = render(state, ctx);
 }
 
-const cropDialog = createCropDialog({ state, t, memberById, toast, redraw: draw });
+const cropDialog = createCropDialog({ state, t, memberById, toast, toastError, redraw: draw });
 
 function redrawAll() {
   ctx = buildContext();
@@ -193,7 +196,7 @@ app.addEventListener('click', async (event) => {
       act.clearAllVisible(state);
       break;
     case 'start':
-      if (!act.startGame(state, { onTooFew: () => toast(t('setup.tooFew')) })) return;
+      if (!act.startGame(state, { onTooFew: () => toastError(t('setup.tooFew')) })) return;
       break;
     case 'clearQuery':
       act.setQuery(state, '');
@@ -202,11 +205,14 @@ app.addEventListener('click', async (event) => {
       if (
         !act.confirmHeat(state, {
           onNeedMore: (need) => toast(t('heat.needMore', { need })),
-          onTooFew: () => toast(t('setup.tooFew')),
+          onTooFew: () => toastError(t('setup.tooFew')),
         })
       ) {
         return;
       }
+      break;
+    case 'undoSort':
+      act.undoSort(state);
       break;
     case 'restart':
       act.setPhase(state, 'setup');

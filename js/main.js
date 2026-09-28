@@ -278,6 +278,9 @@ document.querySelector('#dialog').addEventListener('close', () => {
     URL.revokeObjectURL(posterUrl);
     posterUrl = null;
   }
+  // <img> yang sudah didekode menahan bitmap-nya selama node-nya masih di DOM
+  // (poster 1080x1600 ~ 6,6 MB), jadi isi dialog dibuang setelah ditutup.
+  dialogBody.innerHTML = '';
 });
 
 document.querySelector('#credits').addEventListener('click', () => {

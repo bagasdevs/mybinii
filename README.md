@@ -11,6 +11,11 @@ romanisations) and **i18n** (한국어 / English / Bahasa Indonesia).
 Progress is saved to `localStorage`: a reload lands back on the same heat board
 or the same pairwise comparison, and every phase has a way back to setup.
 
+The result screen also has a **share** button. It encodes the nine finalists and
+the title into the URL hash (`#r=1&m=…&t=…`), so a link opens straight on
+someone else's poster. Opening a shared link never overwrites the progress on
+the device reading it.
+
 ## Run it
 
 No build step, no dependencies. The page uses ES modules, so it must be served
@@ -83,6 +88,8 @@ node --test
   are gone after a reload — the poster falls back to the default photos.
 - **Photo files are large.** 475 mirrored JPEG/PNG files, no thumbnails and no
   AVIF/WebP, so mobile data use is noticeable.
+- **Shared links carry only the nine picks and the title.** Uploaded photos and
+  crop edits stay on the device that made them.
 
 ## Credits and licence
 

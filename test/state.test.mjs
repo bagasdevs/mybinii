@@ -12,6 +12,7 @@ import {
   selectAllVisible,
   setPhase,
   setQuery,
+  setTitle,
   startGame,
   toggleDebut,
   toggleGeneration,
@@ -267,4 +268,23 @@ test('finalists selalu berisi 9 id unik milik pool yang dipilih', () => {
   while (state.phase === 'sort' && guard++ < 500) pickSort(state, state.sort.right);
   assert.equal(state.finalists.length, 9);
   for (const id of state.finalists) assert.ok(state.pool.includes(id), `${id} bukan bagian pool`);
+});
+
+// --- judul poster ----------------------------------------------------------
+
+test('setTitle menandai judul sebagai sudah disentuh', () => {
+  const state = createState();
+  assert.equal(state.titleTouched, false);
+  setTitle(state, '나의 구절판');
+  assert.equal(state.title, '나의 구절판');
+  assert.equal(state.titleTouched, true);
+});
+
+test('setTitle tidak mengubah pilihan, pool, atau fase', () => {
+  const state = createState();
+  const selected = [...state.selected].sort();
+  setTitle(state, 'x');
+  assert.deepEqual([...state.selected].sort(), selected);
+  assert.equal(state.phase, 'setup');
+  assert.deepEqual(state.pool, []);
 });

@@ -4,6 +4,9 @@
 # Artefak SDD (ledger, brief, paket review)
 .superpowers/
 
+# Unduhan hasil verifikasi poster di browser (PNG 1,9 MB sekali pakai)
+.tmp-downloads/
+
 # photos/ SENGAJA tidak diabaikan: 475 foto hasil mirror ikut di-commit
 # karena Cloudflare Pages menyajikan berkas langsung dari repo.
 

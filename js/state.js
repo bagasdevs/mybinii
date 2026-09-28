@@ -72,6 +72,12 @@ export function setQuery(state, query) {
   state.query = query;
 }
 
+/** Menandai bahwa pengguna sudah menyunting judul, sehingga i18n berhenti menimpanya. */
+export function setTitle(state, value) {
+  state.title = value;
+  state.titleTouched = true;
+}
+
 /** Satu-satunya tempat transisi fase. Selalu mengosongkan query. */
 export function setPhase(state, phase) {
   state.phase = phase;

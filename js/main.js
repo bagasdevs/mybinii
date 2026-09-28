@@ -2,13 +2,16 @@ import { GROUPS, MEMBERS } from '../data/roster.js';
 import en from '../i18n/en.js';
 import ko from '../i18n/ko.js';
 import { createTranslator, detectLocale, genLabel } from './i18n.js';
+import { effectiveTitle } from './phases/result.js';
+import { buildPoster } from './poster.js';
 import { render } from './render.js';
 import { buildIndex, groupText, memberText } from './search.js';
 import * as act from './state.js';
-import { groupLabel, initialsOf } from './view.js';
+import { esc, groupLabel, initialsOf } from './view.js';
 
 const dicts = { ko, en };
 const app = document.querySelector('#app');
+const dialogBody = document.querySelector('#dialogBody');
 const toastEl = document.querySelector('#toast');
 const langSwitch = document.querySelector('#langSwitch');
 const brandEl = document.querySelector('.brand');
@@ -54,6 +57,61 @@ function toast(message) {
   toastTimer = setTimeout(() => { toastEl.style.display = 'none'; }, 3000);
 }
 
+// Blob URL poster aktif; di-revoke saat dialog ditutup supaya tidak bocor.
+let posterUrl = null;
+
+async function downloadPoster() {
+  const button = app.querySelector('[data-action="download"]');
+  if (!button) return;
+  const original = button.textContent;
+  button.disabled = true;
+  button.textContent = t('result.downloading');
+
+  try {
+    const blob = await buildPoster({
+      finalists: state.finalists,
+      memberById,
+      custom: state.custom,
+      title: effectiveTitle(state, t),
+      labels: {
+        eyebrow: t('app.eyebrow'),
+        foot: t('result.foot'),
+        locale: state.lang,
+        groupById,
+        rank: (n) => t('result.rank', { n }),
+      },
+    });
+
+    if (posterUrl) URL.revokeObjectURL(posterUrl);
+    posterUrl = URL.createObjectURL(blob);
+
+    const link = document.createElement('a');
+    link.href = posterUrl;
+    link.download = t('result.filename');
+    link.click();
+
+    showSavedPreview(posterUrl);
+  } catch {
+    toast(t('result.error'));
+  } finally {
+    button.disabled = false;
+    button.textContent = original;
+  }
+}
+
+function showSavedPreview(url) {
+  const dialog = document.querySelector('#dialog');
+  dialogBody.innerHTML =
+    `<h2>${esc(t('result.saved.title'))}</h2>` +
+    `<p class="small">${esc(t('result.saved.hint'))}</p>`;
+  const preview = document.createElement('img');
+  preview.src = url;
+  preview.className = 'save-preview';
+  preview.alt = t('result.saved.alt');
+  dialogBody.append(preview);
+  dialog.showModal();
+}
+
 function applyDocumentChrome() {
   document.documentElement.lang = state.lang;
   titleEl.textContent = t('app.title');
@@ -85,7 +143,7 @@ langSwitch.addEventListener('click', (event) => {
   redrawAll();
 });
 
-app.addEventListener('click', (event) => {
+app.addEventListener('click', async (event) => {
   const button = event.target.closest('button');
   if (!button || button.disabled) return;
 
@@ -143,6 +201,9 @@ app.addEventListener('click', (event) => {
     case 'restart':
       act.setPhase(state, 'setup');
       break;
+    case 'download':
+      await downloadPoster();
+      return;
     default:
       return;
   }
@@ -179,6 +240,12 @@ function redrawSearch(previous) {
 }
 
 app.addEventListener('input', (event) => {
+  if (event.target.id === 'posterTitle') {
+    act.setTitle(state, event.target.value);
+    const live = app.querySelector('#liveTitle');
+    if (live) live.textContent = effectiveTitle(state, t);
+    return;
+  }
   if (event.target.dataset.action !== 'search') return;
   act.setQuery(state, event.target.value);
   // Saat IME Hangul masih menyusun suku kata, mengganti node input akan
@@ -195,6 +262,13 @@ app.addEventListener('compositionend', (event) => {
 
 document.querySelector('#closeDialog').addEventListener('click', () => {
   document.querySelector('#dialog').close();
+});
+
+document.querySelector('#dialog').addEventListener('close', () => {
+  if (posterUrl) {
+    URL.revokeObjectURL(posterUrl);
+    posterUrl = null;
+  }
 });
 
 redrawAll();

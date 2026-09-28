@@ -890,7 +890,7 @@ export function groupText(group, genLabelFn) {
 - [ ] **Step 4: Jalankan test untuk memastikan lulus**
 
 Run: `node --test test/search.test.mjs`
-Expected: PASS, 15 test lulus.
+Expected: PASS, 16 test lulus.
 
 - [ ] **Step 5: Commit**
 

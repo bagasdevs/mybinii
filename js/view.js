@@ -82,21 +82,26 @@ export function photoOf(member, custom) {
   return custom[member.id] ?? defaultPhoto(member);
 }
 
-/** Alt mengikuti bahasa aktif; label member memang ditampilkan di sebelah foto. */
-export function portrait(member, custom, locale) {
+/**
+ * Alt mengikuti bahasa aktif; label member memang ditampilkan di sebelah foto.
+ * `eager` dipakai foto di layar pertama: `loading="lazy"` menunda LCP sampai
+ * setelah render (terukur 2,2s di heat) padahal grid selalu tampil di atas.
+ */
+export function portrait(member, custom, locale, { eager = false } = {}) {
   const photo = photoOf(member, custom);
+  const load = eager ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
   return (
-    `<img src="${esc(photo.url)}" alt="${esc(memberLabel(member, locale))}" loading="lazy" ` +
+    `<img src="${esc(photo.url)}" alt="${esc(memberLabel(member, locale))}" ${load} ` +
     `data-member="${esc(member.id)}" ` +
     `style="object-position:${photo.x}% ${photo.y}%;transform:scale(${photo.zoom})">`
   );
 }
 
-export function memberCard(member, { custom, groupById, locale, picked = false }) {
+export function memberCard(member, { custom, groupById, locale, picked = false, eager = false }) {
   return (
     `<button class="member ${picked ? 'picked' : ''}" type="button" ` +
     `data-member="${esc(member.id)}" aria-pressed="${picked}">` +
-    `<div class="portrait">${portrait(member, custom, locale)}<span class="check">${picked ? '✓' : ''}</span></div>` +
+    `<div class="portrait">${portrait(member, custom, locale, { eager })}<span class="check">${picked ? '✓' : ''}</span></div>` +
     `<div class="member-name">${esc(memberLabel(member, locale))}</div>` +
     `<div class="member-group">${esc(labelsOf(member, groupById, locale))}</div>` +
     `</button>`

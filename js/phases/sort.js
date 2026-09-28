@@ -9,7 +9,7 @@ export function renderSort(state, ctx) {
 
   const card = (member) =>
     `<button class="member" type="button" data-sort="${esc(member.id)}">` +
-    `<div class="portrait">${portrait(member, state.custom, locale)}</div>` +
+    `<div class="portrait">${portrait(member, state.custom, locale, { eager: true })}</div>` +
     `<div class="member-name">${esc(memberLabel(member, locale))}</div>` +
     `<div class="member-group">${esc(labelsOf(member, ctx.groupById, locale))}</div>` +
     `</button>`;

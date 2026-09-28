@@ -149,6 +149,9 @@ function applyDocumentChrome() {
 let saveTimer;
 function draw() {
   app.innerHTML = render(state, ctx);
+  // Footer sengaja disembunyikan sampai render pertama selesai: kalau tidak,
+  // ia ikut tergeser saat #app terisi dan menyumbang CLS 0.17.
+  document.documentElement.classList.remove('booting');
   clearTimeout(saveTimer);
   saveTimer = setTimeout(() => safeSet(PROGRESS_KEY, JSON.stringify(act.snapshot(state))), 300);
 }

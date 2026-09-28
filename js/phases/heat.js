@@ -42,12 +42,15 @@ export function renderHeat(state, ctx) {
     : `<p class="empty" data-role="searchEmpty">${esc(t('search.empty'))}</p>`;
 
   const cards = visible
-    .map((id) =>
+    .map((id, i) =>
       memberCard(ctx.memberById.get(id), {
         custom: state.custom,
         groupById: ctx.groupById,
         locale: state.lang,
         picked: heat.selected.has(id),
+        // Baris pertama tampil di layar tanpa scroll; membiarkannya lazy
+        // menunda LCP sampai setelah render.
+        eager: i < 3,
       }),
     )
     .join('');

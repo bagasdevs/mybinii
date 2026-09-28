@@ -68,6 +68,15 @@ node tools/mirror-photos.mjs   # unduh foto baru, verifikasi sha256
 node --test
 ```
 
+## Batasan yang diketahui
+
+- **Nama grup Korea tidak lengkap di data.** 50 dari 79 grup hanya punya nama
+  Latin (`TWICE`, `aespa`, `BLACKPINK`, …), jadi di layar pilih `트와이스` tidak
+  menemukan apa pun — pakai `twice`. Nama member Korea tetap bisa dicari: di fase
+  heat, `나연` menemukan TWICE. Menambah alias Korea berarti menambah peta kecil
+  di `js/view.js` (bentuknya sama dengan `EN_GROUP_OVERRIDES`) lalu mengikutkan
+  label itu di index grup.
+
 ## Kredit dan lisensi
 
 Lihat [CREDITS.md](CREDITS.md). Konten dan foto bukan milik proyek ini; dipakai

@@ -13,7 +13,7 @@ export default {
   'step.final': 'Final 9',
   'step.sort': 'Peringkat',
   'step.result': 'Platter',
-  'nav.game': 'Game',
+  'nav.game': 'Main',
   'nav.groups': 'Grup',
   'nav.aria': 'Ganti tampilan',
   'groups.title': 'Semua grup',

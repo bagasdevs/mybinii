@@ -13,7 +13,7 @@ export default {
   'step.final': 'Final 9',
   'step.sort': 'Rank them',
   'step.result': 'Platter',
-  'nav.game': 'Game',
+  'nav.game': 'Main',
   'nav.groups': 'Groups',
   'nav.aria': 'Switch view',
   'groups.title': 'All groups',

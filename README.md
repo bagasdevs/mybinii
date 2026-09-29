@@ -61,7 +61,6 @@ js/phases/*.js         render for each phase
 js/groups.js            group directory (read-only, no phase)
 js/poster.js           1080x1600 canvas poster
 js/photo.js            crop + upload dialog
-js/credits.js          credits dialog
 ```
 
 `photos/` holds the 475 originals plus `photos/thumb/`, the 480px WebP copies the

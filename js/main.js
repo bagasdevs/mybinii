@@ -2,7 +2,6 @@ import { GROUPS, MEMBERS } from '../data/roster.js';
 import en from '../i18n/en.js';
 import id from '../i18n/id.js';
 import ko from '../i18n/ko.js';
-import { renderCredits } from './credits.js';
 import { createTranslator, detectLocale, genLabel } from './i18n.js';
 import { effectiveTitle } from './phases/result.js';
 import { createCropDialog } from './photo.js';
@@ -156,7 +155,6 @@ function applyDocumentChrome() {
   titleEl.textContent = t('app.title');
   descEl.setAttribute('content', t('app.title'));
   brandEl.textContent = t('app.brand');
-  document.querySelector('#credits').textContent = t('credits.button');
   document.querySelector('#closeDialog').textContent = t('dialog.close');
   langSwitch.setAttribute('aria-label', t('lang.aria'));
   for (const button of langSwitch.querySelectorAll('button')) {
@@ -223,9 +221,6 @@ function draw() {
   const previous = focusSelector(document.activeElement);
   app.innerHTML = render(state, ctx);
   viewTabsLabel();
-  // Footer sengaja disembunyikan sampai render pertama selesai: kalau tidak,
-  // ia ikut tergeser saat #app terisi dan menyumbang CLS 0.17.
-  document.documentElement.classList.remove('booting');
   restoreFocus(previous);
   clearTimeout(saveTimer);
   // Tampilan hasil bersama tidak ditulis ke localStorage: membuka tautan orang
@@ -390,8 +385,7 @@ app.addEventListener('compositionend', (event) => {
 
 const dialog = document.querySelector('#dialog');
 document.querySelector('#closeDialog').addEventListener('click', () => dialog.close());
-// Klik backdrop (abu-abu di luar kotak) menutup dialog — tanpa ini pengguna
-// harus scroll 79 baris kredit dulu baru ketemu tombol Tutup.
+// Klik backdrop (abu-abu di luar kotak) menutup dialog.
 dialog.addEventListener('click', (event) => {
   if (event.target === dialog) dialog.close();
 });
@@ -404,11 +398,6 @@ dialog.addEventListener('close', () => {
   // <img> yang sudah didekode menahan bitmap-nya selama node-nya masih di DOM
   // (poster 1080x1600 ~ 6,6 MB), jadi isi dialog dibuang setelah ditutup.
   dialogBody.innerHTML = '';
-});
-
-document.querySelector('#credits').addEventListener('click', () => {
-  dialogBody.innerHTML = renderCredits(state, t);
-  if (!dialog.open) dialog.showModal();
 });
 
 redrawAll();

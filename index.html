@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko" class="booting">
+<html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,8 +10,6 @@
 <link rel="preload" href="fonts/noto-kr-700-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/noto-kr-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
-<!-- Tanpa JS tidak ada render yang menghapus .booting; jangan biarkan footer hilang. -->
-<noscript><style>.booting footer{visibility:visible}</style></noscript>
 </head>
 <body>
 <header>
@@ -23,7 +21,6 @@
   </div>
 </header>
 <main id="app"></main>
-<footer><button id="credits" class="text-button" type="button"></button></footer>
 <dialog id="dialog" aria-labelledby="dialogTitle"><div id="dialogBody"></div><div class="dialog-foot"><button id="closeDialog" class="outline" type="button"></button></div></dialog>
 <div id="toast" role="status" aria-live="polite"></div>
 <script type="module" src="js/main.js"></script>

@@ -4,7 +4,7 @@ export default {
   'app.title': '여돌 구절판 — 나의 취향 9선',
   'app.brand': '여돌 구절판',
   'app.kicker': '2·2.5·3·4·5세대 여돌',
-  'app.eyebrow': 'K-pop 여성 아이돌',
+  'app.eyebrow': 'K-POP 여성 아이돌',
   'app.resume': '지난 진행을 그대로 이어서 불러왔어요',
   'app.shared': '공유된 결과를 보는 중',
   'step.groups': '그룹 선택',

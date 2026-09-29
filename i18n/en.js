@@ -4,7 +4,7 @@ export default {
   'app.title': 'My 9 Picks — Girl Group Platter',
   'app.brand': 'My 9 Picks',
   'app.kicker': '2nd–5th gen girl groups',
-  'app.eyebrow': 'K-pop girl groups',
+  'app.eyebrow': 'K-POP girl groups',
   'app.resume': 'Picked up where you left off',
   'app.shared': 'Viewing shared picks',
   'step.groups': 'Pick groups',

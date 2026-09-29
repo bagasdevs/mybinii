@@ -8,7 +8,7 @@ import { LOCALES } from '../js/i18n.js';
 
 // Kunci memuat huruf besar (setup.selectAll, crop.errSize, ...), jadi kelas
 // karakternya tidak boleh [a-z] saja.
-const NS = '(app|step|gen|common|setup|heat|sort|result|crop|credits|dialog|search|lang)';
+const NS = '(app|step|gen|common|setup|heat|sort|result|crop|credits|dialog|search|lang|nav|groups)';
 const KEY_LITERAL = new RegExp(`'(?:${NS}\\.[A-Za-z0-9.]+)'`, 'g');
 
 // Kunci yang dibentuk runtime, bukan literal — lihat genLabel di js/i18n.js.

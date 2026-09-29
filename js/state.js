@@ -24,6 +24,7 @@ export function createState() {
     debutDesc: false,
     selected: new Set(selectableGroups().map((g) => g.id)),
     phase: 'setup',
+    view: 'game',
     pool: [],
     finalists: [],
     title: '',
@@ -92,6 +93,11 @@ function resetQuery(state) {
 export function setPhase(state, phase) {
   state.phase = phase;
   resetQuery(state);
+}
+
+/** Tampilan navbar: 'game' atau 'groups'. Sengaja tidak ikut snapshot. */
+export function setView(state, view) {
+  state.view = view === 'groups' ? 'groups' : 'game';
 }
 
 /**

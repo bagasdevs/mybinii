@@ -19,6 +19,7 @@ import {
   setPhase,
   setQuery,
   setTitle,
+  setView,
   startGame,
   snapshot,
   toggleDebut,
@@ -501,4 +502,31 @@ test('restore tidak pernah menyalakan flag shared', () => {
   const state = createState();
   assert.equal(restore(state, { v: 1, phase: 'setup', selected: [], sort: { stack: [] } }), true);
   assert.equal(state.shared, false);
+});
+
+test('setView hanya menerima game dan groups', () => {
+  const state = createState();
+  assert.equal(state.view, 'game');
+  setView(state, 'groups');
+  assert.equal(state.view, 'groups');
+  setView(state, 'setup');
+  assert.equal(state.view, 'game');
+});
+
+test('setView tidak mengubah fase, pilihan, atau query', () => {
+  const state = createState();
+  setQuery(state, 'twice');
+  setView(state, 'groups');
+  assert.equal(state.view, 'groups');
+  assert.equal(state.phase, 'setup');
+  assert.equal(state.query, 'twice');
+  assert.ok(state.selected.size > 0);
+});
+
+test('snapshot → restore tidak membawa view', () => {
+  const state = createState();
+  setView(state, 'groups');
+  const loaded = createState();
+  assert.equal(restore(loaded, JSON.parse(JSON.stringify(snapshot(state)))), true);
+  assert.equal(loaded.view, 'game');
 });

@@ -58,6 +58,7 @@ js/view.js             HTML helpers                            [pure]
 js/state.js            one state object + every action
 js/render.js           per-phase dispatch
 js/phases/*.js         render for each phase
+js/groups.js            group directory (read-only, no phase)
 js/poster.js           1080x1600 canvas poster
 js/photo.js            crop + upload dialog
 js/credits.js          credits dialog

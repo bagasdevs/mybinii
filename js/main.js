@@ -18,6 +18,7 @@ const app = document.querySelector('#app');
 const dialogBody = document.querySelector('#dialogBody');
 const toastEl = document.querySelector('#toast');
 const langSwitch = document.querySelector('#langSwitch');
+const viewTabs = document.querySelector('#viewTabs');
 const brandEl = document.querySelector('.brand');
 const titleEl = document.querySelector('title');
 const descEl = document.querySelector('meta[name="description"]');
@@ -162,12 +163,19 @@ function applyDocumentChrome() {
   for (const button of langSwitch.querySelectorAll('button')) {
     button.setAttribute('aria-pressed', String(button.dataset.lang === state.lang));
   }
+  viewTabs.setAttribute('aria-label', t('nav.aria'));
+  for (const button of viewTabs.querySelectorAll('button')) {
+    const on = button.dataset.view === state.view;
+    button.textContent = button.dataset.view === 'groups' ? t('nav.groups') : t('nav.game');
+    button.classList.toggle('on', on);
+    button.setAttribute('aria-current', String(on));
+  }
 }
 
 // `app.innerHTML` membuang elemen yang sedang fokus, jadi pengguna keyboard
 // dilempar ke awal dokumen setiap kali memilih. Identitas elemen disimpan
 // sebelum render dan dipulihkan sesudahnya.
-const FOCUS_ATTRS = ['data-action', 'data-member', 'data-sort', 'data-group', 'data-gen', 'data-photo'];
+const FOCUS_ATTRS = ['data-action', 'data-member', 'data-sort', 'data-group', 'data-gen', 'data-photo', 'data-view'];
 const focusSelector = (el) => {
   if (!el || !app.contains(el)) return null;
   const attr = FOCUS_ATTRS.find((name) => el.hasAttribute(name));
@@ -180,7 +188,7 @@ const focusSelector = (el) => {
  * kartu, dan `<img>` tidak bisa menerima fokus.
  */
 const firstCard = () =>
-  [...app.querySelectorAll('button[data-member], [data-sort], button[data-group]')].find(
+  [...app.querySelectorAll('button[data-member], [data-sort], button[data-group], button[data-view]')].find(
     (el) => !el.disabled,
   );
 
@@ -233,9 +241,26 @@ langSwitch.addEventListener('click', (event) => {
   redrawAll();
 });
 
+viewTabs.addEventListener('click', (event) => {
+  const button = event.target.closest('button[data-view]');
+  if (!button) return;
+  act.setView(state, button.dataset.view);
+  applyDocumentChrome();
+  draw();
+  scrollTo(0, 0);
+});
+
 app.addEventListener('click', async (event) => {
   const button = event.target.closest('button');
   if (!button || button.disabled) return;
+
+  if (button.dataset.view !== undefined) {
+    act.setView(state, button.dataset.view);
+    applyDocumentChrome();
+    draw();
+    scrollTo(0, 0);
+    return;
+  }
 
   if (button.dataset.gen !== undefined) {
     act.toggleGeneration(state, Number(button.dataset.gen));

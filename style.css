@@ -47,14 +47,22 @@ header{max-width:1160px;margin:auto;padding:26px 30px;display:flex;justify-conte
 .bar-inner>div:last-child{display:flex;align-items:center;gap:10px}
 /* --- boot: footer baru tampil setelah render pertama (CLS 0.17 -> 0) --- */
 .booting footer{visibility:hidden}
-/* --- tab navigasi: baris sendiri di bawah header, rata kanan --- */
+/* --- tab navigasi: pojok kanan blok judul halaman (view.js navTabs) --- */
 /* ponytail: .view-tabs .tab.on DISENGAJA — .tab.on (baris 6) spesifisitasnya
    sama dengan .view-tabs .tab, jadi aturan yang lebih akhir menang; tanpa
    kualifikasi dua kelas ini tab aktif jadi putih-di-atas-putih (label hilang). */
-.view-tabs{display:flex;gap:7px;justify-content:flex-end;max-width:1160px;margin:0 auto;padding:0 30px 14px}
+.view-tabs{display:flex;gap:7px;flex-shrink:0;margin-left:auto}
 .view-tabs .tab{min-height:44px;background:#fff}
 .view-tabs .tab.on{background:var(--ink);color:white;border-color:var(--ink)}
-@media(max-width:650px){.view-tabs{padding:0 20px 12px}}
+.page-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 18px}
+.page-head .steps{margin:0}
+@media(max-width:650px){
+  .page-head{flex-direction:column;align-items:stretch}
+  /* Judul dan tab berbagi satu baris hanya di layar lebar; di mobile tab turun
+     ke barisnya sendiri supaya tidak berdesakan dengan judul. */
+  .intro-compact{flex-wrap:wrap;row-gap:12px}
+  .view-tabs{justify-content:flex-end}
+}
 .group-section{margin:0 0 36px}
 .group-section:last-of-type{padding-bottom:110px}
 .group-section>h2{font-size:clamp(22px,3vw,30px);letter-spacing:-1px;margin:0 0 4px}

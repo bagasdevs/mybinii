@@ -2,7 +2,7 @@ import { GROUPS, MEMBERS } from '../data/roster.js';
 import { sortGroups } from './game.js';
 import { genLabel } from './i18n.js';
 import { buildIndex, groupText, search } from './search.js';
-import { bar, esc, groupLabel, groupSearchText, memberLabel, portrait } from './view.js';
+import { bar, esc, groupLabel, groupSearchText, memberLabel, navTabs, portrait } from './view.js';
 
 /** Direktori grup: daftar semua grup + foto tiap anggotanya. Read-only. */
 export function renderGroups(state, ctx) {
@@ -51,7 +51,7 @@ export function renderGroups(state, ctx) {
 
   return (
     `<div class="intro intro-compact"><div><div class="kicker">${esc(t('app.kicker'))}</div>` +
-    `<h1>${esc(t('groups.title'))}</h1></div></div>` +
+    `<h1>${esc(t('groups.title'))}</h1></div>${navTabs()}</div>` +
     `<div class="selection-head">${searchBox}</div>` +
     (groups.length
       ? `<p class="search-count">${esc(t('groups.count', { n: groups.length, members: totalMembers }))}</p>${sections}`

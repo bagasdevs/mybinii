@@ -18,7 +18,6 @@ const app = document.querySelector('#app');
 const dialogBody = document.querySelector('#dialogBody');
 const toastEl = document.querySelector('#toast');
 const langSwitch = document.querySelector('#langSwitch');
-const viewTabs = document.querySelector('#viewTabs');
 const brandEl = document.querySelector('.brand');
 const titleEl = document.querySelector('title');
 const descEl = document.querySelector('meta[name="description"]');
@@ -163,8 +162,18 @@ function applyDocumentChrome() {
   for (const button of langSwitch.querySelectorAll('button')) {
     button.setAttribute('aria-pressed', String(button.dataset.lang === state.lang));
   }
-  viewTabs.setAttribute('aria-label', t('nav.aria'));
-  for (const button of viewTabs.querySelectorAll('button')) {
+  viewTabsLabel();
+}
+
+/**
+ * Label & status tab Game|Grup. Tab-nya dirender bersama isi halaman (view.js
+ * navTabs), jadi elemennya baru ada setelah draw() — bukan saat modul dimuat.
+ */
+function viewTabsLabel() {
+  const nav = document.querySelector('#viewTabs');
+  if (!nav) return;
+  nav.setAttribute('aria-label', t('nav.aria'));
+  for (const button of nav.querySelectorAll('button')) {
     const on = button.dataset.view === state.view;
     button.textContent = button.dataset.view === 'groups' ? t('nav.groups') : t('nav.game');
     button.classList.toggle('on', on);
@@ -213,6 +222,7 @@ let saveTimer;
 function draw() {
   const previous = focusSelector(document.activeElement);
   app.innerHTML = render(state, ctx);
+  viewTabsLabel();
   // Footer sengaja disembunyikan sampai render pertama selesai: kalau tidak,
   // ia ikut tergeser saat #app terisi dan menyumbang CLS 0.17.
   document.documentElement.classList.remove('booting');
@@ -239,15 +249,6 @@ langSwitch.addEventListener('click', (event) => {
   act.setLang(state, button.dataset.lang);
   safeSet('listidol.lang', state.lang);
   redrawAll();
-});
-
-viewTabs.addEventListener('click', (event) => {
-  const button = event.target.closest('button[data-view]');
-  if (!button) return;
-  act.setView(state, button.dataset.view);
-  applyDocumentChrome();
-  draw();
-  scrollTo(0, 0);
 });
 
 app.addEventListener('click', async (event) => {

@@ -1,4 +1,4 @@
-import { POSTER_LAYOUT, bar, esc, labelsOf, memberLabel, portrait, steps } from '../view.js';
+import { POSTER_LAYOUT, bar, esc, labelsOf, memberLabel, navTabs, portrait, steps } from '../view.js';
 
 /** Judul efektif: hasil suntingan pengguna, atau nama aplikasi yang ikut bahasa. */
 export function effectiveTitle(state, t) {
@@ -25,7 +25,7 @@ export function renderResult(state, ctx) {
   }).join('');
 
   return (
-    steps(state, t) +
+    `<div class="page-head">${steps(state, t)}${navTabs()}</div>` +
     `<h1>${esc(t('result.title'))}</h1>` +
     `<div class="result-tools">` +
     `<input id="posterTitle" maxlength="35" aria-label="${esc(t('result.titleInput.aria'))}" value="${esc(title)}">` +

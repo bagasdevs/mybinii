@@ -1,5 +1,5 @@
 import { sortLimit } from '../game.js';
-import { esc, labelsOf, memberLabel, portrait, steps } from '../view.js';
+import { esc, labelsOf, memberLabel, navTabs, portrait, steps } from '../view.js';
 
 export function renderSort(state, ctx) {
   const { t } = ctx;
@@ -25,7 +25,7 @@ export function renderSort(state, ctx) {
     `${state.sortPast.length ? '' : 'disabled'}>${esc(t('sort.undo'))}</button>`;
 
   return (
-    steps(state, t) +
+    `<div class="page-head">${steps(state, t)}${navTabs()}</div>` +
     `<div class="progress-head"><strong>${esc(t('sort.title'))}</strong>` +
     `<span>${esc(t('sort.count', { n: sort.comparisons, limit }))}</span></div>` +
     `<div class="progress" role="progressbar" aria-label="${esc(t('sort.progress.aria'))}" ` +

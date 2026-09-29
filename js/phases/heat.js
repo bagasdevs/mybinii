@@ -1,6 +1,6 @@
 import { heatSize } from '../game.js';
 import { search } from '../search.js';
-import { bar, esc, memberCard, steps } from '../view.js';
+import { bar, esc, memberCard, navTabs, steps } from '../view.js';
 
 export function renderHeat(state, ctx) {
   const { t } = ctx;
@@ -66,7 +66,7 @@ export function renderHeat(state, ctx) {
     `<button class="text-button" type="button" data-action="restart">${esc(t('result.restart'))}</button>`;
 
   return (
-    steps(state, t) +
+    `<div class="page-head">${steps(state, t)}${navTabs()}</div>` +
     `<div class="progress-head"><strong>${esc(stageLabel)}</strong>` +
     `<span>${esc(t('heat.screen', { screen, total }))}</span></div>` +
     `<div class="progress" role="progressbar" aria-label="${esc(t('heat.progress.aria', { stage: stageLabel }))}" ` +

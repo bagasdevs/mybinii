@@ -2,7 +2,7 @@ import { GROUPS, MEMBERS } from '../../data/roster.js';
 import { eligibleMembers, sortGroups } from '../game.js';
 import { genLabel } from '../i18n.js';
 import { search } from '../search.js';
-import { bar, esc, groupLabel, steps, visibleGroups } from '../view.js';
+import { bar, esc, groupLabel, navTabs, steps, visibleGroups } from '../view.js';
 
 const GENERATION_TABS = [0, 2, 3, 4, 5];
 
@@ -67,7 +67,7 @@ export function renderSetup(state, ctx) {
 
   return (
     `<div class="intro intro-compact"><div><div class="kicker">${esc(t('app.kicker'))}</div>` +
-    `<h1>${esc(t('app.brand'))}</h1></div></div>` +
+    `<h1>${esc(t('app.brand'))}</h1></div>${navTabs()}</div>` +
     `<div class="selection-head">${searchBox}<div class="tabs">${tabs}</div>` +
     `<div class="selection-actions">` +
     `<button class="debut-switch" type="button" role="switch" aria-checked="${state.debutDesc}" ` +

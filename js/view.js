@@ -183,6 +183,20 @@ export function memberCard(member, { custom, groupById, locale, picked = false, 
   );
 }
 
+/**
+ * Tombol Game|Grup di pojok kanan blok judul halaman. Satu definisi supaya
+ * kelima layar (setup, heat, sort, result, direktori) tidak bisa menyimpang;
+ * label & statusnya diisi applyDocumentChrome di js/main.js.
+ */
+export function navTabs() {
+  return (
+    `<nav class="view-tabs" id="viewTabs">` +
+    `<button type="button" class="tab on" data-view="game" aria-current="true">게임</button>` +
+    `<button type="button" class="tab" data-view="groups" aria-current="false">그룹</button>` +
+    `</nav>`
+  );
+}
+
 export function bar(left, right) {
   return `<div class="bottom-bar"><div class="bar-inner"><div>${left}</div><div>${right}</div></div></div>`;
 }

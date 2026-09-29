@@ -84,8 +84,8 @@ test('setiap locale punya tombol di pemilih bahasa', () => {
   assert.deepEqual(langs.sort(), [...LOCALES].sort());
 });
 
-test('tab navbar game dan groups ada di markup', () => {
-  const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
-  const views = [...html.matchAll(/data-view="(game|groups)"/g)].map((m) => m[1]);
+test('tab navbar game dan groups ada di helper view.js', () => {
+  const src = readFileSync(new URL('../js/view.js', import.meta.url), 'utf8');
+  const views = [...src.matchAll(/data-view="(game|groups)"/g)].map((m) => m[1]);
   assert.deepEqual(views.sort(), ['game', 'groups']);
 });

@@ -19,7 +19,7 @@ export default {
   'gen.5': '5세대',
   'gen.other': '{n}세대',
   'setup.tab.all': '전체',
-  'setup.debut.label': '데뷔순서',
+  'setup.debut.label': '데뷔순서:',
   'setup.debut.asc': '오름차순 ↑',
   'setup.debut.desc': '내림차순 ↓',
   'setup.debut.aria': '데뷔순서 {order}',

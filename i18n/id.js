@@ -19,7 +19,7 @@ export default {
   'gen.5': 'gen 5',
   'gen.other': 'gen {n}',
   'setup.tab.all': 'Semua',
-  'setup.debut.label': 'Urutan debut',
+  'setup.debut.label': 'Urutan debut:',
   'setup.debut.asc': 'Terlama dulu ↑',
   'setup.debut.desc': 'Terbaru dulu ↓',
   'setup.debut.aria': 'Urutan debut {order}',

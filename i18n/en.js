@@ -19,7 +19,7 @@ export default {
   'gen.5': '5th gen',
   'gen.other': 'gen {n}',
   'setup.tab.all': 'All',
-  'setup.debut.label': 'Debut order',
+  'setup.debut.label': 'Debut order:',
   'setup.debut.asc': 'Oldest first ↑',
   'setup.debut.desc': 'Newest first ↓',
   'setup.debut.aria': 'Debut order {order}',

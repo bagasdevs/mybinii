@@ -47,10 +47,10 @@ header{max-width:1160px;margin:auto;padding:26px 30px;display:flex;justify-conte
 .bar-inner>div:last-child{display:flex;align-items:center;gap:10px}
 /* --- boot: footer baru tampil setelah render pertama (CLS 0.17 -> 0) --- */
 .booting footer{visibility:hidden}
-/* --- direktori grup: daftar semua grup + foto anggota --- */
-/* ponytail: .tab/.tab.on dipakai ulang untuk tab navbar, bukan gaya baru */
-.view-tabs{display:flex;gap:7px;margin-left:auto;flex-wrap:wrap}
-.view-tabs .tab{min-height:44px}
+/* --- tab navigasi: baris sendiri di bawah header, sejajar kolom konten main --- */
+.view-tabs{display:flex;gap:7px;max-width:1100px;margin:0 auto;padding:14px 20px 4px}
+.view-tabs .tab{min-height:44px;background:#fff}
+@media(max-width:650px){.view-tabs{padding:12px 20px 2px}}
 .group-section{margin:0 0 36px}
 .group-section:last-of-type{padding-bottom:110px}
 .group-section>h2{font-size:clamp(22px,3vw,30px);letter-spacing:-1px;margin:0 0 4px}

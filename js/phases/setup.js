@@ -59,7 +59,7 @@ export function renderSetup(state, ctx) {
     ? ''
     : `<p class="empty" data-role="searchEmpty">${esc(t('search.empty'))}</p>`;
 
-  const count = t('setup.count', { teams: state.selected.size, members: eligible.length });
+  const count = t('setup.count', { groups: state.selected.size, members: eligible.length });
   const hint = eligible.length < 9 ? `<div class="small">${esc(t('setup.minMembers'))}</div>` : '';
   const start =
     `<button class="primary" type="button" data-action="start" ${eligible.length < 9 ? 'disabled' : ''}>` +

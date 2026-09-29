@@ -74,12 +74,13 @@ Modules marked `[pure]` never touch the DOM and are tested directly in Node.
 1. Copy `i18n/ko.js` to `i18n/<code>.js` and translate the values.
 2. Add the language code to `LOCALES` in `js/i18n.js`.
 3. Import and register the dictionary in `js/main.js`.
-4. Add an `<option>` for it to the header `<select id="langSwitch">` in
-   `index.html` — the language names live only there, each tagged with `lang`
-   so a screen reader pronounces it in its own language.
+4. Add `<button type="button" data-lang="<code>" lang="<code>">…</button>` to
+   the header row `<div id="langSwitch">` in `index.html` — the language names
+   live only there, each tagged with `lang` so a screen reader pronounces it in
+   its own language.
 
 Nothing else. `test/i18n-keys.test.mjs` fails if any key is left untranslated, or
-if a locale in `LOCALES` has no `<option>` to reach it.
+if a locale in `LOCALES` has no header button to reach it.
 
 ## Updating the data
 

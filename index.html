@@ -18,11 +18,11 @@
   <!-- Bukan tautan: halaman ini hanya satu, dan `href="./"` cuma memuat ulang
        (menghapus ?lang=) atau tidak melakukan apa-apa saat hash #r= dipakai. -->
   <div class="brand">여돌 구절판</div>
-  <select class="lang-switch" id="langSwitch" aria-label="언어">
-    <option value="ko" lang="ko">한국어</option>
-    <option value="en" lang="en">English</option>
-    <option value="id" lang="id">Indonesia</option>
-  </select>
+  <div class="lang-switch" id="langSwitch" role="group" aria-label="언어">
+    <button type="button" data-lang="ko" lang="ko">한국어</button>
+    <button type="button" data-lang="en" lang="en">English</button>
+    <button type="button" data-lang="id" lang="id">Indonesia</button>
+  </div>
 </header>
 <main id="app"></main>
 <footer><button id="credits" class="text-button" type="button"></button></footer>

@@ -76,10 +76,10 @@ test('placeholder di semua kamus untuk key yang sama sama-sama cocok', () => {
   }
 });
 
-test('setiap locale punya <option> di pemilih bahasa', () => {
+test('setiap locale punya tombol di pemilih bahasa', () => {
   const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
-  const options = [...html.matchAll(/<option value="([^"]+)"/g)].map((m) => m[1]);
+  const langs = [...html.matchAll(/data-lang="([^"]+)"/g)].map((m) => m[1]);
   // Penjaga anti-tautologi: kalau markup berubah bentuk, daftar kosong tidak lolos.
-  assert.ok(options.length >= 3, `hanya ${options.length} option terpindai`);
-  assert.deepEqual(options.sort(), [...LOCALES].sort());
+  assert.ok(langs.length >= 3, `hanya ${langs.length} tombol terpindai`);
+  assert.deepEqual(langs.sort(), [...LOCALES].sort());
 });

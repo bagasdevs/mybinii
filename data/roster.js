@@ -3688,7 +3688,7 @@ export const MEMBERS = [
       "CLASS:y"
     ],
     "english": "Jimin",
-    "image": "photos/upload-20260927-g_classy_jimin.png",
+    "image": "photos/upload-20260927-g_classy_jimin.webp",
     "source": null,
     "crop": {
       "x": 50,
@@ -5738,7 +5738,7 @@ export const MEMBERS = [
       "SISTAR"
     ],
     "english": "Bora",
-    "image": "photos/profile-g_sistar_bora.png",
+    "image": "photos/profile-g_sistar_bora.webp",
     "source": "https://kprofiles.com/sistar-members-profile/"
   },
   {
@@ -5918,7 +5918,7 @@ export const MEMBERS = [
       "USPEER"
     ],
     "english": "Sian",
-    "image": "photos/profile-g_uspeer_sian.png",
+    "image": "photos/profile-g_uspeer_sian.webp",
     "source": "https://kprofiles.com/uspeer-members-profile/"
   },
   {
@@ -5928,7 +5928,7 @@ export const MEMBERS = [
       "USPEER"
     ],
     "english": "Soee",
-    "image": "photos/profile-g_uspeer_soee.png",
+    "image": "photos/profile-g_uspeer_soee.webp",
     "source": "https://kprofiles.com/uspeer-members-profile/"
   },
   {
@@ -5938,7 +5938,7 @@ export const MEMBERS = [
       "USPEER"
     ],
     "english": "Seoyu",
-    "image": "photos/profile-g_uspeer_seoyu.png",
+    "image": "photos/profile-g_uspeer_seoyu.webp",
     "source": "https://kprofiles.com/uspeer-members-profile/"
   },
   {
@@ -5948,7 +5948,7 @@ export const MEMBERS = [
       "USPEER"
     ],
     "english": "Daon",
-    "image": "photos/profile-g_uspeer_daon.png",
+    "image": "photos/profile-g_uspeer_daon.webp",
     "source": "https://kprofiles.com/uspeer-members-profile/"
   },
   {
@@ -5958,7 +5958,7 @@ export const MEMBERS = [
       "USPEER"
     ],
     "english": "Chaena",
-    "image": "photos/profile-g_uspeer_chaena.png",
+    "image": "photos/profile-g_uspeer_chaena.webp",
     "source": "https://kprofiles.com/uspeer-members-profile/"
   },
   {
@@ -5968,7 +5968,7 @@ export const MEMBERS = [
       "USPEER"
     ],
     "english": "Roa",
-    "image": "photos/profile-g_uspeer_roa.png",
+    "image": "photos/profile-g_uspeer_roa.webp",
     "source": "https://kprofiles.com/uspeer-members-profile/"
   },
   {

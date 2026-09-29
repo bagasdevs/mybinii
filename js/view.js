@@ -145,7 +145,7 @@ export function photoOf(member, custom) {
 /**
  * Thumbnail grid untuk foto bawaan. Berkas asli tetap dipakai poster dan
  * pratinjau crop; sel grid terbesar ~202 CSS px, jadi 480px cukup dan totalnya
- * 53,6 MB -> 8,7 MB untuk 475 foto (dibuat oleh tools/build-thumbs.py).
+ * 49,3 MB -> 8,7 MB untuk 475 foto (dibuat oleh tools/build-thumbs.py).
  * Jalur diturunkan dari nama berkas, bukan disimpan di roster, supaya data/
  * tetap bersih; test/roster.test.mjs menjaga setiap `member.image` punya
  * thumbnail, karena berkas yang hilang hanya tampak sebagai avatar inisial.

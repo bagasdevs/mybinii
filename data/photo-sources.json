@@ -3815,12 +3815,12 @@
   {
     "id": "g_classy_jimin",
     "name": "지민",
-    "localPath": "photos/upload-20260927-g_classy_jimin.png",
+    "localPath": "photos/upload-20260927-g_classy_jimin.webp",
     "sourceUrl": "https://kr.pinterest.com/pin/642818546859198768/sent/?invite_code=90bb8d7ca28e47e8ad1234fa55e23a9b&sender=855261922893954050&sfo=1",
     "imageUrl": "https://i.pinimg.com/736x/85/0d/13/850d13b702ad588edf80394897be24d7.jpg",
     "sourceType": "web-download-edited",
     "matchMethod": "사용자가 지정한 Pinterest 사진을 얼굴 중심 상단 정사각형으로 크롭",
-    "sha256": "c6c1a7447d77f13b979bb07c59ea3b0b21eba27550f7ce550af0a76607f2a66d"
+    "sha256": "5731156e3bcad5fd3d7865dd0922b28dd7b1d0f755423c2cf32c9106ea1b5e95"
   },
   {
     "id": "g_fromis9_nakyung",
@@ -3953,7 +3953,7 @@
     "sourceUrl": "https://kprofiles.com/sistar-members-profile/",
     "imageUrl": "https://kprofiles.com/wp-content/uploads/2016/05/Bora.png",
     "matchMethod": "Member-specific profile or adjacent labeled image; saved locally",
-    "sha256": "574be75a057bd435276126fdd1586b3e776c73e867f5eca83c7df1b1948722f9"
+    "sha256": "38d7e9d901af94c81c67109d7ec157e273353bbaf95f72b452cee7134b4640ec"
   },
   {
     "id": "g_sistar_soyou",
@@ -4133,7 +4133,7 @@
     "sourceUrl": "https://kprofiles.com/uspeer-members-profile/",
     "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/07/image_2026-06-08_112024253-533x800.png",
     "matchMethod": "Exact stage name in individual member profile section",
-    "sha256": "886d8c26dccd2ed09f179735584dbd83f67a14bf1d130d952347cb2121255b71"
+    "sha256": "c2303bb885b8aa183a19e018a45832ba069c8f57370006d830eb08f8e1f249af"
   },
   {
     "id": "g_uspeer_soee",
@@ -4143,7 +4143,7 @@
     "sourceUrl": "https://kprofiles.com/uspeer-members-profile/",
     "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/07/image_2026-06-08_112016212-533x800.png",
     "matchMethod": "Exact stage name in individual member profile section",
-    "sha256": "9cec1669341490bde5ea7035343e83c0e65546ba307bb42dc2a24ff6e1b0ce48"
+    "sha256": "120fa02b8e204e1424b51ee332cfb7a8611258985aa068f44b3aadfb5a694a4a"
   },
   {
     "id": "g_uspeer_seoyu",
@@ -4153,7 +4153,7 @@
     "sourceUrl": "https://kprofiles.com/uspeer-members-profile/",
     "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/07/image_2026-06-08_112038266-533x800.png",
     "matchMethod": "Exact stage name in individual member profile section",
-    "sha256": "eb6e1b756f3684b18c03244bb40a246877e329a8a5d6f6ca74b921d37d21c1dd"
+    "sha256": "cd2d87af0543802822d158b76a9cfb232b012f818a567aff79c86038fe496fe6"
   },
   {
     "id": "g_uspeer_daon",
@@ -4163,7 +4163,7 @@
     "sourceUrl": "https://kprofiles.com/uspeer-members-profile/",
     "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/07/image_2026-06-08_112052802-533x800.png",
     "matchMethod": "Exact stage name in individual member profile section",
-    "sha256": "09e3cc94ab0512a72e7781c7f759790254f73f527968c1aaefb941dbef519a59"
+    "sha256": "842cd24b9869ef46f2388a94cfafcb9221aee3aee2a3489a5bd2dfc4c69600f9"
   },
   {
     "id": "g_uspeer_chaena",
@@ -4173,7 +4173,7 @@
     "sourceUrl": "https://kprofiles.com/uspeer-members-profile/",
     "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/07/image_2026-06-08_112110602-900x600.png",
     "matchMethod": "Exact stage name in individual member profile section",
-    "sha256": "058244931ec1625a6d3b310bfa5168bc298bf36f8d8b0b86a24ee1c437384a33"
+    "sha256": "cbc66b0222a67c0316c10e3114ccf9e41df90160a8f3507e6f515b6211f85938"
   },
   {
     "id": "g_uspeer_roa",
@@ -4183,7 +4183,7 @@
     "sourceUrl": "https://kprofiles.com/uspeer-members-profile/",
     "imageUrl": "https://kprofiles.com/wp-content/uploads/2023/07/image_2026-06-08_112125791-900x600.png",
     "matchMethod": "Exact stage name in individual member profile section",
-    "sha256": "2cddd45f7b81bcc2d8ec3fb2a4d28723e3d31cd28a8f4d11d6c38bf23fe03f3a"
+    "sha256": "c618a96a8e7346548094d1ec43eafe6562cc5c76847fdb21dd2deeca348939ee"
   },
   {
     "id": "g_madein_serina",

@@ -79,7 +79,7 @@ test('setiap member punya berkas foto di photos/', () => {
   }
 });
 
-// Grid memuat thumbnail (53,6 MB -> 8,7 MB); berkas asli hanya untuk poster dan
+// Grid memuat thumbnail (49,3 MB -> 8,7 MB); berkas asli hanya untuk poster dan
 // pratinjau crop. Jalur thumbnail diturunkan di js/view.js, jadi berkas yang
 // hilang tidak error — hanya tampil sebagai avatar inisial. Test ini yang
 // menjaga setiap foto baru ikut dibuatkan thumbnail.

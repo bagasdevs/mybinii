@@ -39,8 +39,8 @@ Requires Node 26+. Tests use the built-in runner; no framework.
 Cloudflare Pages serves https://mybinii.pages.dev/ from
 [`bagasdevs/mybinii`](https://github.com/bagasdevs/mybinii): the committed tree
 is the site. There is no build command, no output directory and no
-`node_modules`, so `photos/` (475 files, ~59 MB) is committed on purpose — do
-not add it to `.gitignore`.
+`node_modules`, so `photos/` (950 files: 475 originals + 475 thumbs, ~58 MB) is
+committed on purpose — do not add it to `.gitignore`.
 
 Fallback if the repo is not connected: drag this folder onto the Pages dashboard
 (or `npx wrangler pages deploy .`).

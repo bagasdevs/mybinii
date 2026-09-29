@@ -67,3 +67,10 @@ header{max-width:1160px;margin:auto;padding:26px 30px;display:flex;justify-conte
 .group-section>.meta{color:var(--muted);font-size:13px;margin:0 0 14px}
 .group-section .member-grid{margin:0}
 @media(max-width:650px){.group-section .member-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+/* --- tombol ganti pick di halaman hasil (mode #edit) --- */
+/* ponytail: satu kelas ekstra, bukan refactor aturan .edit-photo di atas */
+/* z-index wajib: .portrait (position:relative, datang belakangan di DOM) 
+   menutupi tombol ini tanpa z-index, jadi kliknya tidak pernah sampai. */
+.edit-photo.pick{top:7px;right:7px;bottom:auto;left:auto;z-index:2}
+.member.in-platter{opacity:.45}
+@media(max-width:650px){.edit-photo.pick{top:5px;right:5px}}

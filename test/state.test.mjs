@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { GROUPS, MEMBERS } from '../data/roster.js';
+import { decodeShare, encodeShare } from '../js/share.js';
 import {
   beginCrop,
   clearAllVisible,
@@ -16,6 +17,7 @@ import {
   resetCrop,
   selectAllVisible,
   setCrop,
+  setFinalist,
   setPhase,
   setQuery,
   setTitle,
@@ -27,6 +29,7 @@ import {
   toggleGroup,
 } from '../js/state.js';
 
+const memberById = new Map(MEMBERS.map((m) => [m.id, m]));
 const visibleGroupCount = () => GROUPS.filter((g) => !g.hidden).length;
 const selectableCount = () => GROUPS.filter((g) => !g.disabled && !g.hidden).length;
 
@@ -494,6 +497,88 @@ test('leaveShared melepas penahan progres', () => {
   loadShared(state, { finalists: MEMBERS.slice(0, 9).map((m) => m.id), title: '' });
   leaveShared(state);
   assert.equal(state.shared, false);
+});
+
+// --- mode #edit: ganti pick langsung di halaman hasil ----------------------
+
+test('loadShared dengan editing menyalakan mode ganti pick', () => {
+  const state = createState();
+  loadShared(state, { finalists: MEMBERS.slice(0, 9).map((m) => m.id), title: '', editing: true });
+  assert.equal(state.phase, 'result');
+  assert.equal(state.editing, true);
+  assert.equal(state.shared, true, 'hasil kosong tetap tidak menimpa progres tersimpan');
+});
+
+test('editing mati bila tidak diminta dan dilepas oleh leaveShared', () => {
+  const state = createState();
+  loadShared(state, { finalists: MEMBERS.slice(0, 9).map((m) => m.id), title: '' });
+  assert.equal(state.editing, false, 'tautan hasil biasa bukan mode edit');
+  loadShared(state, { finalists: MEMBERS.slice(0, 9).map((m) => m.id), title: '', editing: true });
+  leaveShared(state);
+  assert.equal(state.editing, false);
+});
+
+test('setFinalist mengganti satu slot tanpa menyentuh slot lain', () => {
+  const state = createState();
+  loadShared(state, { finalists: MEMBERS.slice(0, 9).map((m) => m.id), title: '', editing: true });
+  const replacement = MEMBERS[9].id;
+
+  assert.equal(setFinalist(state, 3, replacement), true);
+  assert.equal(state.finalists[3], replacement);
+  assert.equal(state.finalists.length, 9);
+  assert.equal(new Set(state.finalists).size, 9, 'tidak ada id ganda');
+  assert.deepEqual(state.finalists.slice(0, 3), MEMBERS.slice(0, 3).map((m) => m.id));
+});
+
+test('setFinalist menolak id ganda, id asing, dan slot di luar rentang', () => {
+  const state = createState();
+  loadShared(state, { finalists: MEMBERS.slice(0, 9).map((m) => m.id), title: '', editing: true });
+  const before = [...state.finalists];
+
+  assert.equal(setFinalist(state, 0, MEMBERS[5].id), false, 'id yang sudah dipakai ditolak');
+  assert.equal(setFinalist(state, 0, 'g_bukan_member'), false, 'id asing ditolak');
+  assert.equal(setFinalist(state, 9, MEMBERS[9].id), false, 'slot ke-10 tidak ada');
+  assert.equal(setFinalist(state, -1, MEMBERS[9].id), false, 'slot negatif tidak ada');
+  assert.deepEqual(state.finalists, before, 'finalists tidak berubah setelah penolakan');
+});
+
+test('setFinalist pada slot yang sama dianggap berhasil tanpa mengubah apa pun', () => {
+  const state = createState();
+  const ids = MEMBERS.slice(0, 9).map((m) => m.id);
+  loadShared(state, { finalists: ids, title: '', editing: true });
+  assert.equal(setFinalist(state, 2, ids[2]), true);
+  assert.deepEqual(state.finalists, ids);
+});
+
+test('hasil yang disunting tetap bisa dibagikan sebagai tautan yang sah', () => {
+  const state = createState();
+  loadShared(state, { finalists: MEMBERS.slice(0, 9).map((m) => m.id), title: '', editing: true });
+  setFinalist(state, 0, MEMBERS[20].id);
+  const decoded = decodeShare(`#${encodeShare({ finalists: state.finalists, title: '' })}`, memberById);
+  assert.deepEqual(decoded.finalists, state.finalists, 'decodeShare menerima hasil suntingan');
+});
+
+test('snapshot membuang slot kosong sehingga progres tetap bisa dipulihkan', () => {
+  const state = createState();
+  loadShared(state, { finalists: [], title: '', editing: true });
+  setFinalist(state, 0, MEMBERS[0].id);
+
+  const saved = JSON.parse(JSON.stringify(snapshot(state)));
+  assert.deepEqual(saved.finalists, [MEMBERS[0].id], 'null tidak ikut tersimpan');
+
+  const loaded = createState();
+  assert.equal(restore(loaded, saved), true, 'paket dari mode edit tetap diterima');
+});
+
+test('startGame dan restore mematikan mode edit', () => {
+  const state = createState();
+  loadShared(state, { finalists: MEMBERS.slice(0, 9).map((m) => m.id), title: '', editing: true });
+  startGame(state, {});
+  assert.equal(state.editing, false, 'mulai permainan baru keluar dari mode edit');
+
+  loadShared(state, { finalists: MEMBERS.slice(0, 9).map((m) => m.id), title: '', editing: true });
+  assert.equal(restore(state, { v: 1, phase: 'setup', selected: [], sort: { stack: [] } }), true);
+  assert.equal(state.editing, false, 'paket simpanan tidak bisa menyalakan mode edit');
 });
 
 test('restore tidak pernah menyalakan flag shared', () => {

@@ -5,10 +5,11 @@ import ko from '../i18n/ko.js';
 import { createTranslator, detectLocale, genLabel } from './i18n.js';
 import { effectiveTitle } from './phases/result.js';
 import { createCropDialog } from './photo.js';
+import { createPickDialog } from './pick.js';
 import { buildPoster } from './poster.js';
 import { render } from './render.js';
 import { buildIndex, groupText, memberText } from './search.js';
-import { decodeShare, encodeShare } from './share.js';
+import { decodeShare, encodeShare, isEditLink } from './share.js';
 import * as act from './state.js';
 import { esc, groupSearchText, initialsOf } from './view.js';
 
@@ -46,9 +47,14 @@ state.lang = detectLocale({
 
 // Tautan hasil bersama menang atas progres tersimpan: yang mengklik tautan
 // ingin melihat hasil orang lain, bukan melanjutkan permainannya sendiri.
+// Tautan `#edit` (sengaja tidak ditampilkan di UI): halaman hasil kosong, tiap
+// slot diisi langsung dari dialog pilih. Ia menang atas tautan hasil bersama
+// karena tanpa `m=` decodeShare tidak menghasilkan apa pun.
+const editing = isEditLink(location.hash);
 const shared = decodeShare(location.hash, memberById);
 const resumed = shared ? false : act.restore(state, readProgress());
-if (shared) act.loadShared(state, shared);
+if (shared) act.loadShared(state, { ...shared, editing });
+else if (editing) act.loadShared(state, { finalists: [], title: '', editing: true });
 
 const t = createTranslator(dicts, () => state.lang);
 
@@ -82,6 +88,9 @@ const toastError = (message) => toast(message, 6000);
 let posterUrl = null;
 
 async function downloadPoster() {
+  // Di mode `#edit` platter bisa belum penuh; poster separuh jadi dan tautan
+  // hasilnya akan ditolak decodeShare.
+  if (!act.platterComplete(state)) return toast(t('pick.needAll'));
   const button = app.querySelector('[data-action="download"]');
   if (!button) return;
   const original = button.textContent;
@@ -134,6 +143,7 @@ function showSavedPreview(url) {
 }
 
 async function shareResult() {
+  if (!act.platterComplete(state)) return toast(t('pick.needAll'));
   const title = effectiveTitle(state, t);
   const url = `${location.origin}${location.pathname}#${encodeShare({ finalists: state.finalists, title })}`;
   try {
@@ -182,7 +192,16 @@ function viewTabsLabel() {
 // `app.innerHTML` membuang elemen yang sedang fokus, jadi pengguna keyboard
 // dilempar ke awal dokumen setiap kali memilih. Identitas elemen disimpan
 // sebelum render dan dipulihkan sesudahnya.
-const FOCUS_ATTRS = ['data-action', 'data-member', 'data-sort', 'data-group', 'data-gen', 'data-photo', 'data-view'];
+const FOCUS_ATTRS = [
+  'data-action',
+  'data-member',
+  'data-sort',
+  'data-group',
+  'data-gen',
+  'data-photo',
+  'data-rank',
+  'data-view',
+];
 const focusSelector = (el) => {
   if (!el || !app.contains(el)) return null;
   const attr = FOCUS_ATTRS.find((name) => el.hasAttribute(name));
@@ -231,6 +250,24 @@ function draw() {
 }
 
 const cropDialog = createCropDialog({ state, t, memberById, toast, toastError, redraw: draw });
+
+// `redraw: draw` — bukan redrawAll — karena dialog ini menulis `state.query`
+// untuk kotak search-nya sendiri; context pencarian tidak perlu dibangun ulang.
+const pickDialog = createPickDialog({
+  state,
+  t,
+  groupById,
+  memberById,
+  memberIndex: () => ctx.memberIndex,
+  onPick: (rank, memberId) => {
+    if (!act.setFinalist(state, rank, memberId)) {
+      toast(t('pick.taken'));
+      return;
+    }
+    document.querySelector('#dialog').close();
+    draw();
+  },
+});
 
 function redrawAll() {
   ctx = buildContext();
@@ -283,6 +320,12 @@ app.addEventListener('click', async (event) => {
     return;
   }
 
+  if (button.dataset.rank !== undefined) {
+    act.setQuery(state, '');
+    pickDialog.open(Number(button.dataset.rank));
+    return;
+  }
+
   if (button.dataset.photo !== undefined) {
     cropDialog.open(button.dataset.photo);
     return;
@@ -320,6 +363,9 @@ app.addEventListener('click', async (event) => {
     case 'restart':
       act.leaveShared(state);
       act.setPhase(state, 'setup');
+      // Tanpa ini hash `#edit`/`#r=1…` ikut terbawa, jadi reload berikutnya
+      // melempar pemain kembali ke hasil alih-alih ke layar setup.
+      history.replaceState(null, '', location.pathname + location.search);
       break;
     case 'share':
       await shareResult();
@@ -401,5 +447,6 @@ dialog.addEventListener('close', () => {
 });
 
 redrawAll();
-if (shared) toast(t('app.shared'));
+if (editing) toast(t('pick.start'));
+else if (shared) toast(t('app.shared'));
 else if (resumed && state.phase !== 'setup') toast(t('app.resume'));

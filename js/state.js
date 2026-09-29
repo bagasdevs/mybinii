@@ -15,6 +15,9 @@ import {
 
 const memberById = new Map(MEMBERS.map((m) => [m.id, m]));
 
+/** Slot platter: jumlah yang sama dengan POSTER_LAYOUT di js/view.js. */
+const POSTER_SLOTS = 9;
+
 const selectableGroups = () => GROUPS.filter((g) => !g.disabled && !g.hidden);
 
 export function createState() {
@@ -37,6 +40,9 @@ export function createState() {
     // true = sedang menampilkan hasil dari tautan bersama; progres pengguna
     // sendiri tidak boleh ditimpa selama ini.
     shared: false,
+    // true = halaman hasil dibuka lewat tautan `#edit`: tiap slot boleh diganti
+    // langsung, tanpa main heat + sort.
+    editing: false,
   };
 }
 
@@ -123,6 +129,7 @@ export function startGame(state, { onTooFew } = {}) {
   state.pool = eligible.map((m) => m.id);
   releaseCustom(state);
   state.finalists = [];
+  state.editing = false;
   state.heat = createHeat();
   state.heat.roundTotal = roundCount(state.pool.length);
   state.heat.pool = initialOrder(state.pool, (id) => memberById.get(id)?.groups?.[0] ?? '');
@@ -151,22 +158,47 @@ export function enterSort(state, ids) {
  * supaya membuka tautan orang lain tidak menghapus permainan yang sedang
  * berjalan di perangkat ini.
  */
-export function loadShared(state, { finalists, title }) {
-  state.pool = [...finalists];
-  state.finalists = [...finalists];
+export function loadShared(state, { finalists, title, editing = false }) {
+  // Mode `#edit` mulai dari platter kosong: sembilan slot `null`, supaya
+  // setFinalist punya alamat slot dan halaman hasil tetap punya sembilan
+  // tombol. Tautan biasa selalu membawa sembilan id, jadi tidak tersentuh.
+  const slots = [...finalists];
+  if (editing) while (slots.length < POSTER_SLOTS) slots.push(null);
+  state.pool = slots.filter(Boolean);
+  state.finalists = slots;
   state.heat = createHeat();
   state.sort = createSort();
   state.sortPast = [];
   state.title = title;
   state.titleTouched = title !== '';
   state.shared = true;
+  state.editing = editing;
   setPhase(state, 'result');
 }
 
 /** Keluar dari tampilan bersama; progres kembali disimpan. */
 export function leaveShared(state) {
   state.shared = false;
+  state.editing = false;
 }
+
+/**
+ * Isi satu slot finalis dengan member lain, tanpa menyentuh slot lain.
+ * Duplikat ditolak: tautan hasil menganggap id ganda sebagai paket rusak
+ * (js/share.js), jadi platter tidak boleh pernah memuatnya.
+ */
+export function setFinalist(state, rankIndex, memberId) {
+  if (!Number.isInteger(rankIndex) || rankIndex < 0 || rankIndex >= state.finalists.length) return false;
+  if (!memberById.has(memberId)) return false;
+  if (state.finalists[rankIndex] === memberId) return true;
+  if (state.finalists.includes(memberId)) return false;
+  state.finalists[rankIndex] = memberId;
+  return true;
+}
+
+/** Platter selalu sembilan slot; `finalists` boleh memuat `null` di mode edit. */
+export const platterComplete = (state) =>
+  state.finalists.length === POSTER_SLOTS && state.finalists.every(Boolean);
 
 // --- heat ------------------------------------------------------------------
 
@@ -273,6 +305,10 @@ const groupIds = new Set(GROUPS.map((g) => g.id));
  * Ringkasan yang aman disimpan: Set jadi array, riwayat undo dibuang.
  * Foto unggahan (`custom`) sengaja tidak ikut — isinya blob URL yang mati
  * begitu halaman ditutup.
+ *
+ * `finalists` disaring: di mode `#edit` slot yang belum diisi bernilai `null`,
+ * dan satu `null` saja membuat restore menolak seluruh paket (kehilangan
+ * progres) setelah pemain menekan Ulangi dari mode itu.
  */
 export function snapshot(state) {
   return {
@@ -281,7 +317,7 @@ export function snapshot(state) {
     selected: [...state.selected],
     phase: state.phase,
     pool: state.pool,
-    finalists: state.finalists,
+    finalists: state.finalists.filter(Boolean),
     title: state.title,
     titleTouched: state.titleTouched,
     heat: { ...state.heat, selected: [...state.heat.selected] },
@@ -330,6 +366,8 @@ export function restore(state, data) {
   state.sort = { ...createSort(), ...data.sort, stack: frames };
   state.sortPast = [];
   state.cropId = null;
+  // Mode `#edit` hanya hidup dari URL, tidak pernah ikut paket simpanan.
+  state.editing = false;
   setPhase(state, data.phase);
   return true;
 }

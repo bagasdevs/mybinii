@@ -16,6 +16,12 @@ the title into the URL hash (`#r=1&m=…&t=…`), so a link opens straight on
 someone else's poster. Opening a shared link never overwrites the progress on
 the device reading it.
 
+There is one unlinked entry point: **`#edit`** opens the result screen with nine
+empty slots and a *Change* button on each. Filling a slot picks any member
+directly — no heats, no pairwise ranking — and the filled platter shares and
+downloads like any other result. `#r=1&m=…&edit` opens an existing platter with
+the same buttons. Nothing links to it; it is reachable only by typing the hash.
+
 ## Run it
 
 No build step, no dependencies. The page uses ES modules, so it must be served
@@ -61,6 +67,7 @@ js/phases/*.js         render for each phase
 js/groups.js            group directory (read-only, no phase)
 js/poster.js           1080x1600 canvas poster
 js/photo.js            crop + upload dialog
+js/pick.js             pick-one-member dialog for the `#edit` link
 ```
 
 `photos/` holds the 475 originals plus `photos/thumb/`, the 480px WebP copies the

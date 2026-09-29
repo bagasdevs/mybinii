@@ -10,12 +10,34 @@ export function renderResult(state, ctx) {
   const locale = state.lang;
   const title = effectiveTitle(state, t);
 
+  // Di mode `#edit` tiap slot bisa diganti langsung, jadi tombolnya ikut per
+  // kartu (rank-nya, bukan id member: satu member bisa pindah slot).
+  const change = (rankIndex) =>
+    state.editing
+      ? `<button class="edit-photo pick" type="button" data-rank="${rankIndex}">${esc(t('result.change'))}</button>`
+      : '';
+
   const cards = POSTER_LAYOUT.map((rankIndex) => {
     const member = ctx.memberById.get(state.finalists[rankIndex]);
-    if (!member) return '';
+    if (!member) {
+      // Slot kosong hanya muncul di mode `#edit` (platter dari tautan selalu
+      // berisi sembilan). Tanpa kartu kosong ini halaman `#edit` tidak punya
+      // satu pun tombol untuk diklik.
+      if (!state.editing) return '';
+      return (
+        `<div class="poster-card empty-slot">` +
+        `<span class="badge ${rankIndex === 0 ? 'first' : ''}">${esc(t('result.rank', { n: rankIndex + 1 }))}</span>` +
+        change(rankIndex) +
+        `<div class="portrait"></div>` +
+        `<div class="member-name">—</div>` +
+        `<div class="member-group"></div>` +
+        `</div>`
+      );
+    }
     return (
       `<div class="poster-card">` +
       `<span class="badge ${rankIndex === 0 ? 'first' : ''}">${esc(t('result.rank', { n: rankIndex + 1 }))}</span>` +
+      change(rankIndex) +
       `<div class="portrait">${portrait(member, state.custom, locale)}` +
       `<button class="edit-photo" type="button" data-photo="${esc(member.id)}">${esc(t('result.editPhoto'))}</button></div>` +
       `<div class="member-name">${esc(memberLabel(member, locale))}</div>` +

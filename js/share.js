@@ -20,6 +20,15 @@ export function encodeShare({ finalists, title = '' }) {
 }
 
 /**
+ * Tautan `#edit` membuka halaman hasil kosong dalam mode ganti pick. Bisa
+ * digabung dengan parameter lain (`#r=1&m=…&edit`), jadi kehadiran kuncinya
+ * yang dicek, bukan nilai `r`.
+ */
+export function isEditLink(hash) {
+  return new URLSearchParams(String(hash ?? '').replace(/^#/, '')).has('edit');
+}
+
+/**
  * `hash` (dengan atau tanpa `#`) → `{ finalists, title }`, atau `null` bila
  * paketnya tidak layak dipakai. `memberById` disuntikkan supaya modul tetap
  * murni dan bisa diuji tanpa DOM.

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { MEMBERS } from '../data/roster.js';
-import { decodeShare, encodeShare } from '../js/share.js';
+import { decodeShare, encodeShare, isEditLink } from '../js/share.js';
 
 const memberById = new Map(MEMBERS.map((m) => [m.id, m]));
 const nine = MEMBERS.slice(0, 9).map((m) => m.id);
@@ -48,6 +48,17 @@ test('menolak paket yang tidak layak dipakai', () => {
   assert.equal(decodeShare('#r=1&m=' + duplicate.join('.'), memberById), null, 'id ganda');
   assert.equal(decodeShare('#r=1&m=' + unknown.join('.'), memberById), null, 'id tidak dikenal');
   assert.equal(decodeShare('#r=1&m=' + [...nine, nine[0]].join('.'), memberById), null, '10 id');
+});
+
+test('isEditLink hanya menyalak untuk hash yang membawa kunci edit', () => {
+  assert.equal(isEditLink('#edit'), true);
+  assert.equal(isEditLink('edit'), true, 'tanpa tanda pagar tetap terbaca');
+  assert.equal(isEditLink('#r=1&m=a.b&edit'), true, 'bisa digabung dengan paket hasil');
+  assert.equal(isEditLink('#edit=1'), true, 'nilai kunci tidak penting');
+  assert.equal(isEditLink('#r=1&m=' + nine.join('.')), false, 'tautan hasil biasa bukan mode edit');
+  assert.equal(isEditLink(''), false);
+  assert.equal(isEditLink('#'), false);
+  assert.equal(isEditLink('#edited'), false, 'kunci lain yang berawalan edit tidak ikut lolos');
 });
 
 test('setiap id member aman dipakai sebagai bagian hash', () => {
